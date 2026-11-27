@@ -29,7 +29,7 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 | Aihe | Nodeja | Hyväksytty valmiiksi | Tila |
 |---|---:|---:|---|
 | 01 Suljettu toimintaympäristö | 11 | 11 | Sisältö valmis |
-| 02 Kommunikointi | 21 | 0 | Aiempi luonnos |
+| 02 Kommunikointi | 21 | 8 | Sisältötyö käynnissä |
 | 03 Pääsynhallinta ja toimivalta | 12 | 0 | Aiempi luonnos |
 | 04 Datan hallinta | 11 | 0 | Runko |
 | 05 Riippuvuuksien hallinta | 15 | 0 | Runko |
@@ -60,19 +60,19 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
   - [ ] `communication/external/index.json`
     - [ ] `communication/external/proxy/index.json`
     - [ ] `communication/external/remote/index.json`
-- [ ] `communication/index.json` — aiempi luonnos, syvennettävä
+- [x] `communication/index.json`
   - [ ] `communication/patterns/index.json`
     - [ ] `communication/patterns/pull/index.json`
     - [ ] `communication/patterns/push/index.json`
     - [ ] `communication/patterns/request-response/index.json`
     - [ ] `communication/patterns/store-forward/index.json`
-    - [ ] `communication/primitives/channel/index.json`
-    - [ ] `communication/primitives/direction/index.json`
-  - [ ] `communication/primitives/index.json`
-    - [ ] `communication/primitives/payload/index.json`
-    - [ ] `communication/primitives/protocol/index.json`
-    - [ ] `communication/primitives/source/index.json`
-    - [ ] `communication/primitives/target/index.json`
+    - [x] `communication/primitives/channel/index.json`
+    - [x] `communication/primitives/direction/index.json`
+  - [x] `communication/primitives/index.json`
+    - [x] `communication/primitives/payload/index.json`
+    - [x] `communication/primitives/protocol/index.json`
+    - [x] `communication/primitives/source/index.json`
+    - [x] `communication/primitives/target/index.json`
     - [ ] `communication/transfer/egress/index.json`
   - [ ] `communication/transfer/index.json`
     - [ ] `communication/transfer/ingress/index.json`
@@ -173,10 +173,10 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 
 ## Edistyminen
 
-- Hyväksytysti valmiit sisältönodet: **12 / 101** (sisältää kurssin juurinoden).
+- Hyväksytysti valmiit sisältönodet: **20 / 101** (sisältää kurssin juurinoden).
 - Pääaiheet: **1 / 7** hyväksytysti valmista.
-- SVG-tiedostoja: **88** (22 aiempaa + 66 uutta; 44 kaaviota FI/EN).
-- Seuraava työ: 02 Kommunikointi, pääaiheen yleiskuva ja `communication/primitives/` aliaiheineen.
+- SVG-tiedostoja: **120** (22 aiempaa + 98 uutta; 60 kaaviota FI/EN).
+- Seuraava työ: `communication/transfer/` ja sen kolme aliaihetta (Offline Transfer, Ingress, Egress), sitten kommunikointimallit.
 
 ## Kehitysloki
 
@@ -187,3 +187,5 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 - Kierros 02: laskenta, tallennus, sisäinen verkko ja paikalliset palvelut täydennetty FI/EN. 12 uutta kaaviota kahdella kielellä. R0/R1-referenssijärjestelmä jatkuu huolto-organisaation esimerkillä. JSON ja uudet kuvaviittaukset tarkastettu; SVG:n visuaalinen selaintestaus ja koko kurssin lopputarkastus jäljellä.
 
 - Kierros 03: järjestelmän operatiivinen elinkaari, käynnistys, sammutus ja vikatilanteet täydennetty FI/EN. 11 uutta kaaviota kahdella kielellä. Pääaiheen 01 kaikki 11 nodea sisältövalmiita. R1:n käyttövalmius-, kirjoitus- ja vikatestit määritelty harjoituksiksi, ei väitetty suoritetuiksi. JSON ja uudet kuvaviittaukset tarkastettu; SVG:n visuaalinen selaintestaus ja koko kurssin lopputarkastus jäljellä.
+
+- Kierros 04: kommunikoinnin yleiskuva ja kuusi primitiiviä ryhmittelynodeineen täydennetty FI/EN (8 nodea). 16 uutta kaaviota kahdella kielellä. R1:n sisäinen ohjehaku ja R2:n suunniteltu ohjetuonti muodostavat esimerkkien perustan. JSON, kieliparien rakenne ja uudet kuvaviittaukset tarkastettu. SVG:n visuaalinen selaintestaus, harjoitusten suoritus ja koko kurssin lopputarkastus jäljellä.

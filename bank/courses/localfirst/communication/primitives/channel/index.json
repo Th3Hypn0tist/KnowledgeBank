@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Kanava mahdollistaa siirron",
+        "paragraphs": [
+          "Kanava on reitti tai mekanismi, jota pitkin viesti siirtyy lähteestä kohteeseen. Kanava voi olla fyysinen kaapeli, radiolinkki, looginen verkkoyhteys, paikallinen prosessien välinen yhteys tai hallittu fyysinen tiedostonsiirto. Kuvauksessa ilmoitetaan, mitä abstraktiotasoa kanavalla tarkoitetaan.",
+          "R1:n ohjehaussa fyysisenä reittinä ovat Ethernet-kaapelit ja kytkin, loogisena kanavana TCP-yhteys työasemalta palvelimelle. HTTP määrittelee viestintäsäännöt tämän yhteyden päällä. Kanava ja protokolla eivät ole sama käsite."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Fyysinen reitti ja looginen kanava",
+          "caption": "Fyysinen reitti ja looginen kanava"
+        }
+      },
+      {
+        "title": "Kanavan ominaisuudet ja valinta",
+        "paragraphs": [
+          "Kanavilla on erilaiset kapasiteetit, viiveet, suuntamahdollisuudet, toimitustakuut ja vikaantumistavat. Kanava ei itsessään takaa luottamuksellisuutta tai viestin eheyttä; nämä riippuvat käytetystä toteutuksesta. Valitse kanava määritellyn tehtävän tarpeen mukaan, ei mahdollisimman laajan yhteyden perusteella.",
+          "Harjoituksessa vertaile paikallista TCP-yhteyttä ja manuaalista tiedostonsiirtoa uuden huolto-ohjeen toimittamisessa. Kirjaa siirtomäärä, aikavaatimus, jatkuvan yhteyden tarve ja rajan ylityksen hallinta. Hyväksymiskriteeri: valinta perustellaan tehtävällä eikä pelkällä nopeudella."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Sama sisältö, eri kanavat",
+          "caption": "Sama sisältö, eri kanavat"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "A channel enables transfer",
+        "paragraphs": [
+          "A channel is the path or mechanism through which a message travels from source to target. It may be a physical cable, radio link, logical network connection, local interprocess connection or controlled physical file transfer. State the abstraction level meant by channel.",
+          "For R1 instruction lookup, Ethernet cables and the switch provide the physical path, while a TCP connection from workstation to server is the logical channel. HTTP defines messaging rules over that connection. Channel and protocol are distinct concepts."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Physical path and logical channel",
+          "caption": "Physical path and logical channel"
+        }
+      },
+      {
+        "title": "Channel properties and selection",
+        "paragraphs": [
+          "Channels differ in capacity, latency, direction capabilities, delivery guarantees and failure modes. A channel alone does not guarantee confidentiality or message integrity; these depend on implementation. Choose the channel according to the defined task rather than maximum connectivity.",
+          "Compare a local TCP connection and manual file transfer for delivery of a new maintenance instruction. Record transfer volume, time requirement, need for continuous connectivity and boundary controls. Acceptance criterion: justify the selection by the task rather than speed alone."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Same content, different channels",
+          "caption": "Same content, different channels"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

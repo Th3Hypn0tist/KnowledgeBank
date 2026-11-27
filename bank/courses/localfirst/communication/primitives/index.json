@@ -12,8 +12,58 @@
     "payload"
   ],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Kuusi kommunikoinnin primitiiviä",
+        "paragraphs": [
+          "Kommunikointitapahtuma voidaan kuvata kuudella peruskäsitteellä: lähde, kohde, kanava, suunta, protokolla ja sisältö. Tässä kurssissa nämä ovat kuvausmallin primitiivejä, eivät väite kaikkien tietoliikennejärjestelmien ainoasta mahdollisesta muodollisesta mallista. Sama kuvaus toimii paikalliselle prosessiviestille, verkkopyynnölle ja fyysiselle tiedonsiirrolle.",
+          "R1:n ohjehaussa lähde on työaseman sovellus, kohde huoltopalvelun hakutoiminto, kanava lähiverkon TCP-yhteys, suunta työasemalta palvelimelle, protokolla esimerkiksi HTTP ja sisältö ohjeen tunniste. Vastaus kuvataan erillisenä vastakkaissuuntaisena viestinä."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Kommunikointitapahtuman rakenne",
+          "caption": "Kommunikointitapahtuman rakenne"
+        }
+      },
+      {
+        "title": "Harjoitus: kommunikointisopimus",
+        "paragraphs": [
+          "Kirjoita yhdelle R1:n viestille kuuden kentän kuvaus. Käytä yksiselitteisiä komponenttitunnuksia, nimeä kanava ja protokollataso, määrittele suunta ja kuvaa odotettu sisältö. Kirjaa mahdolliset oletukset, kuten se, ettei kanava salaa sisältöä. Älä sekoita kuvausta käyttöoikeuspäätökseen.",
+          "Tee vastaava kuvaus palvelimen vastaukselle. Hyväksymiskriteeri: toinen osallistuja pystyy tunnistamaan osapuolet ja erottamaan viestit toisistaan ilman tietoa käyttöliittymän ulkoasusta."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Pyyntö ja vastaus erillisinä kuvauksina",
+          "caption": "Pyyntö ja vastaus erillisinä kuvauksina"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Six communication primitives",
+        "paragraphs": [
+          "A communication event can be described using six basic concepts: source, target, channel, direction, protocol and payload. In this course these are descriptive primitives, not a claim that every communication system has only one possible formal model. The description works for local process messages, network requests and physical transfers.",
+          "For an R1 instruction lookup, the source is the workstation application, the target is the maintenance service lookup function, the channel is a TCP connection on the LAN, the direction is workstation to server, the protocol may be HTTP, and the payload is the instruction identifier. Describe the response as a separate message in the opposite direction."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Structure of a communication event",
+          "caption": "Structure of a communication event"
+        }
+      },
+      {
+        "title": "Exercise: communication contract",
+        "paragraphs": [
+          "Write a six-field description for one R1 message. Use unambiguous component identifiers, name the channel and protocol layer, define direction and describe expected payload. Record assumptions, such as whether the channel lacks encryption. Do not confuse the description with an authorization decision.",
+          "Create the equivalent description for the server response. Acceptance criterion: another participant can identify the participants and distinguish messages without knowing the appearance of the interface."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Request and response as separate descriptions",
+          "caption": "Request and response as separate descriptions"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

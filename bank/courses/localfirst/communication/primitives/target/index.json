@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Kohde määritellään riittävän tarkasti",
+        "paragraphs": [
+          "Kohde on tarkasteltavan viestin tarkoitettu vastaanottaja. Pelkkä palvelimen IP-osoite ei yksilöi sovelluksen toimintoa. Kohde voidaan määritellä esimerkiksi palvelimen, palvelun ja toiminnon yhdistelmällä. Reititys kohteeseen ja kohteen oikeus suorittaa toiminto ovat erillisiä kysymyksiä.",
+          "R1:n ohjehakupyynnön kohde voi olla 192.168.50.20-palvelimella oleva huoltopalvelun lukutoiminto. Samassa palvelussa oleva hallintatoiminto on eri toiminnallinen kohde, vaikka se käyttäisi samaa IP-osoitetta ja porttia."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Kohteen tarkkuustasot",
+          "caption": "Kohteen tarkkuustasot"
+        }
+      },
+      {
+        "title": "Yksi tai useita vastaanottajia",
+        "paragraphs": [
+          "Viestin kohde voi olla yksittäinen komponentti tai määritelty vastaanottajajoukko. Yksittäiseen osoitteeseen lähetetty unicast, ryhmälle toimitettava multicast ja lähiverkon broadcast eroavat toisistaan. Julkaisu–tilaus-mallissa viestin toimittamisesta tilaajille vastaa erillinen välittäjä. Kaikki nämä eivät ole keskenään sama mekanismi.",
+          "Harjoituksessa kuvaa huoltotietueen hakupyyntö yhdelle palvelulle sekä yleinen ilmoitus usealle paikalliselle käyttäjälle. Päätä, tarvitaanko todella ryhmäjakelua. Hyväksymiskriteeri: kohteet ja niiden rajat ovat yksilöitävissä eikä tarpeetonta vastaanottajajoukkoa oleteta."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Yksittäinen ja ryhmäjakelu",
+          "caption": "Yksittäinen ja ryhmäjakelu"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Specify the target precisely",
+        "paragraphs": [
+          "The target is the intended recipient of the message under examination. A server IP address alone does not identify an application operation. A target may be specified by a combination of server, service and operation. Routing to the target and authorization to invoke it are separate questions.",
+          "The R1 instruction lookup target may be the maintenance service's read function at 192.168.50.20. An administration function in the same service is a different functional target even if it uses the same IP address and port."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Target granularity",
+          "caption": "Target granularity"
+        }
+      },
+      {
+        "title": "One or multiple recipients",
+        "paragraphs": [
+          "A message may target an individual component or a defined recipient group. Unicast to one address, multicast to a group and LAN broadcast differ. In publish–subscribe, an intermediary delivers messages to subscribers. These are not identical mechanisms.",
+          "Describe a maintenance lookup request to one service and a general notice to multiple local users. Decide whether group delivery is genuinely necessary. Acceptance criterion: targets and their boundaries are identifiable without assuming an unnecessary recipient set."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Individual and group delivery",
+          "caption": "Individual and group delivery"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

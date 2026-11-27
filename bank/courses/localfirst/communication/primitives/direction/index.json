@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Viestin suunta ja kanavan suuntakyky",
+        "paragraphs": [
+          "Viestin suunta ilmaisee, mistä lähteestä mihin kohteeseen tarkasteltava viesti siirtyy. Kanavan suuntakyky puolestaan kuvaa, voiko kyseinen mekanismi siirtää tietoa yhteen vai molempiin suuntiin. Kaksisuuntaisella yhteydellä voidaan toteuttaa yksisuuntainen sovellustason tiedonsiirto, mutta se ei tee fyysisestä yhteydestä yksisuuntaista.",
+          "R1:n HTTP-hakupyyntö kulkee työasemalta palvelimelle ja vastaus takaisin. TCP tarvitsee liikennettä molempiin suuntiin myös silloin, kun sovellustason hyötydataa siirretään vain yhteen suuntaan. Erottele siis hyötydatan, kontrolliliikenteen ja fyysisen kanavan suunnat."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Suunta eri tasoilla",
+          "caption": "Suunta eri tasoilla"
+        }
+      },
+      {
+        "title": "Fyysinen ja ohjelmallinen suuntarajoitus",
+        "paragraphs": [
+          "Ohjelmallinen sääntö voi estää tietyn suunnan viestit tai estää uuden yhteyden aloittamisen. Säännön vaikutus riippuu kerroksesta ja konfiguraatiosta. Fyysinen yksisuuntainen siirtomekanismi puolestaan rajaa itse siirtoreitin suuntakyvyn. Tavallinen palomuuri ei ole fyysinen datadiodi.",
+          "Harjoituksessa kuvaa ohjetuonti R2:een kahdella vaihtoehdolla: kaksisuuntainen kanava, jolla sovellus hyväksyy vain ohjetuonnin, ja aidosti yksisuuntainen siirtomekanismi. Kirjaa mahdolliset paluu- ja kuittausreitit erikseen. Hyväksymiskriteeri: sovellustason rajoitusta ei esitetä fyysisenä eristyksenä."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Kaksi erilaista suuntarajoitusta",
+          "caption": "Kaksi erilaista suuntarajoitusta"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Message direction and channel capability",
+        "paragraphs": [
+          "Message direction specifies the source-to-target path of the message under examination. Channel capability describes whether the mechanism can transfer information in one or both directions. A bidirectional connection can carry one-way application data, but this does not make the physical connection unidirectional.",
+          "An R1 HTTP lookup request travels from workstation to server and the response returns. TCP requires traffic in both directions even if application payload moves only one way. Distinguish payload direction, control traffic and physical channel capability."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Direction at different layers",
+          "caption": "Direction at different layers"
+        }
+      },
+      {
+        "title": "Physical and software direction constraints",
+        "paragraphs": [
+          "A software rule may block messages in a given direction or prevent initiation of new connections. Its effect depends on layer and configuration. A physically unidirectional transfer mechanism constrains the direction capability of the path itself. An ordinary firewall is not a physical data diode.",
+          "Describe instruction import into R2 with two alternatives: a bidirectional channel whose application accepts only instruction imports, and a truly unidirectional transfer mechanism. Record any return and acknowledgement paths separately. Acceptance criterion: an application-level constraint is not presented as physical isolation."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Two different direction constraints",
+          "caption": "Two different direction constraints"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Lähde on viestin tuottava osapuoli",
+        "paragraphs": [
+          "Lähde on komponentti, joka tuottaa tarkasteltavan viestin. Se voi olla käyttäjää palveleva sovellus, sensori, paikallinen prosessi tai palvelin. Lähde määritellään valitulla tarkastelutasolla: verkkopakettien lähdeosoite ja sovellusviestin alkuperäinen tuottaja eivät välttämättä ole sama asia.",
+          "R1:n ohjehaussa käyttäjä käynnistää toiminnon, mutta viestin lähde on työaseman sovellusprosessi. Kun palvelin vastaa, palvelin on vastauksen lähde. Käyttäjän identiteetti ja komponentin tekninen tunniste kirjataan tarvittaessa eri kenttiin."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Käyttäjä ei ole sama kuin viestin lähde",
+          "caption": "Käyttäjä ei ole sama kuin viestin lähde"
+        }
+      },
+      {
+        "title": "Alkuperäinen lähde ja välittäjä",
+        "paragraphs": [
+          "Välittäjä voi vastaanottaa viestin ja muodostaa uuden viestin seuraavalle kohteelle. Tällöin vastaanottajan välitön verkkolähde voi olla välittäjä, vaikka sisältö olisi alun perin tuotettu muualla. Lähdeosoitetta tai viestissä ilmoitettua nimeä ei pidä tulkita todennetuksi identiteetiksi.",
+          "Piirrä harjoituksessa ulkopuolinen ohjejulkaisu, paikallinen tuontikomponentti ja huoltopalvelu. Nimeä alkuperäinen sisällön tuottaja ja jokaisen siirtovaiheen välitön lähde erikseen. Hyväksymiskriteeri: kuvaus ei menetä eroa alkuperän ja viimeisen lähettäjän välillä."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Lähde vaihtuu siirtovaiheittain",
+          "caption": "Lähde vaihtuu siirtovaiheittain"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "The source produces the message",
+        "paragraphs": [
+          "The source is the component producing the message under examination. It may be a user-facing application, sensor, local process or server. Define the source at the selected level: the network packet's source address and the original producer of an application message may differ.",
+          "In R1 instruction lookup, the user initiates the operation but the workstation application process produces the message. When the server responds, it is the response source. Record user identity and technical component identifier in separate fields where needed."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "The user is not the message source",
+          "caption": "The user is not the message source"
+        }
+      },
+      {
+        "title": "Original source and intermediary",
+        "paragraphs": [
+          "An intermediary can receive a message and create another for the next target. The recipient's immediate network source may then be the intermediary even though the content was originally produced elsewhere. A source address or claimed name is not a verified identity.",
+          "In the exercise, draw an external instruction publisher, local import component and maintenance service. Name the original content producer and immediate source of each transfer separately. Acceptance criterion: the description preserves the distinction between origin and last sender."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Source changes at each transfer stage",
+          "caption": "Source changes at each transfer stage"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

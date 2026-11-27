@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Protokolla määrittelee kommunikoinnin säännöt",
+        "paragraphs": [
+          "Protokolla määrittelee, miten osapuolet muodostavat, lähettävät, vastaanottavat ja tulkitsevat viestejä. Se voi määritellä viestien rakenteen, järjestyksen, virhetilanteet ja tilasiirtymät. Eri protokollat toimivat eri kerroksilla, eikä yksi protokolla yleensä kuvaa koko tiedonsiirtoketjua.",
+          "R1:n esimerkkipyyntö voi käyttää HTTP:tä TCP/IP:n ja Ethernetin päällä. HTTP määrittelee sovellusviestinnän säännöt, TCP tavujonon kuljetuksen, IP osoittamisen ja reitityksen sekä Ethernet paikallisten kehysten siirron. JSON on datan esitysmuoto, ei itsessään koko kommunikointiprotokolla."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Esimerkki protokollakerroksista",
+          "caption": "Esimerkki protokollakerroksista"
+        }
+      },
+      {
+        "title": "Sopimus sisältää myös virhetilanteet",
+        "paragraphs": [
+          "Yhteensopivuus vaatii yhteisen tulkinnan viesteistä. Määrittele sovellusprotokollan pyynnöt, vastaukset, mahdollinen versiointi sekä virhetilanteiden merkitys. Pelkkä TCP-yhteyden onnistuminen ei osoita sovelluspyynnön onnistumista, eikä esimerkiksi HTTP-statuskoodi yksin takaa palautetun datan oikeellisuutta.",
+          "Harjoituksessa määrittele huolto-ohjeen hakutoiminto: tunnettu tunniste palauttaa ohjeen, tuntematon tunniste määritellyn virheen ja virheellinen pyyntö hylätään. Testaa nämä kolme tapausta hyväksytyssä harjoitusympäristössä. Hyväksymiskriteeri: asiakas tulkitsee jokaisen tuloksen sovitulla tavalla."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Sovittu pyyntö ja tulokset",
+          "caption": "Sovittu pyyntö ja tulokset"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "A protocol defines communication rules",
+        "paragraphs": [
+          "A protocol defines how participants construct, send, receive and interpret messages. It may define message structure, ordering, error conditions and state transitions. Different protocols operate at different layers, and one protocol generally does not describe the entire transfer chain.",
+          "An R1 example request may use HTTP over TCP/IP and Ethernet. HTTP defines application messaging, TCP byte-stream transport, IP addressing and routing, and Ethernet local frame transfer. JSON is a data representation format, not by itself the entire communication protocol."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Example protocol layers",
+          "caption": "Example protocol layers"
+        }
+      },
+      {
+        "title": "The contract includes errors",
+        "paragraphs": [
+          "Interoperability requires shared interpretation of messages. Define application protocol requests, responses, versioning where needed, and error semantics. A successful TCP connection does not establish application success, and an HTTP status code alone does not guarantee correctness of returned data.",
+          "Define the instruction lookup operation: a known identifier returns an instruction, an unknown identifier yields a defined error, and a malformed request is rejected. Test all three cases in an approved training environment. Acceptance criterion: the client interprets each result according to the contract."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Contracted request and outcomes",
+          "caption": "Contracted request and outcomes"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }
