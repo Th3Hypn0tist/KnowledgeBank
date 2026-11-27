@@ -163,20 +163,25 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 
 ## Lopputarkastus
 
-- [ ] Kaikki JSON-tiedostot parsittavissa ja `children`-viittaukset olemassa oikeassa järjestyksessä.
-- [ ] Kaikki kuvaviittaukset osoittavat olemassa oleviin SVG-tiedostoihin; SVG:t validia XML:ää.
-- [ ] FI/EN-sisällön vastaavuus, terminologia ja kuvien luettavuus.
+- [x] Kaikki 102 JSON-tiedostoa parsittavissa ja `children`-viittaukset olemassa; julkaistun hierarkian kattavuus tarkastettu.
+- [x] Kaikki 460 kuvaviittausta osoittavat olemassa oleviin SVG-tiedostoihin; 22 käyttämätöntä vanhaa SVG:tä poistettu.
+- [ ] Koko 460 SVG-tiedoston XML-validointi oikealla parserilla; validaattori lisätty ja testattu testiaineistolla.
+- [x] FI/EN-rakenne: kaikissa 101 nodessa yhtä monta korttia molemmilla kielillä (230/kieli).
+- [ ] FI/EN-sisällön semanttinen vastaavuus, terminologia ja kaikkien kuvien luettavuus.
 - [ ] Päällekkäisyyksien ja abstraktiotasojen tarkastus.
 - [ ] Referenssijärjestelmän jatkuvuus ja käytännön harjoitukset.
-- [ ] Kurssiluettelo, ankkurit, kielivalinta ja sivun toiminta selaimessa.
+- [x] PHP-syntaksi ja API:n JSON/XML/HTML-sitemapit, yksittäiset nodet ja virhetapaukset paikallisella synteettisellä testipuulla; Apache-reititys testattu.
+- [x] JavaScript-syntaksi tarkastettu; virheellisen URL-ankkurin käsittely korjattu.
+- [ ] API:n kaikkien 102 todellisen noden ajotesti ja tuotantoreititys.
+- [ ] Kurssiluettelo, ankkurit, kielivalinta ja sivun toiminta selaimessa; Chromium esti navigoinnin testiympäristössä.
 - [ ] Mobiilinäkymä ja tuotantopolut; testaa ilman ulkoisia verkkoyhteyksiä paikallisella HTTP-palvelimella ja AIGM site.css:llä.
 
 ## Edistyminen
 
 - Hyväksytysti valmiit sisältönodet: **101 / 101** (sisältää kurssin juurinoden).
 - Pääaiheet: **7 / 7** hyväksytysti valmista.
-- SVG-tiedostoja: **482** (22 aiempaa + 460 uutta; 241 kaaviota FI/EN).
-- Seuraava työ: koko kurssin lopputarkastus; sisältötyö valmis.
+- SVG-tiedostoja: **460** (230 kaaviota FI/EN; 22 vanhaa käyttämätöntä poistettu).
+- Seuraava työ: koko aineiston XML/API-ajotesti, semanttinen ja visuaalinen katselmointi, tuotanto- ja harjoitustestit; ks. `developement/REVIEW.md`.
 
 ## Kehitysloki
 
@@ -223,3 +228,5 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 - Kierros 11: koko paikallisen tekoälyn luku, 15 nodea FI/EN, 30 uutta kaaviota (60 SVG-tiedostoa). Malli, data, inferenssi, Knowledge Engine, RAG ja botin toimivalta erotettu toisistaan; paikallinen ydintoiminta säilyy ilman tekoälypalvelua. Käytetty synteettistä R3-huoltoaineistoa ja malliriippumattomia toimivaltarajoja. Jokaisessa nodessa määritelmä ja harjoitus hyväksymiskriteereineen. Olemassa oleva hierarkia ja metatiedot säilytetty, aiemmat kuvat jätetty repositorioon lopputarkastusta varten. JSON-parsinta, kieliparien rakenne ja uudet kuvaviittaukset tarkastettu; SVG:n XML- ja visuaalinen tarkastus sekä harjoitusten suoritus jäljellä. Ei UI- tai API-muutoksia.
 
 - Kierros 12: verifioinnin kaikki 15 nodea täydennetty FI/EN, 30 uutta kaaviota (60 SVG-tiedostoa). Monitorointi, auditointi ja testaus erotettu toisistaan. Hyväksymistestit kattavat katkaisun, kylmäkäynnistyksen, vikatilanteet, toimivallan, luottamusrajat ja palautumisen; jokaisessa nodessa määritelmä ja harjoitus hyväksymiskriteereineen. Kurssin kaikki 101 sisältönodea ja 7 pääaihetta sisältövalmiita. Olemassa oleva hierarkia ja metatiedot säilytetty; aiemmat kuvat säilytetty lopputarkastusta varten. JSON-parsinta, kieliparien rakenne ja uudet kuvaviittaukset tarkastettu. Koko kurssin resurssi-, XML-, sisältö-, selain- ja API-tarkastus sekä harjoitusten suorittaminen vielä avoinna. Harjoitusten määrittely ei ole näyttö niiden suorittamisesta. Ei UI- tai API-muutoksia.
+
+- Kierros 13: kaikki 102 JSON-tiedostoa luettu GitHubista (101 kurssinodea + luettelo). 230 korttia/kieli, 460 kuvaviittausta; ei puuttuvia nodeja tai kuvia. Poistettu 22 viittaamatonta vanhaa SVG:tä. Lisätty riippuvuudeton julkaisuvalidaattori ja katselmointiraportti. PHP 8.4.24 CLI ja paikallinen Apache synteettisellä testipuulla PASS; JavaScript-syntaksi PASS. Korjattu virheellisen URL-fragmentin käsittely, yhdenmukaistettu footerin API-linkki absoluuttiseksi ja estetty .git/developement HTTP-pääsy Apache-säännöllä (403 testattu). Koko repon kloonaus ja tuotannon hakeminen estyivät ympäristössä; selaimen navigointi estetty. Täyden aineiston XML/parseriajoa, koko aineiston API-ajotestiä, visuaalista/semanttista katselmointia ja harjoituksia ei merkitä läpäistyiksi.
