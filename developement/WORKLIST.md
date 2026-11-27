@@ -248,4 +248,6 @@ Ei muutoksia JSON-lähdeaineistoon, PHP-API:in tai sisältömäärään (101/101
 - [x] Pikkukuvat käyttävät SVG:n omaa kuvasuhdetta, eivät pakotettua 680/370-suhdetta.
 - [x] Lisätty toistettava Node.js-työkalu developement/compact-svg.js (oletuksena dry-run; --write kirjoittaa).
 - [x] Toinen osatallennus: 118 SVG:tä tiivistetty ja lähdeblobit tarkistettu. Korkeussumma 43660 → 40554.
-- [ ] Loput SVG:t (138) sekä visuaalinen selaintarkastus.
+- [x] Viimeinen osatallennus: 138 SVG:tä tiivistetty ja lähdeblobit tarkistettu. Korkeussumma 51060 → 46484.
+- [x] Kaikki 460 SVG:tä (230 FI/EN-paria) tiivistetty ja tallennettu. Kokonaiskorkeus 169320 → 138236. Tiivistys idempotentti korkeuden osalta.
+- [ ] Visuaalinen selaintarkastus ja koko aineiston XML-parseritarkastus.
