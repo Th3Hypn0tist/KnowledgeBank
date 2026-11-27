@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Resurssien käyttö ja kapasiteettirajat",
+        "paragraphs": [
+          "Paikallisen järjestelmän kapasiteetti on rajallinen. Seuraa CPU:n, RAM:n, levyn, verkkoyhteyksien ja tarvittaessa GPU:n käyttöä. AI-palvelun muistitarve voi vaihdella kontekstin ja rinnakkaisten pyyntöjen mukaan. Levyn vapaa tila, I/O-viive ja kirjoitusvirheet ovat erillisiä havaintoja.",
+          "R3:ssa mittareita verrataan työtehtävien vasteaikoihin ja virheisiin. Määrittele varoitusraja sekä toiminnallinen raja, jonka ylitys johtaa esimerkiksi uusien AI-pyyntöjen rajoittamiseen. Yhden hetken käyttöaste ei vielä osoita järjestelmän enimmäiskapasiteettia."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Resurssien käyttö ja kapasiteettirajat",
+          "caption": "Resurssien käyttö ja kapasiteettirajat"
+        }
+      },
+      {
+        "title": "Harjoitus: hallittu kuormituskoe",
+        "paragraphs": [
+          "Suorita harjoitusympäristössä ensin ohjehaku ilman AI-kuormaa. Lisää paikallisia synteettisiä inferenssipyyntöjä vaiheittain ennalta sovittuun testirajaan. Mittaa vasteaika, virheet ja resurssien huippukäyttö. Määrittele pysäytysehdot etukäteen, jotta kuormitus ei aiheuta vahinkoa eikä kuluta testilevyä täyteen.",
+          "Hyväksymiskriteeri: ydintoiminnon palvelutaso tunnetaan kuormituksen aikana. Sovittu raja käynnistää määritellyn kuormanhallinnan. Epäonnistuneet ajot raportoidaan, eikä niiden poisjättämisellä keinotekoisesti paranneta tuloksia."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: hallittu kuormituskoe",
+          "caption": "Harjoitus: hallittu kuormituskoe"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Resource utilization and capacity limits",
+        "paragraphs": [
+          "Local system capacity is finite. Observe CPU, RAM, disk, network and GPU where appropriate. AI memory requirements may vary with context and concurrent requests. Free disk space, I/O latency and write errors are separate observations.",
+          "Compare R3 metrics against task latency and failures. Define warning and operational limits, for example restricting new AI requests above a threshold. A single utilization sample does not establish maximum system capacity."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Resource utilization and capacity limits",
+          "caption": "Resource utilization and capacity limits"
+        }
+      },
+      {
+        "title": "Exercise: controlled load test",
+        "paragraphs": [
+          "First perform instruction lookup without AI load in a training environment. Increase local synthetic inference requests incrementally up to an agreed test limit. Measure latency, errors and peak utilization. Define stop conditions beforehand to avoid damage or filling the test disk.",
+          "Acceptance criterion: core service levels are known during load. The agreed limit triggers defined load management. Report failed runs rather than artificially improving results by excluding them."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: controlled load test",
+          "caption": "Exercise: controlled load test"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

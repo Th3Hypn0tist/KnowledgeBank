@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Toimivaltatesti tarkastaa todellisen vaikutuksen",
+        "paragraphs": [
+          "Toimivaltatestaus vertaa toteutettuja toimintoja etukäteen määriteltyyn toimivaltamatriisiin. Testaa toimija, operaatio, kohde ja tilaehto, ei vain kirjautumisen onnistumista. Kielletyn pyynnön hylkäysviesti ei yksin todista, ettei pyynnöllä ollut vaikutusta.",
+          "R3:n huoltaja saa lukea hyväksytyn ohjeen ja kirjata oman työtehtävänsä tapahtuman. Hän ei saa muuttaa toisen organisaation tietoa. Testaa myös botin kautta tehty pyyntö, jos botti on käytössä. Mallin suostumus tai kieltäytyminen ei ole toimivaltatestin lopputulos."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Toimivaltatesti tarkastaa todellisen vaikutuksen",
+          "caption": "Toimivaltatesti tarkastaa todellisen vaikutuksen"
+        }
+      },
+      {
+        "title": "Harjoitus: oikeuksien ja peruutuksen regressiotesti",
+        "paragraphs": [
+          "Luo synteettiset käyttäjä- ja palvelutunnukset kahdelle organisaatiolle. Testaa sallittu oma luku ja kirjoitus, kielletty toisen organisaation haku, puuttuva valtuus ja aktiivisen istunnon kirjoitusoikeuden peruuttaminen. Tarkista tietovaraston tila, palautettu sisältö ja peruutuksen toteutunut viive.",
+          "Hyväksymiskriteeri: kaikki testatut päätökset vastaavat matriisia, kiellettyä aineistoa ei palauteta eikä kiellettyä muutosta synny. Peruuttaminen tulee voimaan määritellyssä ajassa. Uusi testijoukko, politiikkaversio tai havaittu poikkeama dokumentoidaan; testit toistetaan olennaisten muutosten jälkeen."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: oikeuksien ja peruutuksen regressiotesti",
+          "caption": "Harjoitus: oikeuksien ja peruutuksen regressiotesti"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Authority testing checks actual effects",
+        "paragraphs": [
+          "Authority testing compares actual operations against a predefined authority matrix. Test principal, operation, target and state conditions, not only sign-in. A denial message alone does not establish that a request had no effect.",
+          "An R3 technician may read an approved instruction and record an event for an assigned task. They may not modify another organization's data. Test requests through the bot too if enabled. Model agreement or refusal is not the authority test outcome."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Authority testing checks actual effects",
+          "caption": "Authority testing checks actual effects"
+        }
+      },
+      {
+        "title": "Exercise: permission and revocation regression test",
+        "paragraphs": [
+          "Create synthetic user and service identities for two organizations. Test permitted own reads and writes, denied cross-organization retrieval, missing permission and write revocation in an active session. Inspect data store state, returned contents and actual revocation delay.",
+          "Acceptance criterion: tested decisions match the matrix, prohibited data is not returned and prohibited changes do not occur. Revocation takes effect within the defined time. Record changed test sets, policy revisions and deviations; repeat tests after relevant changes."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: permission and revocation regression test",
+          "caption": "Exercise: permission and revocation regression test"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

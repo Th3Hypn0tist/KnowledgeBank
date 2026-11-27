@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Katkaisukoe todentaa yhteyden vaikutuksen",
+        "paragraphs": [
+          "Yhteyden katkaisukoe poistaa määritellyn verkkoyhteyden ja vertaa toimintoja normaaliin tilaan. Erota internetyhteyden katkaisu koko lähiverkon katkaisusta. R3:n verkotetussa harjoitusvaihtoehdossa ulkoinen reitti poistetaan niin, että paikallinen verkko ja palvelut säilyvät käytettävissä.",
+          "Varmista katkaisu määritellyssä mittauspisteessä ja huomioi vaihtoehtoiset reitit, kuten toinen verkkoliitäntä. Katkaisu kesken käytön ja käynnistys jo katkaistussa ympäristössä ovat eri testit. Välimuisti, voimassa oleva istunto tai aiemmin ladattu aineisto voi peittää käynnistysriippuvuuden."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Katkaisukoe todentaa yhteyden vaikutuksen",
+          "caption": "Katkaisukoe todentaa yhteyden vaikutuksen"
+        }
+      },
+      {
+        "title": "Harjoitus: katkaisu ja uudelleenkytkentä",
+        "paragraphs": [
+          "Suorita normaalitilan ohjehaku ja testiraportin toimitus. Katkaise vain harjoitusympäristön ulkoinen yhteys. Toista ohjehaku, sallittu tallennus ja raporttitoimitus. Kirjaa paikallinen tila ja toimituksen jonotus tai virhe. Palauta yhteys hallitusti ja tarkasta, ettei raportin uusinta aiheuta määritelmän vastaista kaksoisvaikutusta.",
+          "Hyväksymiskriteeri: paikalliset ydintoiminnot jatkavat käyttöehtojensa mukaisesti, ulkoinen toimitus ei näy valheellisesti onnistuneena ja uudelleenkytkentä noudattaa sovittua toimituspolitiikkaa. Dokumentoi katkaisuhetki, kesto ja todetut yhteydet."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: katkaisu ja uudelleenkytkentä",
+          "caption": "Harjoitus: katkaisu ja uudelleenkytkentä"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Disconnection testing verifies connectivity impact",
+        "paragraphs": [
+          "A disconnection test removes defined connectivity and compares operations with normal state. Distinguish internet disconnection from loss of the entire LAN. In the networked R3 alternative remove the external route while preserving local networking and services.",
+          "Verify disconnection at the defined observation point and account for alternative routes such as another network interface. Disconnecting during operation and starting while already disconnected are different tests. A cache, valid session or previously downloaded material may conceal startup dependency."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Disconnection testing verifies connectivity impact",
+          "caption": "Disconnection testing verifies connectivity impact"
+        }
+      },
+      {
+        "title": "Exercise: disconnect and reconnect",
+        "paragraphs": [
+          "Perform baseline instruction lookup and test report delivery. Disconnect only the external training link. Repeat lookup, authorized saving and report delivery. Record local state and delivery queuing or error. Restore connectivity in a controlled manner and verify retries do not produce prohibited duplicate effects.",
+          "Acceptance criterion: local core functions continue within their usage conditions, external delivery is not falsely reported successful and reconnection follows the agreed delivery policy. Record disconnection time, duration and observed links."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: disconnect and reconnect",
+          "caption": "Exercise: disconnect and reconnect"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

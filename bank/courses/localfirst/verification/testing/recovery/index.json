@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Palautumistesti mittaa toimintakykyä",
+        "paragraphs": [
+          "Palautumisen verifioinnissa ei tarkasteta vain varmuuskopion olemassaoloa. Todennetaan palautetun aineiston eheys, sovelluksen käyttökelpoisuus ja toimivaltarajojen säilyminen. RTO ja RPO ovat ennalta asetettuja tavoitteita; toteutunut palautumisaika ja tietohävikki ovat mitattavia tuloksia.",
+          "R3:ssa palautus voi vaatia ohjelmistoversion, skeeman, asetukset, avaimet, paikallisen IAM:n ja johdettujen hakemistojen uusimisen. Vanha palautuspiste ei saa automaattisesti palauttaa käytöstä poistettuja oikeuksia tai tietoa, jonka aktiivinen käyttö on nykyisen politiikan vastaista."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Palautumistesti mittaa toimintakykyä",
+          "caption": "Palautumistesti mittaa toimintakykyä"
+        }
+      },
+      {
+        "title": "Harjoitus: koko paikallisen järjestelmän palautus",
+        "paragraphs": [
+          "Valitse synteettinen R3-palautuspiste ja dokumentoi simuloitu häiriöhetki. Palauta erilliselle harjoituslaitteelle ilman ulkoista yhteyttä. Tarkasta data, voimassa olevat oikeudet, ohjehaku, sallittu tallennus ja kielletty toiminto. Rakenna tarvittaessa hakemisto uudelleen lähteestä ja testaa myös AI-palvelun rajattu haku, jos se kuuluu palautusvaatimuksiin.",
+          "Hyväksymiskriteeri: palautuksen mitattu kesto ja palautuspiste täyttävät määritellyt RTO/RPO-tavoitteet, ydintoiminnot ja rajat toimivat ja puuttuvat resurssit on kirjattu. Lopuksi kokoa verifiointiraportti, jossa kaikki kurssin hyväksymisvaatimukset yhdistetään toteutuneeseen näyttöön, poikkeamiin ja rajoitteisiin."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: koko paikallisen järjestelmän palautus",
+          "caption": "Harjoitus: koko paikallisen järjestelmän palautus"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Recovery testing measures operational capability",
+        "paragraphs": [
+          "Recovery verification checks more than backup existence. Verify restored data integrity, application usability and authority boundary preservation. RTO and RPO are predefined objectives; actual recovery time and data loss are measured results.",
+          "R3 recovery may require software version, schema, configuration, keys, local IAM and rebuilding derived indexes. An old recovery point must not automatically restore revoked permissions or information whose active use violates current policy."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Recovery testing measures operational capability",
+          "caption": "Recovery testing measures operational capability"
+        }
+      },
+      {
+        "title": "Exercise: full local system recovery",
+        "paragraphs": [
+          "Select a synthetic R3 recovery point and document simulated disruption time. Restore to separate training hardware without external connectivity. Check data, current permissions, instruction lookup, authorized saving and denied operations. Rebuild indexes from source where needed and test bounded AI retrieval if required for recovery.",
+          "Acceptance criterion: measured recovery duration and recovery point satisfy defined RTO/RPO, core functions and boundaries work, and missing resources are recorded. Finally assemble a verification report linking course acceptance requirements to actual evidence, deviations and limitations."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: full local system recovery",
+          "caption": "Exercise: full local system recovery"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

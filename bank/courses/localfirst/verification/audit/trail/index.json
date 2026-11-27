@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Audit Trail jäljittää tietoon kohdistuneet vaikutukset",
+        "paragraphs": [
+          "Audit Trail eli auditointijälki yhdistää olennaiset toimet ja niiden vaikutukset jäljitettäväksi historiaksi. Se eroaa yleisestä diagnostiikkalokista siinä, että tarkoitus on osoittaa esimerkiksi kuka hyväksyi muutoksen, mihin kohteeseen se kohdistui, minkä revision perusteella ja mikä hyväksytty tila syntyi.",
+          "R3:n ohjeversion hyväksymisellä on yksilöity toimija, tapahtuma, kohde, lähtörevisio ja uusi revisio. Muutos ja sitä koskeva pakollinen auditointitieto tallennetaan johdonmukaisesti. Muuttumattomuutta voidaan tukea rajatuilla kirjoitusoikeuksilla, erillisillä kopioilla tai tiivisteketjuilla; mikään näistä ei yksin takaa väärentämättömyyttä kaikkia uhkia vastaan."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Audit Trail jäljittää tietoon kohdistuneet vaikutukset",
+          "caption": "Audit Trail jäljittää tietoon kohdistuneet vaikutukset"
+        }
+      },
+      {
+        "title": "Harjoitus: rekonstruoi hyväksytyn tiedon historia",
+        "paragraphs": [
+          "Luo synteettinen työohje, hyväksy uusi revisio ja hylkää toinen muutosehdotus. Käytä auditointijälkeä osoittamaan tapahtumien järjestys, hyväksyjä ja voimaan tullut revisio. Tarkasta, ettei tavallisella huoltajatunnuksella ole oikeutta muuttaa auditointihistoriaa. Simuloi harjoituskopiossa jäljen puuttuva tapahtuma ja arvioi, miten puute havaitaan.",
+          "Hyväksymiskriteeri: hyväksytty tila ja siihen johtaneet määritellyt tapahtumat ovat jäljitettävissä. Hylätty ehdotus ei näy hyväksyttynä muutoksena. Dokumentoi jäljen säilytys, tarkastusoikeus ja havaintomekanismin rajat; älä väitä täydellistä muuttumattomuutta ilman vastaavaa näyttöä."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: rekonstruoi hyväksytyn tiedon historia",
+          "caption": "Harjoitus: rekonstruoi hyväksytyn tiedon historia"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "An audit trail traces effects on information",
+        "paragraphs": [
+          "An audit trail connects relevant actions and effects into traceable history. Unlike general diagnostic logging, its purpose is to establish who approved a change, its target, base revision and resulting accepted state, for example.",
+          "R3 instruction approval has an identified principal, event, target, base revision and new revision. Store a change and its mandatory audit information consistently. Immutability may be supported by restricted write access, separate copies or hash chains; none alone guarantees tamper resistance against every threat."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "An audit trail traces effects on information",
+          "caption": "An audit trail traces effects on information"
+        }
+      },
+      {
+        "title": "Exercise: reconstruct accepted data history",
+        "paragraphs": [
+          "Create a synthetic instruction, approve a new revision and reject another proposal. Use the audit trail to establish event order, approver and effective revision. Verify that an ordinary technician cannot change audit history. Simulate a missing event in a training copy and assess detection.",
+          "Acceptance criterion: accepted state and the defined events leading to it are traceable. Rejected proposals do not appear as accepted changes. Document retention, inspection rights and detection limits; do not claim complete immutability without corresponding evidence."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: reconstruct accepted data history",
+          "caption": "Exercise: reconstruct accepted data history"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

@@ -9,8 +9,58 @@
     "services"
   ],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Monitorointi tekee järjestelmän tilan havaittavaksi",
+        "paragraphs": [
+          "Monitorointi kerää havaintoja järjestelmän toiminnasta määritellyissä mittauspisteissä. Mittari, tapahtuma ja tilatieto kuvaavat eri asioita: esimerkiksi levytilan määrä, epäonnistunut pyyntö ja palvelun käyttövalmius. R3:n paikalliset palvelut tarvitsevat paikallisesti saavutettavan näkymän myös internetin puuttuessa.",
+          "Valitse mittauspisteet vaatimusten perusteella. Pelkkä vihreä merkkivalo ei kerro, mitä toimintoja on tarkastettu. Kirjaa näytteenottoväli, mittauksen lähde, havaintohetki ja puuttuvan tiedon käsittely. Monitorointijärjestelmän oma vika ei saa näkyä virheellisesti valvottavan järjestelmän terveenä tilana."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Monitorointi tekee järjestelmän tilan havaittavaksi",
+          "caption": "Monitorointi tekee järjestelmän tilan havaittavaksi"
+        }
+      },
+      {
+        "title": "Harjoitus: mittauksen puuttuminen",
+        "paragraphs": [
+          "Kerää harjoitusympäristöstä verkkoliikenteen, palvelun ja levytilan havaintoja. Määrittele jokaiselle normaalitila, hälytysraja ja enimmäisikä. Keskeytä yhden mittauslähteen raportointi ilman että itse valvottavaa palvelua pysäytetään. Palauta raportointi ja tarkista havaintojen aikajärjestys.",
+          "Hyväksymiskriteeri: vanhentunut havainto erotetaan tuoreesta, puuttuva mittaus näkyy tuntemattomana ja palautunut mittaus päivittyy oikein. Monitoroinnin vika ei itsessään muuta valvottavan palvelun todellista tilaa."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: mittauksen puuttuminen",
+          "caption": "Harjoitus: mittauksen puuttuminen"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Monitoring makes system state observable",
+        "paragraphs": [
+          "Monitoring collects observations at defined measurement points. Metrics, events and state describe different things, such as free disk space, a failed request and service readiness. R3 local services require a locally accessible view even without internet.",
+          "Select measurement points based on requirements. A green indicator alone does not tell which operations were checked. Record sampling interval, source, observation time and missing-data handling. Monitoring failure must not be misrepresented as a healthy monitored system."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Monitoring makes system state observable",
+          "caption": "Monitoring makes system state observable"
+        }
+      },
+      {
+        "title": "Exercise: missing measurements",
+        "paragraphs": [
+          "Collect network, service and disk observations from the training environment. Define normal state, alert threshold and maximum age for each. Interrupt one measurement source without stopping the monitored service itself. Restore reporting and inspect observation order.",
+          "Acceptance criterion: stale and fresh observations are distinct, missing measurements appear unknown and restored measurements update correctly. Monitoring failure does not itself change the monitored service's actual state."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: missing measurements",
+          "caption": "Exercise: missing measurements"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

@@ -12,8 +12,58 @@
     "recovery"
   ],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Testitapaus määritellään ennen suoritusta",
+        "paragraphs": [
+          "Testitapaus yksilöi vaatimuksen, lähtötilan, testisyötteen, suoritettavan toiminnon, odotetun tuloksen ja havaintomenetelmän. Kirjaa konfiguraatio, aineistoversio ja käytettävät identiteetit. Positiivinen testi osoittaa sallitun toiminnon onnistumista; negatiivinen testi osoittaa määritellyn kielletyn tai virheellisen toiminnon käsittelyä.",
+          "R3:n hyväksymisessä ei riitä, että käyttöliittymä näyttää odotetun tekstin. Tarkasta vaikutukset myös tietovarastosta, palvelun rajalta tai testivastaanottimesta. Testin jälkeen palauta tarvittaessa lähtötila, jotta seuraavan testin tulos ei riipu huomaamatta edellisestä."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Testitapaus määritellään ennen suoritusta",
+          "caption": "Testitapaus määritellään ennen suoritusta"
+        }
+      },
+      {
+        "title": "Harjoitus: muodosta hyväksymistestimatriisi",
+        "paragraphs": [
+          "Luo taulukko, jossa on tunniste, vaatimus, ympäristöversio, odotettu tulos, toteutunut tulos, näyttö ja tila. Lisää vähintään yksi sallittu luku, sallittu kirjoitus, estetty kirjoitus, virheellinen syöte ja yhteyskatko. Suorita testit hallitussa järjestyksessä ja säilytä synteettinen havaintoaineisto.",
+          "Hyväksymiskriteeri: jokaista pakollista vaatimusta vastaa yksi tai useampi määritelty testi. Tulos kirjataan PASS, FAIL, NOT RUN tai INCONCLUSIVE ja perustellaan; pelkkää suunniteltua harjoitusta ei merkitä suoritetuksi."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: muodosta hyväksymistestimatriisi",
+          "caption": "Harjoitus: muodosta hyväksymistestimatriisi"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Define the test case before execution",
+        "paragraphs": [
+          "A test case identifies requirement, initial state, input, operation, expected result and observation method. Record configuration, dataset version and identities. A positive test demonstrates successful permitted behavior; a negative test demonstrates handling of a defined prohibited or invalid operation.",
+          "R3 acceptance cannot rely solely on the UI showing expected text. Inspect actual effects at the data store, service boundary or test receiver. Restore initial state where needed so later results do not silently depend on earlier tests."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Define the test case before execution",
+          "caption": "Define the test case before execution"
+        }
+      },
+      {
+        "title": "Exercise: build an acceptance test matrix",
+        "paragraphs": [
+          "Create a table with identifier, requirement, environment version, expected result, actual result, evidence and status. Include at least one permitted read, permitted write, denied write, malformed input and disconnection. Execute in controlled order and retain synthetic evidence.",
+          "Acceptance criterion: every mandatory requirement has one or more defined tests. Record and justify PASS, FAIL, NOT RUN or INCONCLUSIVE; a planned exercise is not marked executed."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: build an acceptance test matrix",
+          "caption": "Exercise: build an acceptance test matrix"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

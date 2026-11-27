@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Vikatesti rajaa häiriön vaikutusalueen",
+        "paragraphs": [
+          "Vikatestissä poistetaan tai heikennetään hallitusti yksi määritelty edellytys ja tarkastetaan järjestelmän käyttäytyminen. Vika voi koskea paikallista palvelua, yhteyttä, kapasiteettia tai ulkoista riippuvuutta. Odotettu toiminta voi olla tehtävän jatkuminen, siirtäminen myöhemmäksi tai määritelty esto.",
+          "R3:ssa AI-palvelun vika ei saa tarpeettomasti estää suoraa ohjehakua. Tietokannan vika voi sen sijaan estää uuden huoltotapahtuman tallentamisen. Virheellisen onnistumisilmoituksen sijaan järjestelmän tulee näyttää todellinen tila ja käsitellä keskeneräinen toiminto sovitusti."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Vikatesti rajaa häiriön vaikutusalueen",
+          "caption": "Vikatesti rajaa häiriön vaikutusalueen"
+        }
+      },
+      {
+        "title": "Harjoitus: yhden vian testimatriisi",
+        "paragraphs": [
+          "Kirjaa erilliset harjoitusviat: AI-palvelu pysähtyy, tietokanta ei vastaa ja ulkoinen raporttivastaanotin ei vastaa. Testaa yksi kerrallaan, palauta lähtötila välissä ja tarkasta paikallinen ohjehaku, tallennus ja raportin tila. Suunnittele aikakatkaisut ja testin keskeytysrajat; älä tee tuhoavia kokeita tuotantolaitteilla.",
+          "Hyväksymiskriteeri: jokainen toiminto käyttäytyy dokumentoidun vika- ja riippuvuusmatriisin mukaisesti. Tietojen eheys säilyy määritellysti, epäonnistuminen näkyy eikä palautuminen aiheuta sovitun vastaista kaksoistallennusta. Yhden vian kokeet eivät kata kaikkia samanaikaisia vikoja."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: yhden vian testimatriisi",
+          "caption": "Harjoitus: yhden vian testimatriisi"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Fault testing establishes failure scope",
+        "paragraphs": [
+          "Fault testing removes or degrades one defined prerequisite in a controlled way and examines behavior. Faults may affect a local service, connection, capacity or external dependency. Expected behavior may be continued work, deferral or defined denial.",
+          "In R3, AI failure should not unnecessarily block direct instruction lookup. Database failure may instead prevent recording a new maintenance event. Rather than reporting false success, the system must expose actual state and handle unfinished operations as agreed."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Fault testing establishes failure scope",
+          "caption": "Fault testing establishes failure scope"
+        }
+      },
+      {
+        "title": "Exercise: single-fault matrix",
+        "paragraphs": [
+          "Record separate training failures: AI stops, database is unresponsive and external report receiver is unresponsive. Test one at a time, restore initial state between tests and inspect local lookup, saving and report status. Plan timeouts and stop limits; do not perform destructive tests on production equipment.",
+          "Acceptance criterion: each function behaves according to its documented fault and dependency matrix. Data consistency is maintained as defined, failure is visible and recovery does not produce prohibited duplicate records. Single-fault tests do not cover every simultaneous failure."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: single-fault matrix",
+          "caption": "Exercise: single-fault matrix"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

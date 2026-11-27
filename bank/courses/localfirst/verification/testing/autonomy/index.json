@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Itsenäinen toiminta osoitetaan koko käyttöketjussa",
+        "paragraphs": [
+          "Itsenäinen toiminta tarkoittaa tässä kurssissa kykyä suorittaa määritellyt ydintehtävät paikallisessa hallinnassa ilman ulkoista yhteyttä. Tämä ei tarkoita autonomista bottia eikä kaikkien paikallisten komponenttien riippumattomuutta toisistaan. Testaa käytön lisäksi käynnistys, tarvittava kirjautuminen, tiedon voimassaolo ja hallittu sammutus.",
+          "R3 voi olla offline-käyttökelpoinen jo asennetussa tilassa mutta tarvita ulkoista asennusaineistoa uutta laitetta varten. Erota normaalin käytön, puhtaan asennuksen ja palautuksen riippumattomuus. Määrittele vaadittu offline-kesto; lyhyt onnistunut testi ei todista rajatonta toimintaa."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Itsenäinen toiminta osoitetaan koko käyttöketjussa",
+          "caption": "Itsenäinen toiminta osoitetaan koko käyttöketjussa"
+        }
+      },
+      {
+        "title": "Harjoitus: kylmäkäynnistys ilman ulkoista yhteyttä",
+        "paragraphs": [
+          "Valmistele R3-harjoitusjärjestelmä ja sammuta se hallitusti. Poista ulkoinen yhteys ennen käynnistystä. Käynnistä paikalliset palvelut, kirjaudu uudella istunnolla, hae voimassa oleva ohje ja tallenna synteettinen huoltotapahtuma. Toista tarvittaessa puhtaalla selainprofiililla ja sovitun offline-jakson jälkeen.",
+          "Hyväksymiskriteeri: kaikki määritellyt käynnistys- ja ydintoiminnot onnistuvat paikallisista resursseista tai puute kirjataan. Tarkasta, etteivät ulkoiset IAM-, DNS-, lisenssi- tai aikapalvelut ole piilottaneet käynnistysriippuvuutta. Arvioi rajat myös ohjeiden ja valtuuksien vanhentuessa."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: kylmäkäynnistys ilman ulkoista yhteyttä",
+          "caption": "Harjoitus: kylmäkäynnistys ilman ulkoista yhteyttä"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Autonomous operation is verified across the lifecycle",
+        "paragraphs": [
+          "Autonomous operation in this course means performing defined core tasks under local control without external connectivity. It does not mean an autonomous bot or independence of every local component from the others. Test startup, required sign-in, data validity and controlled shutdown as well as runtime.",
+          "R3 may support offline operation after installation yet need externally acquired installation material for a replacement device. Distinguish runtime, clean installation and recovery independence. Define required offline duration; a short successful test does not establish indefinite operation."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Autonomous operation is verified across the lifecycle",
+          "caption": "Autonomous operation is verified across the lifecycle"
+        }
+      },
+      {
+        "title": "Exercise: cold start without external connectivity",
+        "paragraphs": [
+          "Prepare the R3 training system and shut it down cleanly. Remove external connectivity before startup. Start local services, sign in with a new session, retrieve a valid instruction and save a synthetic maintenance event. Repeat with a fresh browser profile and after the agreed offline interval where required.",
+          "Acceptance criterion: all defined startup and core operations succeed using local resources or deficiencies are recorded. Check for hidden startup dependencies on external IAM, DNS, licensing or time services. Assess limits when instructions and permissions expire."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: cold start without external connectivity",
+          "caption": "Exercise: cold start without external connectivity"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

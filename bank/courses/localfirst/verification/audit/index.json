@@ -8,8 +8,58 @@
     "trail"
   ],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Auditointi arvioi näyttöä kriteereitä vasten",
+        "paragraphs": [
+          "Auditointi on järjestelmällinen arviointi, jossa tarkastellaan toteutusta, määriteltyjä vaatimuksia ja saatavilla olevaa näyttöä. Auditoinnin laajuus voi olla tekninen, toiminnallinen tai organisatorinen. Lokit ja testitulokset ovat näyttöä, mutta niiden olemassaolo ei itsessään ole auditointi.",
+          "R3:n auditoinnissa tarkastetaan esimerkiksi, vastaavatko toteutetut yhteydet hyväksyttyä matriisia, onko aineistolle määritelty hallintavastuu ja löytyykö palautuskokeesta todiste. Kirjaa arviointikriteerit, tarkastettu konfiguraatio, havainto ja johtopäätöksen rajaus. Erottele havaittu poikkeama ja vielä selvittämätön asia."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Auditointi arvioi näyttöä kriteereitä vasten",
+          "caption": "Auditointi arvioi näyttöä kriteereitä vasten"
+        }
+      },
+      {
+        "title": "Harjoitus: poikkeamien arviointi",
+        "paragraphs": [
+          "Valitse R3:lle kolme vaatimusta. Tarkasta kunkin toteutus ja testinäyttö. Käytä synteettisenä poikkeamana esimerkiksi hyväksymätöntä ulkoista testiriippuvuutta tai puuttuvaa palautuskokeen tulosta. Luokittele vaatimuksenmukainen havainto, todettu poikkeama ja riittämätön näyttö erikseen.",
+          "Hyväksymiskriteeri: jokaiselle johtopäätökselle löytyy kriteeri ja tarkastettava näyttö. Poikkeamalle määritellään vastuurooli, korjaus ja uusintatesti; pelkkä korjaussuunnitelma ei sulje poikkeamaa. Riippumaton arvioija voi tarvittaessa tarkastaa saman aineiston."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: poikkeamien arviointi",
+          "caption": "Harjoitus: poikkeamien arviointi"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Audit evaluates evidence against criteria",
+        "paragraphs": [
+          "An audit is a systematic evaluation of implementation, defined requirements and available evidence. Scope may be technical, operational or organizational. Logs and test results are evidence, but their existence alone is not an audit.",
+          "An R3 audit may examine whether implemented connections match the approved matrix, datasets have governance responsibility, and recovery tests have evidence. Record criteria, configuration examined, observations and conclusion scope. Distinguish observed deviations from unresolved questions."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Audit evaluates evidence against criteria",
+          "caption": "Audit evaluates evidence against criteria"
+        }
+      },
+      {
+        "title": "Exercise: evaluate deviations",
+        "paragraphs": [
+          "Select three R3 requirements. Inspect implementation and test evidence for each. Use an unapproved external test dependency or missing recovery test result as a synthetic deviation. Classify conformance, established deviation and insufficient evidence separately.",
+          "Acceptance criterion: each conclusion has a criterion and inspectable evidence. Define owner, correction and retest for each deviation; a correction plan alone does not close it. An independent reviewer can inspect the same evidence when required."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: evaluate deviations",
+          "caption": "Exercise: evaluate deviations"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

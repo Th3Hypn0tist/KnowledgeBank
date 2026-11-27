@@ -9,7 +9,7 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 - [x] Tuotantopolku `/kb/bank/courses/localfirst/`.
 - [x] Aiemman materiaalin siirto ja 22 SVG-tiedostoa (11 aihekuvaa kahdella kielellä).
 - [x] Seitsemän pääaiheen otsikkopuu.
-- [ ] Täydellinen kurssisisältö.
+- [x] Täydellinen kurssisisältö.
 - [ ] Sisältö-, resurssi- ja selaintestaus.
 
 ## Sisältötyön kriteerit
@@ -34,7 +34,7 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 | 04 Datan hallinta | 11 | 11 | Sisältö valmis |
 | 05 Riippuvuuksien hallinta | 15 | 15 | Sisältö valmis |
 | 06 Paikallinen tekoäly | 15 | 15 | Sisältö valmis |
-| 07 Verifiointi | 15 | 0 | Aiempi luonnos |
+| 07 Verifiointi | 15 | 15 | Sisältö valmis |
 
 ## Työlista nodeittain
 
@@ -145,21 +145,21 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 
 ### 07 Verifiointi
 
-  - [ ] `verification/audit/index.json`
-    - [ ] `verification/audit/logging/index.json`
-    - [ ] `verification/audit/trail/index.json`
-- [ ] `verification/index.json` — aiempi luonnos, syvennettävä
-  - [ ] `verification/monitoring/index.json`
-    - [ ] `verification/monitoring/resources/index.json`
-    - [ ] `verification/monitoring/services/index.json`
-    - [ ] `verification/monitoring/traffic/index.json`
-    - [ ] `verification/testing/authority/index.json`
-    - [ ] `verification/testing/autonomy/index.json`
-    - [ ] `verification/testing/boundaries/index.json`
-    - [ ] `verification/testing/disconnect/index.json`
-    - [ ] `verification/testing/faults/index.json`
-  - [ ] `verification/testing/index.json`
-    - [ ] `verification/testing/recovery/index.json`
+  - [x] `verification/audit/index.json`
+    - [x] `verification/audit/logging/index.json`
+    - [x] `verification/audit/trail/index.json`
+- [x] `verification/index.json`
+  - [x] `verification/monitoring/index.json`
+    - [x] `verification/monitoring/resources/index.json`
+    - [x] `verification/monitoring/services/index.json`
+    - [x] `verification/monitoring/traffic/index.json`
+    - [x] `verification/testing/authority/index.json`
+    - [x] `verification/testing/autonomy/index.json`
+    - [x] `verification/testing/boundaries/index.json`
+    - [x] `verification/testing/disconnect/index.json`
+    - [x] `verification/testing/faults/index.json`
+  - [x] `verification/testing/index.json`
+    - [x] `verification/testing/recovery/index.json`
 
 ## Lopputarkastus
 
@@ -173,10 +173,10 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 
 ## Edistyminen
 
-- Hyväksytysti valmiit sisältönodet: **86 / 101** (sisältää kurssin juurinoden).
-- Pääaiheet: **6 / 7** hyväksytysti valmista.
-- SVG-tiedostoja: **422** (22 aiempaa + 400 uutta; 211 kaaviota FI/EN).
-- Seuraava työ: 07 Verifiointi (15 nodea), sitten lopputarkastus.
+- Hyväksytysti valmiit sisältönodet: **101 / 101** (sisältää kurssin juurinoden).
+- Pääaiheet: **7 / 7** hyväksytysti valmista.
+- SVG-tiedostoja: **482** (22 aiempaa + 460 uutta; 241 kaaviota FI/EN).
+- Seuraava työ: koko kurssin lopputarkastus; sisältötyö valmis.
 
 ## Kehitysloki
 
@@ -221,3 +221,5 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 - Kierros 10B: kaikki 10 ulkoisen riippuvuuden nodea täydennetty FI/EN, 20 uutta kaaviota (40 SVG-tiedostoa). Riippuvuuksien hallinta kokonaan sisältövalmis. DNS, NTP, IAM, sertifikaatit, lisenssit, kirjastot, pakettivarastot, Cloud API, CDN ja telemetria käsitelty hankinta-, suoritus- tai ylläpitoriippuvuuksina. Jokaisessa määritelmä, R3-esimerkki, harjoitus ja hyväksymiskriteerit. JSON-parsinta, kieliparien rakenne ja uudet kuvaviittaukset tarkastettu; SVG:n XML- ja visuaalinen tarkastus sekä harjoitusten suoritus jäljellä. Ei käyttöliittymä- tai API-muutoksia.
 
 - Kierros 11: koko paikallisen tekoälyn luku, 15 nodea FI/EN, 30 uutta kaaviota (60 SVG-tiedostoa). Malli, data, inferenssi, Knowledge Engine, RAG ja botin toimivalta erotettu toisistaan; paikallinen ydintoiminta säilyy ilman tekoälypalvelua. Käytetty synteettistä R3-huoltoaineistoa ja malliriippumattomia toimivaltarajoja. Jokaisessa nodessa määritelmä ja harjoitus hyväksymiskriteereineen. Olemassa oleva hierarkia ja metatiedot säilytetty, aiemmat kuvat jätetty repositorioon lopputarkastusta varten. JSON-parsinta, kieliparien rakenne ja uudet kuvaviittaukset tarkastettu; SVG:n XML- ja visuaalinen tarkastus sekä harjoitusten suoritus jäljellä. Ei UI- tai API-muutoksia.
+
+- Kierros 12: verifioinnin kaikki 15 nodea täydennetty FI/EN, 30 uutta kaaviota (60 SVG-tiedostoa). Monitorointi, auditointi ja testaus erotettu toisistaan. Hyväksymistestit kattavat katkaisun, kylmäkäynnistyksen, vikatilanteet, toimivallan, luottamusrajat ja palautumisen; jokaisessa nodessa määritelmä ja harjoitus hyväksymiskriteereineen. Kurssin kaikki 101 sisältönodea ja 7 pääaihetta sisältövalmiita. Olemassa oleva hierarkia ja metatiedot säilytetty; aiemmat kuvat säilytetty lopputarkastusta varten. JSON-parsinta, kieliparien rakenne ja uudet kuvaviittaukset tarkastettu. Koko kurssin resurssi-, XML-, sisältö-, selain- ja API-tarkastus sekä harjoitusten suorittaminen vielä avoinna. Harjoitusten määrittely ei ole näyttö niiden suorittamisesta. Ei UI- tai API-muutoksia.

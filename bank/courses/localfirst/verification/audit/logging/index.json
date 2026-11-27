@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Lokitus tallentaa järjestelmän tapahtumia",
+        "paragraphs": [
+          "Lokit tallentavat valittuja tapahtumia, kuten palvelun käynnistymisen, pyynnön epäonnistumisen ja toimivaltapäätöksen. Rakenteinen loki voi sisältää tapahtumatunnisteen, ajan, komponentin, pyynnön korrelaatiotunnisteen, tapahtumatyypin ja tuloksen. Lokin ei tarvitse sisältää koko pyyntöä.",
+          "R3:n lokit säilytetään paikallisesti määritellyn käyttöoikeuden ja säilytysajan mukaisesti. Salaisuuksia, salasanoja ja tarpeetonta henkilötietoa ei tallenneta. Suunnittele lokien kierto ja kapasiteetti sekä toiminta, jos lokitus ei onnistu. Aikaleiman tarkkuus riippuu käytetyn ajan lähteestä."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Lokitus tallentaa järjestelmän tapahtumia",
+          "caption": "Lokitus tallentaa järjestelmän tapahtumia"
+        }
+      },
+      {
+        "title": "Harjoitus: korreloi yksi pyyntö",
+        "paragraphs": [
+          "Suorita harjoituspalvelun hyväksytty ohjehaku ja hylätty testikirjoitus. Anna pyynnöille korrelaatiotunnisteet ja tarkasta niitä vastaavat lokit. Simuloi lokivaraston häiriö erillisessä ympäristössä. Tarkasta, ettei testitunnuksen salasana tai tarpeeton hyötykuorma päädy lokiin.",
+          "Hyväksymiskriteeri: tunnetut tapahtumat ja niiden lopputulokset voidaan yhdistää pyyntöihin, salaisuudet eivät näy lokissa ja lokitusvirhe näkyy määritellyllä tavalla. Jos tietyn suojatun toiminnon auditointinäyttö on pakollinen, sen puuttumiselle on suunniteltu erillinen toimintatapa."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: korreloi yksi pyyntö",
+          "caption": "Harjoitus: korreloi yksi pyyntö"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Logging records system events",
+        "paragraphs": [
+          "Logs record selected events such as service startup, failed requests and authority decisions. Structured logs may include event identifier, time, component, request correlation ID, event type and outcome. A log need not contain the entire request.",
+          "R3 logs are retained locally under defined access and retention rules. Do not store secrets, passwords or unnecessary personal data. Plan log rotation, capacity and behavior when logging fails. Timestamp accuracy depends on the time source."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Logging records system events",
+          "caption": "Logging records system events"
+        }
+      },
+      {
+        "title": "Exercise: correlate one request",
+        "paragraphs": [
+          "Perform an approved instruction lookup and denied test write. Assign request correlation identifiers and inspect matching logs. Simulate log-store failure in a separate environment. Ensure the training password and unnecessary payload do not appear in logs.",
+          "Acceptance criterion: known events and outcomes correlate to requests, secrets are absent and logging failure is visible as defined. If audit evidence is mandatory for a protected operation, define separate behavior when that evidence cannot be recorded."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: correlate one request",
+          "caption": "Exercise: correlate one request"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

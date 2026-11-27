@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Luottamusraja testataan toteutuksen tasolla",
+        "paragraphs": [
+          "Luottamusrajan verifiointi tarkastaa, että määritelty täytäntöönpanomekanismi rajoittaa resurssin saavutettavuutta tai käyttöä. Verkkorajan, prosessirajan ja organisaatiorajan testit eivät korvaa toisiaan. Jos palvelu on verkkotasolla saavutettavissa, sovellus voi silti estää kielletyn toiminnon.",
+          "R3:ssa tarkastetaan sekä sallittu rajanylitys että määritelty estetty vaihtoehto. Selvitä tunnetut vaihtoehtoiset reitit ja jaetut hallintavaltuudet. Rajan pitävyys arvioidaan määritellyssä uhkamallissa ja testikattavuudessa, ei pelkän arkkitehtuurikaavion perusteella."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Luottamusraja testataan toteutuksen tasolla",
+          "caption": "Luottamusraja testataan toteutuksen tasolla"
+        }
+      },
+      {
+        "title": "Harjoitus: rajanylitysten hyväksymismatriisi",
+        "paragraphs": [
+          "Valitse harjoitusympäristöstä kolme rajaa. Testaa työaseman sallittu sovellusreitti ja estetty suora testitietokantareitti; tuontiprosessin sallittu harjoitushakemisto ja estetty suojattu hakemisto; sekä organisaation sallittu oma haku ja estetty toisen organisaation testitietue. Tarkista havainto asianomaisella toteutustasolla.",
+          "Hyväksymiskriteeri: sallitut reitit toimivat ja määritellyt estetyt reitit eivät tuota kiellettyä vaikutusta. Kirjaa mittauspisteet, testitunnukset, konfiguraatio ja testaamattomat rajanylitykset. Hyväksyntä koskee vain tarkastettua toteutusta."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: rajanylitysten hyväksymismatriisi",
+          "caption": "Harjoitus: rajanylitysten hyväksymismatriisi"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Test trust boundaries at the implementation layer",
+        "paragraphs": [
+          "Trust boundary verification checks that a defined enforcement mechanism constrains resource reachability or use. Network, process and organization boundary tests are not interchangeable. A service reachable at network level can still deny a prohibited application operation.",
+          "Test both permitted crossings and defined denied alternatives in R3. Identify known alternative paths and shared administrative privileges. Evaluate boundary enforcement within the defined threat model and test coverage, not merely from the architecture diagram."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Test trust boundaries at the implementation layer",
+          "caption": "Test trust boundaries at the implementation layer"
+        }
+      },
+      {
+        "title": "Exercise: boundary-crossing acceptance matrix",
+        "paragraphs": [
+          "Select three training boundaries. Test a permitted workstation application path and denied direct test database path; the import process's permitted training directory and denied protected directory; and an organization's permitted own lookup and denied other-organization test record. Inspect evidence at the relevant implementation layer.",
+          "Acceptance criterion: permitted paths work and defined denied paths do not produce prohibited effects. Record observation points, test identities, configuration and untested crossings. Acceptance applies only to the implementation examined."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: boundary-crossing acceptance matrix",
+          "caption": "Exercise: boundary-crossing acceptance matrix"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

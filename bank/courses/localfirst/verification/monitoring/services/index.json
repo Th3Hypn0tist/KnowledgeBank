@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Käynnissä oleva palvelu ei aina ole käyttövalmis",
+        "paragraphs": [
+          "Palvelun prosessi voi olla käynnissä, vaikka se ei pystyisi suorittamaan tehtäväänsä. Erottele elossaolo (liveness), käyttövalmius (readiness) ja todellinen toiminnallinen palvelutesti. Tietokantaan yhdistäminen ei vielä osoita, että huoltotapahtuma voidaan tallentaa oikeilla valtuuksilla.",
+          "R3:n huoltosovelluksen käyttövalmius riippuu esimerkiksi tietokannan saavutettavuudesta, hyväksytystä skeemaversiosta ja toimivaltapolitiikasta. Paikallisen tekoälyn tila arvioidaan erikseen; sen puuttuminen ei tarkoita kaikkien palvelujen olevan poissa käytöstä."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Käynnissä oleva palvelu ei aina ole käyttövalmis",
+          "caption": "Käynnissä oleva palvelu ei aina ole käyttövalmis"
+        }
+      },
+      {
+        "title": "Harjoitus: osittainen palveluhäiriö",
+        "paragraphs": [
+          "Tarkasta harjoituspalvelun normaali elossaolo, käyttövalmius ja ohjehaku. Simuloi sen tietovaraston puuttuminen ja toista tarkastukset. Palauta tietovarasto ja pysäytä sen jälkeen vain AI-palvelu. Käytä toiminnallisessa testissä synteettistä, rajattua aineistoa.",
+          "Hyväksymiskriteeri: prosessin elossaolo ei peitä tietovaraston häiriötä, tekoälyn puuttuminen näkyy erillisenä tilana ja alkuperäisen ohjeen suora haku säilyy sovitusti. Testi ei saa tarpeettomasti muuttaa varsinaista dataa."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: osittainen palveluhäiriö",
+          "caption": "Harjoitus: osittainen palveluhäiriö"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "A running service is not always ready",
+        "paragraphs": [
+          "A service process can be running while unable to perform its task. Distinguish liveness, readiness and actual functional testing. Connecting to a database does not establish that a maintenance event can be saved with appropriate authority.",
+          "R3 application readiness depends on database reachability, approved schema version and authority policy, for example. Assess local AI separately; its absence does not mean every service is unavailable."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "A running service is not always ready",
+          "caption": "A running service is not always ready"
+        }
+      },
+      {
+        "title": "Exercise: partial service failure",
+        "paragraphs": [
+          "Check normal training service liveness, readiness and instruction retrieval. Simulate missing data storage and repeat checks. Restore storage and then stop only AI. Use bounded synthetic data in functional checks.",
+          "Acceptance criterion: process liveness does not hide storage failure, AI absence is reported separately and direct instruction lookup remains available as defined. The test should not unnecessarily modify actual data."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: partial service failure",
+          "caption": "Exercise: partial service failure"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

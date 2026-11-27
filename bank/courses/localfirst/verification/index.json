@@ -11,52 +11,56 @@
   "content": {
     "fi": [
       {
-        "title": "Rakentaminen ja avaaminen",
+        "title": "Vaatimus, havainto ja verifioitu tulos",
         "paragraphs": [
-          "Rakennetaan eristetty ympäristö. Määritellään yksi ulkoinen kommunikointitarve ja toteutetaan rajattu rajapinta."
+          "Verifioinnilla osoitetaan, täyttääkö toteutus määritellyt vaatimukset. R0–R3-referenssijärjestelmässä paikallisen toiminnan, kommunikointirajojen ja toimivallan vaatimukset muodostettiin ennen toteutusta. Nyt niille määritellään testit, lähtötila, odotettu tulos ja hyväksymisraja.",
+          "Monitorointi tuottaa havaintoja järjestelmän toiminnasta, auditointi arvioi toimintaa ja näyttöä sovittuja kriteereitä vasten, ja testaus tuottaa hallituissa olosuhteissa toistettavaa näyttöä. Hyväksytty testi osoittaa vaatimuksen täyttymistä testin rajauksessa, ei koko järjestelmän virheettömyyttä."
         ],
         "image": {
-          "src": "images/practice-1-fi.svg",
-          "alt": "01 / Harjoituksen eteneminen",
-          "caption": "01 / Harjoituksen eteneminen"
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Vaatimus, havainto ja verifioitu tulos",
+          "caption": "Vaatimus, havainto ja verifioitu tulos"
         }
       },
       {
-        "title": "Hyväksymistestaus",
+        "title": "Harjoitus: referenssijärjestelmän hyväksyntä",
         "paragraphs": [
-          "Testataan sallittu pyyntö, luvaton pyyntö, virheellinen viesti ja ulkoisen yhteyden katkeaminen. Dokumentoidaan odotettu ja toteutunut tulos."
+          "Kokoa R3:n synteettinen huoltoaineisto, paikalliset palvelut, rajattu ulkoinen testirajapinta ja valinnainen paikallinen AI-palvelu. Valitse vaatimuksiksi ohjehaku, huoltotapahtuman kirjaus, hyväksytty raporttivienti, kielletty kirjoitus sekä kielletty tiedonsiirto. Määrittele kullekin normaali tila ja häiriötila. Toteuta harjoitukset erillisessä ympäristössä, ei tuotantojärjestelmässä.",
+          "Hyväksymiskriteeri: vaatimukset ovat jäljitettävissä testituloksiin ja havaintoaineistoon. Merkitse läpäisty, hylätty, suorittamatta tai epäselvä. Hyväksyntä ei perustu suorittamattomaan testiin. Lopuksi dokumentoi rajaukset, jäljellä olevat riskit ja uusintatestauksen käynnistävät muutokset."
         ],
         "image": {
-          "src": "images/practice-2-fi.svg",
-          "alt": "02 / Katkaisukoe",
-          "caption": "02 / Katkaisukoe"
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: referenssijärjestelmän hyväksyntä",
+          "caption": "Harjoitus: referenssijärjestelmän hyväksyntä"
         }
       }
     ],
     "en": [
       {
-        "title": "Build and connect",
+        "title": "Requirement, observation and verified result",
         "paragraphs": [
-          "Build an isolated environment. Define one external communication requirement and implement a bounded interface."
+          "Verification establishes whether an implementation meets defined requirements. In the R0–R3 reference system, local operation, communication boundaries and authority requirements were defined before implementation. Now define tests, initial state, expected results and acceptance limits for them.",
+          "Monitoring produces observations, auditing evaluates operations and evidence against agreed criteria, and testing produces repeatable evidence under controlled conditions. A passing test supports fulfillment within its scope, not the absence of all system defects."
         ],
         "image": {
-          "src": "images/practice-1-en.svg",
-          "alt": "01 / Exercise sequence",
-          "caption": "01 / Exercise sequence"
+          "src": "images/lesson-1-en.svg",
+          "alt": "Requirement, observation and verified result",
+          "caption": "Requirement, observation and verified result"
         }
       },
       {
-        "title": "Acceptance testing",
+        "title": "Exercise: acceptance of the reference system",
         "paragraphs": [
-          "Test permitted requests, unauthorized requests, malformed messages and loss of external connectivity. Record expected and actual results."
+          "Assemble synthetic R3 maintenance data, local services, a bounded external test interface and optional local AI. Select instruction lookup, maintenance logging, approved report export, denied writing and denied transfer as requirements. Define normal and disrupted states for each. Perform exercises in a separate environment, not production.",
+          "Acceptance criterion: requirements trace to test results and evidence. Mark pass, fail, not run or inconclusive. Acceptance cannot rely on an unexecuted test. Finally document scope, remaining risks and changes that trigger retesting."
         ],
         "image": {
-          "src": "images/practice-2-en.svg",
-          "alt": "02 / Disconnection test",
-          "caption": "02 / Disconnection test"
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: acceptance of the reference system",
+          "caption": "Exercise: acceptance of the reference system"
         }
       }
     ]
   },
-  "status": "draft"
+  "status": "complete"
 }

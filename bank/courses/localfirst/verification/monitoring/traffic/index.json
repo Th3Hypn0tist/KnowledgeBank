@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Verkkoliikenteen havainnointi ja rajat",
+        "paragraphs": [
+          "Verkkoliikennettä voidaan tarkastella yhteysmetatietojen, liikennelaskureiden tai pakettihavaintojen avulla. Mittauspiste ratkaisee, mitä liikennettä nähdään. Työaseman havainto ei kata automaattisesti palvelinten välistä liikennettä; salatun yhteyden sisältöä ei yleensä nähdä ilman soveltuvaa päätepisteen havaintoa.",
+          "R3:ssa määritellään mittauspiste paikalliselle palveluliikenteelle ja ulkoiselle rajalle. Tarkastellaan lähde- ja kohdeosoitteita, protokollaa, suuntaa, määrää ja yhteyden ajankohtaa. Käytä vain hyväksyttyä harjoitusliikennettä ja vältä tarpeetonta hyötykuorman tallennusta."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Verkkoliikenteen havainnointi ja rajat",
+          "caption": "Verkkoliikenteen havainnointi ja rajat"
+        }
+      },
+      {
+        "title": "Harjoitus: liikenne verrattuna sallittuun matriisiin",
+        "paragraphs": [
+          "Laadi harjoitusverkkoon sallittujen yhteyksien matriisi. Suorita tunnettu ohjehaku, hyväksytty raporttitoimitus testivastaanottimelle ja yksi ennalta määritelty estetty testiyhteys. Vertaa mittauspisteissä havaittuja yhteyksiä matriisiin ja tarkasta estetty reitti myös vastaanottajan näkökulmasta, jos mahdollista.",
+          "Hyväksymiskriteeri: sallitut yhteydet havaitaan ja estetty yhteys ei saavuta suojattua toimintoa. Selittämättömät havainnot kirjataan tutkittaviksi. Yksi lyhyt mittausjakso ei todista, ettei myöhemmin aktivoituvia yhteyksiä ole."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: liikenne verrattuna sallittuun matriisiin",
+          "caption": "Harjoitus: liikenne verrattuna sallittuun matriisiin"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Network traffic observation and boundaries",
+        "paragraphs": [
+          "Network traffic can be examined using connection metadata, traffic counters or packet observations. Measurement location determines visibility. Workstation observations do not automatically cover server-to-server traffic; encrypted payload is generally not visible without suitable endpoint observations.",
+          "Define observation points for local R3 service traffic and the external boundary. Inspect source and destination addresses, protocol, direction, volume and connection time. Use authorized training traffic only and avoid unnecessary payload retention."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Network traffic observation and boundaries",
+          "caption": "Network traffic observation and boundaries"
+        }
+      },
+      {
+        "title": "Exercise: traffic versus the permitted matrix",
+        "paragraphs": [
+          "Create a permitted-connection matrix for the training network. Perform a known instruction lookup, an approved report delivery to a test receiver and a predefined denied test connection. Compare observations at measurement points with the matrix, and inspect the denied path from the receiver where possible.",
+          "Acceptance criterion: permitted connections are observed and the denied connection cannot reach the protected operation. Record unexplained observations for investigation. A short observation window does not prove that no connections activate later."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: traffic versus the permitted matrix",
+          "caption": "Exercise: traffic versus the permitted matrix"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }
