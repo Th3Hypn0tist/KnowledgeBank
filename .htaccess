@@ -1,0 +1,3 @@
+# KnowledgeBank sitemap discovery routes; keep the single-page course UI.
+RewriteEngine On
+RewriteRule ^sitemap\.(xml|html)$ api/index.php [L]

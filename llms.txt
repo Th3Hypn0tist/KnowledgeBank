@@ -6,7 +6,7 @@
 
 1. GET https://aigm.fi/kb/api/sitemap (or a course subtree).
 2. Traverse nodes and their nested children arrays. Select relevant topics by title, description, path and status where available. The sitemap contains metadata, not lesson paragraphs.
-3. GET each selected node's api URL, resolving relative URLs against https://aigm.fi.
+3. GET each selected node's api URL exactly as returned by the sitemap. All api and source fields are absolute HTTPS URLs.
 4. Read data.content.fi or data.content.en for the requested language. Read title, paragraphs and optional image references.
 5. Resolve image.src against the node's source URL, not the API URL. Fetch SVG diagrams when relevant.
 6. Cite the actual node source or API URL. Distinguish outline, draft and complete content. Do not infer lesson content from a title alone.
@@ -19,6 +19,12 @@ No HTML scraping, JavaScript execution, or full corpus download is needed. If th
 - [Course catalogue](https://aigm.fi/kb/bank/courses/index.json): Machine-readable list of available courses.
 - [Local-First](https://aigm.fi/kb/bank/courses/localfirst/index.json): Course root covering closed environments, communication, access control, data management, dependencies, local AI and verification.
 
+## Crawler discovery
+
+- [HTML link directory](https://aigm.fi/kb/sitemap.html): Absolute clickable API links for every node, including outline entries; use when a retrieval tool requires URLs to appear as HTML hyperlinks.
+- [XML sitemap](https://aigm.fi/kb/sitemap.xml): Standard crawler sitemap; excludes outline and draft nodes.
+- [Site robots.txt](https://aigm.fi/robots.txt): Host-level crawl rules, when deployed by the site administrator.
+
 ## REST API (read-only)
 
 - [API discovery](https://aigm.fi/kb/api/): Version and endpoint templates.
@@ -28,7 +34,7 @@ No HTML scraping, JavaScript execution, or full corpus download is needed. If th
 - [Full sitemap](https://aigm.fi/kb/api/sitemap): Recursive content tree without lesson paragraphs.
 - [Local-First sitemap](https://aigm.fi/kb/api/sitemap/courses/localfirst): Course subtree.
 - [Individual topic](https://aigm.fi/kb/api/node/courses/localfirst/communication/primitives/channel): Original JSON in data, with source path.
-- Resolve source and api paths relative to https://aigm.fi; resolve image references relative to source. No separate content index.
+- API links and source URLs are absolute HTTPS URLs. Image references inside data remain relative to source. No separate content index.
 
 Only GET is supported. Responses are JSON. Sitemap response: {version, root, count, nodes}; each node has path, source, api, children (nested nodes), and localized metadata where present. Individual node response: {path, source, data}; data is the original JSON object. HTTP 400 = invalid or missing path, 404 = unknown route or node, 405 = unsupported method, 500 = content unavailable.
 

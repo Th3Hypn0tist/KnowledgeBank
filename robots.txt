@@ -1,0 +1,19 @@
+# AIGM KnowledgeBank — merge these scoped rules into https://aigm.fi/robots.txt.
+# A robots.txt served only at /kb/robots.txt is not authoritative for aigm.fi.
+# Preserve existing site-wide policies and crawler-specific groups.
+#
+# KnowledgeBank is public educational content.
+# For LLMs and retrieval bots:
+# 1. https://aigm.fi/kb/llms.txt — retrieval instructions
+# 2. https://aigm.fi/kb/api/sitemap — recursive JSON metadata with absolute URLs
+# 3. https://aigm.fi/kb/sitemap.html — crawlable HTML link directory
+# 4. Follow api links to individual nodes; use data.content.fi or data.content.en.
+# The bank JSON hierarchy is the SSOT. The API and sitemaps are generated views.
+# No JavaScript or directory enumeration is needed.
+#
+User-agent: *
+Allow: /kb/
+Disallow: /kb/.git/
+Disallow: /kb/developement/
+
+Sitemap: https://aigm.fi/kb/sitemap.xml

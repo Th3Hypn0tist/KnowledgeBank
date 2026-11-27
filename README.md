@@ -40,4 +40,14 @@ GET /kb/api/sitemap/courses/localfirst — course subtree
 GET /kb/api/node/courses/localfirst — one node
 GET /kb/api/node/courses/localfirst/communication/primitives/channel — one topic
 
-Apache requires mod_rewrite and AllowOverride FileInfo Indexes (or equivalent server configuration). Alternatively route /kb/api/* to api/index.php preserving REQUEST_URI, or use index.php/sitemap and index.php/node/<path> if PHP PATH_INFO is supported. PHP 7.4+; no dependencies or database. Static UI remains independent. Sitemap omits lesson paragraphs, preserves child order, includes all maturity states; count includes category catalogues. Node response contains original JSON under data and source URL for relative image resolution. Only GET is accepted. Paths are restricted to published index.json nodes under bank/; no arbitrary file access or writes. Do not store private data under public bank/. Production assumes /kb/ deployment.
+Apache requires mod_rewrite and AllowOverride FileInfo Indexes (or equivalent server configuration). Alternatively route /kb/api/* to api/index.php preserving REQUEST_URI, or use index.php/sitemap and index.php/node/<path> if PHP PATH_INFO is supported. PHP 7.4+; no dependencies or database. Static UI remains independent. Sitemap omits lesson paragraphs, preserves child order, includes all maturity states; count includes category catalogues. Node response contains original JSON under data and an absolute source URL for relative image resolution. Discovery links, root, api and source fields use the fixed PUBLIC_BASE constant (https://aigm.fi/kb); configure this for another deployment. Logical path and original bank image references remain relative. Only GET is accepted. Paths are restricted to published index.json nodes under bank/; no arbitrary file access or writes. Do not store private data under public bank/. Production assumes /kb/ deployment.
+
+## Crawler discovery
+
+- /kb/sitemap.xml — standard XML sitemap generated from published JSON nodes, excluding outline and draft. API nodes are the chosen canonical machine-readable content URLs.
+- /kb/sitemap.html — live HTML directory with absolute clickable API links for all nodes, including unfinished topics. No separate lesson pages or stored index.
+- /kb/api/sitemap — full JSON hierarchy, including unfinished nodes.
+- /kb/llms.txt — bot retrieval instructions.
+- robots.txt in this repository is a scoped merge template for the **host root** /robots.txt, not a separately effective robots policy at /kb/robots.txt. Merge its Sitemap line and relevant rules into existing site policy; preserve other site rules and explicit crawler groups. Do not overwrite the host file blindly. Robots rules are advisory, not access control. Deny nonpublic files at the web server.
+
+Root .htaccess routes sitemap.xml and sitemap.html to the existing API; Apache mod_rewrite and AllowOverride FileInfo are required (or equivalent routing preserving REQUEST_URI). Sitemaps aid discovery, not guaranteed indexing; JSON indexing depends on crawler support. All views read the same bank hierarchy.
