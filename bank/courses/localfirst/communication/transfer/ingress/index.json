@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Ingress on sisäänpäin tapahtuva siirto",
+        "paragraphs": [
+          "Ingress kuvaa tiedon tai viestin siirtymistä määritellyn ympäristön ulkopuolelta sen sisäpuolelle. Se ei tarkoita automaattisesti ulkopuolelta aloitettua verkkoyhteyttä: myös paikallisen asiakkaan aloittaman hakupyynnön vastaus voi olla ingress-hyötydataa. Täsmennä aina, tarkastellaanko yhteyden aloitusta, pakettisuuntaa vai sovellussisältöä.",
+          "R2 tarvitsee uuden työohjeen ulkoiselta julkaisijalta. Tuontitoiminnon vastaanottokohde on rajattu, eikä julkaisijalle tarvitse antaa suoraa kirjoitusoikeutta paikalliseen huoltotietokantaan."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Rajattu ingress",
+          "caption": "Rajattu ingress"
+        }
+      },
+      {
+        "title": "Ingressin rajaus ja epäonnistunut tuonti",
+        "paragraphs": [
+          "Määrittele vastaanotettava sisältö, enimmäiskoko, vastaanottokohde ja käsittelykapasiteetti. Puutteellista tai vääränmuotoista aineistoa ei pidä ottaa käyttöön vain siksi, että siirto onnistui teknisesti. Vastaanotto, sisällön tarkistus ja aktivointi ovat eri vaiheita; luvussa 03 käsitellään identiteettiä ja toimivaltaa tarkemmin.",
+          "Harjoituksessa määrittele ohjepaketin kolme tulosta: vastaanotettu mutta tarkastamatta, hyväksytty käyttöön ja hylätty. Testaa harjoitusaineistolla puuttuva kenttä sekä sallittua suurempi tiedosto. Hyväksymiskriteeri: kumpikaan ei muuta voimassa olevaa työohjetta, ja aiempi ohje säilyy käytettävissä silloin, kun se on edelleen voimassa."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Tuonnin lopputulos ei ole sama kuin siirron tulos",
+          "caption": "Tuonnin lopputulos ei ole sama kuin siirron tulos"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Ingress is inward transfer",
+        "paragraphs": [
+          "Ingress describes movement of data or a message from outside a defined environment into it. It does not automatically mean an externally initiated network connection: a response to a locally initiated retrieval request can also be ingress payload. Always specify whether you mean connection initiation, packet direction or application content.",
+          "R2 needs a new instruction from an external publisher. The import function has a bounded receiving target, and the publisher does not need direct write access to the local maintenance database."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Bounded ingress",
+          "caption": "Bounded ingress"
+        }
+      },
+      {
+        "title": "Ingress boundaries and failed import",
+        "paragraphs": [
+          "Define accepted content, maximum size, destination and processing capacity. Incomplete or malformed data should not be activated merely because transport succeeded. Receipt, content checking and activation are distinct stages; chapter 03 covers identity and authority in more detail.",
+          "Define three outcomes for an instruction package: received but unchecked, accepted for use and rejected. Test a missing field and an oversized file using training data. Acceptance criterion: neither changes the current instruction, and the prior instruction remains available if still valid."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Import outcome differs from transport outcome",
+          "caption": "Import outcome differs from transport outcome"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

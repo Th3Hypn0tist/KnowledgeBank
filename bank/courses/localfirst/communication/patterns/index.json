@@ -10,8 +10,58 @@
     "store-forward"
   ],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Kommunikointimalli kuvaa osapuolten käyttäytymistä",
+        "paragraphs": [
+          "Kommunikointimalli kertoo, kuka käynnistää tiedonsiirron, milloin osapuolet kommunikoivat ja tarvitseeko vastaanottajan olla käytettävissä lähetyshetkellä. Pull ja Push kuvaavat erityisesti hyötydatan siirron aloitteellisuutta. Request / Response kuvaa toisiinsa liittyvien viestien rakennetta. Store & Forward kuvaa viivästettyä välitystä. Nämä eivät ole toisiaan poissulkevia vaihtoehtoja.",
+          "Esimerkiksi R2 voi hakea ohjepaketin Pull-mallilla HTTP-pyynnön ja vastauksen avulla, tallentaa paketin paikallisesti ja välittää sen myöhemmin sisäiseen palveluun. Eri mallit kuvaavat saman kokonaisuuden eri ominaisuuksia."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Useita malleja samassa siirrossa",
+          "caption": "Useita malleja samassa siirrossa"
+        }
+      },
+      {
+        "title": "Mallin valinta työtehtävän perusteella",
+        "paragraphs": [
+          "Valitse malli sen mukaan, kuka tietää uuden tiedon olemassaolosta, kuka määrittelee noutohetken, kuinka kauan toimitus saa kestää ja mitä tapahtuu yhteyden puuttuessa. Huomioi myös mahdollinen toimituskuittaus ja toistuvien viestien käsittely. Mallin nimi ei yksin määritä turvallisuutta tai toimitustakuuta.",
+          "Harjoituksessa määrittele R2:n työohjeen päivitys, välitön paikallinen ohjehaku ja viivästettävä kuukausiraportti. Valitse jokaiselle tehtävälle tarvittavat kommunikointimallit. Hyväksymiskriteeri: valinta perustellaan aloitteella, aikavaatimuksella ja häiriötilanteessa tarvittavalla käyttäytymisellä."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Mallin valintaperusteet",
+          "caption": "Mallin valintaperusteet"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "A communication pattern describes participant behaviour",
+        "paragraphs": [
+          "A communication pattern describes who initiates a transfer, when participants communicate and whether the recipient must be available at send time. Pull and Push primarily describe initiation of application data transfer. Request / Response describes related messages. Store & Forward describes deferred forwarding. They are not mutually exclusive alternatives.",
+          "For example, R2 may retrieve an instruction package using Pull through an HTTP request and response, store it locally and later forward it to an internal service. Different patterns describe different properties of the same system."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Several patterns within one transfer",
+          "caption": "Several patterns within one transfer"
+        }
+      },
+      {
+        "title": "Selecting a pattern from task requirements",
+        "paragraphs": [
+          "Choose the pattern according to who knows new information exists, who determines retrieval time, acceptable delivery delay and behavior when connectivity is missing. Consider receipts and handling of repeated messages. The pattern name alone establishes neither security nor delivery guarantees.",
+          "Define R2 instruction updates, immediate local instruction lookup and a deferrable monthly report. Choose the necessary communication patterns for each. Acceptance criterion: justify choices using initiation, timing requirements and required behavior during disruption."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Pattern selection criteria",
+          "caption": "Pattern selection criteria"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Egress on ulospäin tapahtuva siirto",
+        "paragraphs": [
+          "Egress tarkoittaa tiedon tai viestin siirtymistä määritellyn ympäristön sisältä sen ulkopuolelle. Siirtoon kuuluvat hyötydatan lisäksi mahdolliset kyselyt, kuittaukset ja metatiedot. Ulospäin tapahtuva siirto ei välttämättä edellytä ulkopuolelle avattua kuuntelupalvelua.",
+          "R2:n kuukausiraportti muodostetaan paikallisista huoltotiedoista määriteltyä ulkoista vastaanottajaa varten. Raportin toimitus ei edellytä koko tietokannan luovutusta. Lähetyksen käynnistystapa käsitellään Pull- ja Push-malleissa."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Rajattu raporttivienti",
+          "caption": "Rajattu raporttivienti"
+        }
+      },
+      {
+        "title": "Viennin sisältö ja sivuvaikutukset",
+        "paragraphs": [
+          "Määrittele vietävän raportin kentät, vastaanottaja, toimituskanava ja ajankohta. Myös lokit, virheraportit, telemetria ja nimipalvelukyselyt voivat sisältää ulospäin siirtyvää tietoa. Egressin arvioinnissa huomioidaan siksi sekä tarkoitettu sovellusdata että sivuvaikutuksena syntyvät siirrot.",
+          "Harjoituksessa muodostetaan keinotekoisesta aineistosta raportti, jossa on ainoastaan laitteiden määrä ja huoltotapahtumien lukumäärä. Tarkista tiedoston sisältö ja mahdolliset lisäkentät ennen toimitusta. Hyväksymiskriteeri: raportti sisältää vain sovitut tiedot, ja toimituksen onnistuminen tai epäonnistuminen kirjataan erikseen."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Tarkoitettu ja muu egress",
+          "caption": "Tarkoitettu ja muu egress"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Egress is outward transfer",
+        "paragraphs": [
+          "Egress means movement of data or a message from inside a defined environment to the outside. In addition to application payload, transfers may include queries, acknowledgements and metadata. Outward transfer does not necessarily require exposing a listening service externally.",
+          "The R2 monthly report is generated from local maintenance data for a defined external recipient. Delivering it does not require disclosing the entire database. Transfer initiation is covered in Pull and Push patterns."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Bounded report export",
+          "caption": "Bounded report export"
+        }
+      },
+      {
+        "title": "Export content and side effects",
+        "paragraphs": [
+          "Define report fields, recipient, delivery channel and timing. Logs, error reports, telemetry and name-resolution queries may also carry information outward. Egress assessment therefore covers intended application data and transfers arising as side effects.",
+          "Generate a report from synthetic data containing only equipment and maintenance event counts. Inspect its contents and any additional fields before delivery. Acceptance criterion: the report contains only agreed information, and delivery success or failure is recorded separately."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Intended and other egress",
+          "caption": "Intended and other egress"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

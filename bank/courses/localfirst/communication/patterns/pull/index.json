@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Pull: vastaanottaja käynnistää noudon",
+        "paragraphs": [
+          "Pull-mallissa tietoa tarvitseva osapuoli käynnistää noudon. Tietoa tarjoava osapuoli vastaa hakupyyntöön. Noudon aloitus ja hyötydatan suunta ovat siis vastakkaiset. Pull ei edellytä, että vastaanottaja tarjoaisi ulkopuolelle kuuntelupalvelun, mutta vastausliikenteelle tarvitaan toimiva reitti.",
+          "R2:n tuontikomponentti voi hakea uuden ohjepaketin määritellystä julkaisupalvelusta. Paikallinen komponentti määrittelee noutohetken. Tämä on vaihtoehto offline-tuonnille; jos verkkoyhteys lisätään, kyseinen rajapinta ei enää ole fyysisesti eristetty samassa merkityksessä kuin R1."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Pull: aloite ja hyötydata",
+          "caption": "Pull: aloite ja hyötydata"
+        }
+      },
+      {
+        "title": "Ajastettu nouto ja muuttumaton sisältö",
+        "paragraphs": [
+          "Pull voidaan käynnistää käyttäjän pyynnöstä tai ajastetusti. Toistuva kysely voi tuottaa saman aineiston useita kertoja; käytä sovittua tunnistetta tai versiota sen erottamiseen uudesta aineistosta. Noutoväli määritellään aineiston tuoreusvaatimuksen ja kuormituksen mukaan. Epäonnistuneiden noutojen uusinnat kannattaa rajoittaa, jotta häiriö ei aiheuta jatkuvaa kuormitusta.",
+          "Harjoituksessa paikallinen noutaja hakee testipalvelusta ohjeversion. Tarjoa ensin sama versio, sitten uusi versio ja lopuksi simuloitu yhteysvirhe. Hyväksymiskriteeri: samaa versiota ei oteta käyttöön uudelleen tarpeettomasti, uusi tunnistetaan ja yhteysvirhe näkyy erillisenä tilana."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Pull-noudon tulokset",
+          "caption": "Pull-noudon tulokset"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Pull: the receiver initiates retrieval",
+        "paragraphs": [
+          "In Pull, the participant needing information initiates retrieval. The information provider responds. Initiation and application payload direction are therefore opposite. Pull does not require the receiver to expose a listening service externally, but response traffic needs a working path.",
+          "R2's import component may retrieve a new instruction package from a defined publishing service. The local component determines retrieval time. This is an alternative to offline import; adding a network connection means that interface is no longer physically isolated in the same sense as R1."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Pull: initiation and payload",
+          "caption": "Pull: initiation and payload"
+        }
+      },
+      {
+        "title": "Scheduled retrieval and unchanged content",
+        "paragraphs": [
+          "Pull can be user-initiated or scheduled. Repeated queries may return the same data multiple times; use an agreed identifier or version to distinguish it from new data. Set retrieval intervals according to freshness requirements and load. Bound retries after retrieval failures so disruption does not cause continuous load.",
+          "Have the local retriever fetch an instruction version from a test service. Offer the same version first, then a new version and finally a simulated connection error. Acceptance criterion: the unchanged version is not unnecessarily reactivated, the new version is recognized and a connection error appears as a separate state."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Pull retrieval outcomes",
+          "caption": "Pull retrieval outcomes"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

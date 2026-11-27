@@ -29,7 +29,7 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 | Aihe | Nodeja | Hyväksytty valmiiksi | Tila |
 |---|---:|---:|---|
 | 01 Suljettu toimintaympäristö | 11 | 11 | Sisältö valmis |
-| 02 Kommunikointi | 21 | 8 | Sisältötyö käynnissä |
+| 02 Kommunikointi | 21 | 17 | Sisältötyö käynnissä |
 | 03 Pääsynhallinta ja toimivalta | 12 | 0 | Aiempi luonnos |
 | 04 Datan hallinta | 11 | 0 | Runko |
 | 05 Riippuvuuksien hallinta | 15 | 0 | Runko |
@@ -61,11 +61,11 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
     - [ ] `communication/external/proxy/index.json`
     - [ ] `communication/external/remote/index.json`
 - [x] `communication/index.json`
-  - [ ] `communication/patterns/index.json`
-    - [ ] `communication/patterns/pull/index.json`
-    - [ ] `communication/patterns/push/index.json`
-    - [ ] `communication/patterns/request-response/index.json`
-    - [ ] `communication/patterns/store-forward/index.json`
+  - [x] `communication/patterns/index.json`
+    - [x] `communication/patterns/pull/index.json`
+    - [x] `communication/patterns/push/index.json`
+    - [x] `communication/patterns/request-response/index.json`
+    - [x] `communication/patterns/store-forward/index.json`
     - [x] `communication/primitives/channel/index.json`
     - [x] `communication/primitives/direction/index.json`
   - [x] `communication/primitives/index.json`
@@ -73,10 +73,10 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
     - [x] `communication/primitives/protocol/index.json`
     - [x] `communication/primitives/source/index.json`
     - [x] `communication/primitives/target/index.json`
-    - [ ] `communication/transfer/egress/index.json`
-  - [ ] `communication/transfer/index.json`
-    - [ ] `communication/transfer/ingress/index.json`
-    - [ ] `communication/transfer/offline/index.json`
+    - [x] `communication/transfer/egress/index.json`
+  - [x] `communication/transfer/index.json`
+    - [x] `communication/transfer/ingress/index.json`
+    - [x] `communication/transfer/offline/index.json`
 
 ### 03 Pääsynhallinta ja toimivalta
 
@@ -173,10 +173,10 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 
 ## Edistyminen
 
-- Hyväksytysti valmiit sisältönodet: **20 / 101** (sisältää kurssin juurinoden).
+- Hyväksytysti valmiit sisältönodet: **29 / 101** (sisältää kurssin juurinoden).
 - Pääaiheet: **1 / 7** hyväksytysti valmista.
-- SVG-tiedostoja: **120** (22 aiempaa + 98 uutta; 60 kaaviota FI/EN).
-- Seuraava työ: `communication/transfer/` ja sen kolme aliaihetta (Offline Transfer, Ingress, Egress), sitten kommunikointimallit.
+- SVG-tiedostoja: **160** (22 aiempaa + 138 uutta; 80 kaaviota FI/EN).
+- Seuraava työ: `communication/external/` ja sen kolme aliaihetta (Proxy, Remote Access, Federation).
 
 ## Kehitysloki
 
@@ -189,3 +189,5 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 - Kierros 03: järjestelmän operatiivinen elinkaari, käynnistys, sammutus ja vikatilanteet täydennetty FI/EN. 11 uutta kaaviota kahdella kielellä. Pääaiheen 01 kaikki 11 nodea sisältövalmiita. R1:n käyttövalmius-, kirjoitus- ja vikatestit määritelty harjoituksiksi, ei väitetty suoritetuiksi. JSON ja uudet kuvaviittaukset tarkastettu; SVG:n visuaalinen selaintestaus ja koko kurssin lopputarkastus jäljellä.
 
 - Kierros 04: kommunikoinnin yleiskuva ja kuusi primitiiviä ryhmittelynodeineen täydennetty FI/EN (8 nodea). 16 uutta kaaviota kahdella kielellä. R1:n sisäinen ohjehaku ja R2:n suunniteltu ohjetuonti muodostavat esimerkkien perustan. JSON, kieliparien rakenne ja uudet kuvaviittaukset tarkastettu. SVG:n visuaalinen selaintestaus, harjoitusten suoritus ja koko kurssin lopputarkastus jäljellä.
+
+- Kierros 05: tiedonsiirto ja kommunikointimallit ryhmittelynodeineen täydennetty FI/EN (9 nodea). 20 uutta kaaviota kahdella kielellä. R2:n ohjetuonti ja raporttivienti kuvaavat siirtosuuntia, aloitteellisuutta ja toimituksen ajallista erottelua. Offline ja verkotettu R2 ovat vaihtoehtoisia toteutuksia. JSON, kieliparien rakenne ja uudet kuvaviittaukset tarkastettu. SVG:n visuaalinen selaintestaus, harjoitusten suoritus ja koko kurssin lopputarkastus jäljellä.

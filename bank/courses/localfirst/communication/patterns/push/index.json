@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Push: lähettäjä käynnistää toimituksen",
+        "paragraphs": [
+          "Push-mallissa aineiston lähettävä osapuoli käynnistää hyötydatan toimituksen vastaanottajalle. Lähetys voi perustua tapahtumaan, ajastukseen tai käyttäjän päätökseen. Vastaanotto voi tapahtua suoraan palveluun tai viestivälittäjän kautta. Push kuvaa aloitteellisuutta, ei sitä, kumpi osapuoli alun perin avasi fyysisen tai loogisen yhteyden.",
+          "R2:n paikallinen raportointipalvelu voi lähettää hyväksytyn kuukausiraportin määritellylle ulkoiselle vastaanottajalle. Hyötydata ja toimituksen aloite kulkevat tässä samalta osapuolelta. Mahdollinen vastaanottokuittaus on vastakkaissuuntainen viesti."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Push: toimitus ja kuittaus",
+          "caption": "Push: toimitus ja kuittaus"
+        }
+      },
+      {
+        "title": "Push ja vastaanottajan kapasiteetti",
+        "paragraphs": [
+          "Lähettäjä ei voi olettaa vastaanottajan olevan aina käyttövalmis. Määrittele kuormitusraja, aikakatkaisu ja toimintatapa, jos vastaanottaja ei hyväksy uutta työtä. Välittäjän tai vastaanottajan puskuri voi ottaa vastaan viestejä, mutta sen kapasiteetti on rajallinen. Kuittauksen puuttuminen ei yksin osoita, ettei aineistoa vastaanotettu.",
+          "Harjoituksessa lähetä yksilöity testiraportti hyväksyttyyn testivastaanottimeen. Simuloi vastaanottajan tilapäinen poissaolo ja kuittauksen puuttuminen. Hyväksymiskriteeri: paikallinen raportti säilyy, toimitustila ei muutu virheellisesti onnistuneeksi ja uusintaa koskeva päätös on määritelty."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Push-toimituksen tilat",
+          "caption": "Push-toimituksen tilat"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Push: the sender initiates delivery",
+        "paragraphs": [
+          "In Push, the participant sending data initiates application payload delivery to the receiver. Sending may be event-driven, scheduled or user-triggered. Reception may occur directly through a service or via a message broker. Push describes initiation, not which participant originally opened the physical or logical connection.",
+          "R2's local reporting service may send an approved monthly report to a defined external recipient. Application payload and delivery initiation originate from the same participant here. Any receipt is a message in the opposite direction."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Push: delivery and receipt",
+          "caption": "Push: delivery and receipt"
+        }
+      },
+      {
+        "title": "Push and receiver capacity",
+        "paragraphs": [
+          "A sender cannot assume the receiver is always ready. Define a load limit, timeout and behavior when the receiver does not accept new work. A broker or receiver buffer can accept messages, but its capacity is finite. Missing acknowledgement alone does not prove the data was not received.",
+          "Send an identified test report to an approved test receiver. Simulate temporary receiver unavailability and missing acknowledgement. Acceptance criterion: the local report is retained, delivery state is not incorrectly marked successful and retry behavior is defined."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Push delivery states",
+          "caption": "Push delivery states"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

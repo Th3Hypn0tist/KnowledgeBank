@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Siirto ilman jatkuvaa verkkoyhteyttä",
+        "paragraphs": [
+          "Offline Transfer tarkoittaa tietojen siirtämistä ympäristöjen välillä ilman niiden välistä jatkuvaa verkkoyhteyttä. Esimerkiksi ulkoisessa ympäristössä luotu työohjepaketti voidaan toimittaa hallitulla tallennusvälineellä eristettyyn ympäristöön. Siirtotapahtuma ei luo pysyvää verkkoreittiä, mutta media muodostaa silti luottamusrajan ylittävän tietoreitin.",
+          "R2:n ensimmäinen toteutus voi säilyttää R1:n fyysisen verkkoeristyksen ja lisätä erillisen ohjeiden tuontiprosessin. Tallennusväline ei automaattisesti ole luotettu, eikä eristys yksin suojaa haitalliselta tiedostolta tai laitteelta."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Fyysinen siirto ilman verkkoreittiä",
+          "caption": "Fyysinen siirto ilman verkkoreittiä"
+        }
+      },
+      {
+        "title": "Vastaanotto ja hyväksytty aineisto",
+        "paragraphs": [
+          "Suunnittele erilliset vaiheet aineiston muodostamiselle, toimitukselle, tarkastukselle ja käyttöönotolle. Tuontiin tarkoitettu vastaanottoalue ei saa automaattisesti suorittaa toimitettua sisältöä tai korvata tuotantoaineistoa. Tiedoston tiiviste voi osoittaa vastaavuuden tunnettuun tiivisteeseen, mutta alkuperän todentaminen vaatii luotettavan vertailutiedon tai asianmukaisesti tarkastetun allekirjoituksen.",
+          "Harjoituksessa toimita keinotekoinen työohjepaketti ja yksi tarkoituksella virheellinen paketti hyväksyttyyn testiympäristöön. Määrittele hyväksytyt tiedostomuodot ja tarkistusmenettely ennen tuontia. Hyväksymiskriteeri: kelvollinen paketti siirtyy käyttöönottoon ja virheellinen jää erilleen; kumpaakaan ei suoriteta automaattisesti."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Offline-tuonnin käsittelyvaiheet",
+          "caption": "Offline-tuonnin käsittelyvaiheet"
+        }
+      },
+      {
+        "title": "Siirtovälineen paluureitti",
+        "paragraphs": [
+          "Saman median palauttaminen ulkoiseen ympäristöön voi muodostaa ulospäin suuntautuvan tietoreitin, vaikka alkuperäinen tehtävä olisi vain tuonti. Tallennusvälineiden käyttö, säilytys, mahdollinen palautus ja poistaminen määritellään siksi erikseen. Pelkkä sovellustason yksisuuntainen prosessi ei tee uudelleenkäytettävästä mediasta fyysistä datadiodia.",
+          "Harjoituksessa kuvaa median koko kulku toimituksesta käytön päättymiseen. Vertaa paikallisessa ympäristössä säilytettävää mediaa palautettavaan mediaan. Hyväksymiskriteeri: jokainen rajan ylitys on tunnistettu, ja mahdollinen paluusiirto käsitellään erillisenä egress-tarpeena."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Median mahdollinen paluureitti",
+          "caption": "Median mahdollinen paluureitti"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Transfer without continuous network connectivity",
+        "paragraphs": [
+          "Offline Transfer moves information between environments without a continuous network connection between them. An instruction package created externally can, for example, be delivered to an isolated environment on controlled media. The transfer does not establish a permanent network route, but the media still creates an information path across a trust boundary.",
+          "The first R2 implementation may preserve R1's physical network isolation and add a separate instruction import process. Storage media is not automatically trusted, and isolation alone does not protect against malicious files or devices."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Physical transfer without a network route",
+          "caption": "Physical transfer without a network route"
+        }
+      },
+      {
+        "title": "Receipt and accepted content",
+        "paragraphs": [
+          "Plan separate stages for package creation, delivery, inspection and activation. The import staging area must not automatically execute delivered content or replace production data. A file digest can demonstrate correspondence to a known digest, but proving origin requires trusted reference information or a properly verified signature.",
+          "Deliver a synthetic instruction package and one deliberately invalid package to an approved test environment. Define accepted formats and the inspection procedure before import. Acceptance criterion: the valid package proceeds to activation and the invalid one remains separate; neither is executed automatically."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Offline import processing stages",
+          "caption": "Offline import processing stages"
+        }
+      },
+      {
+        "title": "Return path of transfer media",
+        "paragraphs": [
+          "Returning the same media to the external environment can create an outward information path even when the original task is import only. Define media use, custody, possible return and disposal separately. A one-way application process does not turn reusable media into a physical data diode.",
+          "Describe the complete media journey from delivery to end of use. Compare media retained locally with returned media. Acceptance criterion: every boundary crossing is identified and any return transfer is considered a separate egress requirement."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Potential media return path",
+          "caption": "Potential media return path"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

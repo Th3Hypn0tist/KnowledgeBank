@@ -9,8 +9,58 @@
     "egress"
   ],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Tiedonsiirto suhteessa järjestelmän rajaan",
+        "paragraphs": [
+          "Tiedonsiirron tarve määritellään suhteessa tarkasteltavaan ympäristöön. R1:n työaseman ja palvelimen väliset viestit ovat sisäisiä. Kun työohje siirretään ulkopuoliselta julkaisijalta R1:n ympäristöön, kyseessä on ingress eli sisäänpäin tapahtuva siirto. Kun paikallinen raportti toimitetaan ympäristön ulkopuolelle, kyseessä on egress eli ulospäin tapahtuva siirto.",
+          "Offline Transfer kuvaa siirtomekanismia, ei suuntaa. Fyysisellä tallennusvälineellä voidaan toteuttaa kumpikin suunta erillisinä prosesseina. Sama siirtotapahtuma voi olla yhden järjestelmän egress ja toisen ingress."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Siirtosuunnat suhteessa rajaan",
+          "caption": "Siirtosuunnat suhteessa rajaan"
+        }
+      },
+      {
+        "title": "Siirtotarpeen määrittely",
+        "paragraphs": [
+          "Ennen toteutusta kirjaa siirron tarkoitus, lähde, kohde, sisältö, suunta, aikavaatimus ja toimituksen hyväksymiskriteeri. Päätä erikseen tarvitaanko jatkuvaa yhteyttä, sallitaanko viivästetty toimitus ja tarvitaanko vastaanottokuittausta. Kuittaus on oma kommunikointitapahtumansa.",
+          "Harjoituksessa suunnittele R2:een päivitetyn työohjeen vastaanotto ja kuukausiraportin toimitus. Kumpikin määritellään itsenäisesti. Hyväksymiskriteeri: kumpikaan siirtotarve ei automaattisesti oikeuta avaamaan vastakkaista siirtosuuntaa tai muuta toimintoa."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Tarpeesta siirtosopimukseen",
+          "caption": "Tarpeesta siirtosopimukseen"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Transfer relative to the system boundary",
+        "paragraphs": [
+          "Define transfer requirements relative to the environment under examination. Messages between the R1 workstation and server are internal. Moving an instruction from an external publisher into R1 is ingress. Delivering a local report outside that environment is egress.",
+          "Offline Transfer describes a transfer mechanism, not a direction. Physical media can support either direction through separate processes. The same transfer can be egress for one system and ingress for another."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Transfer directions relative to a boundary",
+          "caption": "Transfer directions relative to a boundary"
+        }
+      },
+      {
+        "title": "Defining transfer requirements",
+        "paragraphs": [
+          "Before implementation, record transfer purpose, source, target, content, direction, timing requirement and acceptance criterion. Decide separately whether continuous connectivity is required, delayed delivery is acceptable and a receipt is needed. A receipt is its own communication event.",
+          "Plan receipt of an updated instruction and delivery of a monthly report for R2. Define each independently. Acceptance criterion: neither transfer requirement automatically authorizes the opposite direction or another operation."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "From need to transfer contract",
+          "caption": "From need to transfer contract"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Pyyntö ja siihen liittyvä vastaus",
+        "paragraphs": [
+          "Request / Response -mallissa pyytävä osapuoli lähettää määritellyn pyynnön ja vastaanottaja muodostaa siihen liittyvän vastauksen. Vastauksen täytyy olla yhdistettävissä oikeaan pyyntöön. Yhteys voi olla synkroninen tai asynkroninen; osapuolen ei tarvitse välttämättä odottaa vastausta samassa suoritusketjussa.",
+          "R1:n työasema pyytää ohjetta tunnisteella 42 ja huoltopalvelu palauttaa ohjeen tai määritellyn virheen. HTTP on yksi toteutustapa. Useiden rinnakkaisten pyyntöjen yhdistäminen vastauksiin perustuu käytetyn protokollan tai sovelluksen mekanismiin."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Pyyntö–vastaus-sekvenssi",
+          "caption": "Pyyntö–vastaus-sekvenssi"
+        }
+      },
+      {
+        "title": "Aikakatkaisu ja epävarma lopputulos",
+        "paragraphs": [
+          "Aikakatkaisu tarkoittaa, ettei odotettua vastausta saatu määritellyssä ajassa. Se ei todista, ettei palvelu suorittanut pyydettyä toimintoa. Lukupyyntö voi usein olla turvallista toistaa, mutta kirjoituspyynnön uusinta voi luoda kaksoistietueen, jos ensimmäinen suoritus onnistui ja vain vastaus katosi. Uusintakäyttäytyminen on osa sovelluksen sopimusta.",
+          "Harjoituksessa luo tunnisteella varustettu huoltotietue testipalveluun ja simuloi vastauksen katoaminen onnistuneen tallennuksen jälkeen. Tarkista olemassa oleva tila ennen mahdollista uusintaa. Hyväksymiskriteeri: epävarma tulos ei aiheuta automaattisesti uutta tietuetta, ja toteutunut lopputulos voidaan selvittää."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Tallennus onnistui, vastaus ei saapunut",
+          "caption": "Tallennus onnistui, vastaus ei saapunut"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "A request and its associated response",
+        "paragraphs": [
+          "In Request / Response, the requesting participant sends a defined request and the receiver creates an associated response. The response must be attributable to the correct request. Interaction can be synchronous or asynchronous; the participant need not necessarily wait for the answer in the same execution flow.",
+          "The R1 workstation requests instruction 42 and the maintenance service returns the instruction or a defined error. HTTP is one implementation. Associating concurrent requests and responses relies on the mechanisms of the protocol or application used."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Request–response sequence",
+          "caption": "Request–response sequence"
+        }
+      },
+      {
+        "title": "Timeout and uncertain outcome",
+        "paragraphs": [
+          "A timeout means an expected response was not received within the defined time. It does not prove the service failed to execute the requested operation. A read request can often be retried safely, but retrying a write may create a duplicate if the first execution succeeded and only its response was lost. Retry behavior is part of the application contract.",
+          "Create an identified maintenance record in a test service and simulate response loss after a successful write. Check the existing state before a possible retry. Acceptance criterion: an uncertain outcome does not automatically create another record, and the actual result can be determined."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Write succeeded, response did not arrive",
+          "caption": "Write succeeded, response did not arrive"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Store & Forward erottaa vastaanoton ja toimituksen ajallisesti",
+        "paragraphs": [
+          "Store & Forward -mallissa välittävä komponentti vastaanottaa aineiston, tallentaa sen ja toimittaa sen seuraavalle kohteelle myöhemmin. Vastaanottajan ei tarvitse olla tavoitettavissa alkuperäisen vastaanoton hetkellä. Jos aineiston pitää säilyä virran katkeamisen yli, käytetään tarkoitukseen soveltuvaa pysyvää tallennusta eikä pelkkää RAM-puskuria.",
+          "R2:n raportti voidaan muodostaa paikallisesti ja asettaa lähtevien toimitusten jonoon. Kun hyväksytty toimitusreitti on käytettävissä, raportti välitetään vastaanottajalle. Paikallisen raportoinnin valmistuminen ja ulkoisen toimituksen valmistuminen ovat eri tiloja."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Paikallinen jono erottaa toimitushetket",
+          "caption": "Paikallinen jono erottaa toimitushetket"
+        }
+      },
+      {
+        "title": "Toimitustilat, uusinnat ja kaksoisviestit",
+        "paragraphs": [
+          "Määrittele jonotietueen tilat, kuten odottaa, toimitusyritys käynnissä, vahvistettu ja selvitystä vaativa. Jos vastaanottaja kuittaa onnistuneen käsittelyn mutta kuittaus katoaa, sama viesti voidaan toimittaa uudelleen. Pysyvä jono ei yksin takaa täsmälleen yhden kerran käsittelyä. Yksilöllinen viestitunniste ja vastaanottajan duplikaattien käsittely voivat estää saman loogisen vaikutuksen toistumisen, kun ne toteutetaan luotettavasti.",
+          "Määrittele myös enimmäisyritykset, uusintavälit, säilytysaika ja jonon kapasiteetti. Virheellinen viesti ei saa estää kaikkien muiden viestien etenemistä, ellei niiden järjestys ole toiminnallisesti välttämätön. Toimitusvahvistus ja paikallisen jonotietueen poistaminen sidotaan määriteltyyn toimitusehtoon."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Toimitusjonon tilasiirtymät",
+          "caption": "Toimitusjonon tilasiirtymät"
+        }
+      },
+      {
+        "title": "Harjoitus: toimitus yhteyden palattua",
+        "paragraphs": [
+          "Käytä erillistä harjoitusvastaanotinta ja synteettisiä raportteja. Estä harjoitusvastaanottimen saavutettavuus, luo kolme yksilöityä raporttia ja tarkista jonon tila. Käynnistä lähettävä komponentti hallitusti uudelleen ja varmista, että pysyväksi määritellyt jonotietueet ovat säilyneet.",
+          "Palauta yhteys ja seuraa toimituksia. Simuloi yhden kuittauksen katoaminen, jos testiympäristö mahdollistaa sen. Hyväksymiskriteeri: kaikki kolme loogista raporttia päätyvät määriteltyyn lopputilaan, epävarmat toimitukset ovat näkyviä eikä mahdollinen uusinta tuota tarpeetonta kaksoisvaikutusta. Kirjaa myös jonon suurin koko ja toimituksen viive."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Jonon käyttäytyminen katkon aikana",
+          "caption": "Jonon käyttäytyminen katkon aikana"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Store & Forward separates receipt and delivery in time",
+        "paragraphs": [
+          "In Store & Forward, an intermediary receives data, stores it and forwards it to the next target later. The recipient need not be reachable at the initial receipt time. If the data must survive loss of power, use suitable persistent storage rather than merely a RAM buffer.",
+          "An R2 report can be generated locally and placed in an outbound delivery queue. When the approved delivery path is available, the report is forwarded to its recipient. Local report completion and external delivery completion are distinct states."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "A local queue separates delivery times",
+          "caption": "A local queue separates delivery times"
+        }
+      },
+      {
+        "title": "Delivery states, retries and duplicates",
+        "paragraphs": [
+          "Define queue record states such as pending, attempting delivery, confirmed and requires investigation. If the recipient acknowledges successful processing but the acknowledgement is lost, the same message may be delivered again. A persistent queue alone does not guarantee exactly-once processing. Unique message identifiers and receiver deduplication can prevent repeated logical effects when reliably implemented.",
+          "Also define retry limits, retry intervals, retention and queue capacity. A bad message should not block all other messages unless ordering is functionally required. Delivery confirmation and removal of the local queue record must follow the defined delivery condition."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Delivery queue state transitions",
+          "caption": "Delivery queue state transitions"
+        }
+      },
+      {
+        "title": "Exercise: delivery after connectivity returns",
+        "paragraphs": [
+          "Use a separate training receiver and synthetic reports. Make the receiver unreachable, create three identified reports and inspect queue state. Restart the sending component normally and verify that records defined as persistent survive.",
+          "Restore connectivity and observe delivery. Simulate loss of one acknowledgement if the test environment permits it. Acceptance criterion: all three logical reports reach a defined final state, uncertain deliveries remain visible and retries do not produce unnecessary duplicate effects. Record maximum queue size and delivery delay as well."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Queue behavior during disconnection",
+          "caption": "Queue behavior during disconnection"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }
