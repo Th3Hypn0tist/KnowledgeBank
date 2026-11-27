@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Käynnistysjärjestys seuraa riippuvuuksia",
+        "paragraphs": [
+          "Käynnistys on vaiheittainen siirtymä sammutetusta käyttövalmiiseen ympäristöön. R1:ssä virransyöttö ja laitteisto mahdollistavat käyttöjärjestelmän toiminnan, käyttöjärjestelmä ottaa paikallisen tallennuksen käyttöön, tietokantapalvelu avaa aineiston ja sovelluspalvelu aloittaa sen käytön. Työasema ja kytkin voivat käynnistyä rinnakkain; palvelujen järjestys määräytyy todellisten riippuvuuksien mukaan.",
+          "Prosessin käynnistyminen ei välttämättä tarkoita sen käyttövalmiutta. Tietokannan on voitava avata aineisto ja vastata tarvittavaan kyselyyn ennen kuin sovelluspalvelu voi turvallisesti ilmoittaa sitä tarvitsevat toiminnot valmiiksi. Kiinteä viive ei ole luotettava todiste valmiudesta."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "R1-palvelimen käynnistysketju",
+          "caption": "R1-palvelimen käynnistysketju"
+        }
+      },
+      {
+        "title": "Offline-käynnistys",
+        "paragraphs": [
+          "Käynnistys ei saa jäädä odottamaan ulkoista DNS-, aika-, identiteetti- tai lisenssipalvelua, jos kyseistä palvelua ei tarvita ydintoiminnassa. Tarvittavat ohjelmat ja asetukset on oltava paikallisesti saatavilla. Jos jokin ulkoinen toiminto ei ole käytettävissä, sovelluksen tulee ilmaista se ja jatkaa määriteltyjä paikallisia tehtäviä, mikäli se on turvallista.",
+          "R1 käynnistetään ilman oletusyhdyskäytävää ja ulkoisia verkkoyhteyksiä. Paikallinen osoite ja palvelun asetukset on määritelty valmiiksi. Ulkoiset riippuvuudet kartoitetaan tarkemmin riippuvuuksien hallinnan luvussa; tässä tavoitteena on paikallisen järjestelmän itsenäinen käynnistyminen."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Käynnistys ilman ulkoista yhteyttä",
+          "caption": "Käynnistys ilman ulkoista yhteyttä"
+        }
+      },
+      {
+        "title": "Harjoitus: kylmäkäynnistyksen todennus",
+        "paragraphs": [
+          "Pysäytä R1:n harjoitusjärjestelmä normaalisti. Varmista, ettei ympäristöllä ole ulkoisia yhteyksiä. Käynnistä laitteet ja kirjaa käynnistymisajat, palvelujen ilmoittamat tilat sekä hetki, jolloin määritelty paikallinen tehtävä onnistuu. Mittaa kokonaiskesto sähkön kytkemisestä käyttövalmiuteen.",
+          "Toista testi esimerkiksi viisi kertaa samoilla asetuksilla ja testiaineistolla. Käyttövalmiuden tarkistus: avaa tunnettu työohje, tallenna yksilöllinen testitietue ja lue se takaisin. Hyväksymiskriteeri: kaikki määritellyt ydintoiminnot onnistuvat asetetussa ajassa ilman ulkoista yhteyttä. Kirjaa mahdolliset epäonnistumiset; älä korvaa puuttuvaa näyttöä oletuksella."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Kylmäkäynnistyksen mittauspisteet",
+          "caption": "Kylmäkäynnistyksen mittauspisteet"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Startup follows dependencies",
+        "paragraphs": [
+          "Startup is a staged transition from off to ready. In R1 power and hardware enable the operating system, which makes local storage available; the database service opens its dataset and the application service begins using it. The workstation and switch may start in parallel; service order follows actual dependencies.",
+          "Process startup does not necessarily establish readiness. The database must open its dataset and respond to the required query before the application can safely declare dependent functions ready. A fixed delay is not reliable evidence of readiness."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "R1 server startup chain",
+          "caption": "R1 server startup chain"
+        }
+      },
+      {
+        "title": "Offline startup",
+        "paragraphs": [
+          "Startup must not wait indefinitely for external DNS, time, identity or license services when they are unnecessary for core operation. Required software and configuration must be locally available. If an external function is unavailable, the application should report that condition and continue defined local tasks where safe.",
+          "Start R1 without a default gateway or external connections. Local addressing and service configuration are already defined. External dependencies are mapped in detail in the dependency management chapter; here the goal is independent startup."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Startup without external connectivity",
+          "caption": "Startup without external connectivity"
+        }
+      },
+      {
+        "title": "Exercise: verify a cold start",
+        "paragraphs": [
+          "Shut down the R1 training system normally. Verify that it has no external connections. Start the devices and record startup times, service-reported states and the point when the defined local task succeeds. Measure elapsed time from power-on to readiness.",
+          "Repeat, for example five times, with the same configuration and dataset. Readiness check: open a known instruction, save a unique test record and read it back. Acceptance criterion: all defined core functions succeed within the required time without external connectivity. Record any failures rather than replacing missing evidence with assumptions."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Cold-start measurement points",
+          "caption": "Cold-start measurement points"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

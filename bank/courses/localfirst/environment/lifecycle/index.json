@@ -9,8 +9,58 @@
     "failures"
   ],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Järjestelmä ei ole vain käynnissä tai sammutettu",
+        "paragraphs": [
+          "Järjestelmän toiminnallinen elinkaari muodostuu tiloista ja niiden välisistä siirtymistä. Tässä luvussa tarkastellaan operatiivista elinkaarta, ei ohjelmiston kehitystä tai laitteen hankinnasta poistoon ulottuvaa elinkaarta. Pelkkä sähkön kytkeminen ei osoita käyttövalmiutta, eikä prosessin päättyminen tarkoita, että kaikki keskeneräinen työ on tallennettu.",
+          "R1:n käyttötilat määritellään: sammutettu, käynnistymässä, käyttövalmis, rajoittunut, vikatilassa ja sammumassa. Käyttövalmius tarkoittaa määriteltyjen ydintoimintojen todettua toimivuutta. Rajoittuneessa tilassa jokin toiminto voi olla estetty muiden säilyessä käytettävissä."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Operatiivinen tilamalli",
+          "caption": "Operatiivinen tilamalli"
+        }
+      },
+      {
+        "title": "Tilat, ehdot ja vastuut",
+        "paragraphs": [
+          "Jokaiselle tilasiirtymälle määritellään käynnistävä tapahtuma, siirtymän ehdot, vastuullinen komponentti ja onnistumisen todennus. Esimerkiksi käyttövalmiiksi siirtyminen edellyttää, että palvelu pystyy lukemaan ohjeet ja tallentamaan testitietueen. Vikatilassa käytetään ennalta määriteltyä toimintamallia, ei oletusta siitä, että normaali toiminta jatkuu.",
+          "Harjoituksen tuloksena laaditaan R1:n tilataulukko: nykytila, tapahtuma, sallittu seuraava tila ja tarkistus. Käynnistys, sammutus ja häiriötilanteet käsitellään seuraavissa nodeissa. Hyväksymiskriteeri: käyttäjälle voidaan kertoa, mitä toimintoa voi käyttää kussakin tilassa."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Tilasiirtymän ehdot",
+          "caption": "Tilasiirtymän ehdot"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "A system is not merely on or off",
+        "paragraphs": [
+          "The operational lifecycle consists of states and transitions. This chapter covers operation rather than software development or the equipment lifecycle from procurement to disposal. Applying power alone does not establish readiness, and a terminated process does not prove that unfinished work was saved.",
+          "Define R1 operating states: off, starting, ready, degraded, failed and shutting down. Readiness means verified availability of defined core functions. In a degraded state some functions may be disabled while others remain available."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Operational state model",
+          "caption": "Operational state model"
+        }
+      },
+      {
+        "title": "States, conditions and responsibilities",
+        "paragraphs": [
+          "For each transition define the initiating event, conditions, responsible component and evidence of success. For example, readiness requires the service to read instructions and save a test record. A failed state follows a predefined response instead of assuming normal operation continues.",
+          "The exercise produces an R1 state table: current state, event, permitted next state and check. Startup, shutdown and failure conditions are covered in the following nodes. Acceptance criterion: users can be told which functions are available in each state."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Transition conditions",
+          "caption": "Transition conditions"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Hallittu sammutus on toiminto",
+        "paragraphs": [
+          "Sammutus tarkoittaa uusien tehtävien vastaanoton hallittua lopettamista, keskeneräisten tehtävien käsittelyä sekä resurssien vapauttamista. Keskeneräiset tapahtumat joko saatetaan määriteltyyn hyväksyttyyn tilaan tai perutaan. Palvelun ei pidä vahvistaa onnistuneeksi tapahtumaa, jota se ei ole saanut loppuun.",
+          "R1:ssä käyttöliittymä ilmoittaa palvelun sammumisesta. Sovelluspalvelu lopettaa uusien kirjoituspyyntöjen vastaanoton, käsittelee jo hyväksytyt työt ja sulkee tietokantayhteydet. Tietokantapalvelu pysäytetään sen oman hallitun sammutusmenettelyn mukaisesti. Käyttöjärjestelmä voi tämän jälkeen irrottaa tallennuksen turvallisesti."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Hallittu sammutusketju",
+          "caption": "Hallittu sammutusketju"
+        }
+      },
+      {
+        "title": "Keskeneräiset työt ja vahvistukset",
+        "paragraphs": [
+          "Keskeneräistä työtä ei voi aina viedä loppuun käytettävissä olevassa sammutusajassa. Jokaiselle työtyypille tarvitaan sääntö: viimeistele, peru tai säilytä myöhemmin jatkettavana. Tietokannan transaktio voi tehdä yhden loogisen muutoksen atomiseksi, mutta se ei automaattisesti tee usean eri järjestelmän toiminnosta atomista.",
+          "R1:n yksittäisen huoltotietueen tallennus voidaan käsitellä tietokantatransaktiona. Asiakkaalle lähetetään onnistumisvahvistus vasta, kun määritelty tallennusehto on täyttynyt. Jos yhteys katkeaa vahvistuksen aikana, asiakkaan näkökulmasta tulos voi jäädä tuntemattomaksi; tila tarkistetaan ennen mahdollista uusintaa."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Kirjoituspyynnön mahdolliset tulokset",
+          "caption": "Kirjoituspyynnön mahdolliset tulokset"
+        }
+      },
+      {
+        "title": "Harjoitus: sammutus aktiivisen työn aikana",
+        "paragraphs": [
+          "Käytä vain harjoitusdataa ja erillistä testiympäristöä. Luo tunnettu huoltotietue ja käynnistä uusi testikirjoitus. Pyydä sovelluksen hallittua sammutusta ja kirjaa, hyväksyttiinkö uusi työ, vietiinkö aiempi työ loppuun vai peruttiinko se. Älä testaa virran fyysistä katkaisua tuotantojärjestelmässä.",
+          "Käynnistä järjestelmä uudelleen ja tarkasta tietokannan sisältö. Hyväksymiskriteeri: aiemmin vahvistetut tietueet säilyvät, keskeneräisten töiden tila vastaa määriteltyä sammutuskäytäntöä ja käyttäjälle annettu ilmoitus vastaa toteutunutta lopputulosta. Tuntematon tila dokumentoidaan ja selvitetään ennen uutta yritystä."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Sammutustestin tarkastusketju",
+          "caption": "Sammutustestin tarkastusketju"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Controlled shutdown is an operation",
+        "paragraphs": [
+          "Shutdown means controlled cessation of new work, handling of unfinished tasks and release of resources. Incomplete transactions are either brought to a defined accepted state or rolled back. A service should not acknowledge success for work it has not completed.",
+          "In R1 the interface reports shutdown. The application service stops accepting new write requests, handles already accepted work and closes database connections. The database is stopped according to its own controlled shutdown procedure. The operating system can then safely detach storage."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Controlled shutdown chain",
+          "caption": "Controlled shutdown chain"
+        }
+      },
+      {
+        "title": "Unfinished work and acknowledgements",
+        "paragraphs": [
+          "Unfinished work cannot always be completed within the available shutdown time. Each work type needs a rule: finish, cancel or preserve for later continuation. A database transaction can make one logical change atomic, but it does not automatically make an operation spanning multiple systems atomic.",
+          "Saving a single R1 maintenance record can be handled as a database transaction. Send an acknowledgement only after the defined durability condition is satisfied. If connectivity fails during acknowledgement, the client may not know the outcome; check the state before a possible retry."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Possible write request outcomes",
+          "caption": "Possible write request outcomes"
+        }
+      },
+      {
+        "title": "Exercise: shutdown during active work",
+        "paragraphs": [
+          "Use only training data and a separate test environment. Create a known maintenance record and initiate another test write. Request a controlled application shutdown and record whether new work was accepted and whether prior work completed or was cancelled. Do not test physical power interruption on production systems.",
+          "Restart and inspect database contents. Acceptance criterion: previously acknowledged records survive, incomplete work follows the defined shutdown policy, and user-visible feedback matches the actual outcome. Document and resolve any unknown state before retrying."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Shutdown test verification chain",
+          "caption": "Shutdown test verification chain"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

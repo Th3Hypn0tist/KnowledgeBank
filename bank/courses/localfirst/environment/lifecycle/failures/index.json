@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Vika, häiriö ja toiminnallinen vaikutus",
+        "paragraphs": [
+          "Komponentin vika ja käyttäjän kokema toiminnan menetys eivät ole sama asia. Työaseman, kytkimen, palvelimen, tietokannan tai tallennuksen häiriöllä voi olla eri vaikutuksia. Vian laajuus määräytyy riippuvuuksista: paikallinen ympäristö voi toimia ilman internetiä, mutta yksittäinen paikallinen kytkin voi silti olla kriittinen komponentti.",
+          "R1:ssä kytkimen vika voi estää työasemaa käyttämästä palvelinta, vaikka palvelin ja tietokanta toimisivat edelleen. Tietokannan vika voi estää huoltotapahtuman tallennuksen, vaikka verkkoyhteys ja sovellusprosessi toimisivat. Määrittele aina vaikutus työtehtävän näkökulmasta."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Yksi paikallinen vika, erilaiset vaikutukset",
+          "caption": "Yksi paikallinen vika, erilaiset vaikutukset"
+        }
+      },
+      {
+        "title": "Rajoitettu toiminta ja turvallinen tila",
+        "paragraphs": [
+          "Vikatilanteessa järjestelmä voi jatkaa niitä tehtäviä, joiden edellytykset ovat edelleen voimassa. Tätä kutsutaan rajoitetuksi toiminnaksi. Jos pysyvä kirjoitus ei onnistu, huoltotapahtumaa ei saa ilmoittaa tallennetuksi. Paikallisesti saatavilla olevan ohjeen lukeminen voi silti olla mahdollista, jos sen eheys, ajantasaisuus ja käyttöoikeudet ovat riittävät.",
+          "Turvallinen tila määritellään käyttötarkoituksen mukaan. Kaikissa järjestelmissä pysäytys ei ole turvallisin ratkaisu; esimerkiksi fyysisen prosessin ohjaus tarvitsee erillisen riskianalyysin. Kurssin huoltosovelluksessa turvallinen käytäntö on estää vahvistamattomat kirjoitukset, kertoa rajoituksesta ja säilyttää tarvittaessa keskeneräinen työ määritellyllä tavalla."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Tehtäväkohtainen rajoitus",
+          "caption": "Tehtäväkohtainen rajoitus"
+        }
+      },
+      {
+        "title": "Harjoitus: rajattu vian simulointi",
+        "paragraphs": [
+          "Määrittele testattava vika ja ennakoitu vaikutus ennen testiä. Käytä vain erillistä hyväksyttyä harjoitusympäristöä. R1:ssä voidaan esimerkiksi pysäyttää tietokantapalvelu hallitusti tai irrottaa työaseman lähiverkkokaapeli. Testaa yksi häiriö kerrallaan ja kirjaa sekä vaikutuksen alkaminen että palautumisen jälkeinen toiminta.",
+          "Varmista, että käyttäjälle näkyvä tilailmoitus vastaa tilannetta. Palauta komponentti normaalisti, tarkista palveluketju ja suorita tunnettu työtehtävä. Hyväksymiskriteeri: määritelty vika ei aiheuta väärää onnistumisvahvistusta, vaikutus rajoittuu odotettuihin toimintoihin ja palautuminen on todennettu. Muut vaikutukset kirjataan poikkeamiksi. Laajempi vikasietoisuuden ja palautumisen verifiointi käsitellään luvussa 07."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Hallittu vikatesti",
+          "caption": "Hallittu vikatesti"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Fault, disruption and functional impact",
+        "paragraphs": [
+          "A component fault and user-visible loss of function are distinct. Workstation, switch, server, database or storage failures can have different impacts. Scope follows dependencies: the local environment may operate without internet, yet a single local switch can still be critical.",
+          "In R1 a switch fault may prevent workstation access while the server and database continue running. A database fault may prevent maintenance logging even when network connectivity and the application process work. Always define impact from the task perspective."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "One local fault, different impacts",
+          "caption": "One local fault, different impacts"
+        }
+      },
+      {
+        "title": "Degraded operation and safe state",
+        "paragraphs": [
+          "During a fault, the system may continue tasks whose prerequisites remain satisfied. This is degraded operation. If durable writes fail, maintenance events must not be reported as saved. Reading locally available instructions may remain possible if integrity, currency and authorization are adequate.",
+          "A safe state depends on purpose. Shutdown is not always the safest response; physical process control, for example, requires a separate risk analysis. For this course's maintenance application, safe behavior means preventing false write acknowledgements, exposing limitations and preserving unfinished work where the defined policy permits."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Task-specific degradation",
+          "caption": "Task-specific degradation"
+        }
+      },
+      {
+        "title": "Exercise: controlled fault simulation",
+        "paragraphs": [
+          "Define the fault and expected impact before testing. Use only a separate approved training environment. In R1, for example, stop the database service normally or disconnect the workstation LAN cable. Introduce one disruption at a time and record onset and operation after recovery.",
+          "Verify that user-visible status matches the situation. Restore the component normally, check the service chain and perform a known task. Acceptance criterion: the defined fault produces no false success acknowledgement, impact remains within expected functions and recovery is verified. Record other effects as deviations. Broader fault tolerance and recovery verification is covered in chapter 07."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Controlled fault test",
+          "caption": "Controlled fault test"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }
