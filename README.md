@@ -60,3 +60,7 @@ From the repository root:
     node --check lib/bank.js
 
 The validator uses the Python standard library and optionally PHP CLI. It checks the release hierarchy, paired content blocks, SVG XML and references, all individual API responses and sitemap coverage, plus negative API cases. It assumes a completed Local-First release and the canonical aigm.fi deployment URLs. It does not establish visual rendering, semantic translation quality, Apache production configuration or completion of the instructional exercises. The root .htaccess also denies HTTP access to .git and developement when Apache rewrite rules are enabled. See developement/REVIEW.md for scope and evidence.
+
+## Course reader
+
+The single HTML entry point uses a collapsible outline, selected-node reading pane and an SVG thumbnail strip for the active top-level chapter only. The introduction is a separate group. Existing topic fragments such as `#communication/primitives/channel` remain valid; append `:2` to address the second content card. `#@intro` addresses the introduction. Language switching preserves the fragment. On narrow screens, outline and diagrams are toggleable panels above the reading pane. Source JSON and REST API remain unchanged.

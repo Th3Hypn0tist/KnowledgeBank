@@ -230,3 +230,14 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 - Kierros 12: verifioinnin kaikki 15 nodea täydennetty FI/EN, 30 uutta kaaviota (60 SVG-tiedostoa). Monitorointi, auditointi ja testaus erotettu toisistaan. Hyväksymistestit kattavat katkaisun, kylmäkäynnistyksen, vikatilanteet, toimivallan, luottamusrajat ja palautumisen; jokaisessa nodessa määritelmä ja harjoitus hyväksymiskriteereineen. Kurssin kaikki 101 sisältönodea ja 7 pääaihetta sisältövalmiita. Olemassa oleva hierarkia ja metatiedot säilytetty; aiemmat kuvat säilytetty lopputarkastusta varten. JSON-parsinta, kieliparien rakenne ja uudet kuvaviittaukset tarkastettu. Koko kurssin resurssi-, XML-, sisältö-, selain- ja API-tarkastus sekä harjoitusten suorittaminen vielä avoinna. Harjoitusten määrittely ei ole näyttö niiden suorittamisesta. Ei UI- tai API-muutoksia.
 
 - Kierros 13: kaikki 102 JSON-tiedostoa luettu GitHubista (101 kurssinodea + luettelo). 230 korttia/kieli, 460 kuvaviittausta; ei puuttuvia nodeja tai kuvia. Poistettu 22 viittaamatonta vanhaa SVG:tä. Lisätty riippuvuudeton julkaisuvalidaattori ja katselmointiraportti. PHP 8.4.24 CLI ja paikallinen Apache synteettisellä testipuulla PASS; JavaScript-syntaksi PASS. Korjattu virheellisen URL-fragmentin käsittely, yhdenmukaistettu footerin API-linkki absoluuttiseksi ja estetty .git/developement HTTP-pääsy Apache-säännöllä (403 testattu). Koko repon kloonaus ja tuotannon hakeminen estyivät ympäristössä; selaimen navigointi estetty. Täyden aineiston XML/parseriajoa, koko aineiston API-ajotestiä, visuaalista/semanttista katselmointia ja harjoituksia ei merkitä läpäistyiksi.
+
+## Käyttöliittymän kehityskierros 14 – kolmen paneelin lukija
+
+- [x] Avattava otsikkopuu vasemmalla, vain valittu node keskellä.
+- [x] Oikealla vain aktiivisen pääaiheen SVG-pikkukuvat, hierarkian järjestyksessä. Johdanto omana ryhmänään.
+- [x] Pikkukuvat linkittävät yksittäiseen korttiin; aktiivinen node ja kuva korostetaan. Ryhmän sisällä kuvahakemisto säilyy.
+- [x] Breadcrumb, edellinen/seuraava, aliaihelinkit, kielenvaihto ja hash-navigaatio. Aiemmat node-ankkurit säilyvät.
+- [x] Leveä työpöytäasettelu, kolme erikseen vieritettävää aluetta; kapeassa näkymässä avattavat paneelit.
+- [ ] Selaimen desktop/mobiili- ja navigointiregressiotestit oikealla aineistolla.
+
+Ei muutoksia JSON-lähdeaineistoon, PHP-API:in tai sisältömäärään (101/101). CSS/JS v10. Hakua, koko kurssin yhtenäistä näkymää ja etenemisseurantaa ei lisätty tähän kokeiluun.
