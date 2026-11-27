@@ -1,0 +1,15 @@
+{
+  "title": {
+    "fi": "Toimintamallit",
+    "en": "Behavior"
+  },
+  "children": [
+    "deterministic",
+    "probabilistic"
+  ],
+  "content": {
+    "fi": [],
+    "en": []
+  },
+  "status": "outline"
+}

@@ -1,0 +1,16 @@
+{
+  "title": {
+    "fi": "Järjestelmän elinkaari",
+    "en": "System lifecycle"
+  },
+  "children": [
+    "startup",
+    "shutdown",
+    "failures"
+  ],
+  "content": {
+    "fi": [],
+    "en": []
+  },
+  "status": "outline"
+}

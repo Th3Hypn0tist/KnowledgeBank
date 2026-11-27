@@ -1,0 +1,17 @@
+{
+  "title": {
+    "fi": "Kommunikointimallit",
+    "en": "Communication patterns"
+  },
+  "children": [
+    "pull",
+    "push",
+    "request-response",
+    "store-forward"
+  ],
+  "content": {
+    "fi": [],
+    "en": []
+  },
+  "status": "outline"
+}

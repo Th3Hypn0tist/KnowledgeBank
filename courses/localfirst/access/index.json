@@ -1,0 +1,66 @@
+{
+  "title": {
+    "fi": "Pääsynhallinta ja toimivalta",
+    "en": "Access control and authority"
+  },
+  "children": [
+    "identity",
+    "authentication",
+    "authorization",
+    "validation",
+    "default-deny",
+    "revocation",
+    "boundaries"
+  ],
+  "content": {
+    "fi": [
+      {
+        "title": "Rajapinta ja identiteetti",
+        "paragraphs": [
+          "Määritellään viestin muoto, lähettäjän identiteetti, autentikointi, validointi ja vastaus. Oletuksena pyynnöt hylätään, ellei niitä ole sallittu."
+        ],
+        "image": {
+          "src": "images/communication-1-fi.svg",
+          "alt": "01 / Pyynnön käsittely",
+          "caption": "01 / Pyynnön käsittely"
+        }
+      },
+      {
+        "title": "Erilliset valtuudet",
+        "paragraphs": [
+          "Luku, kirjoitus, vienti ja komentojen suoritus ovat erillisiä valtuuksia. Rajataan myös kohde, tietosisältö ja sallittu toiminto."
+        ],
+        "image": {
+          "src": "images/communication-2-fi.svg",
+          "alt": "02 / Valtuudet eivät periydy",
+          "caption": "02 / Valtuudet eivät periydy"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Interface and identity",
+        "paragraphs": [
+          "Define message format, sender identity, authentication, validation and response. Requests are denied unless explicitly permitted."
+        ],
+        "image": {
+          "src": "images/communication-1-en.svg",
+          "alt": "01 / Request processing",
+          "caption": "01 / Request processing"
+        }
+      },
+      {
+        "title": "Separate permissions",
+        "paragraphs": [
+          "Read, write, export and command execution are separate permissions. Scope each operation to its target and data."
+        ],
+        "image": {
+          "src": "images/communication-2-en.svg",
+          "alt": "02 / Permissions are independent",
+          "caption": "02 / Permissions are independent"
+        }
+      }
+    ]
+  },
+  "status": "draft"
+}

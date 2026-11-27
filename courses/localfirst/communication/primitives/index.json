@@ -1,0 +1,19 @@
+{
+  "title": {
+    "fi": "Primitiivit",
+    "en": "Primitives"
+  },
+  "children": [
+    "source",
+    "target",
+    "channel",
+    "direction",
+    "protocol",
+    "payload"
+  ],
+  "content": {
+    "fi": [],
+    "en": []
+  },
+  "status": "outline"
+}

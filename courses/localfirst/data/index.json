@@ -1,0 +1,23 @@
+{
+  "title": {
+    "fi": "Datan hallinta",
+    "en": "Data management"
+  },
+  "children": [
+    "ssot",
+    "ownership",
+    "location",
+    "lifecycle",
+    "replication",
+    "sync",
+    "conflicts",
+    "backup",
+    "restore",
+    "deletion"
+  ],
+  "content": {
+    "fi": [],
+    "en": []
+  },
+  "status": "outline"
+}

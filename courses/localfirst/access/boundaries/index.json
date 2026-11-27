@@ -1,0 +1,17 @@
+{
+  "title": {
+    "fi": "Luottamusrajat",
+    "en": "Trust boundaries"
+  },
+  "children": [
+    "segments",
+    "processes",
+    "users",
+    "organizations"
+  ],
+  "content": {
+    "fi": [],
+    "en": []
+  },
+  "status": "outline"
+}

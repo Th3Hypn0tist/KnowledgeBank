@@ -1,0 +1,23 @@
+{
+  "title": {
+    "fi": "Ulkoiset riippuvuudet",
+    "en": "External dependencies"
+  },
+  "children": [
+    "dns",
+    "ntp",
+    "iam",
+    "certificates",
+    "licenses",
+    "libraries",
+    "packages",
+    "cloud",
+    "cdn",
+    "telemetry"
+  ],
+  "content": {
+    "fi": [],
+    "en": []
+  },
+  "status": "outline"
+}

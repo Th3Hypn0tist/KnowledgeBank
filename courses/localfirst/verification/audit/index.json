@@ -1,0 +1,15 @@
+{
+  "title": {
+    "fi": "Auditointi",
+    "en": "Auditing"
+  },
+  "children": [
+    "logging",
+    "trail"
+  ],
+  "content": {
+    "fi": [],
+    "en": []
+  },
+  "status": "outline"
+}

@@ -1,0 +1,69 @@
+{
+  "title": {
+    "fi": "Paikallinen tekoäly",
+    "en": "Local AI"
+  },
+  "children": [
+    "resources",
+    "models",
+    "inference",
+    "knowledge",
+    "rag",
+    "separation",
+    "bots",
+    "external",
+    "validation",
+    "behavior"
+  ],
+  "content": {
+    "fi": [
+      {
+        "title": "Paikalliset palvelut",
+        "paragraphs": [
+          "Tietokanta, web-palvelu ja dokumentti-indeksi toimivat lähiverkossa. Mallit ja ohjelmistot valmistellaan paikallisesti käytettäviksi."
+        ],
+        "image": {
+          "src": "images/services-1-fi.svg",
+          "alt": "01 / Paikallinen tiedonhaku",
+          "caption": "01 / Paikallinen tiedonhaku"
+        }
+      },
+      {
+        "title": "Botin toimivallan rajaaminen",
+        "paragraphs": [
+          "Kielimalli ei saa automaattisesti oikeutta tietokantaan tai komentojen suorittamiseen. Mahdolliset ulkoiset AI-palvelut ovat erikseen hyväksyttyjä integraatioita."
+        ],
+        "image": {
+          "src": "images/services-2-fi.svg",
+          "alt": "02 / Botin toimivalta",
+          "caption": "02 / Botin toimivalta"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Local services",
+        "paragraphs": [
+          "Database, web service and document index operate on the LAN. Models and software are prepared for local use."
+        ],
+        "image": {
+          "src": "images/services-1-en.svg",
+          "alt": "01 / Local retrieval",
+          "caption": "01 / Local retrieval"
+        }
+      },
+      {
+        "title": "Bounding bot authority",
+        "paragraphs": [
+          "A language model does not automatically receive database or execution permissions. External AI services are separately approved integrations."
+        ],
+        "image": {
+          "src": "images/services-2-en.svg",
+          "alt": "02 / Bot authority",
+          "caption": "02 / Bot authority"
+        }
+      }
+    ]
+  },
+  "status": "draft"
+}

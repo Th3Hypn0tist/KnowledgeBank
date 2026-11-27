@@ -1,0 +1,63 @@
+{
+  "title": {
+    "fi": "Kommunikointi",
+    "en": "Communication"
+  },
+  "children": [
+    "primitives",
+    "transfer",
+    "patterns",
+    "external"
+  ],
+  "content": {
+    "fi": [
+      {
+        "title": "Tiedonsiirron suunnat",
+        "paragraphs": [
+          "Tuonti ja vienti määritellään erikseen. Yksisuuntainen fyysinen siirtoratkaisu eroaa ohjelmallisesti rajoitetusta kaksisuuntaisesta yhteydestä."
+        ],
+        "image": {
+          "src": "images/connectivity-1-fi.svg",
+          "alt": "01 / Hallittu datan tuonti",
+          "caption": "01 / Hallittu datan tuonti"
+        }
+      },
+      {
+        "title": "Etäkäyttö ja integraatiot",
+        "paragraphs": [
+          "Rajataan päätepisteet, protokollat ja toimivalta. Kirjataan yhteydet ja testataan niiden katkaisu. Etäkäyttö ei tarkoita koko lähiverkon avaamista."
+        ],
+        "image": {
+          "src": "images/connectivity-2-fi.svg",
+          "alt": "02 / Rajattu etäkäyttö",
+          "caption": "02 / Rajattu etäkäyttö"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Transfer directions",
+        "paragraphs": [
+          "Define import and export separately. A physical one-way transfer mechanism differs from a software-restricted bidirectional connection."
+        ],
+        "image": {
+          "src": "images/connectivity-1-en.svg",
+          "alt": "01 / Controlled data import",
+          "caption": "01 / Controlled data import"
+        }
+      },
+      {
+        "title": "Remote access and integrations",
+        "paragraphs": [
+          "Restrict endpoints, protocols and authority. Log connections and test disconnection. Remote access does not require exposing the entire LAN."
+        ],
+        "image": {
+          "src": "images/connectivity-2-en.svg",
+          "alt": "02 / Bounded remote access",
+          "caption": "02 / Bounded remote access"
+        }
+      }
+    ]
+  },
+  "status": "draft"
+}

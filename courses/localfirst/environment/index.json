@@ -1,0 +1,66 @@
+{
+  "title": {
+    "fi": "Suljettu toimintaympäristö",
+    "en": "Closed environment"
+  },
+  "children": [
+    "physical",
+    "logical",
+    "compute",
+    "storage",
+    "network",
+    "services",
+    "lifecycle"
+  ],
+  "content": {
+    "fi": [
+      {
+        "title": "Fyysinen ja looginen eristys",
+        "paragraphs": [
+          "Fyysinen eristys tarkoittaa ulkoisen yhteyden puuttumista. Looginen eristys perustuu esimerkiksi verkkosegmentointiin ja liikennesääntöihin. Ne eivät ole sama asia."
+        ],
+        "image": {
+          "src": "images/environment-1-fi.svg",
+          "alt": "01 / Eristetty lähiverkko",
+          "caption": "01 / Eristetty lähiverkko"
+        }
+      },
+      {
+        "title": "Paikalliset riippuvuudet",
+        "paragraphs": [
+          "Selvitetään DNS, aikapalvelu, autentikointi, ohjelmistot, tallennus ja varmuuskopiot. Testataan käynnistys ja palautus ilman internetiä."
+        ],
+        "image": {
+          "src": "images/environment-2-fi.svg",
+          "alt": "02 / Paikallinen palveluketju",
+          "caption": "02 / Paikallinen palveluketju"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Physical and logical isolation",
+        "paragraphs": [
+          "Physical isolation removes external connectivity. Logical isolation relies on segmentation and traffic rules, for example. They are not equivalent."
+        ],
+        "image": {
+          "src": "images/environment-1-en.svg",
+          "alt": "01 / Isolated LAN",
+          "caption": "01 / Isolated LAN"
+        }
+      },
+      {
+        "title": "Local dependencies",
+        "paragraphs": [
+          "Identify DNS, time, authentication, software, storage and backups. Test startup and recovery without internet."
+        ],
+        "image": {
+          "src": "images/environment-2-en.svg",
+          "alt": "02 / Local service chain",
+          "caption": "02 / Local service chain"
+        }
+      }
+    ]
+  },
+  "status": "draft"
+}

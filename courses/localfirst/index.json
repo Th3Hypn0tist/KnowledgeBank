@@ -1,0 +1,48 @@
+{
+  "title": {
+    "fi": "Local-First",
+    "en": "Local-First"
+  },
+  "description": {
+    "fi": "Koulutus organisaatioille, jotka haluavat hallita omaa infrastruktuuriaan, dataansa ja laskentaansa. Aloitamme suljetusta verkosta ja avaamme vain perustellut kommunikointimahdollisuudet.",
+    "en": "Training for organisations seeking control over infrastructure, data and compute. We start with a closed network and add only justified communication capabilities."
+  },
+  "children": [
+    "environment",
+    "communication",
+    "access",
+    "data",
+    "dependencies",
+    "ai",
+    "verification"
+  ],
+  "content": {
+    "fi": [
+      {
+        "title": "Secure by limitations.",
+        "paragraphs": [
+          "Internet on valinnainen resurssi, ei toiminnan edellytys. Yhteys ja toimivalta määritellään erikseen."
+        ],
+        "image": {
+          "src": "images/index-1-fi.svg",
+          "alt": "Kommunikointiperiaate",
+          "caption": "Kommunikointiperiaate"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Secure by limitations.",
+        "paragraphs": [
+          "Internet is optional, not a prerequisite. Connectivity and authority are defined separately."
+        ],
+        "image": {
+          "src": "images/index-1-en.svg",
+          "alt": "Communication principle",
+          "caption": "Communication principle"
+        }
+      }
+    ]
+  },
+  "status": "draft"
+}

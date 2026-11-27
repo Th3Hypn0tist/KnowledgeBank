@@ -1,0 +1,19 @@
+{
+  "title": {
+    "fi": "Käytännön testaus",
+    "en": "Practical testing"
+  },
+  "children": [
+    "autonomy",
+    "disconnect",
+    "faults",
+    "authority",
+    "boundaries",
+    "recovery"
+  ],
+  "content": {
+    "fi": [],
+    "en": []
+  },
+  "status": "outline"
+}

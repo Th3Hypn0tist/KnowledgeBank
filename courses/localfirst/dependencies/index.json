@@ -1,0 +1,17 @@
+{
+  "title": {
+    "fi": "Riippuvuuksien hallinta",
+    "en": "Dependency management"
+  },
+  "children": [
+    "discovery",
+    "internal",
+    "external",
+    "updates"
+  ],
+  "content": {
+    "fi": [],
+    "en": []
+  },
+  "status": "outline"
+}

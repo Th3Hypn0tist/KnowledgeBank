@@ -1,0 +1,16 @@
+{
+  "title": {
+    "fi": "Monitorointi",
+    "en": "Monitoring"
+  },
+  "children": [
+    "traffic",
+    "resources",
+    "services"
+  ],
+  "content": {
+    "fi": [],
+    "en": []
+  },
+  "status": "outline"
+}

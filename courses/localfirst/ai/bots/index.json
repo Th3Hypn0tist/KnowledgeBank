@@ -1,0 +1,15 @@
+{
+  "title": {
+    "fi": "Botit",
+    "en": "Bots"
+  },
+  "children": [
+    "authority",
+    "tools"
+  ],
+  "content": {
+    "fi": [],
+    "en": []
+  },
+  "status": "outline"
+}

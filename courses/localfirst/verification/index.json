@@ -1,0 +1,62 @@
+{
+  "title": {
+    "fi": "Verifiointi",
+    "en": "Verification"
+  },
+  "children": [
+    "monitoring",
+    "audit",
+    "testing"
+  ],
+  "content": {
+    "fi": [
+      {
+        "title": "Rakentaminen ja avaaminen",
+        "paragraphs": [
+          "Rakennetaan eristetty ympäristö. Määritellään yksi ulkoinen kommunikointitarve ja toteutetaan rajattu rajapinta."
+        ],
+        "image": {
+          "src": "images/practice-1-fi.svg",
+          "alt": "01 / Harjoituksen eteneminen",
+          "caption": "01 / Harjoituksen eteneminen"
+        }
+      },
+      {
+        "title": "Hyväksymistestaus",
+        "paragraphs": [
+          "Testataan sallittu pyyntö, luvaton pyyntö, virheellinen viesti ja ulkoisen yhteyden katkeaminen. Dokumentoidaan odotettu ja toteutunut tulos."
+        ],
+        "image": {
+          "src": "images/practice-2-fi.svg",
+          "alt": "02 / Katkaisukoe",
+          "caption": "02 / Katkaisukoe"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Build and connect",
+        "paragraphs": [
+          "Build an isolated environment. Define one external communication requirement and implement a bounded interface."
+        ],
+        "image": {
+          "src": "images/practice-1-en.svg",
+          "alt": "01 / Exercise sequence",
+          "caption": "01 / Exercise sequence"
+        }
+      },
+      {
+        "title": "Acceptance testing",
+        "paragraphs": [
+          "Test permitted requests, unauthorized requests, malformed messages and loss of external connectivity. Record expected and actual results."
+        ],
+        "image": {
+          "src": "images/practice-2-en.svg",
+          "alt": "02 / Disconnection test",
+          "caption": "02 / Disconnection test"
+        }
+      }
+    ]
+  },
+  "status": "draft"
+}

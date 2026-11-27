@@ -1,0 +1,16 @@
+{
+  "title": {
+    "fi": "Ulkoiset yhteydet",
+    "en": "External connections"
+  },
+  "children": [
+    "proxy",
+    "remote",
+    "federation"
+  ],
+  "content": {
+    "fi": [],
+    "en": []
+  },
+  "status": "outline"
+}
