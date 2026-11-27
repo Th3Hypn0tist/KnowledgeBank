@@ -4,8 +4,8 @@ Deploy the repository root directly as the AIGM web directory /kb/. No copying i
 
 ## Layout
 - index.html — single HTML entry point
-- lib/course.js — shared catalogue and recursive renderer
-- style/training.css — presentation extensions to /site.css
+- lib/bank.js — shared catalogue and recursive renderer
+- style/bank.css — presentation extensions to /site.css
 - bank/courses/index.json — course catalogue
 - bank/courses/<id>/ — course JSON hierarchy and SVG assets
 - bank/ — future knowledge categories (installation guides, documentation, etc.)

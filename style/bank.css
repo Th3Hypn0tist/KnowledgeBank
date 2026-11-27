@@ -52,3 +52,11 @@
 @media(max-width:730px) {
   .kb-page .kb-content-block .kb-card-copy { padding: 16px; }
 }
+
+/* Card ordering is enforced even if an older cached renderer is used. */
+.kb-page .kb-content-block > figure { order: -1; flex: none; width: 100%; }
+.kb-page .kb-content-block > div { order: 0; padding: 22px 26px; min-width: 0; box-sizing: border-box; }
+.kb-page .kb-content-block:has(> figure:not([hidden])) > div > h3 { display: none; }
+.kb-page .kb-content-block > figure > figcaption { display: none; }
+.kb-page .kb-content-block > figure[hidden] { display: none; }
+@media(max-width:730px) { .kb-page .kb-content-block > div { padding: 16px; } }
