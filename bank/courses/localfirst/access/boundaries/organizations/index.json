@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Organisaatioraja erottaa hallintavastuut",
+        "paragraphs": [
+          "Organisaatioiden erottaminen tarkoittaa, että yhden organisaation toimijat eivät saa automaattisesti oikeutta toisen organisaation resursseihin. Raja voi toteutua erillisillä järjestelmäinstansseilla tai yhteisen järjestelmän loogisena organisaatiorajauksena. Jälkimmäisessä toteutuksessa myös jaetun infrastruktuurin ylläpitäjien ja palvelutunnusten vaikutusalueet pitää tunnistaa.",
+          "R2:n kumppaniorganisaatiot A ja B voivat vaihtaa määriteltyjä työohjeita ja raportteja Federation-mallilla. A:n paikallinen politiikka ratkaisee A:n aineiston käytön ja B:n politiikka B:n aineiston käytön. Kumppanin tunnistaminen tai yhteinen sopimus ei yksin anna oikeutta toisen organisaation sisäisiin toimintoihin."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Organisaatioraja erottaa hallintavastuut",
+          "caption": "Organisaatioraja erottaa hallintavastuut"
+        }
+      },
+      {
+        "title": "Jaettu infrastruktuuri ja organisaatiokonteksti",
+        "paragraphs": [
+          "Jos organisaatiot käyttävät samaa sovellusta tai tietokantaa, organisaatiokontekstin pitää olla osa resurssin tunnistamista ja toimivaltapäätöstä. Pelkkä organisaatiotunniste pyynnön sisällössä ei todista, että toimijalla on oikeus kyseiseen organisaatioon. Palvelu muodostaa tai tarkistaa sallitun kontekstin todennetun identiteetin ja voimassa olevan politiikan perusteella.",
+          "Looginen rajaus on toteutettava kaikissa olennaisissa luku-, kirjoitus-, haku- ja vientitoiminnoissa sekä välimuisteissa ja taustatöissä. Yhteinen järjestelmä voi sisältää laajempia ylläpitovaltuuksia; ne on määriteltävä ja valvottava erikseen. Jos nämä luottamusoletukset eivät vastaa vaatimuksia, erilliset instanssit tai fyysisempi eristys voivat olla perusteltuja."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Jaettu infrastruktuuri ja organisaatiokonteksti",
+          "caption": "Jaettu infrastruktuuri ja organisaatiokonteksti"
+        }
+      },
+      {
+        "title": "Harjoitus: organisaatiorajan pitävyys",
+        "paragraphs": [
+          "Käytä kahta kuvitteellista organisaatiota ja erillisiä testitietueita. Luo tarkoituksella sama paikallinen työtehtävän tunniste molempiin organisaatioihin. Testaa A:n sallittu oma haku ja kirjoitus, B:n vastaavat toiminnot sekä nimenomaisesti kielletyt organisaatiorajan ylitykset harjoitussovelluksen rajapinnalla. Testaa myös sovittu kumppaniraportin vaihto.",
+          "Hyväksymiskriteeri: sama paikallinen tunniste ei sekoita organisaatioiden aineistoja; kielletyt haut, muutokset ja viennit eivät toteudu; sovittu rajattu raporttivaihto toimii. Kirjaa, mitkä infrastruktuurin komponentit ja hallintavaltuudet ovat yhteisiä. Näin testituloksesta ei tehdä perusteetonta päätelmää täydellisestä fyysisestä eristyksestä."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Harjoitus: organisaatiorajan pitävyys",
+          "caption": "Harjoitus: organisaatiorajan pitävyys"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Organization boundaries separate governance",
+        "paragraphs": [
+          "Organization separation means that one organization's principals do not automatically gain authority over another organization's resources. The boundary may use separate system instances or logical organization scoping in a shared system. In the latter implementation, the scope of shared infrastructure administrators and service identities must also be identified.",
+          "R2 partner organizations A and B may exchange defined instructions and reports through Federation. A's local policy governs A's data and B's policy governs B's data. Identifying a partner or having a shared agreement does not independently grant access to another organization's internal functions."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Organization boundaries separate governance",
+          "caption": "Organization boundaries separate governance"
+        }
+      },
+      {
+        "title": "Shared infrastructure and organization context",
+        "paragraphs": [
+          "If organizations share an application or database, organization context must participate in resource identification and authority decisions. An organization identifier supplied in a request does not prove the principal has authority for that organization. The service derives or verifies permitted context from authenticated identity and valid policy.",
+          "Logical scoping must be enforced in all relevant read, write, search and export operations, caches and background jobs. Shared systems may include broader administrative authority; define and control it separately. If these trust assumptions do not meet requirements, separate instances or more physical isolation may be justified."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Shared infrastructure and organization context",
+          "caption": "Shared infrastructure and organization context"
+        }
+      },
+      {
+        "title": "Exercise: organization boundary enforcement",
+        "paragraphs": [
+          "Use two fictional organizations and separate test records. Deliberately create the same local task identifier in both organizations. Test A's authorized local lookup and write, B's equivalent operations and explicitly prohibited cross-organization operations through the training application interface. Also test the agreed partner report exchange.",
+          "Acceptance criterion: identical local identifiers do not mix organizations' data; prohibited reads, modifications and exports do not occur; agreed bounded report exchange works. Record which infrastructure components and administration privileges are shared. This avoids treating the test result as unwarranted proof of complete physical isolation."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Exercise: organization boundary enforcement",
+          "caption": "Exercise: organization boundary enforcement"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

@@ -10,8 +10,58 @@
     "organizations"
   ],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Luottamusraja ei ole pelkkä verkkoraja",
+        "paragraphs": [
+          "Luottamusraja on kohta, jossa järjestelmän luottamusoletukset, hallintavastuu tai toimivaltapolitiikka muuttuvat. Raja voi sijaita verkkojen välillä, prosessien välillä, käyttäjien välillä tai organisaatioiden välillä. Eri rajat voivat olla samassa fyysisessä laitteessa. Raja määritellään suhteessa suojattavaan resurssiin ja toimintaan.",
+          "R2:n työasema ja palvelin ovat samassa lähiverkossa, mutta työaseman sovelluksen ei pidä saada suoraa tietokantahallintaa. Huoltajan ja ylläpitäjän valtuudet eroavat samassa sovelluksessa. Kumppaniorganisaatiolla puolestaan on oma hallintavastuunsa ja paikallinen politiikkansa. Kaikki nämä ovat eri luottamusrajoja."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Luottamusraja ei ole pelkkä verkkoraja",
+          "caption": "Luottamusraja ei ole pelkkä verkkoraja"
+        }
+      },
+      {
+        "title": "Rajaa suojaava mekanismi ja sen oletukset",
+        "paragraphs": [
+          "Piirretty raja ei vielä eristä mitään. Jokaiselle rajalle määritellään suojattava resurssi, sallitut ylitykset, päätöksen tekijä, täytäntöönpanomekanismi ja sen riippuvuudet. Samalla arvioidaan vaihtoehtoiset reitit. Esimerkiksi verkkosäännöt eivät automaattisesti estä samassa prosessissa tapahtuvaa väärää datakäsittelyä.",
+          "Harjoituksessa merkitse R2:n verkkoraja, sovellusprosessin raja, käyttäjien toimivaltarajat ja kumppaniorganisaation raja. Kirjaa kullekin yksi sallittu ja yksi estetty ylitys sekä testausmenetelmä. Hyväksymiskriteeri: rajalla on tunnistettu toteutusmekanismi ja vastuullinen omistaja; pelkkää kaavion katkoviivaa ei tulkita suojaukseksi."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Rajaa suojaava mekanismi ja sen oletukset",
+          "caption": "Rajaa suojaava mekanismi ja sen oletukset"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "A trust boundary is more than a network boundary",
+        "paragraphs": [
+          "A trust boundary is a point where trust assumptions, administrative responsibility or authority policy change. A boundary may occur between networks, processes, users or organizations. Different boundaries can exist on the same physical device. Define a boundary relative to the protected resource and operation.",
+          "The R2 workstation and server share a LAN, yet the workstation application should not receive direct database administration access. Technician and administrator permissions differ within the same application. A partner organization has its own administrative responsibility and local policy. These are distinct trust boundaries."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "A trust boundary is more than a network boundary",
+          "caption": "A trust boundary is more than a network boundary"
+        }
+      },
+      {
+        "title": "Boundary enforcement and its assumptions",
+        "paragraphs": [
+          "A drawn boundary does not isolate anything by itself. For each boundary define the protected resource, permitted crossings, decision maker, enforcement mechanism and its dependencies. Evaluate alternative paths as well. Network rules, for example, do not automatically prevent incorrect data processing inside the same process.",
+          "Mark R2's network boundary, application process boundary, user authority boundaries and partner organization boundary. Record one permitted and one denied crossing for each, together with a test method. Acceptance criterion: each boundary has an identified implementation mechanism and responsible owner; a dashed line in a diagram is not treated as protection."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Boundary enforcement and its assumptions",
+          "caption": "Boundary enforcement and its assumptions"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

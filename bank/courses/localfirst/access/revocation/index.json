@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Oikeuden poistaminen ei ole identiteetin poistaminen",
+        "paragraphs": [
+          "Oikeuksien peruuttaminen tarkoittaa toimijalle aiemmin myönnetyn valtuuden poistamista tai mitätöintiä. Identiteetti voi säilyä aktiivisena ja muut valtuudet voimassa. Tunnuksen käytöstä poistaminen puolestaan estää määritellyllä tavalla koko identiteetin käytön. Näiden toimenpiteiden vaikutukset on erotettava.",
+          "R2:n huoltaja U-042 siirtyy pois työtehtävästä 42, mutta jatkaa työohjeiden lukemista. Tehtäväkohtainen kirjoitusoikeus poistetaan ja lukuoikeus säilytetään. Peruuttaminen toteutetaan toimivaltapolitiikassa eikä vain poistamalla käyttöliittymän painiketta."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Oikeuden poistaminen ei ole identiteetin poistaminen",
+          "caption": "Oikeuden poistaminen ei ole identiteetin poistaminen"
+        }
+      },
+      {
+        "title": "Peruuttamisen vaikutusviive",
+        "paragraphs": [
+          "Peruuttamisen jälkeen kaikki valtuutta käyttävät päätös- ja täytäntöönpanokomponentit eivät välttämättä heti tiedä muutoksesta. Välimuistit, aktiiviset istunnot ja voimassa olevat käyttötokenit voivat aiheuttaa viiveen. Määrittele enimmäisviive ja mekanismi, jolla uusi politiikka tulee voimaan. Jos välitön esto on vaatimus, pelkkä tokenin myöhempi vanheneminen ei riitä.",
+          "Local-First-ympäristössä ulkoisen yhteyden puuttuminen voi estää etäältä tulevan peruutustiedon vastaanoton. Paikallinen hallinta voi peruuttaa paikalliset oikeudet suoraan, mutta muualta hallittujen valtuuksien offline-voimassaolo ja synkronointi pitää määritellä erikseen. Älä lupaa välitöntä etäperuutusta eristettyyn järjestelmään ilman siihen soveltuvaa tietoreittiä."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Peruuttamisen vaikutusviive",
+          "caption": "Peruuttamisen vaikutusviive"
+        }
+      },
+      {
+        "title": "Harjoitus: peruuta aktiivisen istunnon valtuus",
+        "paragraphs": [
+          "Kirjaudu harjoitustunnuksella, suorita sallittu testikirjoitus ja pidä istunto aktiivisena. Peruuta kirjoitusoikeus toisella hyväksytyllä harjoitushallintatunnuksella. Testaa sama toiminto vanhalla istunnolla ja uudella istunnolla. Mittaa, milloin esto astuu tosiasiallisesti voimaan. Tarkista, että erillinen lukuoikeus säilyy.",
+          "Hyväksymiskriteeri: kirjoitusoikeus poistuu määritellyssä enimmäisajassa, myöhemmät kielletyt kirjoitukset eivät muuta testiaineistoa ja sallitut lukuoperaatiot onnistuvat. Dokumentoi myös, miten ennen peruutusta alkanut keskeneräinen työ käsitellään. Käytä vain erillistä harjoitusympäristöä."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Harjoitus: peruuta aktiivisen istunnon valtuus",
+          "caption": "Harjoitus: peruuta aktiivisen istunnon valtuus"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Revoking permission is not deleting identity",
+        "paragraphs": [
+          "Revocation removes or invalidates a previously granted permission. The identity may remain active and other permissions may remain valid. Disabling an account, by contrast, prevents use of the entire identity according to the defined mechanism. Distinguish the effects of these operations.",
+          "R2 technician U-042 leaves task 42 but continues reading instructions. Remove task-specific write permission while preserving read permission. Implement revocation in authority policy, not merely by removing an interface button."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Revoking permission is not deleting identity",
+          "caption": "Revoking permission is not deleting identity"
+        }
+      },
+      {
+        "title": "Revocation propagation delay",
+        "paragraphs": [
+          "After revocation, not every authorization decision and enforcement component necessarily knows about the change immediately. Caches, active sessions and valid access tokens may introduce delay. Define the maximum delay and mechanism by which updated policy takes effect. If immediate denial is required, later token expiration alone is insufficient.",
+          "In a Local-First environment, loss of external connectivity may prevent receipt of remotely issued revocation information. Local administration can revoke local permissions directly, but offline validity and synchronization of remotely managed permissions must be defined separately. Do not promise immediate remote revocation in an isolated system without an appropriate information path."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Revocation propagation delay",
+          "caption": "Revocation propagation delay"
+        }
+      },
+      {
+        "title": "Exercise: revoke permission in an active session",
+        "paragraphs": [
+          "Sign in with training credentials, perform an authorized test write and keep the session active. Revoke write permission using another approved training administrator identity. Test the same operation with the old session and with a new session. Measure when denial becomes effective. Verify that separate read permission remains.",
+          "Acceptance criterion: write permission disappears within the specified maximum delay, subsequent prohibited writes do not change test data, and authorized reads succeed. Document how unfinished work initiated before revocation is handled. Use only a separate training environment."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Exercise: revoke permission in an active session",
+          "caption": "Exercise: revoke permission in an active session"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

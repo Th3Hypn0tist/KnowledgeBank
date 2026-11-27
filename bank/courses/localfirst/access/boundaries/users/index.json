@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Käyttäjäraja erottaa toimijat ja niiden aineiston",
+        "paragraphs": [
+          "Käyttäjien eristäminen tarkoittaa, etteivät yhden käyttäjän valtuudet, istunnot ja henkilökohtaiseksi tai tehtäväkohtaiseksi määritellyt resurssit siirry automaattisesti toiselle. Käyttäjäraja voi toteutua käyttöjärjestelmässä, sovelluksessa ja tietokannassa. Nämä eivät ole sama asia: eri sovelluskäyttäjät voivat käyttää samaa taustapalvelun tietokantatunnusta, jolloin sovelluksen on valvottava käyttäjäkohtaista toimivaltaa.",
+          "R2:ssa U-042 ja U-043 voivat lukea yhteisiä työohjeita, mutta muuttaa vain omiin työtehtäviinsä kuuluvia tietueita. Yhteinen aineisto on nimenomaisesti sallittu resurssi, ei perustelu kaikkien käyttäjätietojen yhdistämiselle. Järjestelmässä pitää erottaa jaettu, henkilökohtainen ja tehtäväkohtainen tieto."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Käyttäjäraja erottaa toimijat ja niiden aineiston",
+          "caption": "Käyttäjäraja erottaa toimijat ja niiden aineiston"
+        }
+      },
+      {
+        "title": "Käyttäjäkohtainen konteksti ei saa sekoittua",
+        "paragraphs": [
+          "Sovelluksen välimuistit, istunnot, tiedostojen väliaikaistallennus ja raportit voivat sisältää käyttäjäkohtaista tietoa. Jos konteksti vaihtuu, edellisen käyttäjän suojattu aineisto ei saa jäädä seuraavan käyttäjän saataville ilman erillistä valtuutta. Välimuistin avaimessa ja tietokantakyselyssä on huomioitava tarvittava käyttäjä- tai kohderajaus.",
+          "R2:n yhteiskäyttöisellä harjoitustyöasemalla käyttäjä A päättää istuntonsa ja käyttäjä B aloittaa omansa. Palvelin todentaa B:n erikseen ja muodostaa tälle sallitun näkymän. Pelkkä selainikkunan vaihtaminen ei yksin ole riittävä osoitus siitä, että aiemman käyttäjän istunto tai paikallinen suojattu aineisto on poistunut käytöstä."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Käyttäjäkohtainen konteksti ei saa sekoittua",
+          "caption": "Käyttäjäkohtainen konteksti ei saa sekoittua"
+        }
+      },
+      {
+        "title": "Harjoitus: kaksi käyttäjää, kaksi työtehtävää",
+        "paragraphs": [
+          "Luo harjoitusympäristöön kaksi käyttäjää ja kaksi erillistä testityötehtävää. Määrittele molemmille yhteinen ohje ja kummallekin oma kirjoitettava tietue. Testaa A:n ja B:n sallittu oma kirjoitus sekä toisen käyttäjän tietueeseen kohdistuva kielletty kirjoitus. Vaihda lisäksi käyttäjää samalla harjoitustyöasemalla.",
+          "Hyväksymiskriteeri: yhteinen ohje toimii molemmille, henkilö- tai tehtäväkohtaiset kielletyt muutokset eivät toteudu eikä edellisen käyttäjän suojattu aineisto näy seuraavan käyttäjän näkymässä. Tarkasta myös suojatun aineiston hakupyynnöt ja testitietokannan lopputila. Käytä vain keinotekoisia tietoja."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Harjoitus: kaksi käyttäjää, kaksi työtehtävää",
+          "caption": "Harjoitus: kaksi käyttäjää, kaksi työtehtävää"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "User boundaries separate principals and their data",
+        "paragraphs": [
+          "User isolation means that one user's permissions, sessions and personal or task-specific resources do not automatically transfer to another user. A user boundary may be enforced by the operating system, application and database. These are distinct: application users may share one backend database identity, requiring the application to enforce user-specific authority.",
+          "In R2, U-042 and U-043 may read shared instructions but modify only records belonging to their assigned tasks. Shared data is an explicitly permitted resource, not a reason to merge all user data. Distinguish shared, personal and task-specific information."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "User boundaries separate principals and their data",
+          "caption": "User boundaries separate principals and their data"
+        }
+      },
+      {
+        "title": "User contexts must not mix",
+        "paragraphs": [
+          "Application caches, sessions, temporary files and reports may hold user-specific data. When context changes, protected data belonging to the previous user must not remain accessible to the next user without separate authorization. Cache keys and database queries must include required user or target scoping.",
+          "On an R2 shared training workstation, user A ends a session and user B starts a new one. The server authenticates B independently and forms B's permitted view. Merely changing a browser window does not establish that the previous user's session or local protected data is no longer accessible."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "User contexts must not mix",
+          "caption": "User contexts must not mix"
+        }
+      },
+      {
+        "title": "Exercise: two users, two tasks",
+        "paragraphs": [
+          "Create two users and two separate test tasks in the training environment. Define a shared instruction and a separate writable record for each user. Test permitted writes to assigned tasks and prohibited writes to the other user's record. Also switch users on the same training workstation.",
+          "Acceptance criterion: the shared instruction works for both, prohibited personal or task-specific changes do not occur, and protected data from the previous user does not appear in the next user's view. Also check retrieval requests for protected data and the final test database state. Use synthetic data only."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Exercise: two users, two tasks",
+          "caption": "Exercise: two users, two tasks"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

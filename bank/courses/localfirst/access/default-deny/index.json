@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Oletusarvoinen esto (Default Deny)",
+        "paragraphs": [
+          "Oletusarvoinen esto tarkoittaa, ettei toimintoa sallita ilman soveltuvaa, voimassa olevaa sallivaa päätöstä. Lähtötilassa ei siis ole yleistä käyttöoikeutta, jota vähitellen kavennetaan. Secure by limitations: järjestelmän toiminnallista vaikutusaluetta kasvatetaan vain perustelluilla valtuuksilla.",
+          "R2:n ohjetuontipalvelun tunniste S-IMPORT saa vastaanottaa ja käsitellä määriteltyjä työohjepaketteja. Sen ei tarvitse kirjoittaa huoltotapahtumia, viedä raportteja tai hallita palvelinta. Näitä toimintoja ei tarvitse erikseen kieltää jokaiselle uudelle palvelutunnukselle, jos toteutettu oletus on esto. Uusi toiminto jää estetyksi, kunnes siihen määritellään oikeus."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Oletusarvoinen esto (Default Deny)",
+          "caption": "Oletusarvoinen esto (Default Deny)"
+        }
+      },
+      {
+        "title": "Päätöstä ei voida tehdä: älä oleta lupaa",
+        "paragraphs": [
+          "Toimivaltapäätös voi epäonnistua esimerkiksi puuttuvan politiikan, tuntemattoman toiminnon tai päätöskomponentin häiriön vuoksi. Epäonnistunut tarkastus ei saa itsessään muuttua luvaksi. Suojattua toimintoa ei suoriteta, jos tarvittavaa sallivaa päätöstä ei pystytä muodostamaan tai todentamaan.",
+          "Tämä ei tarkoita koko järjestelmän tarpeetonta pysäyttämistä. R2 voi käyttää voimassa olevaa paikallista politiikkaa ulkoisesta palvelusta riippumatta, jos sen oikeellisuus ja voimassaolo voidaan tarkastaa paikallisesti. Jos fyysisen prosessin turvallisuus edellyttää poikkeustoimintaa, se suunnitellaan etukäteen erilliseksi rajatuksi toiminnoksi eikä yleiseksi oikeustarkastuksen ohitukseksi."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Päätöstä ei voida tehdä: älä oleta lupaa",
+          "caption": "Päätöstä ei voida tehdä: älä oleta lupaa"
+        }
+      },
+      {
+        "title": "Harjoitus: uusi toiminto jää estetyksi",
+        "paragraphs": [
+          "Käytä harjoitussovelluksen valtuusmatriisia ja S-IMPORT-tunnistetta. Lisää testimalliin kuvitteellinen uusi raportin poistotoiminto määrittelemättä sille sallivaa valtuutta. Testaa olemassa oleva sallittu ohjetuonti, uusi määrittelemätön toiminto ja simuloitu puuttuva toimivaltapolitiikka. Tee testit erillisessä ympäristössä.",
+          "Hyväksymiskriteeri: sallittu ohjetuonti toimii, uusi toiminto ei aiheuta muutosta aineistoon, eikä toimivaltatarkastuksen häiriö myönnä ylimääräisiä oikeuksia. Vertaa testiaineiston tilaa ennen ja jälkeen. Kirjaa myös ne paikalliset toiminnot, joiden turvallinen suorittaminen ei edellytä häiriintynyttä komponenttia."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Harjoitus: uusi toiminto jää estetyksi",
+          "caption": "Harjoitus: uusi toiminto jää estetyksi"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Default deny",
+        "paragraphs": [
+          "Default deny means that an operation is not permitted without an applicable, valid permission decision. The initial state is therefore not universal access that is gradually narrowed. Secure by limitations: expand the functional scope of the system only through justified permissions.",
+          "R2 instruction import service S-IMPORT may receive and process defined instruction packages. It does not need to write maintenance events, export reports or administer the server. These operations need not be individually prohibited for every new service identity if the implemented default is denial. A new operation remains denied until permission is defined."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Default deny",
+          "caption": "Default deny"
+        }
+      },
+      {
+        "title": "No decision available: do not assume permission",
+        "paragraphs": [
+          "An authority decision may fail because of missing policy, an unknown operation or a decision-component failure. A failed check must not itself become a permission. Do not execute a protected operation if its required permission decision cannot be established or verified.",
+          "This does not require unnecessarily stopping the entire system. R2 can use valid local policy independently of an external service when its integrity and validity can be checked locally. If physical process safety requires exceptional behavior, design it in advance as a separate bounded operation rather than a general authorization bypass."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "No decision available: do not assume permission",
+          "caption": "No decision available: do not assume permission"
+        }
+      },
+      {
+        "title": "Exercise: a new operation remains denied",
+        "paragraphs": [
+          "Use the training application's authority matrix and S-IMPORT identity. Add a fictional report deletion operation to the test model without defining a permission for it. Test the existing permitted import, the newly undefined operation and simulated missing authority policy. Perform the tests in a separate environment.",
+          "Acceptance criterion: permitted instruction import works, the new operation does not change the dataset, and a failed authority check grants no additional permission. Compare test data before and after. Also record local operations that can safely execute without the affected component."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Exercise: a new operation remains denied",
+          "caption": "Exercise: a new operation remains denied"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

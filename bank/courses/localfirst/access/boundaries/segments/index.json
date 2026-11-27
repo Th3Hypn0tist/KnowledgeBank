@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Verkkosegmentointi rajaa saavutettavuutta",
+        "paragraphs": [
+          "Verkkosegmentointi jakaa verkkoympäristön määriteltyihin osiin ja rajoittaa niiden välistä liikennettä. Segmentti voi perustua fyysiseen erotteluun tai loogisiin verkkoratkaisuihin. Pelkkä IP-aliverkko tai VLAN-tunniste ei automaattisesti muodosta täytäntöönpantua turvallisuusrajaa. Segmenttien välisen liikenteen reititys ja suodatus ratkaisevat todellisen saavutettavuuden.",
+          "R2:n verkotetussa harjoitusvaihtoehdossa työasemasegmentti, palvelinsegmentti ja ulkoisen yhteyden rajapinta voidaan erottaa. Työaseman tarvitsee saavuttaa huoltosovellus, ei suoraan tietokannan hallintaporttia. Ulkoinen rajapinta saa käyttää vain määriteltyjä palveluja. Segmentointi ei korvaa sovelluksen toimivaltapäätöksiä."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Verkkosegmentointi rajaa saavutettavuutta",
+          "caption": "Verkkosegmentointi rajaa saavutettavuutta"
+        }
+      },
+      {
+        "title": "Saavutettavuusmatriisi ja hallintaliikenne",
+        "paragraphs": [
+          "Dokumentoi segmenttien välinen liikenne lähde-, kohde-, protokolla- ja palvelukohtaisesti. Kuvaa erikseen normaalin sovellusliikenteen ja infrastruktuurin hallinnan tarpeet. Kytkimen, palomuurin tai palvelimen hallintatoiminto ei kuulu automaattisesti jokaiselle sovellusliikennettä käyttävälle laitteelle. Huomioi myös mahdolliset toiset verkkoliitännät ja sallitun yhteyden paluuliikenne.",
+          "R2:ssa työasemasegmentistä sallitaan harjoitussovelluksen liikenne palvelinsegmenttiin. Palvelinten välinen tarvittava tietokantaliikenne määritellään erikseen, jos tietokanta on eri laitteella. Hallinta rajataan tarkoitukseen määritellylle hallintayhteydelle. Kaavio esittää esimerkkipolitiikan, ei yleiskäyttöistä tuotantoverkon konfiguraatiota."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Saavutettavuusmatriisi ja hallintaliikenne",
+          "caption": "Saavutettavuusmatriisi ja hallintaliikenne"
+        }
+      },
+      {
+        "title": "Harjoitus: testaa segmenttien rajat",
+        "paragraphs": [
+          "Käytä erillistä hyväksyttyä harjoitusverkkoa. Määrittele kaksi segmenttiä ja yksi tarvittava sovellusreitti niiden välillä. Testaa sovelluspalvelun saavutettavuus ja erikseen määritelmän ulkopuolisen testipalvelun saavuttamattomuus. Tarkista tulokset sekä testiasiakkaalta että kohteen tai liikennevalvonnan havainnoista mahdollisuuksien mukaan.",
+          "Hyväksymiskriteeri: määritelty sovellusreitti toimii, kielletty testireitti ei mahdollista suojattua yhteyttä eikä tarpeetonta vaihtoehtoista reittiä ole havaittu. Testi koskee valittuja reittejä ja konfiguraatiota; yksittäinen ping-testi ei todista kaikkien segmentointirajojen pitävyyttä. Kirjaa konfiguraatioversio ja testipisteet."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Harjoitus: testaa segmenttien rajat",
+          "caption": "Harjoitus: testaa segmenttien rajat"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Network segmentation constrains reachability",
+        "paragraphs": [
+          "Network segmentation divides a network environment into defined parts and restricts traffic between them. A segment may use physical separation or logical networking. An IP subnet or VLAN identifier alone does not automatically constitute an enforced security boundary. Routing and filtering between segments determine actual reachability.",
+          "In R2's networked training alternative, workstation, server and external interface segments can be separated. The workstation needs to reach the maintenance application, not the database administration port directly. The external interface accesses only defined services. Segmentation does not replace application authority decisions."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Network segmentation constrains reachability",
+          "caption": "Network segmentation constrains reachability"
+        }
+      },
+      {
+        "title": "Reachability matrix and management traffic",
+        "paragraphs": [
+          "Document cross-segment traffic by source, destination, protocol and service. Describe normal application traffic and infrastructure management needs separately. Managing a switch, firewall or server is not inherently required for every device using application traffic. Include additional interfaces and permitted connection return traffic where applicable.",
+          "In R2, permit training application traffic from the workstation segment to the server segment. Define required database traffic separately if the database runs on another device. Restrict administration to the designated management connection. The diagram is an example policy, not a universal production network configuration."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Reachability matrix and management traffic",
+          "caption": "Reachability matrix and management traffic"
+        }
+      },
+      {
+        "title": "Exercise: test segment boundaries",
+        "paragraphs": [
+          "Use a separate approved training network. Define two segments and one required application path between them. Test application service reachability and separately test that an out-of-scope training service cannot be reached. Where possible, confirm observations from both the test client and the destination or traffic monitoring.",
+          "Acceptance criterion: the defined application path works, the prohibited test path does not provide the protected connection, and no unnecessary alternative route is observed. The test applies to selected paths and configuration; a single ping does not prove every segmentation boundary. Record configuration version and test points."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Exercise: test segment boundaries",
+          "caption": "Exercise: test segment boundaries"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

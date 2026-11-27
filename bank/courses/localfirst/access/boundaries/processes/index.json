@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Prosessiraja eristää suoritusta",
+        "paragraphs": [
+          "Käyttöjärjestelmän prosessit tarjoavat erillisiä suoritusympäristöjä. Prosessin osoiteavaruus, käyttöjärjestelmätunnus, tiedosto-oikeudet ja muut eristysmekanismit voivat rajata pääsyä resursseihin. Eri prosessit eivät kuitenkaan automaattisesti tarkoita vahvaa toimivaltaerottelua: samalla laajaoikeuksisella tunnuksella toimivat prosessit voivat päästä samoihin tiedostoihin ja palveluihin.",
+          "R2:n ohjetuonti voidaan suorittaa omana rajattuna prosessinaan, jolla ei ole tarpeetonta pääsyä huoltotietokannan tallennustiedostoihin. Prosessi toimittaa tarkastetun aineiston määriteltyyn rajapintaan. Käyttöjärjestelmä ja sovelluspalvelu valvovat omia rajojaan erikseen."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Prosessiraja eristää suoritusta",
+          "caption": "Prosessiraja eristää suoritusta"
+        }
+      },
+      {
+        "title": "Eri eristysmekanismit, eri luottamusoletukset",
+        "paragraphs": [
+          "Prosessin käyttäjätunnus, tiedostojärjestelmän oikeudet, hiekkalaatikko, kontti ja virtuaalikone voivat kaikki muodostaa erilaisia rajoja. Kontti jakaa tyypillisesti isäntäjärjestelmän ytimen muiden konttien kanssa, kun taas virtuaalikoneessa on oma vieraskäyttöjärjestelmän ydin hypervisorin päällä. Toteutus, jaetut resurssit ja hallintaoikeudet ratkaisevat käytännön eristyksen. Mikään näistä ei automaattisesti ole fyysinen air gap.",
+          "Valitse R2:n tuontikomponentin eristystapa käsiteltävän sisällön ja riskien perusteella. Vältä tarpeetonta pääsyä isäntäkoneen hallintaliittymiin ja muihin prosesseihin. Dokumentoi, mihin jaettuun komponenttiin eristys perustuu ja mitä tapahtuu, jos kyseinen komponentti vikaantuu."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Eri eristysmekanismit, eri luottamusoletukset",
+          "caption": "Eri eristysmekanismit, eri luottamusoletukset"
+        }
+      },
+      {
+        "title": "Harjoitus: prosessin resurssirajat",
+        "paragraphs": [
+          "Luo erillisessä harjoitusympäristössä tuontipalvelulle oma rajattu käyttöjärjestelmäidentiteetti. Määrittele yksi harjoitushakemisto, jota se saa käyttää, ja toinen suojattu testihakemisto, jota se ei tarvitse. Testaa sallittu lukeminen tai kirjoittaminen ja kielletty pääsy kyseisen palveluidentiteetin normaalissa suoritusympäristössä.",
+          "Hyväksymiskriteeri: tuontikomponentti suorittaa tehtävänsä sallituilla resursseilla, mutta kielletty testitiedosto jää lukematta tai muuttamatta. Tarkasta myös palvelun käyttämät muut rajapinnat ja oikeudet. Älä laajenna harjoitusprosessin oikeuksia vain siksi, että jokin tarpeeton toiminto epäonnistuu."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Harjoitus: prosessin resurssirajat",
+          "caption": "Harjoitus: prosessin resurssirajat"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "A process boundary isolates execution",
+        "paragraphs": [
+          "Operating system processes provide separate execution contexts. A process address space, OS identity, file permissions and other isolation mechanisms can constrain resource access. Different processes do not automatically imply strong authority separation: processes using the same broadly privileged identity may access the same files and services.",
+          "R2 instruction import can run as its own restricted process without unnecessary access to the maintenance database storage files. It delivers checked content to a defined interface. The operating system and application service enforce their respective boundaries separately."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "A process boundary isolates execution",
+          "caption": "A process boundary isolates execution"
+        }
+      },
+      {
+        "title": "Different isolation mechanisms, different assumptions",
+        "paragraphs": [
+          "Process identities, filesystem permissions, sandboxes, containers and virtual machines can form different boundaries. Containers typically share the host kernel with other containers, whereas virtual machines have guest operating system kernels above a hypervisor. Implementation, shared resources and administration privileges determine practical isolation. None is automatically a physical air gap.",
+          "Choose isolation for the R2 import component according to processed content and risk. Avoid unnecessary access to host management interfaces and other processes. Document the shared components on which isolation depends and what happens if they fail."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Different isolation mechanisms, different assumptions",
+          "caption": "Different isolation mechanisms, different assumptions"
+        }
+      },
+      {
+        "title": "Exercise: process resource boundaries",
+        "paragraphs": [
+          "Create a dedicated restricted operating system identity for the import service in a separate training environment. Define one training directory it may use and another protected test directory it does not need. Test permitted reading or writing and denied access in that service identity's normal execution context.",
+          "Acceptance criterion: the import component completes its task using permitted resources, while prohibited test files remain unread or unchanged. Also inspect other interfaces and permissions used by the service. Do not broaden training process privileges simply because an unnecessary operation fails."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Exercise: process resource boundaries",
+          "caption": "Exercise: process resource boundaries"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

@@ -30,7 +30,7 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 |---|---:|---:|---|
 | 01 Suljettu toimintaympäristö | 11 | 11 | Sisältö valmis |
 | 02 Kommunikointi | 21 | 21 | Sisältö valmis |
-| 03 Pääsynhallinta ja toimivalta | 12 | 5 | Sisältötyö käynnissä |
+| 03 Pääsynhallinta ja toimivalta | 12 | 12 | Sisältö valmis |
 | 04 Datan hallinta | 11 | 0 | Runko |
 | 05 Riippuvuuksien hallinta | 15 | 0 | Runko |
 | 06 Paikallinen tekoäly | 15 | 0 | Aiempi luonnos |
@@ -82,15 +82,15 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 
   - [x] `access/authentication/index.json`
   - [x] `access/authorization/index.json`
-  - [ ] `access/boundaries/index.json`
-    - [ ] `access/boundaries/organizations/index.json`
-    - [ ] `access/boundaries/processes/index.json`
-    - [ ] `access/boundaries/segments/index.json`
-    - [ ] `access/boundaries/users/index.json`
-  - [ ] `access/default-deny/index.json`
+  - [x] `access/boundaries/index.json`
+    - [x] `access/boundaries/organizations/index.json`
+    - [x] `access/boundaries/processes/index.json`
+    - [x] `access/boundaries/segments/index.json`
+    - [x] `access/boundaries/users/index.json`
+  - [x] `access/default-deny/index.json`
   - [x] `access/identity/index.json`
 - [x] `access/index.json`
-  - [ ] `access/revocation/index.json`
+  - [x] `access/revocation/index.json`
   - [x] `access/validation/index.json`
 
 ### 04 Datan hallinta
@@ -173,10 +173,10 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 
 ## Edistyminen
 
-- Hyväksytysti valmiit sisältönodet: **38 / 101** (sisältää kurssin juurinoden).
-- Pääaiheet: **2 / 7** hyväksytysti valmista.
-- SVG-tiedostoja: **210** (22 aiempaa + 188 uutta; 105 kaaviota FI/EN).
-- Seuraava työ: `access/default-deny/`, `access/revocation/` ja `access/boundaries/` aliaiheineen.
+- Hyväksytysti valmiit sisältönodet: **45 / 101** (sisältää kurssin juurinoden).
+- Pääaiheet: **3 / 7** hyväksytysti valmista.
+- SVG-tiedostoja: **250** (22 aiempaa + 228 uutta; 125 kaaviota FI/EN).
+- Seuraava työ: 04 Datan hallinta – yleiskuva, SSOT, omistajuus, sijainti ja elinkaari.
 
 ## Kehitysloki
 
@@ -199,3 +199,5 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 - Käyttöliittymä: kuvat koko sisältökortin leveydelle ensimmäiseksi, leipäteksti kuvan alle. Kuvallisissa korteissa käytetään SVG:n omaa otsikkoa ilman toistuvaa HTML-otsikkoa tai kuvatekstiä. Kuvattomien korttien otsikot säilyvät. Korttitausta tummennettu (#aeb4bd), välimuistiversiot v7. Ei muutosta sisältöprosenttiin. Selaintestaus jäljellä.
 
 - Kierros 07: pääsynhallinnan yleiskuva, identiteetinhallinta, autentikointi, auktorisointi ja validointi täydennetty FI/EN (5 nodea). 14 uutta kaaviota kahdella kielellä. SVG:n näkyvä otsikko vastaa oppitunnin otsikkoa uuden kuva-ensin-asettelun mukaisesti. JSON, kieliparien rakenne ja kuvaviittaukset tarkastettu. Selaintestaus, harjoitusten suoritus ja koko kurssin lopputarkastus jäljellä.
+
+- Kierros 08: oletusarvoinen esto, oikeuksien peruuttaminen ja luottamusrajat (verkko, prosessi, käyttäjä, organisaatio) täydennetty FI/EN (7 nodea). 20 uutta kaaviota kahdella kielellä. Pääaiheen 03 kaikki 12 nodea sisältövalmiita. Erottelun toteutusmekanismit, peruutuksen vaikutusviive ja toimivaltapolitiikan puuttuminen käsitelty erillisinä. JSON, kieliparien rakenne ja kuvaviittaukset tarkastettu. Selaintestaus, harjoitusten suoritus ja koko kurssin lopputarkastus jäljellä.
