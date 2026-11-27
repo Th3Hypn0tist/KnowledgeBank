@@ -241,3 +241,10 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 - [ ] Selaimen desktop/mobiili- ja navigointiregressiotestit oikealla aineistolla.
 
 Ei muutoksia JSON-lähdeaineistoon, PHP-API:in tai sisältömäärään (101/101). CSS/JS v10. Hakua, koko kurssin yhtenäistä näkymää ja etenemisseurantaa ei lisätty tähän kokeiluun.
+
+## Kehityskierros 15 – SVG-kaavioiden pystysuuntainen tiivistys
+
+- [x] Ensimmäinen erä: 204 SVG:tä tarkastettu, 204 tiivistetty. Lähdeblobit tarkistettu SHA-1:llä. FI/EN-pareille yhteinen korkeus; muotojen, tekstien ja nuolten skaala ennallaan.
+- [x] Pikkukuvat käyttävät SVG:n omaa kuvasuhdetta, eivät pakotettua 680/370-suhdetta.
+- [x] Lisätty toistettava Node.js-työkalu developement/compact-svg.js (oletuksena dry-run; --write kirjoittaa).
+- [ ] Loput SVG:t (256) sekä visuaalinen selaintarkastus.
