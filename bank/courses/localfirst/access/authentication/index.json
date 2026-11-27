@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Autentikointi todentaa identiteetin",
+        "paragraphs": [
+          "Autentikointi on menetelmä, jolla järjestelmä tarkastaa toimijan esittämän identiteetin hyväksytyn todisteen perusteella. Esimerkiksi käyttäjä voi todistaa hallitsevansa salasanan tai yksityisen avaimen. Palvelu voi käyttää tarkoitukseen soveltuvaa palvelutunnistetta ja avainpohjaista todentamista. Pelkkä käyttäjänimi tai viestissä ilmoitettu tunniste ei ole todiste.",
+          "Todentajan on pystyttävä luottamaan todentamisessa käytettyyn aineistoon ja tarkastamaan se asianmukaisesti. R2:n paikallinen autentikointi voi käyttää paikallisesti hallittuja tunnuksia, jolloin määritelty ydintoiminta ei riipu ulkoisen kirjautumispalvelun saatavuudesta."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Autentikointi todentaa identiteetin",
+          "caption": "Autentikointi todentaa identiteetin"
+        }
+      },
+      {
+        "title": "Todisteet ja niiden suojaaminen",
+        "paragraphs": [
+          "Autentikointitekijöitä voidaan ryhmitellä tietoon, hallussa olevaan välineeseen ja biometriseen ominaisuuteen. Monivaiheinen autentikointi käyttää vähintään kahta eri tekijätyyppiä. Salasanoja ei tule säilyttää selväkielisinä, vaan tarkoitukseen suunnitellulla suolatulla salasanatiivisteellä. Yksityisiä avaimia ja muita salaisuuksia suojataan niiden käyttötarkoituksen mukaisesti.",
+          "Paikallinen toteutus ei poista tarvetta suojata todentamisaineistoa, rajoittaa epäonnistuneita yrityksiä ja hallita istuntoja. Offline-toimintakyvyn kannalta on määriteltävä, miten paikallinen todentaminen, mahdollinen tunnusten vanheneminen ja palautuminen toimivat ilman ulkoista palvelua."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Todisteet ja niiden suojaaminen",
+          "caption": "Todisteet ja niiden suojaaminen"
+        }
+      },
+      {
+        "title": "Harjoitus: todennus suljetussa verkossa",
+        "paragraphs": [
+          "Käytä R1:n tai R2:n paikallista harjoitussovellusta ja harjoitustunnuksia. Testaa oikea todiste, väärä todiste ja käytöstä poistettu tunnus. Varmista, että autentikointi ei palauta tarpeettomia salaisuuksia tai kirjoita niitä lokiin. Tarkasta toistuvien epäonnistumisten käsittely määriteltyjen rajoitusten puitteissa.",
+          "Irrota harjoitusympäristön ulkoinen yhteys ja toista sallittu paikallinen kirjautuminen. Hyväksymiskriteeri: aktiivinen toimija voidaan todentaa paikallisesti, väärää todistetta ei hyväksytä ja käytöstä poistettu tunnus ei saa uutta istuntoa. Testi ei vielä osoita, mitä toimintoja todennettu käyttäjä saa suorittaa."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Harjoitus: todennus suljetussa verkossa",
+          "caption": "Harjoitus: todennus suljetussa verkossa"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Authentication verifies identity",
+        "paragraphs": [
+          "Authentication checks a principal's claimed identity using accepted evidence. A user may demonstrate possession of a password or private key, for example. A service may use an appropriate service identity and key-based authentication. A username or identifier supplied in a message alone is not evidence.",
+          "The verifier must be able to trust and correctly check the authentication material. R2 can authenticate locally managed identities, allowing defined core functions to operate independently of an external login service."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Authentication verifies identity",
+          "caption": "Authentication verifies identity"
+        }
+      },
+      {
+        "title": "Evidence and its protection",
+        "paragraphs": [
+          "Authentication factors can be grouped into knowledge, possession and inherence. Multifactor authentication uses at least two distinct factor types. Passwords should not be stored in plaintext; use a salted password hashing scheme designed for that purpose. Protect private keys and other secrets appropriately for their use.",
+          "Local operation does not remove the need to protect authentication material, limit failed attempts and manage sessions. For offline operation, define how local authentication, possible credential expiry and recovery work without an external service."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Evidence and its protection",
+          "caption": "Evidence and its protection"
+        }
+      },
+      {
+        "title": "Exercise: authentication in a closed network",
+        "paragraphs": [
+          "Use the local R1 or R2 training application and training credentials. Test correct evidence, incorrect evidence and a disabled identity. Ensure authentication does not disclose unnecessary secrets or write them to logs. Check handling of repeated failures within defined limits.",
+          "Disconnect external connectivity from the training environment and repeat an authorized local sign-in. Acceptance criterion: an active principal can authenticate locally, incorrect evidence is rejected and a disabled identity cannot obtain a new session. This test does not yet establish what operations the authenticated user may perform."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Exercise: authentication in a closed network",
+          "caption": "Exercise: authentication in a closed network"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

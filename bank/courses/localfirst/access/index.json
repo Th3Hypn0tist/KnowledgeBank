@@ -15,52 +15,56 @@
   "content": {
     "fi": [
       {
-        "title": "Rajapinta ja identiteetti",
+        "title": "Yhteys ei anna toimivaltaa",
         "paragraphs": [
-          "Määritellään viestin muoto, lähettäjän identiteetti, autentikointi, validointi ja vastaus. Oletuksena pyynnöt hylätään, ellei niitä ole sallittu."
+          "Pääsynhallinta määrittelee, kuka tai mikä saa suorittaa minkä toiminnon ja mihin kohteeseen. R2:ssa etäkäyttäjä voi saavuttaa paikallisen palvelun rajapinnan, mutta tämä ei tarkoita oikeutta lukea, kirjoittaa tai viedä tietoa. Toimivalta määritellään erikseen jokaiselle tarpeelliselle toiminnolle.",
+          "Tässä luvussa erotetaan identiteetti, autentikointi, auktorisointi ja validointi. Identiteetti yksilöi toimijan, autentikointi todentaa sen esittämän identiteetin, auktorisointi ratkaisee toimivallan ja validointi tarkastaa pyynnön sekä sen sisällön soveltuvuutta. Tarkistukset voivat käytännössä limittyä, eikä alla oleva kuva ole kaikille protokollille pakollinen suoritusjärjestys."
         ],
         "image": {
-          "src": "images/communication-1-fi.svg",
-          "alt": "01 / Pyynnön käsittely",
-          "caption": "01 / Pyynnön käsittely"
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Yhteys ei anna toimivaltaa",
+          "caption": "Yhteys ei anna toimivaltaa"
         }
       },
       {
-        "title": "Erilliset valtuudet",
+        "title": "Toimivalta on toiminto- ja kohdekohtainen",
         "paragraphs": [
-          "Luku, kirjoitus, vienti ja komentojen suoritus ovat erillisiä valtuuksia. Rajataan myös kohde, tietosisältö ja sallittu toiminto."
+          "R2:n huoltosovelluksessa työohjeen lukeminen, huoltotietueen kirjoittaminen, raportin vienti ja palvelun hallinta ovat eri toimintoja. Oikeus yhteen ei lähtökohtaisesti anna oikeutta muihin. Sama koskee ohjelmistokomponentteja ja palvelutunnuksia, ei vain ihmisiä.",
+          "Laadi harjoituksessa taulukko, jonka riveillä ovat toimijat ja sarakkeilla määritellyt toiminnot. Merkitse sallittu tai estetty ja tarvittaessa kohderajaus. Hyväksymiskriteeri: jokainen sallittu toiminto perustellaan työtehtävällä, eikä verkkoyhteyttä tai yleistä kirjautumista tulkita yleisvaltuudeksi."
         ],
         "image": {
-          "src": "images/communication-2-fi.svg",
-          "alt": "02 / Valtuudet eivät periydy",
-          "caption": "02 / Valtuudet eivät periydy"
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Toimivalta on toiminto- ja kohdekohtainen",
+          "caption": "Toimivalta on toiminto- ja kohdekohtainen"
         }
       }
     ],
     "en": [
       {
-        "title": "Interface and identity",
+        "title": "Connectivity grants no authority",
         "paragraphs": [
-          "Define message format, sender identity, authentication, validation and response. Requests are denied unless explicitly permitted."
+          "Access control defines who or what may perform which operation on which target. In R2 a remote user may reach a local service interface without being entitled to read, write or export data. Define authority separately for each necessary operation.",
+          "This chapter separates identity, authentication, authorization and validation. Identity identifies a principal, authentication verifies its claimed identity, authorization determines authority, and validation checks the suitability of the request and content. Checks may overlap in practice; the diagram is not a mandatory execution order for every protocol."
         ],
         "image": {
-          "src": "images/communication-1-en.svg",
-          "alt": "01 / Request processing",
-          "caption": "01 / Request processing"
+          "src": "images/lesson-1-en.svg",
+          "alt": "Connectivity grants no authority",
+          "caption": "Connectivity grants no authority"
         }
       },
       {
-        "title": "Separate permissions",
+        "title": "Authority is operation- and target-specific",
         "paragraphs": [
-          "Read, write, export and command execution are separate permissions. Scope each operation to its target and data."
+          "In R2, reading an instruction, writing a maintenance record, exporting a report and administering the service are distinct operations. Permission for one does not inherently grant the others. This applies to software components and service accounts as well as people.",
+          "Create a matrix with principals as rows and defined operations as columns. Mark permitted or denied and specify target restrictions where necessary. Acceptance criterion: each permitted operation is justified by a task, and network connectivity or a general login is not interpreted as universal authority."
         ],
         "image": {
-          "src": "images/communication-2-en.svg",
-          "alt": "02 / Permissions are independent",
-          "caption": "02 / Permissions are independent"
+          "src": "images/lesson-2-en.svg",
+          "alt": "Authority is operation- and target-specific",
+          "caption": "Authority is operation- and target-specific"
         }
       }
     ]
   },
-  "status": "draft"
+  "status": "complete"
 }

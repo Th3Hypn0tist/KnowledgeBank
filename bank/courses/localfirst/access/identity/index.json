@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Identiteetti yksilöi toimijan",
+        "paragraphs": [
+          "Identiteetti on järjestelmässä yksilöity toimija, kuten käyttäjä, laite tai ohjelmistopalvelu. Pysyvä sisäinen tunniste erotetaan muuttuvasta käyttäjänimestä ja näyttönimestä. Identiteetin olemassaolo ei vielä osoita, että pyynnön lähettäjä hallitsee kyseistä identiteettiä tai saa suorittaa toiminnon.",
+          "R2:ssa huoltajalla voi olla tunniste U-042 ja ohjetuontipalvelulla tunniste S-IMPORT. Molemmat ovat toimijoita, mutta niiden käyttötarkoitus ja tunnistautumismenetelmät voivat olla erilaisia. IP-osoite ei ole pysyvä eikä yksin luotettava toimijan identiteetti."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Identiteetti yksilöi toimijan",
+          "caption": "Identiteetti yksilöi toimijan"
+        }
+      },
+      {
+        "title": "Identiteetin elinkaari",
+        "paragraphs": [
+          "Identiteetinhallinta sisältää toimijan luomisen, käyttötarkoituksen ja omistajan määrittelyn, muutokset sekä käytöstä poistamisen. Palvelutunnuksen vastuuhenkilö ja käyttötarkoitus dokumentoidaan samoin kuin käyttäjätunnuksen. Käytöstä poistettua tunnistetta ei pidä automaattisesti antaa toiselle toimijalle, sillä se voi sekoittaa historiatietojen tulkintaa.",
+          "R2:n paikallinen identiteettirekisteri säilyttää tiedon siitä, onko U-042 aktiivinen vai poistettu käytöstä. Käyttöoikeuden peruuttaminen on erillinen toimenpide: identiteetti voi edelleen olla olemassa, vaikka yksittäinen toimivaltuus poistetaan."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Identiteetin elinkaari",
+          "caption": "Identiteetin elinkaari"
+        }
+      },
+      {
+        "title": "Harjoitus: paikalliset identiteetit",
+        "paragraphs": [
+          "Määrittele R2:een kolme harjoitusidentiteettiä: huoltaja, raporttien käsittelijä ja automaattinen ohjetuontipalvelu. Kirjaa yksilöllinen tunniste, tyyppi, vastuuhenkilö tai omistaja, tarkoitus ja tila. Älä käytä oikeita henkilötietoja tai tunnuksia.",
+          "Simuloi yhden identiteetin käytöstä poistaminen ilman ulkoista identiteettipalvelua. Hyväksymiskriteeri: rekisterin aktiiviset ja käytöstä poistetut toimijat voidaan erottaa toisistaan, ja jäljelle jäävien toimijoiden tunnisteet eivät muutu. Varsinaisen autentikoinnin ja käyttöoikeuksien testaus tehdään seuraavissa aiheissa."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Harjoitus: paikalliset identiteetit",
+          "caption": "Harjoitus: paikalliset identiteetit"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Identity identifies a principal",
+        "paragraphs": [
+          "An identity is a uniquely represented principal in a system, such as a user, device or software service. Separate a stable internal identifier from mutable usernames and display names. The existence of an identity does not establish that a request sender controls it or may perform an operation.",
+          "In R2, a technician may have identifier U-042 and the import service identifier S-IMPORT. Both are principals, but their purposes and authentication methods may differ. An IP address is neither a permanent nor independently trustworthy principal identity."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Identity identifies a principal",
+          "caption": "Identity identifies a principal"
+        }
+      },
+      {
+        "title": "Identity lifecycle",
+        "paragraphs": [
+          "Identity management includes creation, assignment of purpose and owner, changes and deactivation. Document service account responsibility and purpose just as for user accounts. Do not automatically reassign a retired identifier to another principal, because doing so can confuse historical records.",
+          "R2's local identity registry records whether U-042 is active or disabled. Revoking a permission is a separate operation: an identity may continue to exist after one authorization is removed."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Identity lifecycle",
+          "caption": "Identity lifecycle"
+        }
+      },
+      {
+        "title": "Exercise: local identities",
+        "paragraphs": [
+          "Define three R2 training identities: technician, report handler and automated instruction import service. Record unique identifier, type, responsible person or owner, purpose and status. Do not use real personal data or credentials.",
+          "Simulate deactivation of one identity without an external identity service. Acceptance criterion: active and disabled principals are distinguishable in the registry and identifiers of remaining principals do not change. Actual authentication and permission testing follows in the next topics."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Exercise: local identities",
+          "caption": "Exercise: local identities"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

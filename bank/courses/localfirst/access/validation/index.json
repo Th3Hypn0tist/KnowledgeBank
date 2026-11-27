@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Validointi tarkastaa pyynnön sisällön",
+        "paragraphs": [
+          "Validointi tarkastaa, täyttääkö pyyntö määritellyt ehdot. Rakenteellinen validointi koskee esimerkiksi pakollisia kenttiä, tietotyyppejä ja enimmäiskokoa. Semanttinen validointi tarkastaa arvojen ja kenttien suhteiden mielekkyyden. Tilakohtainen validointi arvioi, onko toiminto mahdollinen järjestelmän nykyisessä tilassa.",
+          "R2:n huoltotietueessa voi olla rakenteellisesti oikea laitetunniste, joka ei vastaa mitään paikallista laitetta. Tällainen pyyntö voi läpäistä muototarkastuksen mutta epäonnistua semanttisessa tarkastuksessa. Autentikoitu ja auktorisoitu toimija voi silti lähettää virheellisen pyynnön."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Validointi tarkastaa pyynnön sisällön",
+          "caption": "Validointi tarkastaa pyynnön sisällön"
+        }
+      },
+      {
+        "title": "Kelvollinen sisältö ei tarkoita sallittua toimintoa",
+        "paragraphs": [
+          "Validointi ja auktorisointi ratkaisevat eri kysymykset. Kelvollinen raportti voi olla kielletty lähettää ulkopuoliselle. Vastaavasti sallittu huoltotietueen kirjoitus voidaan hylätä virheellisen sisällön vuoksi. Toiminnon pitää täyttää molemmat ehdot, ja tarvittavat tilariippuvaiset ehdot on tarkastettava myös varsinaisen muutoksen yhteydessä.",
+          "R2:n palvelu käsittelee pyynnöt tietona eikä suorita vastaanotettua tekstiä automaattisesti komentona. Esimerkiksi tietokantakyselyissä käytetään parametrisoituja kyselyitä; pelkkä muototarkastus ei korvaa turvallista tietojenkäsittelyä. Tarkastusten epäonnistuminen ei saa aiheuttaa kiellettyä sivuvaikutusta."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Kelvollinen sisältö ei tarkoita sallittua toimintoa",
+          "caption": "Kelvollinen sisältö ei tarkoita sallittua toimintoa"
+        }
+      },
+      {
+        "title": "Harjoitus: validoinnin rajatapaukset",
+        "paragraphs": [
+          "Määrittele testihuoltotietueen pakolliset kentät, tyypit, sallitut pituudet ja laitetunnisteen olemassaolovaatimus. Testaa kelvollinen tietue, puuttuva kenttä, väärä tyyppi, liian pitkä kuvaus ja olematon laitetunniste. Testaa lisäksi jo suljetulle työtehtävälle tehty kirjoitus, jos sovelluksen tilamalli kieltää sen.",
+          "Hyväksymiskriteeri: vain kaikki määritellyt ehdot täyttävä ja auktorisoitu kirjoitus muuttaa testiaineistoa. Tarkasta virheilmoitukset ja tietokannan lopputila. Validoinnin läpäisy ei yksin todista, että vastaanotettu tieto on tosiasiallisesti totta; esimerkiksi huoltajan kuvaus voi edelleen olla virheellinen."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Harjoitus: validoinnin rajatapaukset",
+          "caption": "Harjoitus: validoinnin rajatapaukset"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Validation checks request content",
+        "paragraphs": [
+          "Validation checks whether a request satisfies defined conditions. Structural validation covers required fields, data types and maximum size, for example. Semantic validation checks the meaning of values and relationships between fields. State-dependent validation assesses whether an operation is possible in the current system state.",
+          "An R2 maintenance record may contain a structurally valid equipment identifier that matches no local device. Such a request can pass format checks but fail semantic validation. An authenticated and authorized principal can still submit an invalid request."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Validation checks request content",
+          "caption": "Validation checks request content"
+        }
+      },
+      {
+        "title": "Valid content does not imply an authorized operation",
+        "paragraphs": [
+          "Validation and authorization answer different questions. A valid report may be prohibited from external delivery. An authorized maintenance write may likewise be rejected because its content is invalid. An operation must satisfy both conditions, and necessary state-dependent checks must also hold when the actual change occurs.",
+          "R2 treats requests as data rather than automatically executing received text as commands. Use parameterized queries for database operations, for example; format validation alone does not replace safe data handling. Failed checks must not produce prohibited side effects."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Valid content does not imply an authorized operation",
+          "caption": "Valid content does not imply an authorized operation"
+        }
+      },
+      {
+        "title": "Exercise: validation edge cases",
+        "paragraphs": [
+          "Define required fields, types, allowed lengths and the equipment identifier existence requirement for a training maintenance record. Test a valid record, missing field, wrong type, oversized description and nonexistent equipment identifier. Also test writing to a closed task if the application state model prohibits it.",
+          "Acceptance criterion: only an authorized write meeting all defined conditions changes the test data. Inspect error messages and final database state. Passing validation does not independently prove that received information is factually true; a technician's description may still be incorrect."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Exercise: validation edge cases",
+          "caption": "Exercise: validation edge cases"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

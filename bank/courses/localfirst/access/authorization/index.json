@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Auktorisointi ratkaisee toimivallan",
+        "paragraphs": [
+          "Auktorisointi ratkaisee, saako toimija suorittaa pyydetyn toiminnon määritellylle kohteelle vallitsevissa olosuhteissa. Päätös voi perustua toimijan rooleihin, ominaisuuksiin, nimenomaisiin valtuuksiin ja kohteen ominaisuuksiin. Autentikointi kertoo, kuka toimija on todennettu olevan; se ei ratkaise toimivaltapäätöstä.",
+          "R2:ssa huoltaja U-042 saa lukea työohjeen ja kirjata oman työtehtävänsä huoltotapahtuman. Tämä ei anna oikeutta muuttaa muiden huoltajien tietueita tai suorittaa raporttivientiä. Palvelun on tarkastettava myös kohdekohtainen valtuus, ei vain toiminnon nimi."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Auktorisointi ratkaisee toimivallan",
+          "caption": "Auktorisointi ratkaisee toimivallan"
+        }
+      },
+      {
+        "title": "Toimivallan tarkistus suorituksen rajalla",
+        "paragraphs": [
+          "Käyttöliittymän painikkeen piilottaminen voi ohjata käyttäjää, mutta se ei ole riittävä pääsynhallinta. Toimivaltapäätös on pantava täytäntöön siinä järjestelmän osassa, joka hallitsee varsinaista toimintoa tai resurssia. Päätöskomponentti ja täytäntöönpanokomponentti voivat olla erillisiä tai samassa palvelussa.",
+          "R2:n sovelluspalvelu tarkastaa toimivallan ennen tietokantakirjoitusta. Myös palvelun oman tietokantatunnuksen oikeudet rajataan sen tehtävään. Näin käyttöliittymään tehty muutos ei itsessään mahdollista kiellettyä kirjoitusta, eikä palvelutunnukselle anneta tarpeettomasti tietokannan hallintaoikeuksia."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Toimivallan tarkistus suorituksen rajalla",
+          "caption": "Toimivallan tarkistus suorituksen rajalla"
+        }
+      },
+      {
+        "title": "Harjoitus: toimivaltamatriisi",
+        "paragraphs": [
+          "Määrittele huoltajan, raporttien käsittelijän ja ohjetuontipalvelun sallitut operaatiot ja kohderajat. Testaa jokaiselle sallittu toiminto ja vähintään yksi kielletty toiminto hyväksytyn harjoitussovelluksen rajapinnan kautta. Käytä myös kahta eri testitietuetta varmistaaksesi, että sama toiminto voi olla sallittu yhdelle kohteelle ja estetty toiselle.",
+          "Hyväksymiskriteeri: jokainen testattu kielletty pyyntö hylätään ennen kiellettyä vaikutusta. Pelkkä virheilmoitus ei riitä, vaan varmista testiaineistosta, ettei kielletty muutos toteutunut. Kaikki todennetut toimijat eivät saa samoja oikeuksia."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Harjoitus: toimivaltamatriisi",
+          "caption": "Harjoitus: toimivaltamatriisi"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Authorization determines authority",
+        "paragraphs": [
+          "Authorization determines whether a principal may perform a requested operation on a defined target under current conditions. Decisions may depend on roles, attributes, explicit permissions and target attributes. Authentication establishes the verified identity; it does not make the authority decision.",
+          "In R2 technician U-042 may read instructions and record a maintenance event for an assigned task. This does not grant permission to modify other technicians' records or export reports. The service must check target-specific authority, not merely the operation name."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Authorization determines authority",
+          "caption": "Authorization determines authority"
+        }
+      },
+      {
+        "title": "Enforce authority at the execution boundary",
+        "paragraphs": [
+          "Hiding a button in the interface may guide a user but is not sufficient access control. Enforce authority where the actual operation or resource is controlled. Decision and enforcement components may be separate or integrated in one service.",
+          "The R2 application service checks authority before database writes. Its own database identity is also restricted to its tasks. Changing the interface therefore does not by itself enable prohibited writes, and the service account is not unnecessarily granted database administration privileges."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Enforce authority at the execution boundary",
+          "caption": "Enforce authority at the execution boundary"
+        }
+      },
+      {
+        "title": "Exercise: authority matrix",
+        "paragraphs": [
+          "Define permitted operations and target restrictions for the technician, report handler and instruction import service. For each, test an allowed operation and at least one denied operation through the approved training application's interface. Use two distinct test records to verify that one operation may be allowed for one target and denied for another.",
+          "Acceptance criterion: every tested prohibited request is rejected before producing the prohibited effect. An error message alone is insufficient; inspect the test data to confirm no forbidden change occurred. Authenticated principals do not all receive the same permissions."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Exercise: authority matrix",
+          "caption": "Exercise: authority matrix"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }
