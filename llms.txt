@@ -1,0 +1,28 @@
+# AIGM KnowledgeBank
+
+> All KnowledgeBank educational and reference content is stored under /kb/bank/ as hierarchical, machine-readable JSON and associated assets. The HTML interface is a presentation layer, not the authoritative content source.
+
+## Content discovery
+
+- [KnowledgeBank content directory](https://aigm.fi/kb/bank/): Root of all knowledge content.
+- [Course catalogue](https://aigm.fi/kb/bank/courses/index.json): Machine-readable list of available courses.
+- [Local-First](https://aigm.fi/kb/bank/courses/localfirst/index.json): Course root covering closed environments, communication, access control, data management, dependencies, local AI and verification.
+
+## How to read the knowledge bank
+
+- Start with the category catalogue. For courses, read the courses array and follow each id to <id>/index.json relative to the catalogue.
+- Each course and topic directory contains index.json.
+- Follow each entry in the children array to <child>/index.json relative to the current JSON file, recursively, preserving array order.
+- title and description contain localized values. content.fi and content.en contain Finnish and English lesson blocks.
+- Each block contains a title, paragraphs and optionally an image reference. Resolve image.src relative to the JSON file containing it. SVG diagrams are part of the educational content; use their text, alt and caption where relevant.
+- status indicates content maturity: outline (structure only), draft (work in progress), complete (content completed; not necessarily independently verified).
+- Prefer the source JSON over rendered HTML. JavaScript execution and HTTP directory listings are not required to traverse the course hierarchy.
+- Additional knowledge categories may be introduced under bank/. Do not assume that a planned category or an unfinished topic already contains published material.
+
+## Human-readable interface
+
+- [KnowledgeBank](https://aigm.fi/kb/)
+- [Local-First course](https://aigm.fi/kb/?course=localfirst)
+- [Local-First course in English](https://aigm.fi/kb/?course=localfirst&lang=en)
+
+The KnowledgeBank is maintained by AIGM. All paths above refer to the KnowledgeBank, not the entire AIGM website.
