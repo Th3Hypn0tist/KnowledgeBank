@@ -6,33 +6,49 @@
 
 .kb-course-layout{display:grid;grid-template-columns:minmax(220px,290px) minmax(0,1fr);gap:36px;margin-top:48px;align-items:start}.kb-course-nav{position:sticky;top:20px;max-height:calc(100vh - 40px);overflow:auto;padding-right:12px}.kb-course-nav h2{font-size:18px}.kb-tree{list-style:none;padding:0;margin:0}.kb-tree .kb-tree{padding-left:14px}.kb-tree a{display:block;padding:5px 0;color:var(--muted);font-size:13px;text-decoration:none;line-height:1.5}.kb-tree a:hover{color:var(--blue)}.kb-node{scroll-margin-top:24px;padding:20px 0;border-top:1px solid var(--line)}.kb-node>.kb-node{margin-left:14px;padding-top:12px}.kb-node h2{font-size:28px}.kb-node h3{font-size:21px}.kb-node h4,.kb-node h5,.kb-node h6{font-size:16px}.kb-content-block p{color:var(--muted);line-height:1.8}.kb-content-block img{width:100%;height:auto;border:1px solid var(--line);border-radius:12px}.kb-course-content{min-width:0}@media(max-width:730px){.kb-course-layout{grid-template-columns:1fr}.kb-course-nav{position:static;max-height:50vh}.kb-node>.kb-node{margin-left:8px}}
 
-/* Light reading surfaces within the dark KnowledgeBank shell. */
+/* Muted grey reading surfaces within the dark KnowledgeBank shell. */
 .kb-page .kb-content-block,
 .kb-page .directory {
-  background: #e2e5e9;
-  color: #202733;
-  border: 1px solid #c8ced6;
+  background: #aeb4bd;
+  color: #161b24;
+  border: 1px solid #929ba7;
   border-radius: 12px;
 }
 .kb-page .kb-content-block {
-  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
   margin: 14px 0 20px;
-  gap: 24px;
+  gap: 0;
+  overflow: hidden;
   overflow-wrap: anywhere;
 }
+.kb-page .kb-content-block .kb-card-copy {
+  padding: 22px 26px;
+  min-width: 0;
+}
+.kb-page .kb-content-block figure {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+.kb-page .kb-content-block img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+  border-radius: 0;
+}
 .kb-page .kb-content-block h3,
-.kb-page .directory .directory-name {
-  color: #202733;
-}
+.kb-page .directory .directory-name { color: #161b24; }
 .kb-page .kb-content-block p,
-.kb-page .kb-content-block figcaption,
-.kb-page .directory .directory-summary {
-  color: #414b59;
-}
-.kb-page .kb-content-block img { display: block; border-color: #aab3bf; }
+.kb-page .directory .directory-summary { color: #242e3b; }
+.kb-page .kb-content-block p:first-child { margin-top: 0; }
+.kb-page .kb-content-block p:last-child { margin-bottom: 0; }
 .kb-page .directory .directory-number,
-.kb-page .directory .directory-arrow { color: #245e86; }
-.kb-page .directory:hover { background: #f0f2f5; border-color: #8c99a8; }
+.kb-page .directory .directory-arrow { color: #174b70; }
+.kb-page .directory:hover { background: #b8bec6; border-color: #88929f; }
 @media(max-width:730px) {
-  .kb-page .kb-content-block { padding: 16px; gap: 16px; }
+  .kb-page .kb-content-block .kb-card-copy { padding: 16px; }
 }
