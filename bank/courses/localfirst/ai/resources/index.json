@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Laskenta, muisti ja tallennus",
+        "paragraphs": [
+          "Paikallinen AI tarvitsee laskentaa, käyttömuistia, tallennustilaa ja virtaa. Mallin painot, aktivoinnit, välitulokset sekä kielimallin KV-välimuisti kuluttavat muistia. GPU voi nopeuttaa inferenssiä, mutta sopiva toteutus voi käyttää myös CPU:ta tai muuta kiihdytintä.",
+          "Esimerkiksi 8 miljardin parametrin mallin nelibittisten painojen teoreettinen koko on noin 4 GB. Todellinen muistitarve on suurempi tai muuten erilainen esitysmuodon, metatietojen, kontekstin, rinnakkaisuuden ja suoritusmoottorin vuoksi. Levyllä olevan mallitiedoston koko ei yksin määritä tarvittavaa VRAM-määrää."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Laskenta, muisti ja tallennus",
+          "caption": "Laskenta, muisti ja tallennus"
+        }
+      },
+      {
+        "title": "Harjoitus: mitoita paikallinen inferenssi",
+        "paragraphs": [
+          "Valitse kaksi paikallisesti saatavaa mallia ja sama synteettinen huolto-ohjekysymysten aineisto. Kirjaa laitteisto, malliversio, kvantisointi, kontekstiraja ja rinnakkaisten pyyntöjen määrä. Mittaa ensimmäisen tokenin viive, generointinopeus, kokonaisvasteaika ja huippumuisti. Mittaa mahdollisuuksien mukaan myös tehonkulutus samalla mittausrajalla.",
+          "Hyväksymiskriteeri: valinta perustuu työtehtävän laatu-, viive- ja resurssivaatimuksiin. Raportoi epäonnistunut tai muistiin mahtumaton ajo erikseen. Suuri tokeninopeus ei yksin osoita käyttökelpoista mallia."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: mitoita paikallinen inferenssi",
+          "caption": "Harjoitus: mitoita paikallinen inferenssi"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Compute, memory and storage",
+        "paragraphs": [
+          "Local AI needs compute, working memory, storage and power. Model weights, activations, intermediates and an LLM's KV cache consume memory. A GPU can accelerate inference, but suitable implementations can also use CPUs or other accelerators.",
+          "For example, four-bit weights for an eight-billion-parameter model have a theoretical size of about 4 GB. Actual memory requirements are greater or otherwise different due to representation, metadata, context, concurrency and runtime. Model file size alone does not establish required VRAM."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Compute, memory and storage",
+          "caption": "Compute, memory and storage"
+        }
+      },
+      {
+        "title": "Exercise: size local inference",
+        "paragraphs": [
+          "Select two locally available models and the same synthetic maintenance-question dataset. Record hardware, model version, quantization, context limit and concurrent request count. Measure time to first token, generation rate, total response time and peak memory. Where possible measure power using the same measurement boundary.",
+          "Acceptance criterion: selection follows task quality, latency and resource requirements. Report failed or out-of-memory runs separately. High token throughput alone does not establish a useful model."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: size local inference",
+          "caption": "Exercise: size local inference"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

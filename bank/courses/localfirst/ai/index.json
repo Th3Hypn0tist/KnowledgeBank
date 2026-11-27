@@ -18,52 +18,56 @@
   "content": {
     "fi": [
       {
-        "title": "Paikalliset palvelut",
+        "title": "Paikallinen tekoäly osana järjestelmää",
         "paragraphs": [
-          "Tietokanta, web-palvelu ja dokumentti-indeksi toimivat lähiverkossa. Mallit ja ohjelmistot valmistellaan paikallisesti käytettäviksi."
+          "R3 laajentaa paikallisen huoltojärjestelmän tekoälytoiminnoilla. Malli, inferenssipalvelu, tietolähteet ja käyttöliittymä voidaan sijoittaa samaan hallintaympäristöön. Paikallinen tekoäly ei tarkoita, että jokaisen laitteen pitäisi suorittaa omaa malliaan.",
+          "Tekoäly ei korvaa auktoritatiivista tietolähdettä eikä saa automaattisesti toimivaltaa. Huoltaja voi pyytää botilta työohjeiden hakua ja yhteenvetoa. Alkuperäinen ohje säilyy määräävänä, ja huoltotapahtuman tallennus on edelleen erillinen valtuutettu toiminto."
         ],
         "image": {
-          "src": "images/services-1-fi.svg",
-          "alt": "01 / Paikallinen tiedonhaku",
-          "caption": "01 / Paikallinen tiedonhaku"
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Paikallinen tekoäly osana järjestelmää",
+          "caption": "Paikallinen tekoäly osana järjestelmää"
         }
       },
       {
-        "title": "Botin toimivallan rajaaminen",
+        "title": "Harjoitus: määrittele tekoälyn tehtävä",
         "paragraphs": [
-          "Kielimalli ei saa automaattisesti oikeutta tietokantaan tai komentojen suorittamiseen. Mahdolliset ulkoiset AI-palvelut ovat erikseen hyväksyttyjä integraatioita."
+          "Määrittele botille yksi rajattu tehtävä: hae paikallisesta ohjekokoelmasta EQ-42-laitteen voimassa oleva ohje ja muodosta lähdeviitteellinen yhteenveto. Määrittele myös, mitä botti ei saa tehdä: muuttaa ohjetta, käyttää hallintatoimintoja tai lähettää aineistoa ulos.",
+          "Hyväksymiskriteeri: tekoälyn tehtävä, syöte, tulos, tietolähde ja toimivaltaraja on dokumentoitu. Paikallinen alkuperäisen ohjeen haku toimii myös tekoälypalvelun puuttuessa. Seuraavat aiheet käsittelevät toteutuksen osat erikseen."
         ],
         "image": {
-          "src": "images/services-2-fi.svg",
-          "alt": "02 / Botin toimivalta",
-          "caption": "02 / Botin toimivalta"
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: määrittele tekoälyn tehtävä",
+          "caption": "Harjoitus: määrittele tekoälyn tehtävä"
         }
       }
     ],
     "en": [
       {
-        "title": "Local services",
+        "title": "Local AI as part of the system",
         "paragraphs": [
-          "Database, web service and document index operate on the LAN. Models and software are prepared for local use."
+          "R3 extends the local maintenance system with AI functions. Models, inference services, data sources and the UI may reside in the same governance environment. Local AI does not require every device to run its own model.",
+          "AI does not replace the authoritative source or automatically acquire authority. A technician may ask a bot to retrieve and summarize instructions. The original instruction remains authoritative, and saving a maintenance event remains a separate authorized operation."
         ],
         "image": {
-          "src": "images/services-1-en.svg",
-          "alt": "01 / Local retrieval",
-          "caption": "01 / Local retrieval"
+          "src": "images/lesson-1-en.svg",
+          "alt": "Local AI as part of the system",
+          "caption": "Local AI as part of the system"
         }
       },
       {
-        "title": "Bounding bot authority",
+        "title": "Exercise: define the AI task",
         "paragraphs": [
-          "A language model does not automatically receive database or execution permissions. External AI services are separately approved integrations."
+          "Define one bounded bot task: retrieve the current instruction for EQ-42 from the local collection and produce a referenced summary. Define prohibited operations too: changing instructions, invoking administration or exporting data.",
+          "Acceptance criterion: the AI task, input, output, data source and authority boundary are documented. Direct local access to the original instruction also works when the AI service is absent. The following topics examine implementation components separately."
         ],
         "image": {
-          "src": "images/services-2-en.svg",
-          "alt": "02 / Bot authority",
-          "caption": "02 / Bot authority"
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: define the AI task",
+          "caption": "Exercise: define the AI task"
         }
       }
     ]
   },
-  "status": "draft"
+  "status": "complete"
 }

@@ -8,8 +8,58 @@
     "tools"
   ],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Botti on järjestelmäkomponenttien kompositio",
+        "paragraphs": [
+          "Botti tarkoittaa tässä kurssissa rajattua ohjelmistokokonaisuutta, joka voi hyödyntää mallia, tietohakua ja määriteltyjä toimintoja. Malli tuottaa esimerkiksi tekstiä tai toimintaehdotuksen; botin ympärillä oleva ohjelmisto hallitsee istuntoa, syötteitä, suorituksia ja tulosten käsittelyä. Jokainen botti ei tarvitse työkalujen käyttöä.",
+          "R3:n ensimmäinen botti vastaa huolto-ohjeita koskeviin kysymyksiin lukurajapinnan kautta. Se ei tarvitse yleistä tietokantatunnusta tai komentotulkkia. Ulkopuolinen pyyntö, mallin vastaus ja järjestelmän toteuttama vaikutus erotetaan toisistaan."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Botti on järjestelmäkomponenttien kompositio",
+          "caption": "Botti on järjestelmäkomponenttien kompositio"
+        }
+      },
+      {
+        "title": "Harjoitus: botin minimikompositio",
+        "paragraphs": [
+          "Piirrä R3:n botti käyttäjän, paikallisen inferenssipalvelun ja rajatun ohjehaun ympärille. Kirjaa komponenttien identiteetit ja kommunikointisopimukset. Poista suunnitelmasta kaikki toiminnot, joita valittu ohjehakutehtävä ei tarvitse. Testaa myös suora ohjehaku botin puuttuessa.",
+          "Hyväksymiskriteeri: tehtävä voidaan suorittaa rajatulla lukutoiminnolla, eikä botti tarvitse kirjoitus-, hallinta- tai ulkoisia verkkovaltuuksia. Mahdollinen toimintaehdotus ei itsessään aiheuta järjestelmän muutosta."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: botin minimikompositio",
+          "caption": "Harjoitus: botin minimikompositio"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "A bot is a composition of system components",
+        "paragraphs": [
+          "In this course a bot is a bounded software composition that may use a model, retrieval and defined operations. A model produces text or an operation proposal, for example; surrounding software manages sessions, inputs, execution and result handling. Not every bot needs tools.",
+          "The first R3 bot answers maintenance questions through a read interface. It does not require a general database account or command shell. Distinguish external request, model response and actual system effect."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "A bot is a composition of system components",
+          "caption": "A bot is a composition of system components"
+        }
+      },
+      {
+        "title": "Exercise: minimal bot composition",
+        "paragraphs": [
+          "Draw the R3 bot around the user, local inference service and bounded instruction retrieval. Record component identities and communication contracts. Remove all operations not required for the selected task. Test direct instruction lookup without the bot.",
+          "Acceptance criterion: the task can be performed with bounded read access and the bot needs no write, administration or external network permissions. An operation proposal does not itself change system state."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: minimal bot composition",
+          "caption": "Exercise: minimal bot composition"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

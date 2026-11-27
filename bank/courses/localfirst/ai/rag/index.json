@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "RAG tuo haetun tiedon mallin kontekstiin",
+        "paragraphs": [
+          "Retrieval-Augmented Generation (RAG) yhdistää tiedonhaun ja generoinnin. Hakukomponentti valitsee kysymykseen liittyviä lähdekatkelmia, jotka lisätään mallin syötteeseen. Haku voi käyttää avainsanoja, vektoreita, tietokantakyselyitä tai niiden yhdistelmää. RAG ei itsessään kouluta mallia uudelleen.",
+          "R3:ssa käyttäjän kysymys rajataan hänen sallittuihin ja voimassa oleviin ohjeisiinsa ennen niiden toimittamista mallille. Lähdekatkelmat ja revision tunnisteet liitetään kontekstiin. Haun osuvuus ei takaa vastauksen totuutta; myös haetun aineiston kattavuus ja mallin tulkinta vaikuttavat."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "RAG tuo haetun tiedon mallin kontekstiin",
+          "caption": "RAG tuo haetun tiedon mallin kontekstiin"
+        }
+      },
+      {
+        "title": "Harjoitus: RAG:n lähteet ja puuttuva tieto",
+        "paragraphs": [
+          "Luo testiaineistoon voimassa oleva ohje, historiallinen versio ja toiselle organisaatiolle rajattu ohje. Kysy voimassa olevaan ohjeeseen liittyvä kysymys sekä kysymys, johon aineistossa ei ole vastausta. Tarkasta hakutulokset erikseen generoidusta vastauksesta. Lisää testidokumenttiin myös teksti, joka väittää antavansa botille uusia oikeuksia.",
+          "Hyväksymiskriteeri: haku ei luovuta kiellettyä aineistoa mallille, vastaus viittaa oikeaan revisioon eikä puuttuvaa tietoa esitetä varmennettuna. Dokumentin sisältämä väite ei muuta botin toimivaltaa. Mittaa hakutuloksen osuvuus ja vastauksen lähdetuki erillisinä."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: RAG:n lähteet ja puuttuva tieto",
+          "caption": "Harjoitus: RAG:n lähteet ja puuttuva tieto"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "RAG brings retrieved information into model context",
+        "paragraphs": [
+          "Retrieval-Augmented Generation (RAG) combines retrieval and generation. A retrieval component selects relevant source passages and adds them to model input. Retrieval may use keywords, vectors, database queries or combinations. RAG itself does not retrain the model.",
+          "In R3, retrieval is restricted to instructions the user is allowed to access and that are currently valid before they are supplied to the model. Passages and revision identifiers enter context. Retrieval relevance does not guarantee answer correctness; coverage and model interpretation also matter."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "RAG brings retrieved information into model context",
+          "caption": "RAG brings retrieved information into model context"
+        }
+      },
+      {
+        "title": "Exercise: RAG sources and missing information",
+        "paragraphs": [
+          "Include a valid instruction, a historical revision and an instruction scoped to another organization in the test dataset. Ask a question supported by the valid instruction and one not answered in the data. Inspect retrieval results independently of the generated answer. Add text to a test document claiming to grant new bot permissions.",
+          "Acceptance criterion: retrieval does not disclose prohibited data to the model, the answer references the correct revision, and missing information is not presented as verified. A document claim does not change bot authority. Measure retrieval relevance and answer support separately."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: RAG sources and missing information",
+          "caption": "Exercise: RAG sources and missing information"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

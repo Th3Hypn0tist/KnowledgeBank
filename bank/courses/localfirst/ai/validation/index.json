@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Tekoälyn tuloksen validointi",
+        "paragraphs": [
+          "Mallin tulos voi olla rakenteellisesti kelvollinen mutta sisällöllisesti virheellinen. Tarkasta tulosmuoto, lähdeviitteet, lähteiden voimassaolo ja väitteiden tuki. Luokittelussa voidaan käyttää tunnettua vertailuaineistoa ja tehtävään sopivia virhemittareita. Kielimallin itse ilmoittama varmuus ei sellaisenaan ole kalibroitu todennäköisyys.",
+          "R3:n huolto-ohjeen yhteenvedosta tarkastetaan, etteivät turvallisuuden kannalta olennaiset ehdot katoa. Epävarma tai ristiriitainen tulos ohjataan lähdeaineistoon tai valtuutetun ihmisen arvioitavaksi. Rakenteellisen validoinnin läpäisy ei todista tosiasiallista oikeellisuutta."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Tekoälyn tuloksen validointi",
+          "caption": "Tekoälyn tuloksen validointi"
+        }
+      },
+      {
+        "title": "Harjoitus: testijoukko ja virheiden erottelu",
+        "paragraphs": [
+          "Luo synteettinen testijoukko, jossa on tunnettu oikea vastaus, puuttuva tieto, ristiriitainen ohje ja kielletty kohde. Määrittele hyväksymiskriteerit etukäteen. Aja samat tapaukset valitulla malliversiolla ja kirjaa lähdetuki, rakenteen kelvollisuus ja toimivaltarajan tulos erillisinä. Merkitse aikakatkaisut ja suoritusvirheet erikseen sisältövirheistä.",
+          "Hyväksymiskriteeri: tuloksista voidaan erottaa hyväksytty, virheellinen, epävarma ja teknisesti epäonnistunut suoritus. Yksittäinen oikea vastaus ei osoita yleistä luotettavuutta. Testaa uudelleen mallin, hakemiston tai syötemallin muuttuessa."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: testijoukko ja virheiden erottelu",
+          "caption": "Harjoitus: testijoukko ja virheiden erottelu"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Validation of AI output",
+        "paragraphs": [
+          "Model output may be structurally valid but factually incorrect. Check output format, references, source validity and support for claims. Classification can use known reference data and task-appropriate error metrics. An LLM's self-reported confidence is not inherently a calibrated probability.",
+          "Verify that summaries of R3 instructions preserve safety-relevant conditions. Refer uncertain or conflicting outputs to source material or authorized human review. Passing structural validation does not establish factual correctness."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Validation of AI output",
+          "caption": "Validation of AI output"
+        }
+      },
+      {
+        "title": "Exercise: test dataset and error separation",
+        "paragraphs": [
+          "Create a synthetic test dataset with a known answer, missing information, conflicting instruction and forbidden target. Define acceptance criteria beforehand. Run identical cases with the selected model version and separately record source support, structural validity and authority outcomes. Record timeouts and execution failures separately from content errors.",
+          "Acceptance criterion: distinguish accepted, incorrect, uncertain and technically failed executions. One correct answer does not establish general reliability. Retest after changes to model, index or input template."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: test dataset and error separation",
+          "caption": "Exercise: test dataset and error separation"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

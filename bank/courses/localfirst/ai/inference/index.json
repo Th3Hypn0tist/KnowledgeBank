@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Inferenssi ei ole mallin kouluttamista",
+        "paragraphs": [
+          "Inferenssi tarkoittaa mallin käyttämistä tuloksen muodostamiseen syötteen perusteella. Kielimallissa syöte tokenisoidaan, malli laskee seuraavan tokenin jakaumaa ja dekoodaus valitsee tokeneita, kunnes määritelty päättymisehto täyttyy. Muissa AI-malleissa tulos voi olla esimerkiksi luokka, lukuarvo tai havainto kuvasta.",
+          "Normaali inferenssi ei päivitä mallin painoja. R3:n paikallinen palvelu vastaanottaa pyynnön, muodostaa kontekstin ja palauttaa tuloksen. Suorituksesta voi kuitenkin syntyä loki- ja välimuistidataa, jotka on hallittava erikseen."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Inferenssi ei ole mallin kouluttamista",
+          "caption": "Inferenssi ei ole mallin kouluttamista"
+        }
+      },
+      {
+        "title": "Harjoitus: inferenssipalvelun sopimus",
+        "paragraphs": [
+          "Määrittele paikalliselle mallipalvelulle syötemuoto, mallin tunniste, kontekstiraja, tulosmuoto, aikakatkaisu ja peruutus. Testaa hyväksytty ohjekysymys, liian pitkä syöte ja palvelun hallittu pysäytys. Varmista, että rajan ylittävä syöte hylätään tai käsitellään nimenomaisesti dokumentoidulla tavalla.",
+          "Hyväksymiskriteeri: paikallinen inferenssi toimii määritellyillä resursseilla, virhetilanteet erotetaan onnistuneesta tuloksesta ja AI-palvelun häiriö ei tarpeettomasti estä alkuperäisen työohjeen hakua."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: inferenssipalvelun sopimus",
+          "caption": "Harjoitus: inferenssipalvelun sopimus"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Inference is not model training",
+        "paragraphs": [
+          "Inference uses a model to generate a result from input. In an LLM, input is tokenized, the model computes a next-token distribution and decoding selects tokens until a defined stopping condition. Other AI models may return a class, numeric value or image observation.",
+          "Ordinary inference does not update model weights. The local R3 service receives a request, constructs context and returns a result. Execution may still produce log and cache data, which require separate governance."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Inference is not model training",
+          "caption": "Inference is not model training"
+        }
+      },
+      {
+        "title": "Exercise: inference service contract",
+        "paragraphs": [
+          "Define input format, model identifier, context limit, output format, timeout and cancellation for the local service. Test an accepted instruction question, an oversized input and controlled service shutdown. Ensure oversized input is rejected or handled through an explicitly documented mechanism.",
+          "Acceptance criterion: local inference works within defined resources, failure states are distinct from successful results, and AI service disruption does not unnecessarily block direct instruction lookup."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: inference service contract",
+          "caption": "Exercise: inference service contract"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

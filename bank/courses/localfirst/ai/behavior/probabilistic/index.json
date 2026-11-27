@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Probabilistinen tulos ja sen vaihtelu",
+        "paragraphs": [
+          "Kielimalli tuottaa tokenien jakaumia, joista dekoodaus voi valita satunnaisotannalla. Temperature, top-p ja muut dekoodausasetukset vaikuttavat valintaan. Ahne dekoodaus valitsee suurimman pistearvon tokenin, mutta sekään ei yleisesti takaa bittitason toistettavuutta eri laitteilla tai suoritusmoottoreilla.",
+          "R3:ssa kaksi yhteenvetoa voi erota sanamuodoltaan tai sisällöltään. Käyttötarkoituksen kannalta oleellista on lähdetuki, riittävä kattavuus ja määriteltyjen ehtojen säilyminen. Satunnaisuuden vähentäminen ei tee mallin väitteistä automaattisesti tosia."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Probabilistinen tulos ja sen vaihtelu",
+          "caption": "Probabilistinen tulos ja sen vaihtelu"
+        }
+      },
+      {
+        "title": "Harjoitus: mittaa vaihtelua ja laatua",
+        "paragraphs": [
+          "Aja sama synteettinen ohjekysymys useita kertoja vakioidulla mallilla, kontekstilla ja dekoodausasetuksilla. Kirjaa mahdollinen seed, suoritusmoottori ja laitteisto. Vertaa sanamuotoja, lähdetukea ja puuttuvia olennaisia ehtoja. Tee erillinen vertailu muutetulla dekoodausasetuksella.",
+          "Hyväksymiskriteeri: vaihtelu kuvataan mitattujen tulosten perusteella. Mallin käyttötarkoitukselle asetettu laatukriteeri täyttyy tai rajoite kirjataan. Kielletyt järjestelmävaikutukset pysyvät estettyinä kaikissa ajoissa, vaikka mallin ehdotukset vaihtelisivat."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: mittaa vaihtelua ja laatua",
+          "caption": "Harjoitus: mittaa vaihtelua ja laatua"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Probabilistic output and variation",
+        "paragraphs": [
+          "An LLM produces token distributions from which decoding may sample. Temperature, top-p and other decoding settings affect selection. Greedy decoding selects the highest-scoring token but does not generally guarantee bitwise repeatability across hardware or runtimes.",
+          "Two R3 summaries may differ in wording or content. The relevant properties are source support, adequate coverage and preservation of defined conditions. Reducing randomness does not automatically make model claims true."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Probabilistic output and variation",
+          "caption": "Probabilistic output and variation"
+        }
+      },
+      {
+        "title": "Exercise: measure variation and quality",
+        "paragraphs": [
+          "Run the same synthetic instruction question repeatedly using a fixed model, context and decoding configuration. Record seed where available, runtime and hardware. Compare wording, source support and missing essential conditions. Run a separate comparison using changed decoding settings.",
+          "Acceptance criterion: variation is described using measured results. The task quality requirement is met or limitations are recorded. Prohibited system effects remain blocked in every run despite varying model proposals."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: measure variation and quality",
+          "caption": "Exercise: measure variation and quality"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

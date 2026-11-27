@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Mallin painot ja organisaation data",
+        "paragraphs": [
+          "Mallin painot, mallille annettava konteksti, tietolähteet ja suorituksen aikana syntyvä data ovat eri resursseja. R3:n huoltotieto voidaan pitää tietovarastossa ja antaa mallille vain tehtävän tarvitsema osa. Tietojen muuttaminen lähteessä ei vaadi mallin uudelleenkoulutusta, jos haku ja konteksti päivittyvät asianmukaisesti.",
+          "Fine-tuning muuttaa mallin painoja tai koulutettavaa adapteria. Se ei ole tavallinen tietokannan päivitys, eikä painoista voida yleisesti taata yksittäisen opitun tiedon täsmällistä poistamista. Suojatun aineiston koulutuskäyttö, lokitus ja välimuistit tarvitsevat erilliset päätökset."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Mallin painot ja organisaation data",
+          "caption": "Mallin painot ja organisaation data"
+        }
+      },
+      {
+        "title": "Harjoitus: datan muutos ilman koulutusta",
+        "paragraphs": [
+          "Kirjaa harjoitusmallin tiedostotiiviste. Päivitä synteettinen työohje hyväksytyn lähdeoperaation kautta ja päivitä hakuindeksi. Toista sama kysymys ja tarkasta uuden revision käyttö. Vertaa mallin tiivistettä ennen ja jälkeen sekä tarkasta mahdolliset tallennetut promptit, vastaukset ja välimuistit.",
+          "Hyväksymiskriteeri: uusi tieto tulee käyttöön lähteen ja haun kautta ilman mallipainojen muutosta. Suorituksessa syntyneiden kopioiden sijainti ja säilytys tunnetaan. Muuttumaton painotiedosto ei yksin osoita, ettei muuta dataa ole tallennettu."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: datan muutos ilman koulutusta",
+          "caption": "Harjoitus: datan muutos ilman koulutusta"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Model weights and organizational data",
+        "paragraphs": [
+          "Model weights, input context, data sources and data generated during execution are distinct resources. R3 maintenance data can remain in a store and only the necessary subset be supplied to the model. Changing source information does not require retraining when retrieval and context update appropriately.",
+          "Fine-tuning modifies weights or a trainable adapter. It is not an ordinary database update, and precise removal of individual learned information from weights cannot generally be guaranteed. Training on protected material, logging and caching require separate decisions."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Model weights and organizational data",
+          "caption": "Model weights and organizational data"
+        }
+      },
+      {
+        "title": "Exercise: update data without training",
+        "paragraphs": [
+          "Record the training model file digest. Update a synthetic instruction through the approved source operation and update the retrieval index. Repeat the question and inspect use of the new revision. Compare model digests before and after and inspect stored prompts, responses and caches.",
+          "Acceptance criterion: new information becomes available through the source and retrieval without weight changes. Locations and retention of runtime copies are known. Unchanged weights alone do not prove that no other data was stored."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: update data without training",
+          "caption": "Exercise: update data without training"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

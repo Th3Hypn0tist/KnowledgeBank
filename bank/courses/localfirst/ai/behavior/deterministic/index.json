@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Deterministinen toiminta tarvitsee määritellyn tilan",
+        "paragraphs": [
+          "Determinismi tarkoittaa tässä, että sama syöte ja sama merkityksellinen lähtötila tuottavat saman määritellyn tuloksen. Aika, tietokannan tila, rinnakkaisten tapahtumien järjestys ja konfiguraatio voivat olla osa lähtötilaa. Siksi sama ulkoinen pyyntö ei aina tarkoita samoja lähtöehtoja.",
+          "R3:n toimivaltapäätös voi olla sääntöpohjainen: aktiivinen identiteetti, sallittu toiminto, oikea organisaatio ja voimassa oleva valtuus. Säännöt dokumentoidaan, puuttuva päätös ei anna lupaa ja tarkistukset tehdään myös varsinaisen vaikutuksen rajalla."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Deterministinen toiminta tarvitsee määritellyn tilan",
+          "caption": "Deterministinen toiminta tarvitsee määritellyn tilan"
+        }
+      },
+      {
+        "title": "Harjoitus: toistettava toimivaltapäätös",
+        "paragraphs": [
+          "Muodosta harjoituksessa vakioitu identiteetti, politiikkaversio, kohde ja testiaika. Toista sama lukuoikeuspäätös useita kertoja. Vaihda sitten vain kohteen organisaatio tai valtuuden tila ja tarkasta päätöksen muuttuminen. Käytä kirjoitustesteissä palautettua lähtötilaa, jos kirjoitus itse muuttaa sitä.",
+          "Hyväksymiskriteeri: sama määritelty lähtötila antaa saman päätöksen ja muuttunut ehto vaikuttaa sovitulla tavalla. Toistettavuus ei riitä, jos päätös on väärä: vertaa tulosta ennalta määriteltyyn toimivaltamatriisiin."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: toistettava toimivaltapäätös",
+          "caption": "Harjoitus: toistettava toimivaltapäätös"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Deterministic behavior needs defined state",
+        "paragraphs": [
+          "Determinism here means the same input and relevant initial state produce the same defined result. Time, database state, concurrent event order and configuration may be part of initial state. Identical external requests therefore do not always imply identical conditions.",
+          "R3 authority decisions may be rule-based: active identity, permitted operation, correct organization and valid permission. Document rules, do not treat missing decisions as permission, and enforce checks at the actual effect boundary."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Deterministic behavior needs defined state",
+          "caption": "Deterministic behavior needs defined state"
+        }
+      },
+      {
+        "title": "Exercise: repeatable authority decision",
+        "paragraphs": [
+          "Set a fixed training identity, policy revision, target and test time. Repeat the same read decision several times. Change only target organization or permission state and inspect the changed decision. Restore initial state for write tests if the write itself modifies it.",
+          "Acceptance criterion: identical defined starting state yields the same decision and changed conditions affect it as specified. Repeatability is insufficient if the decision is wrong: compare with a predefined authority matrix."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: repeatable authority decision",
+          "caption": "Exercise: repeatable authority decision"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

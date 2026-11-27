@@ -8,8 +8,58 @@
     "probabilistic"
   ],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Deterministinen ja probabilistinen toiminta",
+        "paragraphs": [
+          "Deterministinen toiminto tuottaa määritellyissä samoissa lähtöehdoissa saman tuloksen. Probabilistinen toiminto käyttää todennäköisyysjakaumaa tai satunnaisotantaa, jolloin tulokset voivat vaihdella. Koko järjestelmän ominaisuuksia ei voi päätellä pelkästään siitä, että yksi sen komponenteista on deterministinen.",
+          "R3:ssa kielimalli voi ehdottaa yhteenvetoa, mutta toimivalta ja tilaa muuttavien operaatioiden ehdot määritellään mallista riippumatta. Deterministinen sääntökin voi olla virheellinen; se on testattava. Probabilistista tulosta voidaan käyttää rajatun toiminnon syötteenä, kun sen epävarmuus huomioidaan."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Deterministinen ja probabilistinen toiminta",
+          "caption": "Deterministinen ja probabilistinen toiminta"
+        }
+      },
+      {
+        "title": "Harjoitus: luokittele suoritusketjun osat",
+        "paragraphs": [
+          "Piirrä ohjehakuketju identiteetin tarkistuksesta tiedonhakuun, mallin tulokseen ja vastauksen näyttämiseen. Merkitse kunkin osan määritellyt lähtöehdot ja mahdolliset vaihtelulähteet. Älä luokittele koko hakua deterministiseksi, jos esimerkiksi indeksi tai käytetty algoritmi muuttuu.",
+          "Hyväksymiskriteeri: osallistuja erottaa tuloksen muodostamisen ja sen käyttämistä koskevan päätöksen. Mallin vaihtelu ei laajenna toimivaltaa. Määrittele toistettavuus- ja laatutestit erikseen."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: luokittele suoritusketjun osat",
+          "caption": "Harjoitus: luokittele suoritusketjun osat"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Deterministic and probabilistic behavior",
+        "paragraphs": [
+          "A deterministic operation produces the same result under defined identical starting conditions. A probabilistic operation uses probability distributions or sampling, allowing outputs to vary. Whole-system properties cannot be inferred solely from one deterministic component.",
+          "In R3, an LLM may propose a summary, while authority and conditions for state-changing operations are defined independently of the model. A deterministic rule can still be wrong and requires testing. Probabilistic output may serve as input to bounded operations when uncertainty is handled."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Deterministic and probabilistic behavior",
+          "caption": "Deterministic and probabilistic behavior"
+        }
+      },
+      {
+        "title": "Exercise: classify execution components",
+        "paragraphs": [
+          "Draw the instruction lookup chain from identity verification through retrieval, model output and display. Record defined initial conditions and possible sources of variation for each component. Do not classify the entire retrieval process as deterministic if its index or algorithm changes, for example.",
+          "Acceptance criterion: distinguish result generation from decisions about using that result. Model variation does not expand authority. Define repeatability and quality tests separately."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: classify execution components",
+          "caption": "Exercise: classify execution components"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

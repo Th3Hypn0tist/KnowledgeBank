@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Malli on versioitu suoritusresurssi",
+        "paragraphs": [
+          "Mallin hallintaan kuuluvat hankinta, alkuperä, versio, tiedostomuoto, kvantisointi, lisenssi ja yhteensopiva inferenssimoottori. Mallitiedoston lisäksi voidaan tarvita tokenizer, mallin asetukset ja syötemallipohja. Mallin nimen pysyminen samana ei takaa, että sen sisältö pysyy samana.",
+          "R3:n mallivarasto sisältää hyväksytyt paikalliset versiot. Tarkistettava tiiviste yksilöi tiedoston, kun vertailuarvo on luotettava. Mallipakettia käsitellään ulkoisena aineistona: kaikki formaatit ja latausmekanismit eivät ole pelkkää passiivista painodataa."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Malli on versioitu suoritusresurssi",
+          "caption": "Malli on versioitu suoritusresurssi"
+        }
+      },
+      {
+        "title": "Harjoitus: mallin vaihtaminen hallitusti",
+        "paragraphs": [
+          "Valitse kaksi hyväksyttyä mallirevisiota ja tallenna kummankin tunnisteet, asetukset ja tiedostotiivisteet. Aja sama testijoukko molemmilla, tarkista käyttökelpoisuus ilman internetiä ja kirjaa tulosten erot. Määrittele edellisen mallin palautusmenettely ja mahdollinen eri tokenizerin tai kontekstin vaikutus.",
+          "Hyväksymiskriteeri: käytössä oleva malli on yksilöitävissä eikä uusi versio tule käyttöön pelkän latauksen seurauksena. Muutos hyväksytään testitulosten perusteella; aiempi versio voidaan palauttaa määritellyllä tavalla."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: mallin vaihtaminen hallitusti",
+          "caption": "Harjoitus: mallin vaihtaminen hallitusti"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "A model is a versioned execution resource",
+        "paragraphs": [
+          "Model management covers acquisition, provenance, version, format, quantization, license and a compatible inference engine. A model may also require a tokenizer, configuration and input template. An unchanged model name does not guarantee unchanged contents.",
+          "R3's model store contains approved local versions. A verifiable digest identifies a file when the reference digest is trusted. Treat model packages as external material: not all formats and loading mechanisms are merely passive weight data."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "A model is a versioned execution resource",
+          "caption": "A model is a versioned execution resource"
+        }
+      },
+      {
+        "title": "Exercise: controlled model replacement",
+        "paragraphs": [
+          "Choose two approved model revisions and record their identifiers, configuration and file digests. Run the same tests on both, check offline usability and record differences. Define restoration of the prior model and any impact from a different tokenizer or context.",
+          "Acceptance criterion: the active model is identifiable and downloading a new revision does not activate it. Approve changes based on test results; the prior version can be restored through a defined procedure."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: controlled model replacement",
+          "caption": "Exercise: controlled model replacement"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

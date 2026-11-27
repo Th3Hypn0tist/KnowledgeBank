@@ -33,7 +33,7 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 | 03 Pääsynhallinta ja toimivalta | 12 | 12 | Sisältö valmis |
 | 04 Datan hallinta | 11 | 11 | Sisältö valmis |
 | 05 Riippuvuuksien hallinta | 15 | 15 | Sisältö valmis |
-| 06 Paikallinen tekoäly | 15 | 0 | Aiempi luonnos |
+| 06 Paikallinen tekoäly | 15 | 15 | Sisältö valmis |
 | 07 Verifiointi | 15 | 0 | Aiempi luonnos |
 
 ## Työlista nodeittain
@@ -127,21 +127,21 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 
 ### 06 Paikallinen tekoäly
 
-    - [ ] `ai/behavior/deterministic/index.json`
-  - [ ] `ai/behavior/index.json`
-    - [ ] `ai/behavior/probabilistic/index.json`
-    - [ ] `ai/bots/authority/index.json`
-  - [ ] `ai/bots/index.json`
-    - [ ] `ai/bots/tools/index.json`
-  - [ ] `ai/external/index.json`
-- [ ] `ai/index.json` — aiempi luonnos, syvennettävä
-  - [ ] `ai/inference/index.json`
-  - [ ] `ai/knowledge/index.json`
-  - [ ] `ai/models/index.json`
-  - [ ] `ai/rag/index.json`
-  - [ ] `ai/resources/index.json`
-  - [ ] `ai/separation/index.json`
-  - [ ] `ai/validation/index.json`
+    - [x] `ai/behavior/deterministic/index.json`
+  - [x] `ai/behavior/index.json`
+    - [x] `ai/behavior/probabilistic/index.json`
+    - [x] `ai/bots/authority/index.json`
+  - [x] `ai/bots/index.json`
+    - [x] `ai/bots/tools/index.json`
+  - [x] `ai/external/index.json`
+- [x] `ai/index.json`
+  - [x] `ai/inference/index.json`
+  - [x] `ai/knowledge/index.json`
+  - [x] `ai/models/index.json`
+  - [x] `ai/rag/index.json`
+  - [x] `ai/resources/index.json`
+  - [x] `ai/separation/index.json`
+  - [x] `ai/validation/index.json`
 
 ### 07 Verifiointi
 
@@ -173,10 +173,10 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 
 ## Edistyminen
 
-- Hyväksytysti valmiit sisältönodet: **71 / 101** (sisältää kurssin juurinoden).
-- Pääaiheet: **5 / 7** hyväksytysti valmista.
-- SVG-tiedostoja: **362** (22 aiempaa + 340 uutta; 181 kaaviota FI/EN).
-- Seuraava työ: 06 Paikallinen tekoäly (15 nodea).
+- Hyväksytysti valmiit sisältönodet: **86 / 101** (sisältää kurssin juurinoden).
+- Pääaiheet: **6 / 7** hyväksytysti valmista.
+- SVG-tiedostoja: **422** (22 aiempaa + 400 uutta; 211 kaaviota FI/EN).
+- Seuraava työ: 07 Verifiointi (15 nodea), sitten lopputarkastus.
 
 ## Kehitysloki
 
@@ -219,3 +219,5 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 - API:n löydettävyys: absoluuttiset HTTPS-osoitteet (`api`, `source`, `root`, discovery) yhdestä PUBLIC_BASE-vakiosta. Lisätty dynaamiset XML-sitemap ja HTML-linkkiluettelo samasta JSON-hierarkiasta sekä robots.txt-yhdistämismalli sivuston juureen. XML jättää outline/draft-nodet pois; JSON/HTML näyttävät koko rakenteen. index.html, llms.txt ja README päivitetty. Ei sisältöprosentin muutosta. PHP-ajotesti, tuotantoreititys, host-root robots.txt -yhdistäminen ja botin uusintatesti jäljellä.
 
 - Kierros 10B: kaikki 10 ulkoisen riippuvuuden nodea täydennetty FI/EN, 20 uutta kaaviota (40 SVG-tiedostoa). Riippuvuuksien hallinta kokonaan sisältövalmis. DNS, NTP, IAM, sertifikaatit, lisenssit, kirjastot, pakettivarastot, Cloud API, CDN ja telemetria käsitelty hankinta-, suoritus- tai ylläpitoriippuvuuksina. Jokaisessa määritelmä, R3-esimerkki, harjoitus ja hyväksymiskriteerit. JSON-parsinta, kieliparien rakenne ja uudet kuvaviittaukset tarkastettu; SVG:n XML- ja visuaalinen tarkastus sekä harjoitusten suoritus jäljellä. Ei käyttöliittymä- tai API-muutoksia.
+
+- Kierros 11: koko paikallisen tekoälyn luku, 15 nodea FI/EN, 30 uutta kaaviota (60 SVG-tiedostoa). Malli, data, inferenssi, Knowledge Engine, RAG ja botin toimivalta erotettu toisistaan; paikallinen ydintoiminta säilyy ilman tekoälypalvelua. Käytetty synteettistä R3-huoltoaineistoa ja malliriippumattomia toimivaltarajoja. Jokaisessa nodessa määritelmä ja harjoitus hyväksymiskriteereineen. Olemassa oleva hierarkia ja metatiedot säilytetty, aiemmat kuvat jätetty repositorioon lopputarkastusta varten. JSON-parsinta, kieliparien rakenne ja uudet kuvaviittaukset tarkastettu; SVG:n XML- ja visuaalinen tarkastus sekä harjoitusten suoritus jäljellä. Ei UI- tai API-muutoksia.

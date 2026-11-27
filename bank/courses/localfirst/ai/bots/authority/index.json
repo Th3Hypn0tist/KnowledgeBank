@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Mallin ehdotus ei ole toimivaltapäätös",
+        "paragraphs": [
+          "Botin identiteetti ja käyttäjän identiteetti erotetaan. Botille myönnetty tekninen valtuus ei saa automaattisesti laajentaa käyttäjän sallittua vaikutusaluetta. Kun botti toimii käyttäjän puolesta, palvelu tarkistaa sekä delegoidun toimivallan että operaation ja kohteen ehdot.",
+          "R3:n huoltaja voi pyytää botilta ohjeen lukemista. Mallin tuottama JSON, komento tai vakuuttava selitys on ehdotus, ei oikeus suorittaa. Päätös muodostetaan mallista riippumattomassa valvontakomponentissa ja pannaan täytäntöön resurssin rajalla."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Mallin ehdotus ei ole toimivaltapäätös",
+          "caption": "Mallin ehdotus ei ole toimivaltapäätös"
+        }
+      },
+      {
+        "title": "Harjoitus: toimivallan negatiivinen testi",
+        "paragraphs": [
+          "Anna harjoitusbotille vain ohjeiden lukutoiminto. Pyydä lukemaan hyväksytty ohje, muuttamaan huoltotietuetta ja hakemaan toisen organisaation aineistoa. Testaa myös synteettinen ohjeteksti, joka käskee ohittamaan aiemmat säännöt. Tarkasta varsinaiset palvelukutsut ja tietovaraston tila.",
+          "Hyväksymiskriteeri: sallittu luku toimii, kielletty tieto ei siirry mallille eikä kielletty muutos toteudu riippumatta mallin tuottamasta tekstistä. Botin kieltäytyminen ei yksin riitä todisteeksi rakenteellisen rajan pitävyydestä."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: toimivallan negatiivinen testi",
+          "caption": "Harjoitus: toimivallan negatiivinen testi"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "A model proposal is not an authority decision",
+        "paragraphs": [
+          "Separate bot identity from user identity. Technical authority granted to a bot must not automatically expand the user's permitted scope. When acting on behalf of a user, the service checks delegated authority as well as operation and target conditions.",
+          "An R3 technician may ask a bot to read an instruction. JSON, commands or convincing explanations produced by the model are proposals, not permission to execute. A model-independent enforcement component determines authority and enforces it at the resource boundary."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "A model proposal is not an authority decision",
+          "caption": "A model proposal is not an authority decision"
+        }
+      },
+      {
+        "title": "Exercise: negative authority test",
+        "paragraphs": [
+          "Grant the training bot instruction read access only. Request an approved instruction, a maintenance record modification and another organization's data. Also test synthetic instruction text telling the bot to override previous rules. Inspect actual service calls and data store state.",
+          "Acceptance criterion: permitted reading works, prohibited data does not reach the model, and prohibited changes do not occur regardless of generated text. A bot refusal alone is not evidence of structural boundary enforcement."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: negative authority test",
+          "caption": "Exercise: negative authority test"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

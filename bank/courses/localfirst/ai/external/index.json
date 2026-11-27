@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Ulkoinen AI-palvelu on erillinen integraatio",
+        "paragraphs": [
+          "Paikallisen botin käyttöliittymä voi kutsua ulkoista mallipalvelua, mutta tällöin kyseinen inferenssi ei ole paikallista. Pyyntö, konteksti, liitteet ja mahdolliset työkalutulokset voivat ylittää organisaatiorajan. Palvelun käyttötarkoitus, vastaanottaja, tietojen käsittelyehdot ja siirrettävät kentät määritellään erikseen.",
+          "R3:ssa ulkoista mallia voidaan käyttää esimerkiksi erikseen hyväksyttyyn synteettisen aineiston käännökseen. Paikallisen huolto-ohjehaun ei tarvitse lähettää koko aineistoaan ulos. Ulkoisen palvelun vastaus ei saa automaattisesti uusia paikallisia valtuuksia."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Ulkoinen AI-palvelu on erillinen integraatio",
+          "caption": "Ulkoinen AI-palvelu on erillinen integraatio"
+        }
+      },
+      {
+        "title": "Harjoitus: ulkoisen AI-kutsun rajaaminen",
+        "paragraphs": [
+          "Käytä paikallista harjoitusvastaanotinta ulkoisen palvelun simulaationa. Määrittele yksi sallittu synteettinen käännöspyyntö ja yksi suojatuksi merkitty testikenttä. Tarkasta vastaanotettu sisältö. Katkaise testiyhteys ja suorita paikallinen ohjehaku uudelleen.",
+          "Hyväksymiskriteeri: hyväksytty kutsu sisältää vain määritellyt kentät, suojattu kenttä ei ylitä rajaa ja paikallinen ydintoiminto jatkuu. Puuttuvaa ulkoista tulosta ei ilmoiteta onnistuneeksi eikä korvata automaattisella hyväksymättömällä palvelulla."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: ulkoisen AI-kutsun rajaaminen",
+          "caption": "Harjoitus: ulkoisen AI-kutsun rajaaminen"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "External AI is a separate integration",
+        "paragraphs": [
+          "A local bot interface may invoke an external model service, but that inference is not local. Requests, context, attachments and possible tool results may cross the organization boundary. Define purpose, recipient, processing conditions and transferred fields separately.",
+          "R3 may use an external model for separately approved translation of synthetic material, for example. Local instruction retrieval need not export its entire dataset. An external response does not automatically gain new local permissions."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "External AI is a separate integration",
+          "caption": "External AI is a separate integration"
+        }
+      },
+      {
+        "title": "Exercise: bound external AI requests",
+        "paragraphs": [
+          "Use a controlled local receiver to simulate an external service. Define one approved synthetic translation request and one protected test field. Inspect received contents. Disconnect the test link and repeat local instruction retrieval.",
+          "Acceptance criterion: the approved request contains only defined fields, the protected field does not cross the boundary and local core operation continues. Missing external results are not reported as success or automatically substituted by an unapproved service."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: bound external AI requests",
+          "caption": "Exercise: bound external AI requests"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Työkalu on määritelty järjestelmätoiminto",
+        "paragraphs": [
+          "Botin työkalu on rajapinta ennalta määriteltyyn toimintoon. Työkalun kuvaus kertoo mallille käytettävissä olevat parametrit ja tarkoituksen. Varsinainen suoritus tapahtuu ohjelmistossa, joka tarkistaa toimivallan, syötteen kelvollisuuden ja mahdolliset tilaehtonsa. Mallin muodostamaa tekstiä ei suoriteta yleisenä komentona.",
+          "R3:n read_instruction(id) on esimerkki rajatusta työkalusta. Sen palauttamalla aineistolla on lähde ja revisio. Avoin SQL-kysely tai yleinen shell-toiminto antaisi paljon laajemman vaikutusalueen kuin tehtävä tarvitsee. Mahdolliset kirjoitustyökalut tarvitsevat erilliset valtuudet ja tarvittaessa ihmisen hyväksynnän."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Työkalu on määritelty järjestelmätoiminto",
+          "caption": "Työkalu on määritelty järjestelmätoiminto"
+        }
+      },
+      {
+        "title": "Harjoitus: työkalun syöte ja vaikutus",
+        "paragraphs": [
+          "Määrittele read_instruction-työkalulle ohjetunniste, sallittu kohderajaus ja tulosmuoto. Testaa kelvollinen tunniste, väärä tyyppi, puuttuva tunniste ja kielletty kohde. Simuloi palvelun aikakatkaisu. Rajoita työkalukutsujen määrä sekä suoritusaika, jotta mallin toistuva ehdotus ei muodosta hallitsematonta silmukkaa.",
+          "Hyväksymiskriteeri: vain määritellyt hyväksytyt pyynnöt suoritetaan, virhe on näkyvä ja suoritus pysähtyy rajoihin. Jos tulevaisuudessa lisätään tilaa muuttava työkalu, määritellään uusintojen ja epävarman lopputuloksen käsittely ennen käyttöönottoa."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: työkalun syöte ja vaikutus",
+          "caption": "Harjoitus: työkalun syöte ja vaikutus"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "A tool is a defined system operation",
+        "paragraphs": [
+          "A bot tool is an interface to a predefined operation. Its description informs the model about parameters and purpose. Actual execution occurs in software checking authority, input validity and relevant state conditions. Generated text is not executed as a general command.",
+          "R3's read_instruction(id) is an example of a bounded tool. Its output has source and revision. Arbitrary SQL or a general shell would provide much broader impact than the task requires. Any write tools need separate permissions and human approval where required."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "A tool is a defined system operation",
+          "caption": "A tool is a defined system operation"
+        }
+      },
+      {
+        "title": "Exercise: tool input and effect",
+        "paragraphs": [
+          "Define an instruction identifier, permitted target scope and output format for read_instruction. Test a valid identifier, wrong type, missing identifier and forbidden target. Simulate service timeout. Bound tool call count and execution time so repeated model proposals cannot create an uncontrolled loop.",
+          "Acceptance criterion: only defined accepted requests execute, errors are visible and execution stops at limits. If a state-changing tool is added later, define retry and uncertain-outcome handling before deployment."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: tool input and effect",
+          "caption": "Exercise: tool input and effect"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

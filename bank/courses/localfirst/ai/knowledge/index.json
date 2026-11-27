@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Knowledge Engine erottaa tiedon mallista",
+        "paragraphs": [
+          "Knowledge Engine tarkoittaa tässä kurssissa tiedon hallinnan ja haun kokonaisuutta, joka voi käsittää lähdeaineiston, metatiedot, hakemiston, relaatiot ja lähdeviitteet. Se ei tarkoita tiettyä tuotetta eikä edellytä yhtä tietokantateknologiaa. Mallin painot eivät ole luotettava organisaation tietorekisteri.",
+          "R3:n huolto-ohjeet säilyvät auktoritatiivisessa varastossa. Hakemisto voi sisältää tekstikatkelmia, avainsanoja tai vektoriesityksiä. Jokaisen hakutuloksen yhteys lähteen tunnisteeseen, revisioon ja sijaintiin säilytetään. Johdettu indeksi ei muuta lähdettä."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Knowledge Engine erottaa tiedon mallista",
+          "caption": "Knowledge Engine erottaa tiedon mallista"
+        }
+      },
+      {
+        "title": "Harjoitus: tiedon alkuperä ja indeksin uusinta",
+        "paragraphs": [
+          "Luo kolme synteettistä työohjetta, joilla on pysyvät tunnisteet ja revisiot. Muodosta hakemisto ja suorita haku. Korvaa yksi ohje hyväksytyllä uudella versiolla, merkitse edellinen historialliseksi ja päivitä indeksi. Poista johdettu harjoitusindeksi ja rakenna se uudelleen lähteestä.",
+          "Hyväksymiskriteeri: hakutulos voidaan jäljittää alkuperäiseen revisioon ja aktiivisen ohjeen haku ei palauta vanhaa versiota voimassa olevana. Indeksin uusiminen ei muuta lähdeaineistoa; lähteettömät tulokset merkitään epävarmoiksi."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: tiedon alkuperä ja indeksin uusinta",
+          "caption": "Harjoitus: tiedon alkuperä ja indeksin uusinta"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "A Knowledge Engine separates information from the model",
+        "paragraphs": [
+          "Knowledge Engine means a data management and retrieval system in this course, potentially including source material, metadata, indexes, relationships and references. It is not a specific product and does not require one database technology. Model weights are not a reliable organizational registry.",
+          "R3 maintenance instructions remain in the authoritative store. An index may contain text chunks, keywords or vector representations. Preserve each result's connection to its source identifier, revision and location. A derived index does not modify the source."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "A Knowledge Engine separates information from the model",
+          "caption": "A Knowledge Engine separates information from the model"
+        }
+      },
+      {
+        "title": "Exercise: provenance and index rebuilding",
+        "paragraphs": [
+          "Create three synthetic instructions with stable identifiers and revisions. Build an index and retrieve information. Replace one instruction with an approved revision, mark the previous one historical and update the index. Remove the derived training index and rebuild it from the source.",
+          "Acceptance criterion: results trace to their originating revision and current-instruction lookup does not present old revisions as valid. Rebuilding the index does not change source material; results without provenance are marked uncertain."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: provenance and index rebuilding",
+          "caption": "Exercise: provenance and index rebuilding"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }
