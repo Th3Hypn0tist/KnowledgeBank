@@ -207,3 +207,5 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 - Repon juureen lisätty llms.txt: ohjaa botit suoraan bank/-sisältöhierarkiaan, kurssiluetteloon ja rekursiiviseen JSON-lukuun. README päivitetty. Ei muutoksia sisältöprosenttiin.
 
 - Lisätty read-only PHP REST API /api-hakemistoon: rekursiivinen sitemap, rajattu alipuu ja yksittäinen node. Ei erillistä indeksiä tai sisältökopioita. llms.txt ja README päivitetty. PHP-ajotestaus ja tuotannon reitityksen tarkastus jäljellä; sisältöprosentti ennallaan.
+
+- llms.txt muutettu API-first-ohjeeksi (sitemap → valitut nodet → kieliversio ja SVG:t). index.html sisältää staattiset head-linkit llms.txt:hen ja API-sitemappiin sekä näkyvät footer-linkit. Ei muutosta sisältöprosenttiin. Tuotantoreititys ja selaintestaus jäljellä.

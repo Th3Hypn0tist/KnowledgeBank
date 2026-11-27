@@ -1,8 +1,19 @@
 # AIGM KnowledgeBank
 
-> All KnowledgeBank educational and reference content is stored under /kb/bank/ as hierarchical, machine-readable JSON and associated assets. The HTML interface is a presentation layer, not the authoritative content source.
+> Use the REST API first: GET https://aigm.fi/kb/api/sitemap to discover the current KnowledgeBank hierarchy, then fetch relevant nodes using their api links. All educational and reference content originates from /kb/bank/ (SSOT). HTML is only a presentation layer.
 
-## Content discovery
+## Recommended retrieval workflow for bots
+
+1. GET https://aigm.fi/kb/api/sitemap (or a course subtree).
+2. Traverse nodes and their nested children arrays. Select relevant topics by title, description, path and status where available. The sitemap contains metadata, not lesson paragraphs.
+3. GET each selected node's api URL, resolving relative URLs against https://aigm.fi.
+4. Read data.content.fi or data.content.en for the requested language. Read title, paragraphs and optional image references.
+5. Resolve image.src against the node's source URL, not the API URL. Fetch SVG diagrams when relevant.
+6. Cite the actual node source or API URL. Distinguish outline, draft and complete content. Do not infer lesson content from a title alone.
+
+No HTML scraping, JavaScript execution, or full corpus download is needed. If the API is unavailable, use the direct JSON fallback below.
+
+## Content discovery (direct JSON fallback)
 
 - [KnowledgeBank content directory](https://aigm.fi/kb/bank/): Root of all knowledge content.
 - [Course catalogue](https://aigm.fi/kb/bank/courses/index.json): Machine-readable list of available courses.
@@ -10,10 +21,16 @@
 
 ## REST API (read-only)
 
+- [API discovery](https://aigm.fi/kb/api/): Version and endpoint templates.
+- [Catalogue node](https://aigm.fi/kb/api/node/courses): Available courses.
+- [Local-First root node](https://aigm.fi/kb/api/node/courses/localfirst): Course introduction and child IDs.
+
 - [Full sitemap](https://aigm.fi/kb/api/sitemap): Recursive content tree without lesson paragraphs.
 - [Local-First sitemap](https://aigm.fi/kb/api/sitemap/courses/localfirst): Course subtree.
 - [Individual topic](https://aigm.fi/kb/api/node/courses/localfirst/communication/primitives/channel): Original JSON in data, with source path.
 - Resolve source and api paths relative to https://aigm.fi; resolve image references relative to source. No separate content index.
+
+Only GET is supported. Responses are JSON. Sitemap response: {version, root, count, nodes}; each node has path, source, api, children (nested nodes), and localized metadata where present. Individual node response: {path, source, data}; data is the original JSON object. HTTP 400 = invalid or missing path, 404 = unknown route or node, 405 = unsupported method, 500 = content unavailable.
 
 ## How to read the knowledge bank
 
