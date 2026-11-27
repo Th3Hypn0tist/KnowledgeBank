@@ -8,6 +8,13 @@
 - [Course catalogue](https://aigm.fi/kb/bank/courses/index.json): Machine-readable list of available courses.
 - [Local-First](https://aigm.fi/kb/bank/courses/localfirst/index.json): Course root covering closed environments, communication, access control, data management, dependencies, local AI and verification.
 
+## REST API (read-only)
+
+- [Full sitemap](https://aigm.fi/kb/api/sitemap): Recursive content tree without lesson paragraphs.
+- [Local-First sitemap](https://aigm.fi/kb/api/sitemap/courses/localfirst): Course subtree.
+- [Individual topic](https://aigm.fi/kb/api/node/courses/localfirst/communication/primitives/channel): Original JSON in data, with source path.
+- Resolve source and api paths relative to https://aigm.fi; resolve image references relative to source. No separate content index.
+
 ## How to read the knowledge bank
 
 - Start with the category catalogue. For courses, read the courses array and follow each id to <id>/index.json relative to the catalogue.

@@ -205,3 +205,5 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 - Käyttöliittymäkorjaus: tuotannossa näkyi tekstin ja otsikon vanha järjestys uuden CSS:n kanssa. Repon aiempi renderöijä oli jo kuva ensin -mallissa, joten vanhan JS:n välimuisti tai puutteellinen julkaisu on mahdollinen, ei varmistettu syy. Yhteiset tiedostot nimetty bank.js ja bank.css, HTML-viittaukset v8. CSS varmistaa kuvan ensimmäiseksi myös vanhan DOM-rakenteen tapauksessa, piilottaa toistuvat korttiotsikot ja kuvatekstit sekä palauttaa tekstin sisämarginaalit. JSON-sisältö ennallaan; tuotantotestaus jäljellä.
 
 - Repon juureen lisätty llms.txt: ohjaa botit suoraan bank/-sisältöhierarkiaan, kurssiluetteloon ja rekursiiviseen JSON-lukuun. README päivitetty. Ei muutoksia sisältöprosenttiin.
+
+- Lisätty read-only PHP REST API /api-hakemistoon: rekursiivinen sitemap, rajattu alipuu ja yksittäinen node. Ei erillistä indeksiä tai sisältökopioita. llms.txt ja README päivitetty. PHP-ajotestaus ja tuotannon reitityksen tarkastus jäljellä; sisältöprosentti ennallaan.
