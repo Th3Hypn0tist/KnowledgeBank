@@ -15,52 +15,56 @@
   "content": {
     "fi": [
       {
-        "title": "Fyysinen ja looginen eristys",
+        "title": "Määrittele toimintaympäristön raja",
         "paragraphs": [
-          "Fyysinen eristys tarkoittaa ulkoisen yhteyden puuttumista. Looginen eristys perustuu esimerkiksi verkkosegmentointiin ja liikennesääntöihin. Ne eivät ole sama asia."
+          "Suljettu toimintaympäristö on rajattu kokonaisuus, jonka laitteet, ohjelmistot, tallennus ja sisäiset yhteydet on määritelty. Tässä luvussa rakennetaan toiminnallinen perusta ennen ulkoisia yhteyksiä. Suljettu ei tarkoita automaattisesti turvallista: myös paikalliset laitteet ja käyttäjät voivat aiheuttaa riskejä.",
+          "R0-vaiheessa kaikki tarvittava on yhdellä työasemalla. R1-vaiheessa jaetaan laskentaa ja palveluita lähiverkon sisällä. Eristystavan yksityiskohdat käsitellään seuraavissa aiheissa."
         ],
         "image": {
-          "src": "images/environment-1-fi.svg",
-          "alt": "01 / Eristetty lähiverkko",
-          "caption": "01 / Eristetty lähiverkko"
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Määrittele toimintaympäristön raja",
+          "caption": "Määrittele toimintaympäristön raja"
         }
       },
       {
-        "title": "Paikalliset riippuvuudet",
+        "title": "Resurssit ja hyväksymiskriteeri",
         "paragraphs": [
-          "Selvitetään DNS, aikapalvelu, autentikointi, ohjelmistot, tallennus ja varmuuskopiot. Testataan käynnistys ja palautus ilman internetiä."
+          "Laadi luettelo tarvittavasta laskennasta, tallennuksesta, sisäisestä verkosta ja palveluista. Merkitse jokaiselle resurssille omistaja, käyttötehtävä ja tarvittava kapasiteetti. Laitteiston ei tarvitse olla tehokas, jos se pystyy suorittamaan määritellyn tehtävän.",
+          "Luvun harjoitus on saada R1 toimimaan ilman ulkoista verkkoyhteyttä. Käyttäjän on voitava avata huolto-ohje ja tallentaa uusi huoltotapahtuma. Katkaisukokeen yksityiskohtainen menetelmä käsitellään verifiointiluvussa."
         ],
         "image": {
-          "src": "images/environment-2-fi.svg",
-          "alt": "02 / Paikallinen palveluketju",
-          "caption": "02 / Paikallinen palveluketju"
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Resurssit ja hyväksymiskriteeri",
+          "caption": "Resurssit ja hyväksymiskriteeri"
         }
       }
     ],
     "en": [
       {
-        "title": "Physical and logical isolation",
+        "title": "Define the environment boundary",
         "paragraphs": [
-          "Physical isolation removes external connectivity. Logical isolation relies on segmentation and traffic rules, for example. They are not equivalent."
+          "A closed environment is a bounded system with defined devices, software, storage and internal connections. This chapter establishes functional foundations before external connections. Closed does not automatically mean secure: local devices and users can also introduce risks.",
+          "At R0 everything needed is on one workstation. At R1 computation and services are shared within a LAN. The following topics cover isolation methods in detail."
         ],
         "image": {
-          "src": "images/environment-1-en.svg",
-          "alt": "01 / Isolated LAN",
-          "caption": "01 / Isolated LAN"
+          "src": "images/lesson-1-en.svg",
+          "alt": "Define the environment boundary",
+          "caption": "Define the environment boundary"
         }
       },
       {
-        "title": "Local dependencies",
+        "title": "Resources and acceptance criterion",
         "paragraphs": [
-          "Identify DNS, time, authentication, software, storage and backups. Test startup and recovery without internet."
+          "List required compute, storage, internal networking and services. Record an owner, purpose and capacity requirement for each resource. Hardware need not be powerful if it can perform the defined task.",
+          "The chapter exercise is to operate R1 without an external network connection. A user must open a maintenance instruction and save a new maintenance event. Detailed disconnection testing is covered in the verification chapter."
         ],
         "image": {
-          "src": "images/environment-2-en.svg",
-          "alt": "02 / Local service chain",
-          "caption": "02 / Local service chain"
+          "src": "images/lesson-2-en.svg",
+          "alt": "Resources and acceptance criterion",
+          "caption": "Resources and acceptance criterion"
         }
       }
     ]
   },
-  "status": "draft"
+  "status": "complete"
 }

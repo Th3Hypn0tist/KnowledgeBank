@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Looginen eristys ja sen rajat",
+        "paragraphs": [
+          "Looginen eristys rajoittaa tiedonsiirtoa ja resurssien käyttöä konfiguraation avulla, vaikka järjestelmät jakaisivat fyysistä infrastruktuuria. Esimerkkejä ovat VLANit, reitityssäännöt ja palomuurit. VLAN erottaa lähiverkon liikennettä, mutta liikenne voi kulkea VLANien välillä, jos reititys ja säännöt sallivat sen.",
+          "Loogista eristystä ei pidä kutsua fyysiseksi air gapiksi. Konfiguraatiovirhe, hallintatason kompromissi tai jaettu palvelu voi muuttaa toteutunutta rajaa. Tässä R1:n vertailuesimerkissä tarkastellaan erillistä loogista toteutusta eikä muuteta fyysisesti eristettyä referenssiverkkoa."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Looginen eristys ja sen rajat",
+          "caption": "Looginen eristys ja sen rajat"
+        }
+      },
+      {
+        "title": "Sallittu reitti ja oletusarvoinen esto",
+        "paragraphs": [
+          "Jos segmenttien välinen liikenne tarvitaan, määritellään täsmällinen sallittu reitti: lähde, kohde, protokolla ja palvelu. Muut reitit estetään. Verkkosäännöt rajaavat saavutettavuutta, mutta eivät korvaa sovelluksen autentikointia ja auktorisointia.",
+          "Harjoituksessa sallitaan huoltotyöaseman pääsy paikalliseen ohjepalveluun, mutta ei hallintaliittymään. Kirjaa testitulokset sekä sallitulle että estetylle reitille. Käytä erillistä harjoitusverkkoa."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Sallittu reitti ja oletusarvoinen esto",
+          "caption": "Sallittu reitti ja oletusarvoinen esto"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Logical isolation and its limits",
+        "paragraphs": [
+          "Logical isolation restricts data transfer and resource access through configuration even when systems share physical infrastructure. Examples include VLANs, routing rules and firewalls. A VLAN separates LAN traffic, but traffic can cross VLANs when routing and rules permit it.",
+          "Logical isolation should not be called a physical air gap. Misconfiguration, management-plane compromise or a shared service can alter the effective boundary. This alternative R1 example illustrates logical isolation without changing the physically isolated reference network."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Logical isolation and its limits",
+          "caption": "Logical isolation and its limits"
+        }
+      },
+      {
+        "title": "Permitted path and default deny",
+        "paragraphs": [
+          "If cross-segment traffic is required, define the precise permitted path: source, destination, protocol and service. Deny other paths. Network rules constrain reachability but do not replace application authentication and authorization.",
+          "In the exercise, allow the maintenance workstation to reach the local instruction service but not its management interface. Record results for both the permitted and denied path. Use a separate training network."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Permitted path and default deny",
+          "caption": "Permitted path and default deny"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

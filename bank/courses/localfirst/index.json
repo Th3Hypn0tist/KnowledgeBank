@@ -19,30 +19,80 @@
   "content": {
     "fi": [
       {
-        "title": "Secure by limitations.",
+        "title": "Lähtökohta: toiminta ennen yhteyksiä",
         "paragraphs": [
-          "Internet on valinnainen resurssi, ei toiminnan edellytys. Yhteys ja toimivalta määritellään erikseen."
+          "Local-First tarkoittaa tässä kurssissa organisaation kykyä suorittaa määritellyt ydintoiminnot omassa hallinnassaan ilman internetiä. Paikallinen ei tarkoita välttämättä yhtä laitetta: myös usean palvelimen lähiverkko voi muodostaa paikallisen toimintaympäristön.",
+          "Tämä infrastruktuurilähtöinen tulkinta eroaa sovellustason local-first-mallista, jossa painotetaan paikallisia kopioita ja synkronointia. Ne voivat täydentää toisiaan. Tavoitteena ei ole kieltää internetiä, vaan perustella jokainen ulkoinen yhteys erikseen."
         ],
         "image": {
-          "src": "images/index-1-fi.svg",
-          "alt": "Kommunikointiperiaate",
-          "caption": "Kommunikointiperiaate"
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Lähtökohta: toiminta ennen yhteyksiä",
+          "caption": "Lähtökohta: toiminta ennen yhteyksiä"
+        }
+      },
+      {
+        "title": "Oppimistavoitteet ja eteneminen",
+        "paragraphs": [
+          "Kurssin jälkeen osallistuja osaa määritellä järjestelmän rajat, erottaa yhteyden ja toimivallan, tunnistaa riippuvuudet, valita tarpeelliset kommunikointimallit sekä todentaa toiminnan yhteyden katketessa.",
+          "Harjoituksissa rakennetaan kuvitteellisen organisaation referenssijärjestelmä vaiheittain: R0 on itsenäinen työasema, R1 eristetty lähiverkko ja paikallinen palvelin, R2 rajattu kommunikointi, R3 hallittu data ja paikallinen tekoäly. Jokaisessa vaiheessa dokumentoidaan sallittu toiminta ja testataan, että muu toiminta ei ole tarpeen."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Oppimistavoitteet ja eteneminen",
+          "caption": "Oppimistavoitteet ja eteneminen"
+        }
+      },
+      {
+        "title": "Harjoitus: määrittele ydintoiminta",
+        "paragraphs": [
+          "Valitse kuvitteellinen huolto-organisaatio, jonka työntekijä tarvitsee työohjeet, laitetiedot ja huoltotapahtumien kirjauksen. Kirjaa mitkä näistä on voitava tehdä ilman internetiä ja mitkä saavat odottaa yhteyden palautumista. Älä käytä oikeita asiakas- tai henkilötietoja harjoitusdatassa.",
+          "Hyväksymiskriteeri: jokaiselle ydintoiminnolle on määritelty syöte, tulos ja paikallinen resurssi. Verifiointi tehdään myöhemmissä harjoituksissa."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Harjoitus: määrittele ydintoiminta",
+          "caption": "Harjoitus: määrittele ydintoiminta"
         }
       }
     ],
     "en": [
       {
-        "title": "Secure by limitations.",
+        "title": "Starting point: operation before connectivity",
         "paragraphs": [
-          "Internet is optional, not a prerequisite. Connectivity and authority are defined separately."
+          "In this course, Local-First means an organisation can perform defined core functions under its own control without internet access. Local does not necessarily mean a single device: a LAN with several servers can form a local environment.",
+          "This infrastructure-oriented interpretation differs from application-level local-first approaches, which emphasise local copies and synchronisation. They can complement each other. The objective is not to prohibit the internet but to justify every external connection separately."
         ],
         "image": {
-          "src": "images/index-1-en.svg",
-          "alt": "Communication principle",
-          "caption": "Communication principle"
+          "src": "images/lesson-1-en.svg",
+          "alt": "Starting point: operation before connectivity",
+          "caption": "Starting point: operation before connectivity"
+        }
+      },
+      {
+        "title": "Learning objectives and progression",
+        "paragraphs": [
+          "After the course, participants can define system boundaries, distinguish connectivity from authority, identify dependencies, select necessary communication patterns and verify operation after disconnection.",
+          "Exercises develop a fictional organisation's reference system in stages: R0 is an independent workstation, R1 an isolated LAN and local server, R2 controlled communication, R3 governed data and local AI. At each stage, permitted operation is documented and tested without relying on unnecessary capabilities."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Learning objectives and progression",
+          "caption": "Learning objectives and progression"
+        }
+      },
+      {
+        "title": "Exercise: define core operation",
+        "paragraphs": [
+          "Choose a fictional maintenance organisation whose staff need instructions, equipment records and maintenance logging. List which tasks must work without internet and which may wait for connectivity to return. Do not use real customer or personal data in training datasets.",
+          "Acceptance criterion: each core function has a defined input, output and local resource. Verification follows in later exercises."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Exercise: define core operation",
+          "caption": "Exercise: define core operation"
         }
       }
     ]
   },
-  "status": "draft"
+  "status": "complete"
 }

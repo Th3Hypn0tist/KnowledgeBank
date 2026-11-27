@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Fyysinen eristys (air gap)",
+        "paragraphs": [
+          "Fyysinen eristys tarkoittaa, ettei määritellyn rajan yli ole aktiivista suoraa tai epäsuoraa tietoliikenneyhteyttä. Pelkkä irrotettu Ethernet-kaapeli ei riitä, jos Wi-Fi, Bluetooth, mobiilidata tai muu yhteys edelleen yhdistää ympäristön ulkopuolelle. Fyysisesti eristetty lähiverkko voi silti sisältää useita toisiinsa kytkettyjä laitteita.",
+          "R0:ssa työasema toimii ilman ulkoisia verkkoyhteyksiä. R1:ssä työasema ja palvelin kytketään erilliseen kytkimeen, jolla ei ole uplink-yhteyttä muihin verkkoihin. Laitteiden muut yhteysmahdollisuudet tarkastetaan erikseen."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Fyysinen eristys (air gap)",
+          "caption": "Fyysinen eristys (air gap)"
+        }
+      },
+      {
+        "title": "Eristys ei poista kaikkia siirtoreittejä",
+        "paragraphs": [
+          "Irrotettavat tallennusvälineet, huoltolaitteet ja fyysinen pääsy voivat siirtää tietoa tai haitallista sisältöä myös ilman verkkoyhteyttä. Siksi fyysinen eristys ei yksin takaa luottamuksellisuutta, eheyttä tai saatavuutta. Eristyksen määritelmä ja sen uhkamalli on dokumentoitava.",
+          "Jos tiedostojen tuonti on välttämätöntä, siitä tehdään erillinen hallittu prosessi. Tässä vaiheessa tunnistetaan siirtoreitti; yksityiskohtainen tiedonsiirtomalli käsitellään kommunikointiluvussa."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Eristys ei poista kaikkia siirtoreittejä",
+          "caption": "Eristys ei poista kaikkia siirtoreittejä"
+        }
+      },
+      {
+        "title": "Harjoitus: todenna fyysiset yhteydet",
+        "paragraphs": [
+          "Käytä vain omaa tai harjoitukseen hyväksyttyä ympäristöä. Piirrä R0:n tai R1:n laitteet ja listaa kaikki verkkoliitännät sekä radiot. Tarkasta kaapelointi ja laitteiden yhteysasetukset. Poista harjoituksen ulkoiset yhteydet käytöstä; jos fyysinen eristys on vaatimus, pelkkä ohjelmiston estokytkin ei välttämättä riitä sen osoittamiseen.",
+          "Hyväksymiskriteeri: dokumentoitu fyysinen raja, ei tunnistettua aktiivista ulkoista yhteyttä ja paikallinen työtehtävä onnistuu. Yksittäinen epäonnistunut ping tai DNS-haku ei yksin todista eristystä."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Harjoitus: todenna fyysiset yhteydet",
+          "caption": "Harjoitus: todenna fyysiset yhteydet"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Physical isolation (air gap)",
+        "paragraphs": [
+          "Physical isolation means that no active direct or indirect communication link crosses the defined boundary. Disconnecting Ethernet alone is insufficient if Wi-Fi, Bluetooth, cellular data or another link still connects the environment to the outside. A physically isolated LAN may still contain several interconnected devices.",
+          "At R0 the workstation operates without external network connections. At R1 the workstation and server connect to a separate switch with no uplink to other networks. Other device interfaces must be checked separately."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Physical isolation (air gap)",
+          "caption": "Physical isolation (air gap)"
+        }
+      },
+      {
+        "title": "Isolation does not remove every transfer path",
+        "paragraphs": [
+          "Removable media, maintenance equipment and physical access can transfer information or malicious content even without a network connection. Physical isolation alone therefore does not guarantee confidentiality, integrity or availability. Document the isolation definition and threat model.",
+          "If file import is necessary, it becomes a separate controlled process. Here we identify the transfer path; the communication chapter covers the detailed transfer model."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Isolation does not remove every transfer path",
+          "caption": "Isolation does not remove every transfer path"
+        }
+      },
+      {
+        "title": "Exercise: inspect physical connectivity",
+        "paragraphs": [
+          "Use only your own environment or an approved training setup. Draw R0 or R1 devices and list every network interface and radio. Inspect cabling and connection settings. Disable external connections for the exercise; if physical isolation is a requirement, a software toggle alone may not be sufficient evidence.",
+          "Acceptance criterion: a documented physical boundary, no identified active external connection, and successful local task execution. A single failed ping or DNS lookup does not establish isolation."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Exercise: inspect physical connectivity",
+          "caption": "Exercise: inspect physical connectivity"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }
