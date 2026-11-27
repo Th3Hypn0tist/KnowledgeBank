@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Palvelu tarjoaa rajatun toiminnon",
+        "paragraphs": [
+          "Palvelu on ohjelmistokomponentti, joka tarjoaa määritellyn toiminnon toiselle komponentille tai käyttäjälle. Se voi toimia samalla laitteella kuin käyttöliittymä tai erillisellä paikallisella palvelimella. Prosessi, palvelu ja verkkoyhteys eivät ole sama asia: prosessi voi olla käynnissä ilman, että sen tarjoama toiminto on käytettävissä.",
+          "R1:n huoltopalvelu vastaanottaa työohjeen hakupyynnön ja palauttaa tuloksen paikallisesta tallennuksesta. Käyttöliittymän ei tarvitse tuntea tallennuksen sisäistä toteutusta. Näin palvelu muodostaa toiminnallisen rajan, jonka tarkempi käyttöoikeusmalli määritellään myöhemmin."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Palvelun toiminnallinen raja",
+          "caption": "Palvelun toiminnallinen raja"
+        }
+      },
+      {
+        "title": "Palveluketju ja vastuut",
+        "paragraphs": [
+          "Paikallinen sovellus voi muodostua käyttöliittymästä, sovelluspalvelusta ja tietokantapalvelusta. Jokaisella komponentilla on oma vastuu. Tietokantapalvelun ei tarvitse olla suoraan työasemien saavutettavissa, jos sovelluspalvelu hoitaa tietokantakäsittelyn.",
+          "R1:ssä työasema käyttää sovelluspalvelua, joka käyttää paikallista tietokantaa. Palveluketjun suunnittelussa merkitään, kuka tarvitsee yhteyden mihinkin komponenttiin. Palvelut voivat sijaita samalla fyysisellä palvelimella; niiden loogiset vastuut säilyvät erillisinä."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Paikallinen palveluketju",
+          "caption": "Paikallinen palveluketju"
+        }
+      },
+      {
+        "title": "Harjoitus: palvelun toimintakyky",
+        "paragraphs": [
+          "Määrittele palvelulle kaksi tarkistusta: tekninen valmius vastaanottaa pyyntö ja varsinaisen työtehtävän onnistuminen. Pelkkä avoin portti tai käynnissä oleva prosessi ei todista, että taustalla oleva tallennus toimii tai tulos on käyttökelpoinen.",
+          "Käytä R1:n huoltosovelluksessa ennalta tunnettua testiohjetta. Tarkista, että palvelu palauttaa oikean ohjeen ja että uusi testitietue voidaan tallentaa ja lukea takaisin. Simuloi erillisessä harjoitusympäristössä tietokantapalvelun hallittu pysäytys ja tarkasta virheilmoitus. Hyväksymiskriteeri: palvelu ei ilmoita onnistumista, kun vaadittu toiminto epäonnistuu."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Valmius ei ole sama kuin onnistuminen",
+          "caption": "Valmius ei ole sama kuin onnistuminen"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "A service provides a defined function",
+        "paragraphs": [
+          "A service is a software component that provides a defined function to another component or user. It can run on the same device as the interface or on a separate local server. A process, service and network connection are distinct: a process may run while its function remains unavailable.",
+          "The R1 maintenance service receives an instruction search request and returns a result from local storage. The interface need not know storage internals. The service establishes a functional boundary whose detailed access control model will be defined later."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Functional service boundary",
+          "caption": "Functional service boundary"
+        }
+      },
+      {
+        "title": "Service chain and responsibilities",
+        "paragraphs": [
+          "A local application may consist of a user interface, application service and database service. Each component has its own responsibility. The database service need not be directly reachable from workstations when the application service handles database operations.",
+          "In R1 the workstation uses the application service, which uses a local database. Service chain design records which component needs connectivity to which other component. Services may share a physical server while retaining distinct logical responsibilities."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Local service chain",
+          "caption": "Local service chain"
+        }
+      },
+      {
+        "title": "Exercise: service functionality",
+        "paragraphs": [
+          "Define two service checks: technical readiness to receive a request and successful completion of the actual task. An open port or running process alone does not establish that backend storage works or that the result is usable.",
+          "Use a known test instruction in the R1 maintenance application. Verify that the service returns the correct instruction and that a new test record can be saved and read back. In a separate training setup, simulate a controlled database service stop and inspect the error response. Acceptance criterion: the service does not report success when the required function fails."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Readiness is not the same as success",
+          "caption": "Readiness is not the same as success"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

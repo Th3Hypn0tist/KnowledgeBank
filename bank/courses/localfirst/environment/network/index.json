@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Sisäinen verkko ilman internetiä",
+        "paragraphs": [
+          "Lähiverkko yhdistää paikalliset laitteet, jotta ne voivat vaihtaa tietoa. Ethernet-kytkin välittää kehyksiä paikallisten porttien välillä. IP-osoitteilla sovellukset voivat tunnistaa verkkokohteet. Internet-yhteys tai oletusyhdyskäytävä ei ole välttämätön samassa IP-aliverkossa tapahtuvaan kommunikointiin.",
+          "R1:ssä käytetään erillistä kytkintä ja kahta laitetta. Esimerkin IPv4-osoitteet ovat 192.168.50.10/24 työasemalle ja 192.168.50.20/24 palvelimelle. Ne ovat havainnollistavia harjoitusosoitteita: varmista, etteivät ne ole ristiriidassa muiden harjoitusverkon laitteiden kanssa."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "R1: paikallinen IPv4-verkko",
+          "caption": "R1: paikallinen IPv4-verkko"
+        }
+      },
+      {
+        "title": "Osoite, palvelu ja portti",
+        "paragraphs": [
+          "IP-osoite osoittaa verkkokohteen, mutta ei yksin määrittele palvelua. TCP- tai UDP-portti osallistuu liikenteen ohjaamiseen sovellukselle. Esimerkiksi TCP-portti 8080 voi olla harjoitussovelluksen kuunteluportti. Porttinumero ei kuitenkaan itsessään todista palvelun tyyppiä tai turvallisuutta.",
+          "R1:n käyttöliittymä ottaa yhteyden paikallisen palvelimen harjoituspalveluun. Suora IP-osoite toimii ilman ulkoista nimipalvelua. Nimipalvelu voidaan myöhemmin toteuttaa paikallisesti; sen riippuvuudet käsitellään omassa luvussaan. Verkkoyhteyden onnistuminen ei vielä tarkoita käyttöoikeutta."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Yksi kohde, useita palveluita",
+          "caption": "Yksi kohde, useita palveluita"
+        }
+      },
+      {
+        "title": "Harjoitus: erota verkko- ja sovellusvika",
+        "paragraphs": [
+          "Kytke harjoituslaitteet erilliseen kytkimeen. Määrittele yhteensopivat osoitteet ja testaa ensin paikallinen yhteys, sitten varsinainen sovelluspyyntö. Tarkista palvelimen kuunteluosoite ja palvelun tila. Ping voi auttaa verkon tutkimisessa, mutta sen onnistuminen tai epäonnistuminen ei yksin todista sovelluksen tilaa.",
+          "Pysäytä harjoituspalvelu hallitusti ja toista testit. Käynnistä palvelu uudelleen ja irrota sitten harjoitusverkon kaapeli. Vertaa havaintoja. Hyväksymiskriteeri: osallistuja pystyy erottamaan tilanteen, jossa verkkoyhteys toimii mutta sovellus ei, tilanteesta, jossa paikallinen verkkoyhteys puuttuu."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Vian paikantaminen kerroksittain",
+          "caption": "Vian paikantaminen kerroksittain"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Internal networking without internet",
+        "paragraphs": [
+          "A LAN connects local devices so they can exchange information. An Ethernet switch forwards frames between local ports. IP addresses let applications identify network destinations. Internet access or a default gateway is not required for communication within the same IP subnet.",
+          "R1 uses a separate switch and two devices. Example IPv4 addresses are 192.168.50.10/24 for the workstation and 192.168.50.20/24 for the server. These are illustrative training addresses: ensure they do not conflict with other devices in the training network."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "R1: local IPv4 network",
+          "caption": "R1: local IPv4 network"
+        }
+      },
+      {
+        "title": "Address, service and port",
+        "paragraphs": [
+          "An IP address identifies a network destination but does not by itself identify a service. A TCP or UDP port participates in directing traffic to an application. TCP port 8080, for example, may be a training application's listening port. The number alone does not establish service type or security.",
+          "The R1 interface connects to a training service on the local server. A direct IP address works without external name resolution. Local name resolution can be added later; its dependencies are covered separately. Successful connectivity does not establish authorization."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "One destination, multiple services",
+          "caption": "One destination, multiple services"
+        }
+      },
+      {
+        "title": "Exercise: distinguish network and application failures",
+        "paragraphs": [
+          "Connect training devices to a separate switch. Configure compatible addresses and test local connectivity first, then the actual application request. Check the server listening address and service status. Ping may assist network diagnosis, but its success or failure alone does not establish application state.",
+          "Stop the training service normally and repeat the tests. Restart it, then disconnect the training network cable. Compare observations. Acceptance criterion: the participant can distinguish a working network with a failed application from a missing local network connection."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Layered fault diagnosis",
+          "caption": "Layered fault diagnosis"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

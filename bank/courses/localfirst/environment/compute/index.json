@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Laskenta on paikallinen toiminto",
+        "paragraphs": [
+          "Laskenta muuntaa syötteen tulokseksi suorittamalla ohjelman. CPU suorittaa yleiskäyttöistä logiikkaa, RAM säilyttää aktiivisen työtilan ja GPU tai muu kiihdytin voi nopeuttaa siihen soveltuvia tehtäviä. Internet-yhteys ei ole laskennan tekninen edellytys.",
+          "R0:ssa huoltotietueen tarkastus, haku ja tallennuksen käynnistäminen tapahtuvat työasemalla. R1:ssä sama tehtävä voidaan jakaa työaseman käyttöliittymän ja paikallisen palvelimen kesken. Päätös siitä, missä laskenta suoritetaan, ei muuta tehtävän tarkoitusta."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Laskennan perusketju",
+          "caption": "Laskennan perusketju"
+        }
+      },
+      {
+        "title": "Laskennan sijoittaminen",
+        "paragraphs": [
+          "Työasemalle sijoitettu laskenta vähentää palvelinriippuvuutta, mutta kuormittaa päätelaitetta. Paikallinen palvelin mahdollistaa resurssien jakamisen ja yhtenäisen käsittelyn useille käyttäjille. Se lisää riippuvuuden sisäisestä verkosta ja palvelimesta.",
+          "R1:n huoltosovellus lähettää palvelimelle hakupyynnön. Palvelin suorittaa haun ja palauttaa tuloksen. Tämä ei edellytä pilvilaskentaa. Jos lähiverkko katkeaa, palvelimen toiminto ei ole työaseman käytettävissä, vaikka palvelin itse toimisi edelleen."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "R0 ja R1: laskennan sijoittelu",
+          "caption": "R0 ja R1: laskennan sijoittelu"
+        }
+      },
+      {
+        "title": "Harjoitus: mitoita tehtävän mukaan",
+        "paragraphs": [
+          "Määrittele käyttäjämäärä, samanaikaiset tehtävät, hyväksyttävä vasteaika ja työskentelydatan koko ennen laitevalintaa. Mittaa CPU:n, RAMin ja tarvittaessa GPU:n käyttö sekä tehtävän kesto. Kiinnitä huomiota huippukuormaan ja siihen, onko rajoite laskennassa, muistissa vai muualla.",
+          "Suorita R1:ssä toistuva huoltotietuehaku ensin yhdellä ja sitten usealla hyväksytyllä testiasiakkaalla. Käytä samaa testiaineistoa ja kirjaa vasteajat sekä resurssien käyttö. Hyväksymiskriteeri: mitattu suorituskyky täyttää etukäteen määritellyn tarpeen ilman ulkoista laskentapalvelua."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Mitoitus mittaamalla",
+          "caption": "Mitoitus mittaamalla"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Compute is a local function",
+        "paragraphs": [
+          "Compute transforms an input into a result by executing a program. The CPU executes general-purpose logic, RAM holds active working state, and a GPU or another accelerator can speed up suitable workloads. Internet connectivity is not a technical prerequisite for computation.",
+          "At R0 the workstation validates and searches maintenance records and initiates storage. At R1 the same task can be divided between the workstation interface and the local server. Changing the location of execution does not change the purpose of the task."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Basic compute chain",
+          "caption": "Basic compute chain"
+        }
+      },
+      {
+        "title": "Compute placement",
+        "paragraphs": [
+          "Workstation-based compute reduces server dependence but uses endpoint resources. A local server allows resource sharing and consistent processing for multiple users. It introduces dependencies on the internal network and server.",
+          "The R1 maintenance application sends a search request to the server. The server executes the search and returns the result. Cloud compute is unnecessary. If the LAN fails, the server function becomes unavailable to the workstation even if the server itself continues running."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "R0 and R1: compute placement",
+          "caption": "R0 and R1: compute placement"
+        }
+      },
+      {
+        "title": "Exercise: size for the workload",
+        "paragraphs": [
+          "Define user count, concurrent tasks, acceptable response time and working data size before choosing hardware. Measure CPU, RAM and GPU use where relevant, together with task duration. Pay attention to peak load and whether the bottleneck is compute, memory or elsewhere.",
+          "In R1, repeat maintenance record searches with one and then several approved test clients. Use the same dataset and record response times and resource utilization. Acceptance criterion: measured performance satisfies the predefined requirement without external compute services."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Sizing by measurement",
+          "caption": "Sizing by measurement"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

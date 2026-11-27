@@ -28,7 +28,7 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 
 | Aihe | Nodeja | Hyväksytty valmiiksi | Tila |
 |---|---:|---:|---|
-| 01 Suljettu toimintaympäristö | 11 | 3 | Sisältötyö käynnissä |
+| 01 Suljettu toimintaympäristö | 11 | 7 | Sisältötyö käynnissä |
 | 02 Kommunikointi | 21 | 0 | Aiempi luonnos |
 | 03 Pääsynhallinta ja toimivalta | 12 | 0 | Aiempi luonnos |
 | 04 Datan hallinta | 11 | 0 | Runko |
@@ -42,17 +42,17 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 
 ### 01 Suljettu toimintaympäristö
 
-  - [ ] `environment/compute/index.json`
+  - [x] `environment/compute/index.json`
 - [x] `environment/index.json`
     - [ ] `environment/lifecycle/failures/index.json`
   - [ ] `environment/lifecycle/index.json`
     - [ ] `environment/lifecycle/shutdown/index.json`
     - [ ] `environment/lifecycle/startup/index.json`
   - [x] `environment/logical/index.json`
-  - [ ] `environment/network/index.json`
+  - [x] `environment/network/index.json`
   - [x] `environment/physical/index.json`
-  - [ ] `environment/services/index.json`
-  - [ ] `environment/storage/index.json`
+  - [x] `environment/services/index.json`
+  - [x] `environment/storage/index.json`
 
 ### 02 Kommunikointi
 
@@ -173,13 +173,15 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 
 ## Edistyminen
 
-- Hyväksytysti valmiit sisältönodet: **4 / 101** (sisältää kurssin juurinoden).
+- Hyväksytysti valmiit sisältönodet: **8 / 101** (sisältää kurssin juurinoden).
 - Pääaiheet: **0 / 7** hyväksytysti valmista.
-- SVG-tiedostoja: **42** (22 aiempaa + 20 uutta; 21 kaaviota FI/EN).
-- Seuraava työ: `environment/compute/`, `storage/`, `network/` ja `services/`.
+- SVG-tiedostoja: **66** (22 aiempaa + 44 uutta; 33 kaaviota FI/EN).
+- Seuraava työ: `environment/lifecycle/` ja sen kolme aliaihetta (käynnistys, sammutus, vikatilanteet).
 
 ## Kehitysloki
 
 - Työlista alustettu nykyisen repository-puun pohjalta. Aiempi luonnos säilytetään, mutta mitään sisältönodea ei vielä merkitä hyväksytysti valmiiksi. Selaintestaus tekemättä.
 
 - Kierros 01: johdanto, toimintaympäristön yleiskuva, fyysinen ja looginen eristys täydennetty FI/EN. 10 uutta kaaviota kahdella kielellä. JSON-muoto, kuvatiedostoviittaukset ja sisällölliset rajaukset tarkastettu generoinnissa; SVG:n selaimessa renderöinti ja koko kurssin lopputarkastus tekemättä. Vanhoja SVG-resursseja ei poistettu tässä kierroksessa.
+
+- Kierros 02: laskenta, tallennus, sisäinen verkko ja paikalliset palvelut täydennetty FI/EN. 12 uutta kaaviota kahdella kielellä. R0/R1-referenssijärjestelmä jatkuu huolto-organisaation esimerkillä. JSON ja uudet kuvaviittaukset tarkastettu; SVG:n visuaalinen selaintestaus ja koko kurssin lopputarkastus jäljellä.

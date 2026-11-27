@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Pysyvä tallennus ja työmuisti",
+        "paragraphs": [
+          "RAM on tyypillisesti haihtuvaa työmuistia: sen sisältö ei säily virran katketessa. SSD, HDD tai muu pysyvä tallennus säilyttää kirjoitetun tiedon myös sammutettuna, mutta laitteen rikkoutuminen tai keskeneräinen kirjoitus voi silti aiheuttaa tietojen menetystä.",
+          "R0:n huoltotietue on tallennettava paikalliselle levylle. Pelkkä käyttöliittymässä näkyvä merkintä ei osoita, että tieto on pysyvästi tallennettu. Sovelluksen on ilmoitettava tallennuksen onnistuminen vasta soveltuvan pysyvyyden varmistuttua."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Työmuisti ja pysyvä tallennus",
+          "caption": "Työmuisti ja pysyvä tallennus"
+        }
+      },
+      {
+        "title": "Paikallinen ja verkkopohjainen tallennus",
+        "paragraphs": [
+          "Tallennus voi sijaita työaseman omalla levyllä tai paikallisella palvelimella. R1:n käyttäjä voi käyttää palvelimen tallennustilaa sovelluksen kautta ilman suoraa pääsyä tiedostojärjestelmään. Tämä erottaa sovelluksen tarjoaman toiminnon tallennuslaitteen käytöstä.",
+          "Paikallinen verkkotallennus ei ole sama asia kuin internetissä sijaitseva tallennuspalvelu. Se kuitenkin riippuu paikallisesta verkosta, palvelimen käytettävyydestä ja tallennusjärjestelmän kunnosta. Datan omistajuus, replikointi ja varmuuskopiointi käsitellään datan hallinnassa."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Tallennus palvelun takana",
+          "caption": "Tallennus palvelun takana"
+        }
+      },
+      {
+        "title": "Harjoitus: kapasiteetti ja kirjoituksen pysyvyys",
+        "paragraphs": [
+          "Arvioi tallennustarve aineiston koon, kasvun, lokien, väliaikaisten tiedostojen ja vapaan tilan tarpeen perusteella. Mittaa todellinen käyttö. Tallennuskapasiteetti ja kirjoitusnopeus ovat eri ominaisuuksia, eikä vapaa levytila yksin takaa riittävää suorituskykyä.",
+          "Luo harjoitustietue, tallenna se, sulje sovellus normaalisti ja avaa se uudelleen. Tarkista tietueen sisältö ja vapaan tallennustilan määrä. Hyväksymiskriteeri: vahvistettu tietue säilyy normaalin uudelleenkäynnistyksen yli. Tämä ei vielä todista äkillisen sähkökatkon kestävyyttä; sellainen testi vaatii erillisen turvallisen testiympäristön."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Tallennuksen hyväksymistesti",
+          "caption": "Tallennuksen hyväksymistesti"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Persistent storage and working memory",
+        "paragraphs": [
+          "RAM is typically volatile working memory: its contents do not survive loss of power. SSDs, HDDs and other persistent storage retain written data after shutdown, but device failure or incomplete writes may still cause data loss.",
+          "At R0 a maintenance record must be saved to local persistent storage. A record merely visible in the interface does not establish durable storage. The application must report success only after the required durability has been established."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Working memory and persistent storage",
+          "caption": "Working memory and persistent storage"
+        }
+      },
+      {
+        "title": "Local and network-based storage",
+        "paragraphs": [
+          "Storage may reside on the workstation's own drive or on a local server. An R1 user can use server storage through an application without direct filesystem access. This separates the application function from access to the storage device.",
+          "Local network storage is not the same as an internet-hosted storage service. It nevertheless depends on the LAN, server availability and storage health. Data ownership, replication and backups are covered in data management."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Storage behind a service",
+          "caption": "Storage behind a service"
+        }
+      },
+      {
+        "title": "Exercise: capacity and write durability",
+        "paragraphs": [
+          "Estimate storage needs from dataset size, growth, logs, temporary files and required free space. Measure actual usage. Capacity and write performance are distinct properties; free disk space alone does not establish adequate performance.",
+          "Create a training record, save it, close the application normally and reopen it. Verify the record and available storage. Acceptance criterion: the confirmed record survives a normal restart. This does not establish resilience to sudden power loss, which requires a separate safe test environment."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Storage acceptance test",
+          "caption": "Storage acceptance test"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }
