@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "DNS ja paikallinen nimenselvitys",
+        "paragraphs": [
+          "DNS (Domain Name System) yhdistää nimiin erilaisia tietueita, esimerkiksi palvelun IPv4- tai IPv6-osoitteet. Paikallinen sovellus voi olla riippuvainen ulkoisesta resolverista, vaikka kaikki sen tarvitsemat palvelut olisivat lähiverkossa. Ulkoiselle resolverille lähetetty kysely voi lisäksi paljastaa sisäisiä nimiä.",
+          "R3:ssa huoltopalvelun nimi voidaan ratkaista paikallisessa DNS-palvelussa. Pienessä harjoituksessa suora IP-osoite tai hosts-tiedosto voi riittää, mutta ne eivät korvaa kaikkia DNS:n tehtäviä. Suora IP-osoite ei myöskään automaattisesti täytä TLS-varmenteen nimitarkistusta. Paikallisen resolverin mahdolliset ulkoiset edelleenlähetykset määritellään erikseen."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "DNS ja paikallinen nimenselvitys",
+          "caption": "DNS ja paikallinen nimenselvitys"
+        }
+      },
+      {
+        "title": "Harjoitus: DNS ilman internetiä",
+        "paragraphs": [
+          "Määrittele harjoituspalvelulle paikallinen nimi ja tunnista asiakkaan käyttämä resolveri. Huomioi myös selaimen oma nimenselvitys. Irrota ulkoinen testiyhteys, käytä uutta testinimeä tai tyhjennä testiasiakkaan nimivälimuisti hallitusti ja tee nimikysely sekä sovelluspyyntö. Testaa myös tuntematon nimi.",
+          "Hyväksymiskriteeri: paikallinen nimi ratkeaa sovittuun osoitteeseen ja huoltosovellus toimii. Tuntematonta nimeä ei tulkita tunnetuksi palveluksi. Kirjaa mahdolliset ulkoiset DNS-kyselyt ja varmista, ettei vanha välimuisti ole ainoa onnistumisen syy. DNS-vastaus ei yksin todista palvelun identiteettiä."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: DNS ilman internetiä",
+          "caption": "Harjoitus: DNS ilman internetiä"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "DNS and local name resolution",
+        "paragraphs": [
+          "DNS (Domain Name System) associates names with records, including service IPv4 or IPv6 addresses. A local application may depend on an external resolver even when all required services reside on the LAN. Queries sent externally may also disclose internal names.",
+          "In R3, the maintenance service name can be resolved by local DNS. For a small exercise, a direct IP address or hosts file may suffice, but these do not replace all DNS functions. A direct IP address does not automatically satisfy TLS certificate name validation either. Define any external forwarding by the local resolver separately."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "DNS and local name resolution",
+          "caption": "DNS and local name resolution"
+        }
+      },
+      {
+        "title": "Exercise: DNS without internet",
+        "paragraphs": [
+          "Assign a local name to a training service and identify the client's resolver, including any browser-specific resolution. Disconnect the external test link, use a fresh test name or clear the training client's name cache in a controlled manner, and perform both a DNS lookup and an application request. Test an unknown name too.",
+          "Acceptance criterion: the local name resolves to the agreed address and the maintenance application works. An unknown name is not treated as a known service. Record any outward DNS queries and verify that prior cache contents are not the sole reason for success. A DNS response alone does not establish service identity."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: DNS without internet",
+          "caption": "Exercise: DNS without internet"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

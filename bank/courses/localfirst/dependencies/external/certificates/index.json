@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Varmenteiden paikallinen luottamusketju",
+        "paragraphs": [
+          "Varmenne voi sitoa julkisen avaimen identiteettiin luotetun myöntäjän allekirjoituksen kautta. TLS-yhteydessä tarkastetaan muun muassa luottamusketju, kohteen nimi ja voimassaolo. Paikallinen palvelu voi käyttää paikallisesti hallittua luottamusjuurta ilman jatkuvaa internetyhteyttä, kun juuren suojaus ja jakelu on suunniteltu.",
+          "Uusiminen, luottamusjuurten päivitykset ja mahdolliset peruutustarkistukset voivat muodostaa ulkoisia riippuvuuksia. Ulkoinen uusi peruutustieto ei ilmesty eristettyyn ympäristöön itsestään. Luotettava aika on myös voimassaolotarkistuksen edellytys. Offline-ongelmaa ei ratkaista poistamalla varmennetarkistuksia."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Varmenteiden paikallinen luottamusketju",
+          "caption": "Varmenteiden paikallinen luottamusketju"
+        }
+      },
+      {
+        "title": "Harjoitus: varmenne ilman ulkoista yhteyttä",
+        "paragraphs": [
+          "Käytä erillisessä testiverkossa hyväksyttyä testivarmennetta ja paikallista luottamusjuurta. Testaa oikea palvelunimi ja voimassa oleva varmenne ilman internetiä. Testaa lisäksi väärä palvelunimi ja vanhentunut testivarmenne. Laadi uusimissuunnitelma, jossa huomioidaan avaimet, aika, myöntäjä ja mahdollinen peruutustieto.",
+          "Hyväksymiskriteeri: hyväksytty yhteys toimii ja väärä nimi sekä vanhentunut varmenne hylätään. Tarkistuksia ei ohiteta yhteyden saamiseksi. Dokumentoi peruutustiedon tuoreusvaatimus ja sen toteuttamiskelpoisuus offline-tilassa."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: varmenne ilman ulkoista yhteyttä",
+          "caption": "Harjoitus: varmenne ilman ulkoista yhteyttä"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Local certificate trust chains",
+        "paragraphs": [
+          "A certificate can bind a public key to an identity through a trusted issuer's signature. TLS checks include the trust chain, destination name and validity. A local service can use a locally governed trust root without continuous internet connectivity when root protection and distribution are designed.",
+          "Renewal, trust-root updates and applicable revocation checks may introduce external dependencies. New external revocation information does not spontaneously appear in an isolated environment. Reliable time is also a prerequisite for validity checks. Do not solve offline problems by disabling certificate verification."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Local certificate trust chains",
+          "caption": "Local certificate trust chains"
+        }
+      },
+      {
+        "title": "Exercise: certificates without external connectivity",
+        "paragraphs": [
+          "Use an approved test certificate and local trust root in a separate test network. Test the correct service name and a valid certificate without internet. Also test a wrong service name and an expired test certificate. Prepare a renewal plan covering keys, time, issuer and applicable revocation data.",
+          "Acceptance criterion: the approved connection works and wrong names and expired certificates are rejected. Checks are not bypassed to establish connectivity. Document revocation freshness requirements and feasibility offline."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: certificates without external connectivity",
+          "caption": "Exercise: certificates without external connectivity"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

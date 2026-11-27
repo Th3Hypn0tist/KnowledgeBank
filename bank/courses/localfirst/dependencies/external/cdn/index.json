@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "CDN käyttöliittymän piiloriippuvuutena",
+        "paragraphs": [
+          "CDN (Content Delivery Network) jakelee sisältöä eri palvelupisteistä. Paikallinen HTML-sivu voi ladata JavaScriptin, tyylit, fontit tai kuvat ulkoisesta CDN:stä. Silloin paikallisen sivun saavutettavuus ei vielä takaa käyttöliittymän toimivuutta ilman internetiä.",
+          "R3:n tarvitsemat käyttöliittymäresurssit voidaan toimittaa paikalliselta palvelimelta. Ulkopuolisten aineistojen paikallinen jakelu edellyttää tarvittavia oikeuksia. Versioi resurssit tai poista tarpeettomat riippuvuudet. KnowledgeBankin oma JSON- ja SVG-rakenne havainnollistaa paikallisesti jaettavia sisältöresursseja; myös sen yhteisen site.css:n on oltava paikallisesti saatavilla offline-julkaisussa."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "CDN käyttöliittymän piiloriippuvuutena",
+          "caption": "CDN käyttöliittymän piiloriippuvuutena"
+        }
+      },
+      {
+        "title": "Harjoitus: selain ilman aiempaa välimuistia",
+        "paragraphs": [
+          "Avaa harjoitussovellus uudella selainprofiililla ilman ulkoista yhteyttä. Tarkista verkkopyynnöistä skriptien, tyylien, kuvien ja fonttien lähteet. Suorita varsinainen ohjehaku ja sallittu tallennus. Pelkkä sivun otsikon näkyminen ei riitä toimintatestiksi.",
+          "Hyväksymiskriteeri: kaikki ydintehtävän tarvitsemat resurssit saadaan paikallisesti ja toiminto onnistuu. Havaitut ulkoiset pyynnöt kirjataan. Aiemmin välimuistiin ladattu CDN-resurssi ei yksin osoita puhtaan ympäristön offline-käyttökelpoisuutta."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: selain ilman aiempaa välimuistia",
+          "caption": "Harjoitus: selain ilman aiempaa välimuistia"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "CDNs as hidden UI dependencies",
+        "paragraphs": [
+          "A CDN (Content Delivery Network) distributes content from delivery points. A local HTML page may load JavaScript, styles, fonts or images from an external CDN. Local page reachability therefore does not establish UI functionality without internet.",
+          "Required R3 UI assets can be served locally. Local redistribution of third-party material requires appropriate rights. Version assets or remove unnecessary dependencies. KnowledgeBank's JSON and SVG structure illustrates locally distributable content assets; its shared site.css must also be available locally in an offline deployment."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "CDNs as hidden UI dependencies",
+          "caption": "CDNs as hidden UI dependencies"
+        }
+      },
+      {
+        "title": "Exercise: browser without a prior cache",
+        "paragraphs": [
+          "Open the training application in a fresh browser profile without external connectivity. Inspect network requests for script, style, image and font sources. Perform actual instruction lookup and an authorized write. A visible page heading alone is not a functional test.",
+          "Acceptance criterion: every asset required by the core task is locally available and the operation succeeds. Record observed external requests. A previously cached CDN resource does not alone establish offline usability in a clean environment."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: browser without a prior cache",
+          "caption": "Exercise: browser without a prior cache"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

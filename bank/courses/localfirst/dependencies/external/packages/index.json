@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Pakettivarasto on hankintakanava",
+        "paragraphs": [
+          "Pakettivarasto jakelee ohjelmistopaketteja ja niiden metatietoja. Pakettienhallinta voi noutaa myös transitiiviset riippuvuudet. Suora asennus ulkoisesta varastosta riippuu yhteyden, varaston ja tarvittavien versioiden saatavuudesta. Tämä ei tarkoita, että asennettu ohjelma tarvitsee saman yhteyden käytön aikana.",
+          "R3:n offline-asennukseen voidaan valmistella paikallinen pakettivarasto tai versioitu asennusaineisto. Kohdealustan arkkitehtuuri, paketit, tarvittavat metatiedot ja luottamusavaimet huomioidaan. Tiiviste ilman luotettavaa vertailuarvoa ei osoita paketin alkuperää."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Pakettivarasto on hankintakanava",
+          "caption": "Pakettivarasto on hankintakanava"
+        }
+      },
+      {
+        "title": "Harjoitus: asennus puhtaassa ympäristössä",
+        "paragraphs": [
+          "Valitse täsmällinen harjoitussovelluksen versio. Kokoa kohdealustan tarvitsemat hyväksytyt paketit ja metatiedot. Asenna puhtaassa erillisessä harjoitusympäristössä vain paikallista aineistoa käyttäen. Käynnistä sovellus ja suorita tunnettu toimintatesti. Kokeile myös tilannetta, jossa yksi paketti puuttuu.",
+          "Hyväksymiskriteeri: kaikki tarvittavat riippuvuudet ovat paikallisesti saatavilla ja lopputulos toimii. Puuttuva paketti havaitaan eikä asennus turvaudu hiljaisesti ulkoiseen verkkoon vastoin harjoituksen ehtoja."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: asennus puhtaassa ympäristössä",
+          "caption": "Harjoitus: asennus puhtaassa ympäristössä"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Package repositories are acquisition channels",
+        "paragraphs": [
+          "A package repository distributes software packages and metadata. Package managers may also retrieve transitive dependencies. Direct installation from an external repository depends on connectivity, repository availability and required versions. This does not mean the installed program needs that connection at runtime.",
+          "R3 offline installation can use a prepared local repository or versioned installation bundle. Account for target architecture, packages, necessary metadata and trust keys. A digest without a trusted reference does not establish package provenance."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Package repositories are acquisition channels",
+          "caption": "Package repositories are acquisition channels"
+        }
+      },
+      {
+        "title": "Exercise: clean offline installation",
+        "paragraphs": [
+          "Select an exact training application version. Assemble approved packages and metadata for the target platform. Install in a clean separate environment using only local material. Start the application and perform a known functional test. Also try a missing-package scenario.",
+          "Acceptance criterion: all required dependencies are locally available and the result works. A missing package is detected and installation does not silently fall back to the external network against exercise conditions."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: clean offline installation",
+          "caption": "Exercise: clean offline installation"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

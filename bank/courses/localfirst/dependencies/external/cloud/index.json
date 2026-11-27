@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Cloud API ja toiminnon suorituspaikka",
+        "paragraphs": [
+          "Cloud API tarjoaa ulkoisesti suoritetun toiminnon rajapinnan kautta. Paikallinen käyttöliittymä ei tee sen taustalaskennasta paikallista. Ulkoinen luokittelu, haku tai käännös voi riippua yhteydestä, palveluntarjoajan saatavuudesta ja käyttörajoista. Pyynnön sisältö voi samalla ylittää hallintarajan.",
+          "R3:n paikallinen ohjehaku erotetaan valinnaisesta ulkoisesta luokittelusta. Jos ulkoinen tulos on aidosti välttämätön, tehtävää ei ilmoiteta suoritetuksi tuloksen puuttuessa. Mahdollisen paikallisen korvaavan toiminnon laatu ja hyväksyntäehdot määritellään erikseen."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Cloud API ja toiminnon suorituspaikka",
+          "caption": "Cloud API ja toiminnon suorituspaikka"
+        }
+      },
+      {
+        "title": "Harjoitus: ulkoisen API:n häiriö",
+        "paragraphs": [
+          "Käytä omaa harjoitusvastaanotinta ja synteettistä aineistoa. Määrittele paikallinen ohjehaku ja valinnainen ulkoinen luokittelu. Simuloi aikakatkaisu, virhevastaus ja käyttörajan täyttyminen. Tarkista, ettei ulkoinen kutsu estä paikallista hakua tai siirrä tarpeettomia kenttiä.",
+          "Hyväksymiskriteeri: paikallinen ydintoiminto jatkuu sovitusti, ulkoisen toiminnon tila on näkyvä eikä puuttuvaa tulosta keksitä. Kirjaa siirrettävät kentät ja mahdollisen paikallisen vaihtoehdon hyväksyntäehdot."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: ulkoisen API:n häiriö",
+          "caption": "Harjoitus: ulkoisen API:n häiriö"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Cloud APIs and execution location",
+        "paragraphs": [
+          "A cloud API exposes an externally executed operation through an interface. A local UI does not make its underlying computation local. External classification, search or translation may depend on connectivity, provider availability and usage limits. Request content may also cross the governance boundary.",
+          "Separate local R3 instruction lookup from optional external classification. If the external result is genuinely necessary, do not report task completion while it is missing. Define quality and acceptance conditions separately for any local substitute."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Cloud APIs and execution location",
+          "caption": "Cloud APIs and execution location"
+        }
+      },
+      {
+        "title": "Exercise: external API failure",
+        "paragraphs": [
+          "Use a controlled training receiver and synthetic data. Define local instruction lookup and optional external classification. Simulate timeout, error response and quota exhaustion. Verify that the external call does not block local lookup or transfer unnecessary fields.",
+          "Acceptance criterion: the local core continues as agreed, external operation status remains visible and a missing result is not invented. Record transferred fields and acceptance conditions for any local alternative."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: external API failure",
+          "caption": "Exercise: external API failure"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

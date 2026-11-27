@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Paikallinen mittaus ja ulkoinen telemetria",
+        "paragraphs": [
+          "Telemetria tuottaa havaintoja järjestelmän tilasta, suorituskyvystä tai käytöstä. Mittaus voi jäädä paikalliseksi tai siirtyä ulkoiseen palveluun. Ulkoinen diagnostiikka muodostaa egress-reitin ja voi aiheuttaa suoritusriippuvuuden, jos sovellus odottaa sen toimitusta. Myös virheraportti voi sisältää suojattua tietoa.",
+          "R3 tarvitsee paikallisen valvonnan, mutta ei automaattisesti ulkoista telemetriapalvelua. Määrittele paikalliset mittarit ja lokit sekä erillinen mahdollinen vienti. Ulkoisen viennin poistaminen ei saa tarpeettomasti poistaa paikallista kykyä havaita häiriöitä."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Paikallinen mittaus ja ulkoinen telemetria",
+          "caption": "Paikallinen mittaus ja ulkoinen telemetria"
+        }
+      },
+      {
+        "title": "Harjoitus: telemetrian katkaisukoe",
+        "paragraphs": [
+          "Määrittele harjoitussovellukselle paikallinen suorituskykymittari ja hyväksytty testivastaanotin. Estä vastaanottimen saavutettavuus ja suorita paikallinen tehtävä. Tarkasta vasteajat, paikallinen loki ja mahdollinen lähetysjono. Määrittele jonon enimmäiskoko ja säilytysaika, jotta pitkä katkos ei kuluta resursseja hallitsemattomasti.",
+          "Hyväksymiskriteeri: paikallinen mittaus toimii, ulkoinen toimitushäiriö on näkyvä eikä ydintoiminto esty tarpeettomasti. Dokumentoi vientisisältö ja säilytysrajat. Käytä synteettistä diagnostiikkadataa."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: telemetrian katkaisukoe",
+          "caption": "Harjoitus: telemetrian katkaisukoe"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Local measurement and external telemetry",
+        "paragraphs": [
+          "Telemetry produces observations about system state, performance or use. Measurement may remain local or be transferred to an external service. External diagnostics create an egress path and may introduce a runtime dependency if the application waits for delivery. Error reports may also contain protected information.",
+          "R3 needs local monitoring but not automatically an external telemetry service. Define local metrics and logs separately from any export. Removing external export should not unnecessarily remove the local ability to detect faults."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Local measurement and external telemetry",
+          "caption": "Local measurement and external telemetry"
+        }
+      },
+      {
+        "title": "Exercise: telemetry disconnection test",
+        "paragraphs": [
+          "Define a local performance metric and an approved training receiver. Make the receiver unreachable and perform a local task. Inspect response times, local logs and any delivery queue. Define maximum queue size and retention so a prolonged outage does not exhaust resources uncontrollably.",
+          "Acceptance criterion: local measurement works, external delivery failure is visible and the core is not unnecessarily blocked. Document export contents and retention limits. Use synthetic diagnostic data."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: telemetry disconnection test",
+          "caption": "Exercise: telemetry disconnection test"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

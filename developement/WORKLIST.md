@@ -32,7 +32,7 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 | 02 Kommunikointi | 21 | 21 | Sisältö valmis |
 | 03 Pääsynhallinta ja toimivalta | 12 | 12 | Sisältö valmis |
 | 04 Datan hallinta | 11 | 11 | Sisältö valmis |
-| 05 Riippuvuuksien hallinta | 15 | 5 | Sisältötyö käynnissä |
+| 05 Riippuvuuksien hallinta | 15 | 15 | Sisältö valmis |
 | 06 Paikallinen tekoäly | 15 | 0 | Aiempi luonnos |
 | 07 Verifiointi | 15 | 0 | Aiempi luonnos |
 
@@ -110,17 +110,17 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 ### 05 Riippuvuuksien hallinta
 
   - [x] `dependencies/discovery/index.json`
-    - [ ] `dependencies/external/cdn/index.json`
-    - [ ] `dependencies/external/certificates/index.json`
-    - [ ] `dependencies/external/cloud/index.json`
-    - [ ] `dependencies/external/dns/index.json`
-    - [ ] `dependencies/external/iam/index.json`
+    - [x] `dependencies/external/cdn/index.json`
+    - [x] `dependencies/external/certificates/index.json`
+    - [x] `dependencies/external/cloud/index.json`
+    - [x] `dependencies/external/dns/index.json`
+    - [x] `dependencies/external/iam/index.json`
   - [x] `dependencies/external/index.json`
-    - [ ] `dependencies/external/libraries/index.json`
-    - [ ] `dependencies/external/licenses/index.json`
-    - [ ] `dependencies/external/ntp/index.json`
-    - [ ] `dependencies/external/packages/index.json`
-    - [ ] `dependencies/external/telemetry/index.json`
+    - [x] `dependencies/external/libraries/index.json`
+    - [x] `dependencies/external/licenses/index.json`
+    - [x] `dependencies/external/ntp/index.json`
+    - [x] `dependencies/external/packages/index.json`
+    - [x] `dependencies/external/telemetry/index.json`
 - [x] `dependencies/index.json`
   - [x] `dependencies/internal/index.json`
   - [x] `dependencies/updates/index.json`
@@ -173,10 +173,10 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 
 ## Edistyminen
 
-- Hyväksytysti valmiit sisältönodet: **61 / 101** (sisältää kurssin juurinoden).
-- Pääaiheet: **4 / 7** hyväksytysti valmista.
-- SVG-tiedostoja: **322** (22 aiempaa + 300 uutta; 161 kaaviota FI/EN).
-- Seuraava työ: riippuvuuksien hallinnan 10 ulkoista riippuvuutta.
+- Hyväksytysti valmiit sisältönodet: **71 / 101** (sisältää kurssin juurinoden).
+- Pääaiheet: **5 / 7** hyväksytysti valmista.
+- SVG-tiedostoja: **362** (22 aiempaa + 340 uutta; 181 kaaviota FI/EN).
+- Seuraava työ: 06 Paikallinen tekoäly (15 nodea).
 
 ## Kehitysloki
 
@@ -217,3 +217,5 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 - Kierros 10A: datan hallinnan loput kuusi nodea sekä riippuvuuksien hallinnan viisi yleisnodea, yhteensä 11 nodea ja 22 kaaviota FI/EN. Ensimmäinen laaja erä jaettu teknisesti kahteen committiin työkalun kutsurajan vuoksi. JSON ja kuvaviittaukset tarkastettu; visuaalinen tarkastus, XML-parseritarkastus ja harjoitusten suoritus jäljellä.
 
 - API:n löydettävyys: absoluuttiset HTTPS-osoitteet (`api`, `source`, `root`, discovery) yhdestä PUBLIC_BASE-vakiosta. Lisätty dynaamiset XML-sitemap ja HTML-linkkiluettelo samasta JSON-hierarkiasta sekä robots.txt-yhdistämismalli sivuston juureen. XML jättää outline/draft-nodet pois; JSON/HTML näyttävät koko rakenteen. index.html, llms.txt ja README päivitetty. Ei sisältöprosentin muutosta. PHP-ajotesti, tuotantoreititys, host-root robots.txt -yhdistäminen ja botin uusintatesti jäljellä.
+
+- Kierros 10B: kaikki 10 ulkoisen riippuvuuden nodea täydennetty FI/EN, 20 uutta kaaviota (40 SVG-tiedostoa). Riippuvuuksien hallinta kokonaan sisältövalmis. DNS, NTP, IAM, sertifikaatit, lisenssit, kirjastot, pakettivarastot, Cloud API, CDN ja telemetria käsitelty hankinta-, suoritus- tai ylläpitoriippuvuuksina. Jokaisessa määritelmä, R3-esimerkki, harjoitus ja hyväksymiskriteerit. JSON-parsinta, kieliparien rakenne ja uudet kuvaviittaukset tarkastettu; SVG:n XML- ja visuaalinen tarkastus sekä harjoitusten suoritus jäljellä. Ei käyttöliittymä- tai API-muutoksia.

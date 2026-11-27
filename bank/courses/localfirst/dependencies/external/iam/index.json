@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "IAM:n ajonaikainen riippuvuus",
+        "paragraphs": [
+          "IAM (Identity and Access Management) kattaa identiteettien ja pääsyn hallinnan. Tässä käsitellään riippuvuutta IAM-palvelun saatavuudesta, ei uudelleen autentikoinnin ja auktorisoinnin perusteita. Jos jokainen kirjautuminen tai toimivaltapäätös tarvitsee ulkoisen palvelun, paikallinen käyttö voi estyä yhteyskatkossa.",
+          "R3:n vaihtoehtoja ovat paikallisesti hallittu IAM tai suunniteltu offline-malli, jossa paikallisesti tarkastettava todiste ja politiikka ovat voimassa rajatun ajan. Ulkoisen oikeuden peruutustieto ei saavu eristettyyn järjestelmään ilman tietoreittiä. Offline-voimassaolo on sovitettava peruutusviiveen vaatimuksiin."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "IAM:n ajonaikainen riippuvuus",
+          "caption": "IAM:n ajonaikainen riippuvuus"
+        }
+      },
+      {
+        "title": "Harjoitus: offline-valtuuden voimassaolo",
+        "paragraphs": [
+          "Määrittele harjoitusidentiteetille paikallinen kirjautuminen ja oikeuden voimassaolo. Testaa uusi kirjautuminen ulkoisen IAM-yhteyden puuttuessa sekä paikallisesti peruutettu oikeus. Jos käytössä on ulkoisesti myönnetty token, dokumentoi sen jäljellä oleva voimassaolo ja ulkoisen peruutuksen välittymisen viive.",
+          "Hyväksymiskriteeri: vain suunniteltu offline-käyttö onnistuu. Vanhentunut tai paikallisesti peruutettu oikeus hylätään; ulkoisen peruutuksen epävarmuus on näkyvä ja käsitellään sovitun politiikan mukaisesti. Käytä vain harjoitustunnuksia."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: offline-valtuuden voimassaolo",
+          "caption": "Harjoitus: offline-valtuuden voimassaolo"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Runtime dependency on IAM",
+        "paragraphs": [
+          "IAM (Identity and Access Management) covers identity and access governance. This topic addresses service availability rather than repeating authentication and authorization basics. If every sign-in or authority decision requires an external service, local use may be blocked by disconnection.",
+          "R3 options include locally governed IAM or a designed offline model in which locally verifiable evidence and policy remain valid for a bounded period. External revocation information cannot reach an isolated system without a data path. Offline validity must satisfy revocation-delay requirements."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Runtime dependency on IAM",
+          "caption": "Runtime dependency on IAM"
+        }
+      },
+      {
+        "title": "Exercise: offline permission validity",
+        "paragraphs": [
+          "Define local sign-in and permission validity for a training identity. Test a new sign-in without external IAM connectivity and a locally revoked permission. If an externally issued token is used, document remaining validity and propagation delay for external revocation.",
+          "Acceptance criterion: only designed offline use succeeds. Expired or locally revoked authority is denied; uncertainty about external revocation is visible and handled under the agreed policy. Use training identities only."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: offline permission validity",
+          "caption": "Exercise: offline permission validity"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

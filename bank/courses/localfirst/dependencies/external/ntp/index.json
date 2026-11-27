@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Ajan lähde ja kellopoikkeama",
+        "paragraphs": [
+          "NTP (Network Time Protocol) synkronoi kelloja aikapalvelimien kanssa. Luotettavaa kalenteriaikaa voidaan tarvita lokituksessa, varmenteiden voimassaolossa ja ajastuksessa. Yhteyden katkeaminen ei pysäytä paikallista kelloa, mutta sen poikkeama vertailuajasta voi kasvaa.",
+          "R3:n verkossa paikallinen aikapalvelin voi tarjota yhteisen ajan. Määrittele sen ajan lähde, hyväksytty tarkkuus ja toiminta lähteen puuttuessa. Kuluneen ajan mittaamiseen käytetään soveltuvaa monotonista kelloa, joka ei hyppää seinäkellon korjausten mukana. Monotoninen aika ei itsessään tarjoa yhteistä UTC-aikaa eri laitteille."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Ajan lähde ja kellopoikkeama",
+          "caption": "Ajan lähde ja kellopoikkeama"
+        }
+      },
+      {
+        "title": "Harjoitus: aika yhteyskatkon aikana",
+        "paragraphs": [
+          "Mittaa kahden harjoituslaitteen kellopoikkeama suhteessa sovittuun vertailuun. Estä ulkoisen aikapalvelun käyttö testiverkossa ja seuraa poikkeamaa määritellyn jakson ajan. Testaa erillisessä harjoitusprosessissa kuluneen ajan mittausta myös simuloidun seinäkellon muutoksen yhteydessä. Älä muuta tuotantolaitteiden kelloja.",
+          "Hyväksymiskriteeri: kellopoikkeama ja sen hyväksyttävä raja on dokumentoitu; aikakatkaisut käyttävät soveltuvaa kuluneen ajan mittausta. Määrittele toiminta, jos luotettavaa aikaa ei enää ole esimerkiksi varmenteen voimassaolon tarkastamiseen. Epävarmuutta ei tulkita automaattisesti hyväksytyksi ajaksi."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: aika yhteyskatkon aikana",
+          "caption": "Harjoitus: aika yhteyskatkon aikana"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Time source and clock drift",
+        "paragraphs": [
+          "NTP (Network Time Protocol) synchronizes clocks with time servers. Reliable calendar time may be needed for logging, certificate validity and scheduling. Disconnecting the link does not stop a local clock, but its deviation from reference time may grow.",
+          "A local time server can provide common time in R3. Define its time source, accepted accuracy and behavior when the source is absent. Use a suitable monotonic clock for elapsed time, avoiding wall-clock correction jumps. Monotonic time alone does not provide shared UTC across devices."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Time source and clock drift",
+          "caption": "Time source and clock drift"
+        }
+      },
+      {
+        "title": "Exercise: time during disconnection",
+        "paragraphs": [
+          "Measure the clock deviation of two training devices against an agreed reference. Block external time service access in the test network and observe deviation for a defined interval. In a separate training process, test elapsed-time measurement during a simulated wall-clock change. Do not change production device clocks.",
+          "Acceptance criterion: clock deviation and its accepted limit are documented; timeouts use suitable elapsed-time measurement. Define behavior when reliable time is no longer available, for example for certificate validity checks. Uncertainty is not automatically treated as acceptable time."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: time during disconnection",
+          "caption": "Exercise: time during disconnection"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

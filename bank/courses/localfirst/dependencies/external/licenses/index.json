@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Lisenssin käyttöehdot ja tekninen tarkistus",
+        "paragraphs": [
+          "Ohjelmistolisenssi määrittelee sallitun käytön ehdot. Tekninen lisenssipalvelu voi tarkistaa käyttöoikeuden käynnistyksessä, määräajoin tai tietyn toiminnon yhteydessä. Paikallinen asennus ei siksi automaattisesti tarkoita offline-käyttökelpoisuutta. Oikeudellinen käyttöoikeus ja tekninen tarkistus ovat eri asioita.",
+          "R3:n ohjelmistovalinnassa selvitetään, tukeeko valmistaja hyväksyttyä offline-aktivointia, paikallista lisenssipalvelinta tai muuta sopivaa mallia. Lisenssitarkistuksen ohittaminen ei ole Local-First-ratkaisu. Jos vaadittu käyttötapa ei ole sallittu tai mahdollinen, valitaan soveltuva lisenssi tai ohjelmisto."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Lisenssin käyttöehdot ja tekninen tarkistus",
+          "caption": "Lisenssin käyttöehdot ja tekninen tarkistus"
+        }
+      },
+      {
+        "title": "Harjoitus: lisenssin offline-käyttökelpoisuus",
+        "paragraphs": [
+          "Valitse harjoitusohjelmisto ja kirjaa sen dokumentoidut aktivointi-, uusimis- ja offline-ehdot. Selvitä palvelimen vaihdon ja palautuksen vaikutus. Käytä valmistajan sallimia testitapoja ja voimassa olevaa harjoituslisenssiä. Määrittele testijakso myös mahdollisten määräaikaisten tarkistusten perusteella.",
+          "Hyväksymiskriteeri: käyttökelpoisuus ilman internetiä osoitetaan sallitulla tavalla tai riippuvuus kirjataan rajoitteeksi. Yhden onnistuneen käynnistyksen perusteella ei päätellä rajatonta offline-käyttöä."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: lisenssin offline-käyttökelpoisuus",
+          "caption": "Harjoitus: lisenssin offline-käyttökelpoisuus"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "License terms and technical verification",
+        "paragraphs": [
+          "A software license defines conditions for permitted use. A technical license service may check entitlement at startup, periodically or when an operation is invoked. Local installation does not automatically establish offline usability. Legal entitlement and technical verification are distinct.",
+          "When selecting R3 software, establish whether the vendor supports approved offline activation, a local license server or another appropriate model. Bypassing licensing checks is not a Local-First solution. If required use is not permitted or feasible, choose suitable licensing or software."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "License terms and technical verification",
+          "caption": "License terms and technical verification"
+        }
+      },
+      {
+        "title": "Exercise: offline licensing usability",
+        "paragraphs": [
+          "Select training software and record documented activation, renewal and offline conditions. Establish the effects of server replacement and recovery. Use vendor-permitted test methods and valid training licensing. Define the test interval accounting for any periodic checks.",
+          "Acceptance criterion: offline usability is demonstrated through permitted means or the dependency is recorded as a limitation. One successful startup does not establish unlimited offline use."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: offline licensing usability",
+          "caption": "Exercise: offline licensing usability"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

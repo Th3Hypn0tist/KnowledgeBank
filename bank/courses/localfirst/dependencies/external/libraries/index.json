@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Kirjastojen transitiiviset riippuvuudet",
+        "paragraphs": [
+          "Ohjelmistokirjasto tarjoaa uudelleenkäytettäviä toimintoja. Suora kirjasto voi vaatia muita kirjastoja tai järjestelmätason resursseja. Paikallinen ohjelma voi toimia offline-tilassa, vaikka sen rakentaminen vaatisi ulkoista hankintaa. Ajonaikainen dynaaminen lataus voi puolestaan muodostaa uuden suoritusriippuvuuden.",
+          "R3:n sovelluksesta inventoidaan tarvittavat kirjastot, versiot, alkuperä, lisenssit ja tarkistettavat tiivisteet. Tarpeettomat riippuvuudet poistetaan. Nolla ulkoista riippuvuutta on yksi arkkitehtuurivaihtoehto, mutta turvallisuuskriittisen toiminnon toteuttaminen itse ei automaattisesti ole ylläpidettyä kirjastoa turvallisempaa."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Kirjastojen transitiiviset riippuvuudet",
+          "caption": "Kirjastojen transitiiviset riippuvuudet"
+        }
+      },
+      {
+        "title": "Harjoitus: build ja runtime erikseen",
+        "paragraphs": [
+          "Valitse pieni harjoitussovellus ja kokoa hyväksytty, versioitu paikallinen rakennusaineisto. Kirjaa suorat ja tunnetut transitiiviset riippuvuudet. Testaa rakentaminen puhtaassa harjoitusympäristössä sekä erikseen valmiin ohjelman suorittaminen ilman ulkoista yhteyttä. Aiempi välimuisti ei saa peittää puuttuvia resursseja.",
+          "Hyväksymiskriteeri: rakennus- ja suoritusvaiheen riippuvuusprofiilit on kuvattu erikseen. Käytetyt versiot ja lisenssit ovat jäljitettävissä. Jos vaihe epäonnistuu, puuttuva riippuvuus kirjataan."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: build ja runtime erikseen",
+          "caption": "Harjoitus: build ja runtime erikseen"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Transitive library dependencies",
+        "paragraphs": [
+          "A software library supplies reusable functions. A direct library may require other libraries or system resources. A local program can operate offline even when its build requires external acquisition. Dynamic loading during execution may create an additional runtime dependency.",
+          "Inventory required R3 libraries, versions, provenance, licenses and verifiable digests. Remove unnecessary dependencies. Zero external dependencies is one architectural option, but implementing security-critical functions yourself is not automatically safer than using a maintained library."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Transitive library dependencies",
+          "caption": "Transitive library dependencies"
+        }
+      },
+      {
+        "title": "Exercise: separate build and runtime",
+        "paragraphs": [
+          "Choose a small training application and assemble approved, versioned local build material. Record direct and known transitive dependencies. Test building in a clean training environment and separately running the built program without external connectivity. Prior caches must not hide missing resources.",
+          "Acceptance criterion: build and runtime dependency profiles are documented separately. Versions and licenses are traceable. If a stage fails, record the missing dependency."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: separate build and runtime",
+          "caption": "Exercise: separate build and runtime"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }
