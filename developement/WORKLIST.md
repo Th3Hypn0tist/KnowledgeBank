@@ -31,7 +31,7 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 | 01 Suljettu toimintaympäristö | 11 | 11 | Sisältö valmis |
 | 02 Kommunikointi | 21 | 21 | Sisältö valmis |
 | 03 Pääsynhallinta ja toimivalta | 12 | 12 | Sisältö valmis |
-| 04 Datan hallinta | 11 | 0 | Runko |
+| 04 Datan hallinta | 11 | 5 | Sisältötyö käynnissä |
 | 05 Riippuvuuksien hallinta | 15 | 0 | Runko |
 | 06 Paikallinen tekoäly | 15 | 0 | Aiempi luonnos |
 | 07 Verifiointi | 15 | 0 | Aiempi luonnos |
@@ -98,13 +98,13 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
   - [ ] `data/backup/index.json`
   - [ ] `data/conflicts/index.json`
   - [ ] `data/deletion/index.json`
-- [ ] `data/index.json`
-  - [ ] `data/lifecycle/index.json`
-  - [ ] `data/location/index.json`
-  - [ ] `data/ownership/index.json`
+- [x] `data/index.json`
+  - [x] `data/lifecycle/index.json`
+  - [x] `data/location/index.json`
+  - [x] `data/ownership/index.json`
   - [ ] `data/replication/index.json`
   - [ ] `data/restore/index.json`
-  - [ ] `data/ssot/index.json`
+  - [x] `data/ssot/index.json`
   - [ ] `data/sync/index.json`
 
 ### 05 Riippuvuuksien hallinta
@@ -173,10 +173,10 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 
 ## Edistyminen
 
-- Hyväksytysti valmiit sisältönodet: **45 / 101** (sisältää kurssin juurinoden).
+- Hyväksytysti valmiit sisältönodet: **50 / 101** (sisältää kurssin juurinoden).
 - Pääaiheet: **3 / 7** hyväksytysti valmista.
-- SVG-tiedostoja: **250** (22 aiempaa + 228 uutta; 125 kaaviota FI/EN).
-- Seuraava työ: 04 Datan hallinta – yleiskuva, SSOT, omistajuus, sijainti ja elinkaari.
+- SVG-tiedostoja: **278** (22 aiempaa + 256 uutta; 139 kaaviota FI/EN).
+- Seuraava työ: `data/replication/`, `data/sync/`, `data/conflicts/`, `data/backup/`, `data/restore/` ja `data/deletion/`.
 
 ## Kehitysloki
 
@@ -209,3 +209,7 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 - Lisätty read-only PHP REST API /api-hakemistoon: rekursiivinen sitemap, rajattu alipuu ja yksittäinen node. Ei erillistä indeksiä tai sisältökopioita. llms.txt ja README päivitetty. PHP-ajotestaus ja tuotannon reitityksen tarkastus jäljellä; sisältöprosentti ennallaan.
 
 - llms.txt muutettu API-first-ohjeeksi (sitemap → valitut nodet → kieliversio ja SVG:t). index.html sisältää staattiset head-linkit llms.txt:hen ja API-sitemappiin sekä näkyvät footer-linkit. Ei muutosta sisältöprosenttiin. Tuotantoreititys ja selaintestaus jäljellä.
+
+- Käyttäjä vahvisti viimeisimmän käyttöliittymä/API-kokonaisuuden toimivan; tämä ei korvaa systemaattista lopputestausta.
+
+- Kierros 09: datan hallinnan yleiskuva, SSOT, omistajuus, sijainti ja elinkaari täydennetty FI/EN (5 nodea). 14 uutta kaaviota kahdella kielellä. SSOT kuvattu loogisena auktoritatiivisuutena, ei yhden fyysisen kopion vaatimuksena. Omistajuus rajattu arkkitehtuurin hallintavastuuseen, ei juridiseksi omistusoikeusväitteeksi. JSON, kieliparien rakenne ja kuvaviittaukset tarkastettu; uusien kaavioiden visuaalinen tarkastus ja harjoitusten suoritus jäljellä.

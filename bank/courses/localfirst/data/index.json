@@ -16,8 +16,58 @@
     "deletion"
   ],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Data on järjestelmän toiminnan perusta",
+        "paragraphs": [
+          "R3:ssa huolto-organisaatio käyttää paikallisesti hallittuja työohjeita, laiterekisteriä ja huoltotapahtumia. Järjestelmän arvo ei ole pelkästään sovelluksessa vaan tiedossa, jonka avulla tehtävä voidaan suorittaa. Sovelluksen vaihtaminen ei saa tarpeettomasti tehdä aineistosta käyttökelvotonta.",
+          "Datan hallinta määrittelee tiedon auktoritatiivisen lähteen, hallintavastuun, sijainnin ja elinkaaren. Nämä ovat eri kysymyksiä. Tieto voi sijaita usealla levyllä tai palvelimella, vaikka sen hyväksytyllä tilalla olisi yksi määritelty auktoritatiivinen lähde."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Data on järjestelmän toiminnan perusta",
+          "caption": "Data on järjestelmän toiminnan perusta"
+        }
+      },
+      {
+        "title": "Erota tiedon hallinta ja käyttö",
+        "paragraphs": [
+          "Datan käyttäminen ei automaattisesti anna oikeutta päättää sen hyväksytystä sisällöstä tai elinkaaresta. Käyttöoikeus, fyysinen säilytys, hallintavastuu ja tiedon auktoritatiivinen tila on kuvattava erikseen. Esimerkiksi raportin muodostaja käyttää huoltotietoja, mutta ei raportin perusteella muuta alkuperäisiä tapahtumia.",
+          "Harjoituksessa inventoi R3:n kolme tietokokonaisuutta ja nimeä jokaiselle lähde, vastuullinen rooli, sijainti ja tärkeimmät käyttötavat. Hyväksymiskriteeri: tietokokonaisuuksien riippuvuudet ovat tunnistettavissa myös ilman käyttöliittymää tai ulkoista palvelua."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Erota tiedon hallinta ja käyttö",
+          "caption": "Erota tiedon hallinta ja käyttö"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Data is the basis of system operation",
+        "paragraphs": [
+          "In R3 the maintenance organization uses locally governed instructions, equipment records and maintenance events. System value lies not only in the application but in the information enabling the task. Replacing an application should not unnecessarily render the data unusable.",
+          "Data management defines the authoritative source, governance responsibility, location and lifecycle of information. These are different questions. Data may reside on multiple drives or servers while its accepted state has one defined authoritative source."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Data is the basis of system operation",
+          "caption": "Data is the basis of system operation"
+        }
+      },
+      {
+        "title": "Separate data governance from use",
+        "paragraphs": [
+          "Using data does not automatically grant authority to determine its accepted content or lifecycle. Describe access, physical custody, governance responsibility and authoritative state separately. A report generator uses maintenance records, for example, but does not modify original events based on the report.",
+          "Inventory R3's three datasets and identify the source, accountable role, location and main uses of each. Acceptance criterion: dataset dependencies are identifiable even without the interface or an external service."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Separate data governance from use",
+          "caption": "Separate data governance from use"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

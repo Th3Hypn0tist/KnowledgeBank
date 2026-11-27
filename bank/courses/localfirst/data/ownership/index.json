@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Datan omistajuus ja hallintavastuu",
+        "paragraphs": [
+          "Datan omistajuudella tarkoitetaan tässä arkkitehtuuriluvussa määriteltyä vastuuta tiedon hallinnasta ja päätöksistä. Se ei ole väite siitä, että kaikki data olisi juridisesti omistettavaa samalla tavalla kuin esine. Oikeudelliset oikeudet ja velvoitteet voivat rajoittaa käsittelyä riippumatta teknisestä hallinnasta.",
+          "R3:ssa laiterekisterin vastuullinen rooli määrittelee perustietojen hyväksyntämenettelyn, ylläpitopalvelu toteuttaa teknisen tallennuksen ja huoltaja käyttää tietoa työtehtävänsä rajoissa. Nämä voivat olla eri toimijoita. Palvelimen haltija ei automaattisesti saa päätösvaltaa kaikkeen palvelimella olevaan tietoon."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Datan omistajuus ja hallintavastuu",
+          "caption": "Datan omistajuus ja hallintavastuu"
+        }
+      },
+      {
+        "title": "Organisaatioraja ja tiedon luovutus",
+        "paragraphs": [
+          "Tietoa voidaan luovuttaa kumppanille määritellyn tarkoituksen perusteella ilman, että vastaanottajalle siirtyy kaikki lähdeaineiston hallintavastuu. Vastaanotetun kopion käyttöehdot, säilytys ja mahdolliset oikeudet tuottaa uusia tietoja määritellään erikseen. Luovutuksen jälkeen jo toimitetun kopion hallinta riippuu vastaanottajan toteutuksesta ja sopimuksista.",
+          "R3:n organisaatio A voi lähettää B:lle hyväksytyn huoltoraportin. B ei tämän vuoksi saa muuttaa A:n laiterekisteriä. A:n tekninen käyttöoikeuden peruutus ei myöskään automaattisesti poista B:lle aiemmin toimitettua raporttitiedostoa."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Organisaatioraja ja tiedon luovutus",
+          "caption": "Organisaatioraja ja tiedon luovutus"
+        }
+      },
+      {
+        "title": "Harjoitus: määrittele datavastuut",
+        "paragraphs": [
+          "Valitse kolme R3:n tietokokonaisuutta. Kirjaa kuka hyväksyy sisällön muutokset, kuka ylläpitää tallennusta, kuka saa lukea tiedon ja kuka voi päättää viennistä tai poistosta sovellettavien ehtojen puitteissa. Nimeä myös vastuutaho, jolle epäselvä tai ristiriitainen muutos ohjataan.",
+          "Hyväksymiskriteeri: jokaiselle tehtävälle on määritelty vastuullinen rooli eikä teknisen ylläpitäjän pääsyä tulkita yleiseksi oikeudeksi käyttää tai luovuttaa kaikkea dataa. Käytä harjoituksessa vain synteettistä aineistoa. Mahdolliset oikeudelliset vaatimukset merkitään erillisinä selvitettävinä ehtoina."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Harjoitus: määrittele datavastuut",
+          "caption": "Harjoitus: määrittele datavastuut"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Data ownership and governance responsibility",
+        "paragraphs": [
+          "In this architecture chapter data ownership means defined responsibility for governance and decisions. It is not a claim that all data is legally ownable in the same way as a physical object. Legal rights and obligations may constrain processing independently of technical control.",
+          "In R3 the accountable registry role defines master data acceptance, the maintenance service implements storage, and the technician uses data within the assigned task. These can be different principals. Possession of the server does not automatically confer authority over all information stored on it."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Data ownership and governance responsibility",
+          "caption": "Data ownership and governance responsibility"
+        }
+      },
+      {
+        "title": "Organization boundaries and data disclosure",
+        "paragraphs": [
+          "Data may be disclosed to a partner for a defined purpose without transferring all governance responsibility for the source dataset. Define usage conditions, retention and any rights to create new information separately for the received copy. Control over a previously delivered copy depends on the recipient's implementation and agreements.",
+          "R3 organization A may send an approved maintenance report to B. This does not authorize B to modify A's equipment registry. Revocation of technical access in A also does not automatically remove a report file already delivered to B."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Organization boundaries and data disclosure",
+          "caption": "Organization boundaries and data disclosure"
+        }
+      },
+      {
+        "title": "Exercise: define data responsibilities",
+        "paragraphs": [
+          "Select three R3 datasets. Record who approves content changes, maintains storage, may read data and may decide on export or deletion subject to applicable conditions. Identify who handles ambiguous or conflicting changes.",
+          "Acceptance criterion: each task has an accountable role and technical administrator access is not interpreted as universal authority to use or disclose all data. Use synthetic data only. Record any legal requirements separately as conditions requiring clarification."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Exercise: define data responsibilities",
+          "caption": "Exercise: define data responsibilities"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

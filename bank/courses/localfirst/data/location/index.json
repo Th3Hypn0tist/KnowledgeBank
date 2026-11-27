@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Datan sijainti on muutakin kuin palvelimen osoite",
+        "paragraphs": [
+          "Datan sijainnilla voidaan tarkoittaa fyysistä tallennuspaikkaa, loogista tietovarastoa, tietoa käsittelevää ympäristöä tai hallinnollista aluetta. Määrittele mikä sijainti on tarkasteltavan vaatimuksen kannalta olennainen. Palvelun URL tai IP-osoite ei itsessään osoita, missä tieto fyysisesti säilyy.",
+          "R3:ssa laiterekisteri sijaitsee paikallisella palvelimella, mutta työasemalla voi olla siitä välimuisti ja erillisellä medialla varmuuskopio. Paikallinen käsittely tarkoittaa tässä, että määritelty ydintoiminto käyttää paikallisesti saatavia resursseja; kaikki kopiot ja niiden sijainnit inventoidaan erikseen."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Datan sijainti on muutakin kuin palvelimen osoite",
+          "caption": "Datan sijainti on muutakin kuin palvelimen osoite"
+        }
+      },
+      {
+        "title": "Käsittelyn sivutuotteet ja piilokopiot",
+        "paragraphs": [
+          "Aineistoa voi syntyä myös lokitiedostoihin, väliaikaishakemistoihin, selaimen välimuistiin, hakemistoihin ja sovelluksen diagnostiikkaan. Paikallisen tekoälyn kohdalla myös promptit, välitulokset ja embedding-indeksit voivat sisältää tai paljastaa lähdetietoa. Näiden sijaintia ei voi päätellä pelkästään alkuperäisen tietokannan sijainnista.",
+          "R3:n huoltosovelluksen suunnittelussa kartoitetaan varsinaisen tietolähteen lisäksi kaikki tarpeelliset johdannaiset. Tunnista erityisesti komponentit, jotka voisivat lähettää diagnostiikkaa ulos. Sijaintikartoituksen tarkoitus on tehdä tiedon todellinen vaikutusalue näkyväksi; egressin sallittavuus ratkaistaan erikseen."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Käsittelyn sivutuotteet ja piilokopiot",
+          "caption": "Käsittelyn sivutuotteet ja piilokopiot"
+        }
+      },
+      {
+        "title": "Harjoitus: sijainti-inventaario",
+        "paragraphs": [
+          "Luo yksilöity synteettinen testitietue ja seuraa, missä järjestelmän osissa se tai siitä johdettu sisältö esiintyy normaalin käytön aikana. Tarkasta hyväksytyssä harjoitusympäristössä tietovarasto, hakemisto, sovelluslokit, väliaikaiset tiedostot ja mahdollinen varmuuskopio. Kirjaa myös ne komponentit, joihin sinulla ei ole näkyvyyttä.",
+          "Hyväksymiskriteeri: tunnetut sijainnit, käsittelypaikat ja mahdolliset ulkoiset siirtoreitit on kuvattu. Havaitsematta jääneitä kopioita ei väitetä olemattomiksi. Tarkista, että paikallinen työtehtävä onnistuu ilman ulkopuolista tallennuspalvelua, jos se on määritelty vaatimus."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Harjoitus: sijainti-inventaario",
+          "caption": "Harjoitus: sijainti-inventaario"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Data location is more than a server address",
+        "paragraphs": [
+          "Data location may mean physical storage location, logical data store, processing environment or administrative area. Define which location matters to the requirement being examined. A service URL or IP address alone does not establish where information is physically stored.",
+          "In R3 the equipment registry resides on the local server, while the workstation may have a cache and separate media may hold a backup. Local processing here means the defined core function uses locally available resources; inventory all copies and their locations separately."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Data location is more than a server address",
+          "caption": "Data location is more than a server address"
+        }
+      },
+      {
+        "title": "Processing by-products and hidden copies",
+        "paragraphs": [
+          "Information may also be created in logs, temporary directories, browser caches, indexes and application diagnostics. Local AI prompts, intermediate outputs and embedding indexes may contain or reveal source information. Their locations cannot be inferred solely from the original database location.",
+          "R3 maintenance application design inventories necessary derivatives as well as the main source. Identify components that could transmit diagnostics outward. Location mapping makes the actual data scope visible; egress authorization is decided separately."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Processing by-products and hidden copies",
+          "caption": "Processing by-products and hidden copies"
+        }
+      },
+      {
+        "title": "Exercise: location inventory",
+        "paragraphs": [
+          "Create an identified synthetic test record and trace where it or derived content appears during normal use. Inspect the data store, index, application logs, temporary files and any backup in an approved training environment. Record components for which you lack visibility.",
+          "Acceptance criterion: known locations, processing sites and possible outward transfer paths are documented. Do not claim that unobserved copies do not exist. Verify that the local task succeeds without external storage if that is a defined requirement."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Exercise: location inventory",
+          "caption": "Exercise: location inventory"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Datan elinkaari erotetaan järjestelmän käyttötilasta",
+        "paragraphs": [
+          "Datan elinkaari kuvaa tiedon luomista tai vastaanottoa, tarkastamista, käyttöönottoa, muuttamista, säilyttämistä ja lopulta poistamista tai muuta määriteltyä päättymistä. Järjestelmän sammutus ei itsessään päätä datan elinkaarta. Samalla palvelimella voi olla aktiivista, historiallista ja poistettavaksi määriteltyä tietoa.",
+          "R3:n uusi työohje vastaanotetaan, tarkastetaan ja hyväksytään käyttöön. Uusi versio voi korvata aiemman aktiivisessa käytössä, mutta vanhaa versiota voidaan säilyttää perustellusta syystä esimerkiksi historiallisen huoltotapahtuman tulkitsemiseksi."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Datan elinkaari erotetaan järjestelmän käyttötilasta",
+          "caption": "Datan elinkaari erotetaan järjestelmän käyttötilasta"
+        }
+      },
+      {
+        "title": "Versio ja voimassaolo ovat eri ominaisuuksia",
+        "paragraphs": [
+          "Versionumero yksilöi tiedon määritellyn revision. Voimassaolo kertoo, milloin tai missä tilanteessa revisiota saa käyttää. Suurin versionumero ei automaattisesti tarkoita hyväksyttyä tai voimassa olevaa tietoa: uusi versio voi odottaa tarkastusta tai sen käyttöönotto voi alkaa vasta myöhemmin.",
+          "R3:ssa työohjeen versio 1 voi olla voimassa, vaikka versio 2 on jo vastaanotettu. Kun versio 2 hyväksytään ja tulee voimaan, versio 1 poistuu aktiivisesta käytöstä määritellyllä tavalla. Huoltotapahtumaan tallennettu ohjeversion viite auttaa jäljittämään, minkä ohjeen perusteella tehtävä suoritettiin."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Versio ja voimassaolo ovat eri ominaisuuksia",
+          "caption": "Versio ja voimassaolo ovat eri ominaisuuksia"
+        }
+      },
+      {
+        "title": "Harjoitus: määrittele tiedon tilasiirtymät",
+        "paragraphs": [
+          "Muodosta R3:n työohjeelle tilataulukko: vastaanotettu, tarkastuksessa, hyväksytty, voimassa, korvattu ja poistettavissa. Määrittele jokaiselle siirtymälle käynnistävä tapahtuma, vastuullinen rooli ja ehto. Päätä myös, miten epäonnistunut tarkastus näkyy ja miten historialliset viitteet säilytetään.",
+          "Testaa synteettisellä aineistolla tilanne, jossa uusi ohjeversio hylätään, ja toinen tilanne, jossa se hyväksytään. Hyväksymiskriteeri: hylättyä versiota ei käytetä aktiivisena ohjeena ja hyväksytyn version käyttöönotto tapahtuu määriteltyjen ehtojen mukaan. Säilytys- ja poistomenettelyjen yksityiskohdat käsitellään luvun myöhemmissä aiheissa."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Harjoitus: määrittele tiedon tilasiirtymät",
+          "caption": "Harjoitus: määrittele tiedon tilasiirtymät"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Data lifecycle differs from system operating state",
+        "paragraphs": [
+          "A data lifecycle describes creation or receipt, checking, activation, modification, retention and eventual deletion or another defined end state. System shutdown does not itself end the data lifecycle. One server may hold active, historical and deletion-designated information.",
+          "An R3 instruction is received, checked and accepted for use. A new version may replace the prior active version, while the old one may be retained for a justified purpose such as interpreting a historical maintenance event."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Data lifecycle differs from system operating state",
+          "caption": "Data lifecycle differs from system operating state"
+        }
+      },
+      {
+        "title": "Version and validity are distinct properties",
+        "paragraphs": [
+          "A version identifies a defined revision of information. Validity describes when or under which conditions that revision may be used. The highest version number is not automatically accepted or valid: a newer revision may await review or become effective later.",
+          "In R3 instruction version 1 may remain valid even after version 2 has been received. Once version 2 is accepted and becomes effective, version 1 leaves active use through the defined mechanism. An instruction version reference recorded in the maintenance event helps establish which instruction governed the task."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Version and validity are distinct properties",
+          "caption": "Version and validity are distinct properties"
+        }
+      },
+      {
+        "title": "Exercise: define data state transitions",
+        "paragraphs": [
+          "Create a state table for an R3 instruction: received, under review, approved, effective, superseded and eligible for deletion. Define initiating event, accountable role and condition for each transition. Also determine how failed review is represented and how historical references are retained.",
+          "Using synthetic data, test one rejected new instruction version and one accepted version. Acceptance criterion: the rejected revision is not used as the active instruction and the accepted revision becomes active according to defined conditions. Detailed retention and deletion procedures are covered later in the chapter."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Exercise: define data state transitions",
+          "caption": "Exercise: define data state transitions"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

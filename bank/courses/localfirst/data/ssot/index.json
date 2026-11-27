@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "SSOT määrittelee auktoritatiivisen tiedon",
+        "paragraphs": [
+          "Single Source of Truth (SSOT) tarkoittaa tässä kurssissa, että jokaiselle määritellylle tiedolle ja sen hyväksytylle tilalle on yksiselitteinen auktoritatiivinen lähde. Tämä ei edellytä yhtä fyysistä tietokantaa koko organisaatiolle. Eri tietokokonaisuuksilla voi olla eri lähteet, kun niiden vastuut eivät ole ristiriidassa.",
+          "R3:ssa laiterekisteri määrittelee laitteen tunnisteen ja hyväksytyt perustiedot. Huoltotapahtuma viittaa laitteen tunnisteeseen. Raportti ja paikallinen hakemisto johdetaan lähteistä. Raporttiin kopioitu laitteen nimi ei muutu uudeksi auktoritatiiviseksi laitetiedoksi."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "SSOT määrittelee auktoritatiivisen tiedon",
+          "caption": "SSOT määrittelee auktoritatiivisen tiedon"
+        }
+      },
+      {
+        "title": "SSOT ja fyysisten kopioiden määrä",
+        "paragraphs": [
+          "Auktoritatiivisuus on tiedon hallinnan ominaisuus, ei tallennusmedian lukumäärä. Yksi looginen tietolähde voi käyttää replikoita, välimuisteja ja varmuuskopioita. Myös hajautettu tietokanta voi toteuttaa yhden loogisen auktoritatiivisen tilan, jos sen hyväksyntä- ja konfliktisäännöt määrittelevät kyseisen tilan yksiselitteisesti.",
+          "Jos kaksi itsenäistä järjestelmää voi muuttaa samaa tietoa ilman yhteistä hyväksyntä- tai konfliktisääntöä, tiedon hyväksytty tila voi jäädä epäselväksi. R3:n harjoitusmallissa laiterekisterin muutokset hyväksytään määritellyssä lähdepalvelussa, ja muut esitykset päivittyvät siitä."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "SSOT ja fyysisten kopioiden määrä",
+          "caption": "SSOT ja fyysisten kopioiden määrä"
+        }
+      },
+      {
+        "title": "Harjoitus: jäljitä tieto lähteeseen",
+        "paragraphs": [
+          "Luo synteettinen laitetietue, esimerkiksi EQ-42, ja kaksi siitä johdettua esitystä: työaseman hakutulos ja kuukausiraportti. Muuta laitteen nimeä hyväksytyn lähdetoiminnon kautta ja tarkasta, mitkä esitykset päivittyvät ja millä viiveellä. Historiallisen raportin ei välttämättä pidä muuttua jälkikäteen, jos se kuvaa julkaisuhetken tilaa.",
+          "Hyväksymiskriteeri: jokaisen esityksen alkuperäinen lähde ja versio tai muodostusajankohta ovat tunnistettavissa. Johdetun esityksen muokkaaminen ei muuta laiterekisteriä ilman määriteltyä muutostoimintoa. Kirjaa erikseen, mitkä esitykset ovat ajantasaisia näkymiä ja mitkä historiallisia otoksia."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Harjoitus: jäljitä tieto lähteeseen",
+          "caption": "Harjoitus: jäljitä tieto lähteeseen"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "SSOT defines authoritative information",
+        "paragraphs": [
+          "Single Source of Truth (SSOT) means in this course that each defined item of information and its accepted state has an unambiguous authoritative source. It does not require one physical database for an entire organization. Different datasets may have different sources provided their responsibilities do not conflict.",
+          "In R3 the equipment registry defines equipment identifiers and accepted master data. A maintenance event references the equipment identifier. Reports and the local search index derive from sources. An equipment name copied into a report does not become a new authoritative equipment record."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "SSOT defines authoritative information",
+          "caption": "SSOT defines authoritative information"
+        }
+      },
+      {
+        "title": "SSOT and the number of physical copies",
+        "paragraphs": [
+          "Authority is a governance property, not a count of storage media. One logical source may use replicas, caches and backups. A distributed database can also implement a single logical authoritative state if acceptance and conflict rules define that state unambiguously.",
+          "If two independent systems can modify the same information without a shared acceptance or conflict rule, its accepted state may become ambiguous. In R3's training model equipment registry changes are accepted at a designated source service and other representations update from it."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "SSOT and the number of physical copies",
+          "caption": "SSOT and the number of physical copies"
+        }
+      },
+      {
+        "title": "Exercise: trace information to its source",
+        "paragraphs": [
+          "Create a synthetic equipment record, such as EQ-42, and two derived representations: a workstation search result and a monthly report. Change its name through the authorized source operation and inspect which representations update and after what delay. A historical report need not change retroactively if it represents the state at publication time.",
+          "Acceptance criterion: the originating source and version or generation time of each representation are identifiable. Editing a derived representation does not modify the registry without a defined change operation. Record which representations are current views and which are historical snapshots."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Exercise: trace information to its source",
+          "caption": "Exercise: trace information to its source"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }
