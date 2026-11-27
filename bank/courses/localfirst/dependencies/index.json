@@ -10,8 +10,58 @@
     "updates"
   ],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Riippuvuus on toiminnon edellytys",
+        "paragraphs": [
+          "Riippuvuus voi olla resurssi, palvelu, komponentti tai ehto. R3:n huoltotietueen tallennus tarvitsee esimerkiksi sovelluspalvelun, tietokannan, tallennuksen ja toimivaltapäätöksen. Riippuvuudet muodostavat verkon eivätkä vain listaa ohjelmistokirjastoista.",
+          "Local-First ei tarkoita kaikkien riippuvuuksien poistamista. Tavoite on määritellä niiden vaikutusalue ja sijoittaa tarpeelliset resurssit paikallisen hallinnan piiriin, kun käyttötarkoitus sitä edellyttää."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Riippuvuus on toiminnon edellytys",
+          "caption": "Riippuvuus on toiminnon edellytys"
+        }
+      },
+      {
+        "title": "Harjoitus: luokittele toiminnan edellytykset",
+        "paragraphs": [
+          "Luokittele viisi huolto-organisaation tehtävää paikallisiksi ydintoiminnoiksi, valinnaisiksi lisätoiminnoiksi tai siirrettäviksi ulkoisiksi toimituksiksi. Ohjeen lukeminen voi olla paikallinen ydintoiminto ja uuden ohjeversion nouto erillinen toimitus. Huomioi, että vanhentunutta ohjetta ei saa automaattisesti käyttää.",
+          "Hyväksymiskriteeri: jokaiselle tehtävälle on kuvattu toiminta ulkoisen yhteyden puuttuessa. Luokittelu perustuu tehtävään, ei käytetyn teknologian nimeen."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: luokittele toiminnan edellytykset",
+          "caption": "Harjoitus: luokittele toiminnan edellytykset"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "A dependency is a prerequisite",
+        "paragraphs": [
+          "A dependency may be a resource, service, component or condition. Saving an R3 maintenance record requires an application service, database, storage and authority decision, for example. Dependencies form a graph, not merely a list of libraries.",
+          "Local-First does not mean eliminating every dependency. The aim is to define their scope and place required resources under local control when the use case demands it."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "A dependency is a prerequisite",
+          "caption": "A dependency is a prerequisite"
+        }
+      },
+      {
+        "title": "Exercise: classify operational prerequisites",
+        "paragraphs": [
+          "Classify five maintenance tasks as local core functions, optional enhancements or deferrable external deliveries. Reading an instruction may be local, while retrieving a new revision is a separate delivery. Do not automatically use an expired instruction.",
+          "Acceptance criterion: each task has defined behavior when external connectivity is absent. Classification follows the task rather than technology name."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: classify operational prerequisites",
+          "caption": "Exercise: classify operational prerequisites"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

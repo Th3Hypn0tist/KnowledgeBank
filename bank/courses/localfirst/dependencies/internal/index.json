@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Paikallinen ei tarkoita riippuvuudetonta",
+        "paragraphs": [
+          "Sisäinen riippuvuus sijaitsee määritellyn hallintarajan sisällä. Kytkin, paikallinen identiteettipalvelu ja tietokanta voivat olla sisäisiä riippuvuuksia. Paikallisuus ei poista laitevian, kapasiteetin loppumisen tai konfiguraatiovirheen vaikutuksia.",
+          "Yksittäinen paikallinen komponentti voi olla yhteinen vikaantumispiste. Kaksi palvelinta voi edelleen riippua samasta kytkimestä tai virransyötöstä. Redundanssi mitoitetaan todetun saatavuustarpeen ja vika-alueiden mukaan."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Paikallinen ei tarkoita riippuvuudetonta",
+          "caption": "Paikallinen ei tarkoita riippuvuudetonta"
+        }
+      },
+      {
+        "title": "Harjoitus: paikallinen vika-alue",
+        "paragraphs": [
+          "Piirrä R3:n komponentit ja merkitse jaetut virta-, verkko- ja tallennusresurssit. Pysäytä yksi valittu komponentti hallitusti erillisessä testiympäristössä. Tarkasta vaikutus ohjehakuun ja huoltotietojen tallentamiseen.",
+          "Hyväksymiskriteeri: havaitut vaikutukset vastaavat riippuvuusverkkoa tai poikkeamat kirjataan. Varakomponentti lasketaan toimivaksi vasta, kun siirtyminen ja tarvittava tieto on todennettu."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: paikallinen vika-alue",
+          "caption": "Harjoitus: paikallinen vika-alue"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Local does not mean dependency-free",
+        "paragraphs": [
+          "An internal dependency resides inside the defined governance boundary. A switch, local identity service and database may be internal dependencies. Locality does not remove hardware failures, capacity exhaustion or misconfiguration.",
+          "A single local component may be a common failure point. Two servers may still depend on the same switch or power supply. Design redundancy according to availability requirements and failure domains."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Local does not mean dependency-free",
+          "caption": "Local does not mean dependency-free"
+        }
+      },
+      {
+        "title": "Exercise: local failure domain",
+        "paragraphs": [
+          "Draw R3 components and identify shared power, network and storage. Stop one selected component in a controlled manner in a separate test environment. Check effects on instruction lookup and record saving.",
+          "Acceptance criterion: observed effects match the dependency graph or deviations are recorded. Count standby equipment as functional only after failover and required data have been verified."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: local failure domain",
+          "caption": "Exercise: local failure domain"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

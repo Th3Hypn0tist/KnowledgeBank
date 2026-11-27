@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Synkronointi sovittaa tietotilat yhteen",
+        "paragraphs": [
+          "Synkronointi saattaa määritellyt tietokopiot sovittuun tilaan. Replikointi painottaa kopioiden ylläpitoa, synkronointi tilojen yhteensovittamista; mekanismit voivat olla samoja. Täysi synkronointi siirtää koko määritellyn aineiston, inkrementaalinen synkronointi tarvittavat muutokset.",
+          "R3:n ohjevälimuisti hakee hyväksytyt revisiot lähteestä. Muutoshistorian on välitettävä myös poistot, jos poistettu tieto ei saa jäädä aktiiviseksi. Kaksisuuntainen synkronointi tarvitsee konfliktisäännöt."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Synkronointi sovittaa tietotilat yhteen",
+          "caption": "Synkronointi sovittaa tietotilat yhteen"
+        }
+      },
+      {
+        "title": "Harjoitus: synkronoinnin katkos",
+        "paragraphs": [
+          "Luo kolme peräkkäistä testimuutosta, joista yksi on poisto. Keskeytä siirto toisen muutoksen kohdalla. Jatka viimeisestä varmasti käsitellystä revisiosta. Muutosten ja käsittelykohdistimen tallennuksen on oltava johdonmukainen.",
+          "Hyväksymiskriteeri: muutoksia ei katoa, poisto välittyy ja saman muutoksen uusinnalla on määritelty vaikutus. Jos historia puuttuu, tunnista tilanne ja käynnistä sovittu uudelleensynkronointi."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: synkronoinnin katkos",
+          "caption": "Harjoitus: synkronoinnin katkos"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Synchronization reconciles data states",
+        "paragraphs": [
+          "Synchronization brings defined copies into an agreed state. Replication emphasizes maintaining copies, synchronization reconciling their states; mechanisms may overlap. Full synchronization transfers the defined dataset, incremental synchronization the required changes.",
+          "R3's instruction cache retrieves accepted revisions from the source. Change history must also convey deletions if removed information must not remain active. Bidirectional synchronization requires conflict rules."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Synchronization reconciles data states",
+          "caption": "Synchronization reconciles data states"
+        }
+      },
+      {
+        "title": "Exercise: interrupted synchronization",
+        "paragraphs": [
+          "Create three consecutive test changes including a deletion. Interrupt transfer at the second change. Resume from the last definitely processed revision. Change application and checkpoint storage must be consistent.",
+          "Acceptance criterion: changes are not lost, deletion propagates and replay has defined effects. If history is missing, detect this and initiate agreed resynchronization."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: interrupted synchronization",
+          "caption": "Exercise: interrupted synchronization"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

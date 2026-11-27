@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Replikointi ylläpitää kopioita",
+        "paragraphs": [
+          "Replikointi ylläpitää määriteltyä tietoa useassa tallennuspaikassa. Auktoritatiivinen lähde ja hyväksytty kirjoitusvalta määritellään riippumatta fyysisten kopioiden määrästä. R3:n laiterekisteri välittää hyväksytyt muutokset toiselle paikalliselle palvelimelle.",
+          "Synkroninen replikointi odottaa määriteltyä replikan kuittausta ennen kirjoitusvahvistusta. Asynkroninen malli voi vahvistaa kirjoituksen jo lähteessä. Replika voi tällöin olla jäljessä, eikä kuittaus välttämättä tarkoita pysyvää tallennusta: sen merkitys riippuu toteutuksesta."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Replikointi ylläpitää kopioita",
+          "caption": "Replikointi ylläpitää kopioita"
+        }
+      },
+      {
+        "title": "Harjoitus: replikan viive",
+        "paragraphs": [
+          "Kirjoita synteettinen EQ-42-tietue lähteeseen, viivästytä replikan päivitystä ja vertaa palautettuja revisioita. Palauta yhteys ja mittaa aika, jonka kuluttua replika saavuttaa määritellyn lähdetilan. Määrittele etukäteen, milloin replikan tieto on liian vanhaa käytettäväksi.",
+          "Hyväksymiskriteeri: viive havaitaan ja replikan käyttöehdot tunnetaan. Replika voi välittää myös virheellisen muutoksen tai poiston; se ei yksin korvaa varmuuskopiota."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: replikan viive",
+          "caption": "Harjoitus: replikan viive"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Replication maintains copies",
+        "paragraphs": [
+          "Replication maintains defined information in multiple storage locations. The authoritative source and accepted write authority are defined independently of physical copy count. R3's equipment registry propagates accepted changes to another local server.",
+          "Synchronous replication waits for defined replica acknowledgement before confirming a write. Asynchronous replication may confirm at the source first. The replica may lag, and acknowledgement need not imply durability: its meaning depends on implementation."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Replication maintains copies",
+          "caption": "Replication maintains copies"
+        }
+      },
+      {
+        "title": "Exercise: replica lag",
+        "paragraphs": [
+          "Write a synthetic EQ-42 record at the source, delay the replica update and compare returned revisions. Restore connectivity and measure time until the replica reaches the defined source state. Define beforehand when replica data is too stale to use.",
+          "Acceptance criterion: lag is observable and replica usage conditions are known. Replication can propagate incorrect changes or deletion too; it is not a substitute for backup."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: replica lag",
+          "caption": "Exercise: replica lag"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

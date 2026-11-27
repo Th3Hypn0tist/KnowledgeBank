@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Päivitys on hallittu muutos",
+        "paragraphs": [
+          "Local-First ei tarkoita ohjelmiston pysyvää jäädyttämistä. Päivitykset voivat korjata virheitä mutta muuttaa riippuvuuksia tai tietomallia. Erota hankinta, hyväksyntä, testaus ja käyttöönotto. Säilytä version alkuperä ja tarkasta eheys luotettavaa vertailutietoa vasten sekä allekirjoitus, jos soveltuva.",
+          "Suunnittele palautettavuus ennen muutosta. Tietokantamigraatio voi vaatia ennen päivitystä muodostetun palautuspisteen. Myös uuden version aikana syntyneiden tietojen käsittely on suunniteltava."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Päivitys on hallittu muutos",
+          "caption": "Päivitys on hallittu muutos"
+        }
+      },
+      {
+        "title": "Harjoitus: päivitys ja palautussuunnitelma",
+        "paragraphs": [
+          "Valmistele synteettiselle R3-järjestelmälle uusi harjoitusversio ja palautuspiste. Testaa offline-käynnistys, ohjehaku, sallittu tallennus ja kielletyn toiminnon esto. Jos uusi versio ei läpäise testejä, käytä ennalta määriteltyä palautusmenettelyä.",
+          "Hyväksymiskriteeri: versio otetaan käyttöön vain ehtojen täyttyessä. Kirjaa vanha ja uusi versio, testitulokset ja rajoitteet. Arvioi päivityksen jälkeen ulkoiset riippuvuudet uudelleen."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: päivitys ja palautussuunnitelma",
+          "caption": "Harjoitus: päivitys ja palautussuunnitelma"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "An update is a controlled change",
+        "paragraphs": [
+          "Local-First does not mean permanently freezing software. Updates may fix defects but alter dependencies or schemas. Separate acquisition, approval, testing and deployment. Retain version provenance and verify integrity against trusted reference information, and signatures where applicable.",
+          "Plan recoverability before changes. Database migration may require a pre-update recovery point. Handling data created under the new version must also be planned."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "An update is a controlled change",
+          "caption": "An update is a controlled change"
+        }
+      },
+      {
+        "title": "Exercise: update and recovery plan",
+        "paragraphs": [
+          "Prepare a new synthetic R3 training version and recovery point. Test offline startup, instruction lookup, authorized saving and denial of a prohibited operation. If the new version fails, use predefined recovery procedures.",
+          "Acceptance criterion: deploy only when conditions hold. Record old and new versions, test outcomes and limitations. Reassess external dependencies after updating."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: update and recovery plan",
+          "caption": "Exercise: update and recovery plan"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

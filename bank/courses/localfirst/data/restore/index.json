@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Palauttaminen on hallittu käyttöönotto",
+        "paragraphs": [
+          "Palauttaminen muodostaa hyväksytystä palautuslähteestä käyttökelpoisen tilan. Valitse palautuspiste, tarkasta eheys ja yhteensopivuus, palauta erilliseen kohteeseen ja varmista toiminta ennen käyttöönottoa. Älä tarpeettomasti korvaa ehjää tuotantoaineistoa.",
+          "R3:n palautukseen voivat kuulua data, skeema, ohjelmistoversio, asetukset, avaimet ja käyttöoikeudet. Ehjä varmuuskopiotiedosto ei vielä osoita käyttökelpoisuutta, jos esimerkiksi salausavain puuttuu."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Palauttaminen on hallittu käyttöönotto",
+          "caption": "Palauttaminen on hallittu käyttöönotto"
+        }
+      },
+      {
+        "title": "Harjoitus: mittaa palautumisaika",
+        "paragraphs": [
+          "RTO (Recovery Time Objective) on tavoiteajanjakso toiminnan palautumiselle. Määrittele mittauksen alku ja loppu. Palauta synteettinen tietokanta erilliselle palvelimelle ja suorita tunnettu luku ja sallittu kirjoitus.",
+          "Hyväksymiskriteeri: mitattu palautumisaika täyttää RTO:n ja tietojen ajantasaisuus RPO:n. Kirjaa aika, mahdollinen hävikki ja puuttuvat resurssit. Epäonnistunut testi merkitään epäonnistuneeksi."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: mittaa palautumisaika",
+          "caption": "Harjoitus: mittaa palautumisaika"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Recovery is controlled activation",
+        "paragraphs": [
+          "Recovery reconstructs a usable state from an approved recovery source. Select the recovery point, check integrity and compatibility, restore separately and verify operation before activation. Do not unnecessarily overwrite intact production data.",
+          "R3 recovery may require data, schema, software version, configuration, keys and permissions. An intact backup file does not establish usability if an encryption key is missing, for example."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Recovery is controlled activation",
+          "caption": "Recovery is controlled activation"
+        }
+      },
+      {
+        "title": "Exercise: measure recovery time",
+        "paragraphs": [
+          "RTO (Recovery Time Objective) is the target interval for restoring operation. Define measurement start and end. Restore a synthetic database to a separate server and perform a known read and authorized write.",
+          "Acceptance criterion: measured recovery time meets RTO and data freshness meets RPO. Record time, potential loss and missing resources. Record failed tests as failures."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: measure recovery time",
+          "caption": "Exercise: measure recovery time"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Konflikti syntyy yhteensopimattomista muutoksista",
+        "paragraphs": [
+          "Konflikti syntyy, kun muutoksia ei voida soveltaa yhdessä sovitun tietomallin ja hyväksyntäsääntöjen mukaisesti. Rinnakkaiset muutokset eri tietueisiin eivät välttämättä ole konflikteja. Kaksi offline-työasemaa voi kuitenkin ehdottaa samalle EQ-42-laitteelle eri nimeä samasta lähtörevisiosta.",
+          "Tunnista kohde ja muutoksen lähtörevisio. Aikaleima ei yksin todista syyjärjestystä, koska kellot voivat poiketa. Auktoritatiivisen tilan muodostuminen ratkaistaan määritellyllä säännöllä."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Konflikti syntyy yhteensopimattomista muutoksista",
+          "caption": "Konflikti syntyy yhteensopimattomista muutoksista"
+        }
+      },
+      {
+        "title": "Harjoitus: ratkaise ristiriita",
+        "paragraphs": [
+          "Luo kaksi ristiriitaista nimiehdotusta ja määrittele ratkaisustrategia: säilytä lähteen tila, ohjaa valtuutetun ihmisen hyväksyttäväksi tai käytä soveltuvaa yhdistämissääntöä. Viimeisin kirjoitus voittaa -mallia käytetään vain, jos mahdollinen tietohävikki ja järjestysmääritelmä ovat hyväksyttäviä.",
+          "Hyväksymiskriteeri: ristiriitaa ei piiloteta onnistumisilmoituksella. Hyväksytty tila, hylätty tai yhdistetty ehdotus ja ratkaisun peruste ovat jäljitettävissä. Testaa myös konfliktiton muutos."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: ratkaise ristiriita",
+          "caption": "Harjoitus: ratkaise ristiriita"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Conflicts arise from incompatible changes",
+        "paragraphs": [
+          "A conflict arises when changes cannot be applied together under the agreed data model and acceptance rules. Concurrent changes to separate records need not conflict. Two offline workstations may nevertheless propose different names for EQ-42 from the same base revision.",
+          "Identify target and base revision. A timestamp alone does not prove causality because clocks may differ. Authoritative state is established by a defined rule."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Conflicts arise from incompatible changes",
+          "caption": "Conflicts arise from incompatible changes"
+        }
+      },
+      {
+        "title": "Exercise: resolve a conflict",
+        "paragraphs": [
+          "Create two conflicting name proposals and define a resolution strategy: retain source state, refer to an authorized person or use an applicable merge rule. Last-write-wins is suitable only if potential information loss and ordering definition are acceptable.",
+          "Acceptance criterion: conflict is not hidden by success reporting. Accepted state, rejected or merged proposal and resolution rationale remain traceable. Test a non-conflicting change too."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: resolve a conflict",
+          "caption": "Exercise: resolve a conflict"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

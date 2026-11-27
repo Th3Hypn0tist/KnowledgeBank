@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Poistaminen koskee kaikkia määriteltyjä kopioita",
+        "paragraphs": [
+          "Looginen poisto voi estää tiedon normaalin käytön säilyttäen sen tallennuksessa. Tallennusmedian sanitointi tai kryptografinen hävittäminen tavoittelee palauttamisen estämistä määritellyn uhkamallin mukaan. Sopiva menetelmä riippuu mediasta, salauksesta, kopioista ja säilytysvelvoitteista.",
+          "R3:n testitietue voi esiintyä lähteessä, replikassa, hakemistossa, lokissa ja varmuuskopiossa. Jokaiselle sijainnille määritellään poisto tai säilytysajan päättyminen. Paikallinen poisto ei automaattisesti hävitä kumppanille toimitettua kopiota."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Poistaminen koskee kaikkia määriteltyjä kopioita",
+          "caption": "Poistaminen koskee kaikkia määriteltyjä kopioita"
+        }
+      },
+      {
+        "title": "Harjoitus: poisto ja vanha palautuspiste",
+        "paragraphs": [
+          "Luo synteettinen tietue, hakemisto ja varmuuskopio. Poista tietue sovitulla tavalla ja tarkasta aktiiviset hakutulokset. Palauta poistamista edeltävä kopio erilliseen ympäristöön. Sovella nykyistä poistopolitiikkaa ennen palautetun aineiston mahdollista käyttöönottoa.",
+          "Hyväksymiskriteeri: poistettu tietue ei palaudu aktiiviseen käyttöön vastoin määriteltyä politiikkaa. Mahdolliset säilytettävät kopiot on rajattu. Testi osoittaa loogista käyttäytymistä, ei median forenssista tyhjentymistä."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: poisto ja vanha palautuspiste",
+          "caption": "Harjoitus: poisto ja vanha palautuspiste"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Deletion concerns all defined copies",
+        "paragraphs": [
+          "Logical deletion may prevent normal use while retaining data in storage. Media sanitization or cryptographic destruction aims to prevent recovery under a defined threat model. Suitable methods depend on media, encryption, copies and retention obligations.",
+          "An R3 test record may exist in source, replica, index, log and backup. Define deletion or retention expiry for each location. Local deletion does not automatically destroy a copy delivered to a partner."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Deletion concerns all defined copies",
+          "caption": "Deletion concerns all defined copies"
+        }
+      },
+      {
+        "title": "Exercise: deletion and an old recovery point",
+        "paragraphs": [
+          "Create a synthetic record, index and backup. Delete the record according to policy and inspect active search results. Restore the pre-deletion copy separately. Apply current deletion policy before any activation of recovered data.",
+          "Acceptance criterion: the deleted record does not return to active use contrary to defined policy. Any retained copies are restricted. This test establishes logical behavior, not forensic media sanitization."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: deletion and an old recovery point",
+          "caption": "Exercise: deletion and an old recovery point"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

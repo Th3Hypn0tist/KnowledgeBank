@@ -31,8 +31,8 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 | 01 Suljettu toimintaympäristö | 11 | 11 | Sisältö valmis |
 | 02 Kommunikointi | 21 | 21 | Sisältö valmis |
 | 03 Pääsynhallinta ja toimivalta | 12 | 12 | Sisältö valmis |
-| 04 Datan hallinta | 11 | 5 | Sisältötyö käynnissä |
-| 05 Riippuvuuksien hallinta | 15 | 0 | Runko |
+| 04 Datan hallinta | 11 | 11 | Sisältö valmis |
+| 05 Riippuvuuksien hallinta | 15 | 5 | Sisältötyö käynnissä |
 | 06 Paikallinen tekoäly | 15 | 0 | Aiempi luonnos |
 | 07 Verifiointi | 15 | 0 | Aiempi luonnos |
 
@@ -95,35 +95,35 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 
 ### 04 Datan hallinta
 
-  - [ ] `data/backup/index.json`
-  - [ ] `data/conflicts/index.json`
-  - [ ] `data/deletion/index.json`
+  - [x] `data/backup/index.json`
+  - [x] `data/conflicts/index.json`
+  - [x] `data/deletion/index.json`
 - [x] `data/index.json`
   - [x] `data/lifecycle/index.json`
   - [x] `data/location/index.json`
   - [x] `data/ownership/index.json`
-  - [ ] `data/replication/index.json`
-  - [ ] `data/restore/index.json`
+  - [x] `data/replication/index.json`
+  - [x] `data/restore/index.json`
   - [x] `data/ssot/index.json`
-  - [ ] `data/sync/index.json`
+  - [x] `data/sync/index.json`
 
 ### 05 Riippuvuuksien hallinta
 
-  - [ ] `dependencies/discovery/index.json`
+  - [x] `dependencies/discovery/index.json`
     - [ ] `dependencies/external/cdn/index.json`
     - [ ] `dependencies/external/certificates/index.json`
     - [ ] `dependencies/external/cloud/index.json`
     - [ ] `dependencies/external/dns/index.json`
     - [ ] `dependencies/external/iam/index.json`
-  - [ ] `dependencies/external/index.json`
+  - [x] `dependencies/external/index.json`
     - [ ] `dependencies/external/libraries/index.json`
     - [ ] `dependencies/external/licenses/index.json`
     - [ ] `dependencies/external/ntp/index.json`
     - [ ] `dependencies/external/packages/index.json`
     - [ ] `dependencies/external/telemetry/index.json`
-- [ ] `dependencies/index.json`
-  - [ ] `dependencies/internal/index.json`
-  - [ ] `dependencies/updates/index.json`
+- [x] `dependencies/index.json`
+  - [x] `dependencies/internal/index.json`
+  - [x] `dependencies/updates/index.json`
 
 ### 06 Paikallinen tekoäly
 
@@ -173,10 +173,10 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 
 ## Edistyminen
 
-- Hyväksytysti valmiit sisältönodet: **50 / 101** (sisältää kurssin juurinoden).
-- Pääaiheet: **3 / 7** hyväksytysti valmista.
-- SVG-tiedostoja: **278** (22 aiempaa + 256 uutta; 139 kaaviota FI/EN).
-- Seuraava työ: `data/replication/`, `data/sync/`, `data/conflicts/`, `data/backup/`, `data/restore/` ja `data/deletion/`.
+- Hyväksytysti valmiit sisältönodet: **61 / 101** (sisältää kurssin juurinoden).
+- Pääaiheet: **4 / 7** hyväksytysti valmista.
+- SVG-tiedostoja: **322** (22 aiempaa + 300 uutta; 161 kaaviota FI/EN).
+- Seuraava työ: riippuvuuksien hallinnan 10 ulkoista riippuvuutta.
 
 ## Kehitysloki
 
@@ -213,3 +213,5 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 - Käyttäjä vahvisti viimeisimmän käyttöliittymä/API-kokonaisuuden toimivan; tämä ei korvaa systemaattista lopputestausta.
 
 - Kierros 09: datan hallinnan yleiskuva, SSOT, omistajuus, sijainti ja elinkaari täydennetty FI/EN (5 nodea). 14 uutta kaaviota kahdella kielellä. SSOT kuvattu loogisena auktoritatiivisuutena, ei yhden fyysisen kopion vaatimuksena. Omistajuus rajattu arkkitehtuurin hallintavastuuseen, ei juridiseksi omistusoikeusväitteeksi. JSON, kieliparien rakenne ja kuvaviittaukset tarkastettu; uusien kaavioiden visuaalinen tarkastus ja harjoitusten suoritus jäljellä.
+
+- Kierros 10A: datan hallinnan loput kuusi nodea sekä riippuvuuksien hallinnan viisi yleisnodea, yhteensä 11 nodea ja 22 kaaviota FI/EN. Ensimmäinen laaja erä jaettu teknisesti kahteen committiin työkalun kutsurajan vuoksi. JSON ja kuvaviittaukset tarkastettu; visuaalinen tarkastus, XML-parseritarkastus ja harjoitusten suoritus jäljellä.

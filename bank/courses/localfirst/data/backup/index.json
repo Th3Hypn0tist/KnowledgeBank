@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Varmuuskopio on palautuspiste",
+        "paragraphs": [
+          "Varmuuskopio säilyttää määritellyn aineiston palautettavassa muodossa. Sen tarkoitus on mahdollistaa palautuminen esimerkiksi virheellisestä muutoksesta tai laiteviasta. Replika voi välittää lähteen virheen, joten erillinen palautuspiste on tarpeen.",
+          "R3:n tietokantakopio muodostetaan tietokantaan soveltuvalla menetelmällä. Käynnissä olevan tietokannan tiedostojen tavallinen kopiointi ei aina tuota johdonmukaista tilaa. Säilytä myös tarvittava skeema, asetukset ja palautusohjeet."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Varmuuskopio on palautuspiste",
+          "caption": "Varmuuskopio on palautuspiste"
+        }
+      },
+      {
+        "title": "Harjoitus: palautuspiste ja RPO",
+        "paragraphs": [
+          "RPO (Recovery Point Objective) määrittää tavoiteltavan enimmäistietohävikin ajanjaksona. Valitse kopiointitiheys ja säilytyspaikat tavoitteen sekä vika-alueiden mukaan. Luo kaksi ajallisesti erotettua synteettistä tietokantakopiota ja dokumentoi niiden ajankohdat ja tiivisteet.",
+          "Hyväksymiskriteeri: palautuspisteet voidaan yksilöidä ja niitä säilytetään erillään siitä vika-alueesta, jolta niiden on tarkoitus suojata. Käyttökelpoisuus varmistetaan palautuskokeella."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: palautuspiste ja RPO",
+          "caption": "Harjoitus: palautuspiste ja RPO"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "A backup is a recovery point",
+        "paragraphs": [
+          "A backup preserves defined data in recoverable form. It enables recovery from incorrect changes or hardware failure, for example. Replicas may propagate source errors, so a separate recovery point is needed.",
+          "Create R3 database backups using a database-appropriate method. Ordinary copying of live database files may not produce a consistent state. Retain required schema, configuration and recovery instructions too."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "A backup is a recovery point",
+          "caption": "A backup is a recovery point"
+        }
+      },
+      {
+        "title": "Exercise: recovery point and RPO",
+        "paragraphs": [
+          "RPO (Recovery Point Objective) specifies the target maximum data loss as a time interval. Choose backup frequency and locations based on the objective and failure domains. Create two time-separated synthetic database backups and document times and digests.",
+          "Acceptance criterion: recovery points are identifiable and stored separately from the failure domain they are intended to cover. Usability is established through a restore test."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: recovery point and RPO",
+          "caption": "Exercise: recovery point and RPO"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

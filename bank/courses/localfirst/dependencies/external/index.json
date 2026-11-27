@@ -16,8 +16,58 @@
     "telemetry"
   ],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Ulkoinen riippuvuus ylittää hallintarajan",
+        "paragraphs": [
+          "Ulkoinen riippuvuus on hallintarajan ulkopuolella oleva edellytys, esimerkiksi internetpalvelu, kumppanipalvelin tai valmistajan päivitys. Se ei aina tarkoita jatkuvaa verkkoyhteyttä: ohjelmiston hankinta voi olla ulkoinen, vaikka suoritus olisi paikallinen.",
+          "R3 voi hankkia työohjeen ulkopuoliselta julkaisijalta ja käyttää hyväksyttyä versiota paikallisesti. Erota hankinta, käyttöönotto, suoritus ja ylläpito. Teknologialla voi olla eri riippuvuusprofiili eri vaiheissa."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Ulkoinen riippuvuus ylittää hallintarajan",
+          "caption": "Ulkoinen riippuvuus ylittää hallintarajan"
+        }
+      },
+      {
+        "title": "Harjoitus: rajaa ulkoisen palvelun vaikutus",
+        "paragraphs": [
+          "Valitse ulkoinen palvelu ja määrittele, mitä se toimittaa, missä vaiheessa sitä tarvitaan, miten voimassaolo tarkastetaan ja kuinka kauan puuttuminen voidaan hyväksyä. Kokeile yhteyden katkaisua erillisessä harjoitusympäristössä.",
+          "Hyväksymiskriteeri: riippuvuus on rajattu tehtävään ja sen puuttumisen vaikutus näkyy. Ulkoista palvelua tarvitsematon toiminto jatkuu vain, jos sen muut käyttöehdot täyttyvät."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: rajaa ulkoisen palvelun vaikutus",
+          "caption": "Harjoitus: rajaa ulkoisen palvelun vaikutus"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "External dependencies cross governance boundaries",
+        "paragraphs": [
+          "An external dependency is a prerequisite outside the governance boundary, such as an internet service, partner server or vendor update. It does not always mean continuous networking: acquisition may be external while execution is local.",
+          "R3 can obtain instructions from an external publisher and use an accepted revision locally. Separate acquisition, activation, runtime and maintenance. A technology can have different dependency profiles at different stages."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "External dependencies cross governance boundaries",
+          "caption": "External dependencies cross governance boundaries"
+        }
+      },
+      {
+        "title": "Exercise: scope external service impact",
+        "paragraphs": [
+          "Select an external service and define what it supplies, when required, how validity is checked and how long absence is tolerated. Test disconnection in a separate training environment.",
+          "Acceptance criterion: dependency is scoped to the task and absence has visible effects. Functions not requiring the external service continue only if their other usage conditions hold."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: scope external service impact",
+          "caption": "Exercise: scope external service impact"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

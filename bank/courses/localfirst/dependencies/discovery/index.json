@@ -5,8 +5,58 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Suorat ja välilliset riippuvuudet",
+        "paragraphs": [
+          "Suora riippuvuus on toiminnon välittömästi tarvitsema resurssi. Välillinen riippuvuus syntyy, kun tämä resurssi tarvitsee muita resursseja. Huoltosovellus tarvitsee tietokannan, joka tarvitsee tallennuksen, asetukset ja käyttöjärjestelmän. Ulkoiset yhteydet voivat piillä kirjastossa tai määräajoin tapahtuvassa tarkistuksessa.",
+          "Tunnista riippuvuuksia dokumentaatiosta, asetuksista, komponenttiluetteloista ja hyväksytyn harjoitusympäristön suoritushavainnoista. Erota käynnistys-, suoritus-, päivitys- ja palautusvaihe."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Suorat ja välilliset riippuvuudet",
+          "caption": "Suorat ja välilliset riippuvuudet"
+        }
+      },
+      {
+        "title": "Harjoitus: riippuvuusinventaario",
+        "paragraphs": [
+          "Tee ohjehaulle luettelo komponentista, tarkoituksesta, omistajasta, sijainnista, saatavuustarpeesta ja puuttumisen vaikutuksesta. Tarkasta myös ajastetut toiminnot ja testiverkon liikenne. Puhdas asennus voi paljastaa välimuistin peittämiä riippuvuuksia.",
+          "Hyväksymiskriteeri: tunnetut suorat ja välilliset riippuvuudet on kuvattu ja epävarmat kohdat merkitty selvitettäviksi. Yksi onnistunut offline-käynti ei todista kaikkien riippuvuuksien puuttumista."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Harjoitus: riippuvuusinventaario",
+          "caption": "Harjoitus: riippuvuusinventaario"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Direct and transitive dependencies",
+        "paragraphs": [
+          "A direct dependency is an immediately required resource. A transitive dependency arises when that resource requires others. The maintenance application needs a database, which needs storage, configuration and an OS. External connections may be hidden in a library or periodic check.",
+          "Discover dependencies through documentation, configuration, component inventories and approved training observations. Separate startup, runtime, update and recovery stages."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Direct and transitive dependencies",
+          "caption": "Direct and transitive dependencies"
+        }
+      },
+      {
+        "title": "Exercise: dependency inventory",
+        "paragraphs": [
+          "Inventory component, purpose, owner, location, required availability and absence impact for instruction lookup. Inspect scheduled tasks and training network traffic too. A clean installation may expose dependencies hidden by caches.",
+          "Acceptance criterion: known direct and transitive dependencies are documented and uncertainties marked for investigation. One successful offline run does not establish absence of every dependency."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Exercise: dependency inventory",
+          "caption": "Exercise: dependency inventory"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }
