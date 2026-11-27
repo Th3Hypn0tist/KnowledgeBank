@@ -1,0 +1,15 @@
+{
+  "courses": [
+    {
+      "id": "localfirst",
+      "title": {
+        "fi": "Local-First",
+        "en": "Local-First"
+      },
+      "description": {
+        "fi": "Koulutus organisaatioille, jotka haluavat hallita omaa infrastruktuuriaan, dataansa ja laskentaansa. Aloitamme suljetusta verkosta ja avaamme vain perustellut kommunikointimahdollisuudet.",
+        "en": "Training for organisations seeking control over infrastructure, data and compute. We start with a closed network and add only justified communication capabilities."
+      }
+    }
+  ]
+}

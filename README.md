@@ -1,16 +1,22 @@
 # KnowledgeBank
 
-Monolithic educational content repository. Courses are data, rendered by one shared vanilla JavaScript runtime.
+One HTML entry point and a shared vanilla JavaScript renderer for the complete knowledge bank. No HTML or executable code in individual course directories.
 
-## Course structure
-Each directory contains index.json with localized title, optional description, content (FI/EN arrays of blocks), and ordered children (relative directory names). A block has title, paragraphs and optional image {src,alt,caption}. Image paths are relative to the containing JSON file. SVG images are standalone and editable. Status outline means the topic has no developed lesson yet.
+## Repository
+- index.html: shared application shell.
+- lib/course.js: catalogue and recursive course renderer.
+- style/training.css: shared course presentation.
+- courses/index.json: course catalogue.
+- courses/<id>/index.json: course content root.
+- Each child directory has index.json with localized title, optional description, ordered children (relative directory names), content (FI/EN blocks), and status.
+- Blocks have title, paragraphs, and optional image {src,alt,caption}. Image paths are relative to their JSON file; standalone SVG files are content assets.
 
-The browser uses explicit children arrays because static HTTP does not expose a portable directory enumeration API. Add a child directory and its ID to the parent index.json. No build or third-party dependencies.
+## Deployment at /kb/
+Publish root index.html, lib/ and style/ directly into /kb/. Publish the contents of courses/ directly into /kb/ (including courses/index.json as /kb/index.json). Remove obsolete HTML files from course directories on the server. Do not overwrite the AIGM site-wide /site.css.
 
-## AIGM deployment
-- Publish courses/index.html as /kb/index.html.
-- Publish courses/<course-id>/ recursively as /kb/<course-id>/.
-- Publish lib/ as /kb/lib/ and style/ as /kb/style/.
-- Existing /site.css at web root is shared, not owned by KnowledgeBank.
-- Serve over HTTP (including localhost); fetch of JSON under file:// is not supported by typical browsers.
-- Remove obsolete course HTML pages from deployment; course entry is index.html; language is ?lang=en; headings use hash paths.
+Catalogue: /kb/index.html
+Course: /kb/index.html?course=localfirst
+English: /kb/index.html?course=localfirst&lang=en
+Topic: /kb/index.html?course=localfirst#communication/primitives
+
+Serve over HTTP, including localhost. No build step, no external runtime dependencies. Explicit children arrays preserve ordering and avoid directory listing dependencies.
