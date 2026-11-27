@@ -1,14 +1,15 @@
 # KnowledgeBank
 
-A single repository for educational content and shared presentation assets.
+Monolithic educational content repository.
 
 ## Courses
 
-- [Local-First](courses/localfirst/index.html) — closed networks and controlled communication (FI/EN).
+- Local-First: `courses/localfirst/` (FI/EN).
 
-## Structure
+## AIGM deployment
 
-- `courses/<course-id>/`: course-specific HTML and inline SVG.
-- `style/`: shared styles for all courses.
-
-Static HTML/CSS; no external runtime dependencies or build step. Open `index.html` locally or serve the repository root using a static web server.
+- Publish `courses/index.html` as `/kb/index.html`.
+- Publish `courses/<course-id>/` as `/kb/<course-id>/`.
+- Publish `style/training.css` as `/kb/style/training.css`.
+- All pages use the existing site-wide `/site.css` at the AIGM web root. KnowledgeBank does not own or overwrite it.
+- Static HTML and inline SVG; no build step. For local preview reproduce these URL paths and supply the AIGM site.css at the local server root.
