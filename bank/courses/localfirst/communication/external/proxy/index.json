@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Proxy välittää määriteltyä liikennettä",
+        "paragraphs": [
+          "Proxy on välittävä komponentti, joka vastaanottaa liikennettä yhden osapuolen puolesta ja muodostaa tai välittää yhteyden toiselle osapuolelle. Forward proxy toimii tyypillisesti asiakkaan puolesta suhteessa kohdepalveluihin, reverse proxy palvelun edessä suhteessa asiakkaisiin. Proxy ei ole sama asia kuin reititin tai pelkkä pakettisuodatin, vaikka ratkaisut voivat esiintyä samassa järjestelmässä.",
+          "R2:n ohjetuonti voidaan toteuttaa forward proxyn kautta, jolloin tuontikomponentti kommunikoi määritellyn välittäjän kanssa ja välittäjä käyttää hyväksyttyä julkaisupalvelua. Proxyn käyttö ei itsessään estä muita suoria yhteyksiä: reitit ja pääsynhallinta on määriteltävä erikseen."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Forward proxy ja reverse proxy",
+          "caption": "Forward proxy ja reverse proxy"
+        }
+      },
+      {
+        "title": "Välittäjän toiminnallinen raja",
+        "paragraphs": [
+          "Yleinen verkkoproxy voi rajoittaa kohteita ja yhteysominaisuuksia, mutta se ei välttämättä näe tai ymmärrä salatun sovellusliikenteen sisältöä. Sovelluskohtainen välittäjä voi tarjota paljon suppeamman toiminnon, kuten yhden hyväksytyn ohjepaketin noudon. Välittäjän tarkastusoikeudet ja salauksen päätepisteet on määriteltävä toteutuksen mukaan.",
+          "Välittäjästä tulee osa luottamusrajaa ja samalla uusi riippuvuus. Jos proxy ei ole käytettävissä, R2:n ohjetuonti voi odottaa, mutta paikallinen huoltosovellus käyttää edelleen hyväksyttyä paikallista aineistoa, mikäli sen käyttöehdot täyttyvät."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Yleinen yhteys ja rajattu toiminto",
+          "caption": "Yleinen yhteys ja rajattu toiminto"
+        }
+      },
+      {
+        "title": "Harjoitus: välityksen vaikutusalue",
+        "paragraphs": [
+          "Käytä erillisiä harjoituspalveluita. Määrittele yksi hyväksytty julkaisupalvelu ja toinen kohde, jota tuontitoiminto ei tarvitse. Testaa hyväksytty nouto, määritelmän ulkopuolinen kohde sekä välittäjän hallittu pysäytys. Tarkasta myös, ettei tuontikomponentilla ole tarpeetonta vaihtoehtoista reittiä.",
+          "Hyväksymiskriteeri: tarkoitettu nouto onnistuu, kiellettyä kohdetta ei saavuteta määritellystä tuontitoiminnosta, ja välittäjän puuttuminen näkyy tuonnin häiriönä estämättä tarpeettomasti paikallisia ydintoimintoja. Tulokset koskevat testattua konfiguraatiota, eivät kaikkia mahdollisia verkkoreittejä."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Kolme välitystestiä",
+          "caption": "Kolme välitystestiä"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "A proxy mediates defined traffic",
+        "paragraphs": [
+          "A proxy is an intermediary that receives traffic on behalf of one participant and establishes or relays connectivity to another. A forward proxy typically acts for clients accessing destination services; a reverse proxy sits in front of services facing clients. A proxy is not the same as a router or simple packet filter, though these may coexist.",
+          "R2 instruction import can use a forward proxy: the import component communicates with a defined intermediary, which accesses the approved publishing service. Use of a proxy alone does not prevent other direct connections: routing and access controls must be defined separately."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Forward proxy and reverse proxy",
+          "caption": "Forward proxy and reverse proxy"
+        }
+      },
+      {
+        "title": "The intermediary's functional boundary",
+        "paragraphs": [
+          "A general network proxy may restrict destinations and connection properties but may not see or understand encrypted application content. An application-specific intermediary can expose a much narrower function, such as retrieval of one approved instruction package. Inspection capabilities and encryption endpoints must be defined according to implementation.",
+          "The intermediary becomes part of the trust boundary and a new dependency. If the proxy is unavailable, R2 instruction import may wait while the maintenance application continues using accepted local content when its usage conditions remain satisfied."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "General connectivity and bounded operation",
+          "caption": "General connectivity and bounded operation"
+        }
+      },
+      {
+        "title": "Exercise: scope of mediation",
+        "paragraphs": [
+          "Use separate training services. Define one approved publishing service and another destination not required by import. Test approved retrieval, the out-of-scope destination and a controlled intermediary shutdown. Also verify that the import component has no unnecessary alternative route.",
+          "Acceptance criterion: intended retrieval succeeds, the prohibited destination is not reachable through the defined import function, and intermediary loss is reported as an import disruption without unnecessarily blocking local core functions. Results apply to the tested configuration, not every possible network path."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Three mediation tests",
+          "caption": "Three mediation tests"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

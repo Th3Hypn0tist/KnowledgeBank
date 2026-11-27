@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Federation yhdistää itsenäisiä järjestelmiä",
+        "paragraphs": [
+          "Federation tarkoittaa tässä luvussa itsenäisesti hallittujen järjestelmien välistä yhteistyötä määriteltyjen sopimusten kautta. Osapuolilla voi olla oma data, oma käyttäjähallinta, oma päätösvalta ja omat palvelut. Federation ei edellytä yhtä yhteistä tietokantaa tai kaikkien järjestelmien hallinnan siirtämistä keskitetylle toimijalle. Käsite voi eri teknologioissa tarkoittaa myös suppeampaa identiteetti- tai palvelufederaatiota.",
+          "R2:n huolto-organisaatio A ja kumppani B voivat vaihtaa sovittuja työohjeita tai raportteja. Molemmat päättävät paikallisesti, miten vastaanotettua sisältöä käsitellään. Yhteistyösopimus määrittelee vaihdettavan tiedon, mutta ei automaattisesti anna osapuolille toistensa sisäisiä käyttöoikeuksia."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Kaksi itsenäistä ympäristöä",
+          "caption": "Kaksi itsenäistä ympäristöä"
+        }
+      },
+      {
+        "title": "Sopimus ja paikallinen päätösvalta",
+        "paragraphs": [
+          "Federation tarvitsee yhteisen kommunikointisopimuksen: tunnisteet, viestien merkitys, versiot, toimitusehdot sekä luottamuksen perustan. Ulkopuolisen osapuolen tunniste tai väite ei ole automaattisesti paikallinen käyttöoikeus. Vastaanottava järjestelmä arvioi viestin ja sen mahdollisen toiminnallisen vaikutuksen oman politiikkansa mukaan.",
+          "Jos järjestelmät vaihtavat samaa tietoa, on määriteltävä kunkin tiedon auktoritatiivinen lähde sekä ristiriitojen käsittely. Federation ei itsessään ratkaise synkronointia, tietojen omistajuutta tai konfliktien hallintaa. Nämä käsitellään luvussa 04."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Yhteinen sopimus, erilliset päätökset",
+          "caption": "Yhteinen sopimus, erilliset päätökset"
+        }
+      },
+      {
+        "title": "Harjoitus: kumppanin poistuminen",
+        "paragraphs": [
+          "Rakenna kaksi erillistä loogista harjoitusympäristöä, joilla on oma paikallinen testiaineisto. Määrittele A:n julkaisema ohje ja B:n lähettämä raportti. Testaa sovittu vaihto ja simuloitu yhteyskatko. Tarkasta, että molemmissa ympäristöissä jo hyväksytty paikallinen tieto säilyy käyttöehtojensa mukaisesti ja toimituksen tila jää näkyviin.",
+          "Hyväksymiskriteeri: kumppanin yhteyden poistaminen ei tarpeettomasti estä kummankaan ympäristön omia ydintoimintoja, eikä epäonnistunutta ulkoista toimitusta ilmoiteta onnistuneeksi. Kirjaa erikseen toiminnot, jotka perustellusti tarvitsevat kumppanin palvelua."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Itsenäinen toiminta yhteyden katkettua",
+          "caption": "Itsenäinen toiminta yhteyden katkettua"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Federation connects autonomous systems",
+        "paragraphs": [
+          "In this chapter Federation means cooperation between independently governed systems through defined agreements. Participants may have their own data, identity management, decision authority and services. Federation does not require one shared database or transferring control of all systems to a central operator. In specific technologies the term may also denote narrower identity or service federation.",
+          "R2 maintenance organisation A and partner B may exchange agreed instructions or reports. Each decides locally how received content is handled. The cooperation agreement defines exchanged information but does not automatically grant participants each other's internal permissions."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Two autonomous environments",
+          "caption": "Two autonomous environments"
+        }
+      },
+      {
+        "title": "Agreement and local decision authority",
+        "paragraphs": [
+          "Federation needs a shared communication agreement: identifiers, message semantics, versions, delivery conditions and trust basis. An external participant's identifier or assertion is not automatically a local permission. The receiving system evaluates the message and its potential functional effect according to its own policy.",
+          "If systems exchange the same information, define its authoritative source and conflict handling. Federation itself does not solve synchronization, data ownership or conflict management. These are covered in chapter 04."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Shared agreement, separate decisions",
+          "caption": "Shared agreement, separate decisions"
+        }
+      },
+      {
+        "title": "Exercise: partner disconnection",
+        "paragraphs": [
+          "Build two separate logical training environments with their own local test data. Define an instruction published by A and a report sent by B. Test the agreed exchange and a simulated disconnection. Verify that accepted local data remains available in both environments according to its usage conditions and delivery status remains visible.",
+          "Acceptance criterion: disconnecting the partner does not unnecessarily block either environment's own core functions, and failed external delivery is not reported as successful. Separately record functions that legitimately require the partner service."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Independent operation after disconnection",
+          "caption": "Independent operation after disconnection"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

@@ -5,8 +5,82 @@
   },
   "children": [],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Etäkäyttö on toiminnon käyttöä rajan yli",
+        "paragraphs": [
+          "Etäkäyttö tarkoittaa, että ympäristön ulkopuolinen osapuoli käyttää määriteltyä paikallista toimintoa. Ratkaisu voi tarjota yhden sovellusrajapinnan, etätyöpöytäistunnon tai rajatun verkkoyhteyden. Näiden vaikutusalueet ovat erilaisia. Esimerkiksi VPN luo verkkoyhteyden, mutta ei itsessään määritä sovelluksen sallittuja toimintoja.",
+          "R2:n huolto-organisaatiossa etäkäyttäjän tarve voi olla yhden työohjeen lukeminen. Tähän ei välttämättä tarvita etätyöpöytää, pääsyä tietokantaan tai reittiä muihin laitteisiin. Jos tehtävä voidaan toteuttaa rajatulla sovelluspalvelulla, yleisemmän pääsyn tarpeellisuus on perusteltava erikseen."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "Etäkäytön erilaiset vaikutusalueet",
+          "caption": "Etäkäytön erilaiset vaikutusalueet"
+        }
+      },
+      {
+        "title": "Etäistunnon elinkaari",
+        "paragraphs": [
+          "Etäkäytölle määritellään pääsyn aloittamisen ehdot, käyttöajan rajat, sallitut toiminnot ja istunnon päättäminen. Yhteyden salaus, osapuolten todennus ja toimivalta ovat eri vaatimuksia. Käyttöoikeus on voitava peruuttaa määritellyllä tavalla, ja mahdollisten jo aktiivisten istuntojen kohtelu on suunniteltava. Identiteettiä ja auktorisointia käsitellään tarkemmin luvussa 03.",
+          "Etäkäytön ei tule muuttaa R2:n paikallista toimintakykyä pysyvästi ulkoisen osapuolen hallitsemaksi. Ulkoisen yhteyden poistamisen jälkeen paikallisen ympäristön tehtävät ja hallinta säilyvät määritellyn toimintamallin mukaisina."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Rajattu etäistunto",
+          "caption": "Rajattu etäistunto"
+        }
+      },
+      {
+        "title": "Harjoitus: etäkäytön rajat",
+        "paragraphs": [
+          "Määrittele hyväksytyssä testiverkossa etäkäyttäjän tehtäväksi työohjeen lukeminen. Tarkista onnistunut luku sekä kielletty kirjoitus ja hallintatoiminto. Tarkista myös, etteivät muut paikalliset palvelut tule tarpeettomasti saavutettaviksi. Käytä harjoitustunnuksia ja synteettistä aineistoa.",
+          "Päätä istunto määritellyllä tavalla ja testaa, ettei päättynyt istunto enää mahdollista käyttöä. Katkaise ulkoinen testiyhteys ja suorita paikallinen työtehtävä. Hyväksymiskriteeri: vain määritelty etätoiminto onnistuu ja paikallinen toiminta säilyy ilman etäyhteyttä."
+        ],
+        "image": {
+          "src": "images/lesson-3-fi.svg",
+          "alt": "Etäkäytön toiminnallinen testaus",
+          "caption": "Etäkäytön toiminnallinen testaus"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "Remote access uses a function across a boundary",
+        "paragraphs": [
+          "Remote access means that a participant outside an environment uses a defined local function. A solution may expose one application interface, a remote desktop session or a bounded network connection. These have different scopes. A VPN, for example, establishes network connectivity but does not itself define authorized application operations.",
+          "An R2 maintenance organisation may need a remote user to read one instruction. This does not necessarily require remote desktop, database access or routes to other devices. If a bounded application service satisfies the task, any broader access needs separate justification."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "Different scopes of remote access",
+          "caption": "Different scopes of remote access"
+        }
+      },
+      {
+        "title": "Remote session lifecycle",
+        "paragraphs": [
+          "Define conditions for starting remote access, duration limits, permitted operations and session termination. Connection encryption, participant authentication and authority are distinct requirements. Access must be revocable through a defined mechanism, including planned treatment of existing active sessions. Identity and authorization are covered in detail in chapter 03.",
+          "Remote access should not permanently place R2's local operational capability under external control. After removal of the external connection, local tasks and administration remain available according to the defined operating model."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "Bounded remote session",
+          "caption": "Bounded remote session"
+        }
+      },
+      {
+        "title": "Exercise: remote access boundaries",
+        "paragraphs": [
+          "In an approved test network define the remote user's task as reading an instruction. Test successful reading, prohibited writing and prohibited administration. Also verify that other local services do not become unnecessarily reachable. Use training credentials and synthetic data.",
+          "Terminate the session through the defined mechanism and test that the ended session no longer permits use. Disconnect the external test link and perform a local task. Acceptance criterion: only the defined remote operation succeeds and local operation remains available without remote connectivity."
+        ],
+        "image": {
+          "src": "images/lesson-3-en.svg",
+          "alt": "Functional remote access testing",
+          "caption": "Functional remote access testing"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

@@ -9,8 +9,58 @@
     "federation"
   ],
   "content": {
-    "fi": [],
-    "en": []
+    "fi": [
+      {
+        "title": "Ulkoinen yhteys on perusteltu poikkeus",
+        "paragraphs": [
+          "R1:n paikalliset ydintoiminnot ovat lähtökohta. R2:n verkotettu vaihtoehto lisää määritellyn rajapinnan ulkoiseen ympäristöön vain todettua tarvetta varten. Tämä muuttaa eristysmallia: yhdistettyä rajapintaa ei enää kutsuta fyysisesti eristetyksi. Ulkoisen palvelun puuttuminen ei saa tarpeettomasti estää paikallisia tehtäviä.",
+          "Määrittele ulkoinen osapuoli, toiminto, siirtoreitti, sallittu sisältö ja yhteyden elinkaari ennen yhteyden toteuttamista. Proxy, Remote Access ja Federation kuvaavat eri arkkitehtonisia ratkaisuja eivätkä yksin takaa turvallisuutta."
+        ],
+        "image": {
+          "src": "images/lesson-1-fi.svg",
+          "alt": "R2: paikallinen ydin ja ulkoinen rajapinta",
+          "caption": "R2: paikallinen ydin ja ulkoinen rajapinta"
+        }
+      },
+      {
+        "title": "Yhteyden tarpeellisuus ja poistaminen",
+        "paragraphs": [
+          "Kirjaa jokaiselle yhteydelle omistaja, käyttötarkoitus, hyväksytyt päätepisteet, voimassaolo ja käytöstä poistamisen menetelmä. Selvitä myös mahdolliset paluureitit ja yhteyden aiheuttamat uudet riippuvuudet. Yhteyden poistamisen pitää olla suunniteltu toiminto, ei vasta häiriötilanteessa keksittävä ratkaisu.",
+          "Harjoituksessa määrittele R2:n ulkoinen ohjetuonti ja vertaa sitä offline-vaihtoehtoon. Katkaise testiyhteys ja tarkasta, että paikallinen ohjehaku ja huoltotapahtuman tallennus toimivat edelleen määritellyllä tavalla. Hyväksymiskriteeri: yhteydelle on nimetty perusteltu tarve ja poistomenettely, ja sen puuttumisen vaikutus on dokumentoitu."
+        ],
+        "image": {
+          "src": "images/lesson-2-fi.svg",
+          "alt": "Ulkoisen yhteyden elinkaari",
+          "caption": "Ulkoisen yhteyden elinkaari"
+        }
+      }
+    ],
+    "en": [
+      {
+        "title": "An external connection is a justified exception",
+        "paragraphs": [
+          "R1's local core functions are the starting point. The networked R2 alternative adds a defined interface to an external environment only for an established need. This changes the isolation model: the connected interface is no longer described as physically isolated. Loss of an external service should not unnecessarily block local tasks.",
+          "Define the external participant, operation, transfer path, permitted content and connection lifecycle before implementation. Proxy, Remote Access and Federation describe different architectural solutions and do not independently establish security."
+        ],
+        "image": {
+          "src": "images/lesson-1-en.svg",
+          "alt": "R2: local core and external interface",
+          "caption": "R2: local core and external interface"
+        }
+      },
+      {
+        "title": "Connection necessity and removal",
+        "paragraphs": [
+          "For each connection record an owner, purpose, approved endpoints, validity and removal procedure. Identify return paths and new dependencies introduced by the connection. Removal should be a planned operation rather than an improvised response to disruption.",
+          "Define external instruction import for R2 and compare it with the offline alternative. Disconnect the test link and verify that local instruction lookup and maintenance logging continue as defined. Acceptance criterion: the connection has a justified need and removal procedure, and the impact of its absence is documented."
+        ],
+        "image": {
+          "src": "images/lesson-2-en.svg",
+          "alt": "External connection lifecycle",
+          "caption": "External connection lifecycle"
+        }
+      }
+    ]
   },
-  "status": "outline"
+  "status": "complete"
 }

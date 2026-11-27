@@ -29,7 +29,7 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 | Aihe | Nodeja | Hyväksytty valmiiksi | Tila |
 |---|---:|---:|---|
 | 01 Suljettu toimintaympäristö | 11 | 11 | Sisältö valmis |
-| 02 Kommunikointi | 21 | 17 | Sisältötyö käynnissä |
+| 02 Kommunikointi | 21 | 21 | Sisältö valmis |
 | 03 Pääsynhallinta ja toimivalta | 12 | 0 | Aiempi luonnos |
 | 04 Datan hallinta | 11 | 0 | Runko |
 | 05 Riippuvuuksien hallinta | 15 | 0 | Runko |
@@ -56,10 +56,10 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 
 ### 02 Kommunikointi
 
-    - [ ] `communication/external/federation/index.json`
-  - [ ] `communication/external/index.json`
-    - [ ] `communication/external/proxy/index.json`
-    - [ ] `communication/external/remote/index.json`
+    - [x] `communication/external/federation/index.json`
+  - [x] `communication/external/index.json`
+    - [x] `communication/external/proxy/index.json`
+    - [x] `communication/external/remote/index.json`
 - [x] `communication/index.json`
   - [x] `communication/patterns/index.json`
     - [x] `communication/patterns/pull/index.json`
@@ -173,10 +173,10 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 
 ## Edistyminen
 
-- Hyväksytysti valmiit sisältönodet: **29 / 101** (sisältää kurssin juurinoden).
-- Pääaiheet: **1 / 7** hyväksytysti valmista.
-- SVG-tiedostoja: **160** (22 aiempaa + 138 uutta; 80 kaaviota FI/EN).
-- Seuraava työ: `communication/external/` ja sen kolme aliaihetta (Proxy, Remote Access, Federation).
+- Hyväksytysti valmiit sisältönodet: **33 / 101** (sisältää kurssin juurinoden).
+- Pääaiheet: **2 / 7** hyväksytysti valmista.
+- SVG-tiedostoja: **182** (22 aiempaa + 160 uutta; 91 kaaviota FI/EN).
+- Seuraava työ: 03 Pääsynhallinta ja toimivalta, yleiskuva, identiteetinhallinta, autentikointi, auktorisointi ja validointi.
 
 ## Kehitysloki
 
@@ -193,3 +193,5 @@ Tämä on kurssin jatkuvasti päivitettävä työlista. Päivitä sama tiedosto 
 - Kierros 05: tiedonsiirto ja kommunikointimallit ryhmittelynodeineen täydennetty FI/EN (9 nodea). 20 uutta kaaviota kahdella kielellä. R2:n ohjetuonti ja raporttivienti kuvaavat siirtosuuntia, aloitteellisuutta ja toimituksen ajallista erottelua. Offline ja verkotettu R2 ovat vaihtoehtoisia toteutuksia. JSON, kieliparien rakenne ja uudet kuvaviittaukset tarkastettu. SVG:n visuaalinen selaintestaus, harjoitusten suoritus ja koko kurssin lopputarkastus jäljellä.
 
 - Käyttöliittymän visuaalinen muutos käyttäjän pyynnöstä: kurssin sisältökortit ja kurssiluettelon kortit vaaleanharmaiksi, tekstit tummiksi. Sivun yleinen tumma teema ja SVG-kaaviot säilytetty. CSS:n välimuistiversio päivitetty. Ei muutoksia sisältönodien valmiusasteeseen; visuaalinen selaintestaus jäljellä.
+
+- Kierros 06: ulkoiset yhteydet, Proxy, Remote Access ja Federation täydennetty FI/EN (4 nodea). 11 uutta kaaviota kahdella kielellä. Kommunikointiluvun kaikki 21 nodea sisältövalmiita. Federation määritelty kurssissa itsenäisten järjestelmien sopimuspohjaiseksi yhteistyöksi, ei yhteiseksi toimivallaksi. JSON, kieliparien rakenne ja uudet kuvaviittaukset tarkastettu. Visuaalinen selaintestaus, harjoitusten suoritus ja koko kurssin lopputarkastus jäljellä.
